@@ -17,25 +17,82 @@ var elapsed_time = function (log) {
 //console.log(JSON.stringify(esprima.parse("var answer = 42;"), null, 4));
 var fname = process.argv.slice(2)[0];
 console.log("Opening " + fname);
+var _types = [];
 fs.readFile(fname, function (err, data) {
 	if (err) throw err;
 	//var parsed = JSON.stringify(esprima.parse(data), null, 4);
 	var ast = esprima.parse(data);
+	// time for some metadata
+	//var startExpr = esprima.parse("var start = new Date().getTime();").body[0];
+
+	//TODO: code template; make sure to handle SCOPE... different functions with the same name
+	var endExprStr = "{ var end = new Date().getTime() - start; if (!window._p['{f}']) {window._p['{f}'] = {count: 0, avg: 0}; } window._p['{f}'].count++; window._p['{f}'].avg = (window._p['{f}'].avg + end) / 2; }";
+
+	//var _compilestart = function (id) {
+	var startExpr = esprima.parse("var start = new Date().getTime();").body[0];
+	//	return startExpr;
+	//};
+	//var _compileend = function (id) {
+	//	var endExpr = esprima.parse("console.log(new Date().getTime() - start);").body[0];
+	//	return endExpr;
+	//}
+
 	//modify AST as we traverse it
 	//TODO: this is just a POC for now.
 	estraverse.traverse(ast, {
 		enter: function (node, parent) {
-
+			//dump different node types
+			/*
+			if (!_types[node.type]) {
+				_types[node.type] = true;
+				console.log(node.type);
+			}
+			*/
+			if (node.type === "Program") {
+				// initialize
+				node.body.unshift(esprima.parse("window._p = [];").body[0]);
+			}
 		},
 		leave: function (node, parent) {
-			if (node.type === "FunctionDeclaration") {
+			var currEndExpr;
+			if (node.type === "FunctionDeclaration" || node.type === "FunctionExpression") { // want to measure execution of functions
 				var exprs = node.body.body;
-				exprs.unshift(esprima.parse("var start = new Date().getTime();").body[0]);
-				var expr = esprima.parse("console.log(new Date().getTime() - start);").body[0];
-				if (exprs[exprs.length - 1].type === "ReturnStatement") {
-					exprs.splice(exprs.length - 1, 0, expr);
+				currEndExpr = esprima.parse(endExprStr.replace(/{f}/g, node.id ? node.id.name : "anonymous")).body[0];
+				var recorded = false;
+				/*
+				var startExpr = null;
+				if (node.id) {
+					// we are dealing with a named function (as opposed to anonymous)
+					startExpr = _compilestart(node.id);
 				} else {
-					exprs.push(expr);
+					// check if we aren't dealing with a func. assignment
+					startExpr = _compilestart(null);
+				}
+				*/
+				exprs.unshift(startExpr);
+				// need to find all Return statements and process them recursively, cannot rely on the last expression
+				for (var i = 0; exprs[i] && i < exprs.length; i++) {
+					if (exprs[i].type === "ReturnStatement") {
+						//exprs.splice(i, 0, endExpr);
+						//i++;
+						recorded = true;
+						break;
+					}
+				}
+				if (!recorded) {
+					exprs.push(currEndExpr);
+				}
+			} else {
+				// make sure we cover all return stmts
+				if (node.body) {
+					for (var i = 0; i < node.body.length; i++) {
+						if (node.body[i].type === "ReturnStatement") {
+							currEndExpr = esprima.parse(endExprStr.replace(/{f}/g, node.id ? node.id.name : "anonymous")).body[0];
+							node.body.splice(i, 0, currEndExpr);
+							i++;
+							break;
+						}
+					}
 				}
 			}
 		}

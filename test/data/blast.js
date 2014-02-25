@@ -4,8 +4,6 @@
  */
 "use strict";
 (function (window, document) {
-	var start = new Date().getTime();
-	console.log(new Date().getTime() - start);
 	var blast = window.blast = window.blast || {}, doc = document;
 	var _arrextend = ["pop", "push", "reverse", "shift", "sort", "splice", "unshift"];
 	blast.observable = function (val) {
