@@ -22,23 +22,26 @@ fs.readFile(fname, function (err, data) {
 	if (err) throw err;
 	//var parsed = JSON.stringify(esprima.parse(data), null, 4);
 	var ast = esprima.parse(data);
-	// time for some metadata
-	//var startExpr = esprima.parse("var start = new Date().getTime();").body[0];
-
+	// inject our script which sends data
 	//TODO: code template; make sure to handle SCOPE... different functions with the same name
-	var endExprStr = "{ var end = new Date().getTime() - start; if (!window._p['{f}']) {window._p['{f}'] = {count: 0, avg: 0}; } window._p['{f}'].count++; window._p['{f}'].avg = (window._p['{f}'].avg + end) / 2; }";
-
-	//var _compilestart = function (id) {
+	var endExprStr = "{ var ms = new Date().getTime() - start; _putstat('{f}', ms);}";
 	var startExpr = esprima.parse("var start = new Date().getTime();").body[0];
-	//	return startExpr;
-	//};
-	//var _compileend = function (id) {
-	//	var endExpr = esprima.parse("console.log(new Date().getTime() - start);").body[0];
-	//	return endExpr;
-	//}
-
+	var _compileEndExpr = function (node, parent) {
+		var currEndExpr;
+		var funcname = node.id ? (node.id.name ? node.id.name : "anonymous") : "anonymous";
+		if (funcname === "anonymous" && parent) {
+			if (parent.type === "AssignmentExpression") {
+				funcname = "";
+				if (parent.left.object && parent.left.object.type === "Identifier") {
+					funcname += parent.left.object.name + "." + parent.left.property.name;
+				}
+			} else if (parent.type === "VariableDeclarator") {
+				funcname = parent.id.name;
+			}
+		}
+		return esprima.parse(endExprStr.replace(/{f}/g, funcname)).body[0];
+	};
 	//modify AST as we traverse it
-	//TODO: this is just a POC for now.
 	estraverse.traverse(ast, {
 		enter: function (node, parent) {
 			//dump different node types
@@ -50,25 +53,19 @@ fs.readFile(fname, function (err, data) {
 			*/
 			if (node.type === "Program") {
 				// initialize
-				node.body.unshift(esprima.parse("window._p = [];").body[0]);
+				//var headScript = "{ var head = document.getElementsByTagName('head')[0], script = document.createElement('script'); script.src = 'cheetah-collect.js'; head.insertBefore(script, head.firstChild); }";
+				var jqueryScript = "{ var head = document.getElementsByTagName('head')[0], script = document.createElement('script'); script.src = 'http://code.jquery.com/jquery-1.11.0.min.js'; head.insertBefore(script, head.firstChild); }";
+				node.body.unshift(esprima.parse("window._p = {};").body[0]);
+				//node.body.unshift(esprima.parse(headScript).body[0]);
+				node.body.unshift(esprima.parse(jqueryScript).body[0]);
+				// now add a statement that will push the results to our server
+				//node.body.push(esprima.parse("_sendPerfData();").body[0]);
 			}
 		},
 		leave: function (node, parent) {
-			var currEndExpr;
 			if (node.type === "FunctionDeclaration" || node.type === "FunctionExpression") { // want to measure execution of functions
 				var exprs = node.body.body;
-				currEndExpr = esprima.parse(endExprStr.replace(/{f}/g, node.id ? node.id.name : "anonymous")).body[0];
 				var recorded = false;
-				/*
-				var startExpr = null;
-				if (node.id) {
-					// we are dealing with a named function (as opposed to anonymous)
-					startExpr = _compilestart(node.id);
-				} else {
-					// check if we aren't dealing with a func. assignment
-					startExpr = _compilestart(null);
-				}
-				*/
 				exprs.unshift(startExpr);
 				// need to find all Return statements and process them recursively, cannot rely on the last expression
 				for (var i = 0; exprs[i] && i < exprs.length; i++) {
@@ -80,15 +77,16 @@ fs.readFile(fname, function (err, data) {
 					}
 				}
 				if (!recorded) {
-					exprs.push(currEndExpr);
+					//exprs.push(currEndExpr);
+					exprs.push(_compileEndExpr(node, parent));
 				}
 			} else {
 				// make sure we cover all return stmts
 				if (node.body) {
 					for (var i = 0; i < node.body.length; i++) {
 						if (node.body[i].type === "ReturnStatement") {
-							currEndExpr = esprima.parse(endExprStr.replace(/{f}/g, node.id ? node.id.name : "anonymous")).body[0];
-							node.body.splice(i, 0, currEndExpr);
+							//node.body.splice(i, 0, currEndExpr);
+							node.body.splice(i, 0, _compileEndExpr(node, parent));
 							i++;
 							break;
 						}

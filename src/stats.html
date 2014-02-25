@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title> Performance Stats </title>
+	</head>
+	<body>
+		<script src="http://code.jquery.com/jquery-1.11.0.min.js" type="text/javascript" charset="utf-8"></script>
+		<script>
+			$(document).ready(function () {
+				// fetch data from server
+				$.ajax("http://localhost:12346/api/stats").done(function (data) {
+					alert(data);
+				});
+			});
+		</script>
+	</body>
+</html>
