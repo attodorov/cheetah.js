@@ -2,14 +2,70 @@
 <html>
 	<head>
 		<title> Performance Stats </title>
+    <link href="http://cdn-na.infragistics.com/jquery/20132/latest/css/themes/infragistics/infragistics.theme.css" rel="stylesheet" />
+    <link href="http://cdn-na.infragistics.com/jquery/20132/latest/css/structure/infragistics.css" rel="stylesheet" />
+    <link href="http://cdn-na.infragistics.com/jquery/20132/latest/css/structure/modules/infragistics.ui.chart.new.css" rel="stylesheet" />
 	</head>
 	<body>
+		<div id="stats"></div>
 		<script src="http://code.jquery.com/jquery-1.11.0.min.js" type="text/javascript" charset="utf-8"></script>
+		<script src="http://modernizr.com/downloads/modernizr-latest.js"></script>
+		<script src="http://code.jquery.com/ui/1.10.3/jquery-ui.min.js"></script>
+		<script src="http://cdn-na.infragistics.com/jquery/20132/latest/js/infragistics.core.js"></script>
+		<script src="http://cdn-na.infragistics.com/jquery/20132/latest/js/infragistics.dv.js"></script>
 		<script>
 			$(document).ready(function () {
 				// fetch data from server
-				$.ajax("http://localhost:12346/api/stats").done(function (data) {
-					alert(data);
+				$.getJSON("http://localhost:12346/api/stats", function (data) {
+					var normalizedData = [];
+					for (var key in data) {
+						if (data.hasOwnProperty(key)) {
+							var obj = data[key];
+							obj.name = key;
+							normalizedData.push(obj);
+						}
+					}
+					var byAvg = function (a, b) {
+						if (a.avg < b.avg)
+							return 1;
+						if (a.avg > b.avg)
+							return -1;
+						return 0;
+					};
+					normalizedData = normalizedData.sort(byAvg);
+					if (normalizedData.length > 10) {
+						normalizedData = normalizedData.slice(0, 10);
+					}
+					$("#stats").igDataChart({
+						width: "95%",
+						dataSource: normalizedData,
+						title: "Function average times",
+						axes: [
+							{
+								name: "xAxis",
+								type: "numericX",
+								title: "Average speed (ms)"
+							},
+							{
+								name: "yAxis",
+								type: "categoryY",
+								label: "name",
+								interval: 1,
+								labelTopMargin: 5
+							}
+						],
+						series: [
+							{
+								name: "series1",
+								type: "bar",
+								isHighlightingEnabled: true,
+								isTransitionInEnabled: true,
+								xAxis: "xAxis",
+								yAxis: "yAxis",
+								valueMemberPath: "avg"
+							}
+						]
+					});
 				});
 			});
 		</script>

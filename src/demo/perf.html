@@ -1,22 +1,26 @@
 <!DOCTYPE html>
 <html>
 	<head>
+		<script src="http://code.jquery.com/jquery-1.11.0.min.js"></script>
 		<script type="text/javascript" src="cheetah-collect.js"></script>
-		<script type="text/javascript" src="blast.js"></script>
+		<script type="text/javascript" src="js/blast.js"></script>
 		<script type="text/javascript">
 			window.onload = function () {
-				var bigData = [];
-				for (var i = 0; i < 5000; i++) {
-					//bigData.push({prop1: blast.observable("Prop1"  + i) , prop2: blast.observable("bProp2" + i), prop3: blast.observable("Prop3" + i)});
-					bigData.push({prop1: "Prop1"  + i , prop2: "bProp2" + i, prop3: "Prop3" + i});
+				var bigData = [], i;
+				for (i = 0; i < 5000; i++) {
+					bigData.push({prop1: blast.observable("Prop1"  + i) , prop2: blast.observable("Prop2" + i), prop3: blast.observable("Prop3" + i)});
+					//bigData.push({prop1: "Prop1"  + i , prop2: "bProp2" + i, prop3: "Prop3" + i});
 				}	
 				perfModel = {
 					bigdata: bigData
 				};
-				var start = new Date().getTime();
 				blast.bind(perfModel);
-				var end = new Date().getTime() - start;
-				document.getElementById("result").innerHTML = "It took: " + end + "ms";
+				// now increment all values through the observables
+				for (i = 0; i < bigData.length; i++) {
+					bigData[i].prop1("Prop1" + Math.random());
+					bigData[i].prop2("Prop2" + Math.random());
+					bigData[i].prop3("Prop3" + Math.random());
+				}
 				_sendPerfData();
 			};
 		</script>

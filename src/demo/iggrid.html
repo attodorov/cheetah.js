@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title></title>
+
+    <!-- Ignite UI Required Combined CSS Files -->
+    <link href="http://cdn-na.infragistics.com/jquery/20132/latest/css/themes/infragistics/infragistics.theme.css" rel="stylesheet" />
+    <link href="http://cdn-na.infragistics.com/jquery/20132/latest/css/structure/infragistics.css" rel="stylesheet" />
+    <script type="text/javascript" src="cheetah-collect.js"></script>
+    <script src="http://modernizr.com/downloads/modernizr-latest.js"></script>
+    <script src="http://code.jquery.com/jquery-1.11.0.min.js"></script>
+    <script src="http://code.jquery.com/ui/1.10.3/jquery-ui.min.js"></script>
+
+    <!-- Ignite UI Required Combined JavaScript Files -->
+    <script src="js/infragistics.core.js"></script>
+    <script src="js/infragistics.lob.js"></script>
+</head>
+<body>
+    <button class="collect">Collect Perf Data</button>
+    <table id="grid"></table>
+    <script src="http://www.igniteui.com/data-files/adventureworks.min.js"></script>
+    <script>
+        $(function () {
+            $(".collect").on("click", function () {
+                _sendPerfData();
+            });
+            $("#grid").igGrid({
+                autoGenerateColumns: false,
+                width: "100%",
+                columns: [
+                    { headerText: "Product ID", key: "ProductID", dataType: "number", width: "15%" },
+                    { headerText: "Product Name", key: "Name", dataType: "string", width: "40%" },
+                    { headerText: "Product Number", key: "ProductNumber", dataType: "string", width: "30%" },
+                    { headerText: "Make Flag", key: "MakeFlag", dataType: "bool", width: "15%" }
+                ],
+                dataSource: adventureWorks,
+                features: [
+                    {
+                        name: 'Paging',
+                        type: "local",
+                        pageSize: 10
+                    }
+                ]
+            });
+        });
+    </script>
+</body>
+</html>

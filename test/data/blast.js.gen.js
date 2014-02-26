@@ -3,11 +3,6 @@
     script.src = 'http://code.jquery.com/jquery-1.11.0.min.js';
     head.insertBefore(script, head.firstChild);
 }
-{
-    var head = document.getElementsByTagName('head')[0], script = document.createElement('script');
-    script.src = 'cheetah-collect.js';
-    head.insertBefore(script, head.firstChild);
-}
 window._p = {};
 'use strict';
 (function (window, document) {
@@ -33,13 +28,13 @@ window._p = {};
                 ret.notify(true);
                 {
                     var ms = new Date().getTime() - start;
-                    _putstat('anonymous', ms);
+                    _putstat('ret', ms);
                 }
                 return ret;
             }
             {
                 var ms = new Date().getTime() - start;
-                _putstat('anonymous', ms);
+                _putstat('ret', ms);
             }
             return current;
         };
@@ -59,7 +54,7 @@ window._p = {};
         ret(val);
         {
             var ms = new Date().getTime() - start;
-            _putstat('anonymous', ms);
+            _putstat('blast.observable', ms);
         }
         return ret;
     };
@@ -72,7 +67,7 @@ window._p = {};
             var start = new Date().getTime();
             {
                 var ms = new Date().getTime() - start;
-                _putstat('anonymous', ms);
+                _putstat('_compilefn', ms);
             }
             return function () {
                 var start = new Date().getTime();
@@ -91,7 +86,7 @@ window._p = {};
         }
         {
             var ms = new Date().getTime() - start;
-            _putstat('anonymous', ms);
+            _putstat('blast.observableArray', ms);
         }
         return observableArr;
     };
@@ -148,7 +143,7 @@ window._p = {};
         if (undef(data)) {
             {
                 var ms = new Date().getTime() - start;
-                _putstat('anonymous', ms);
+                _putstat('blast.observe', ms);
             }
             return null;
         }
@@ -159,13 +154,13 @@ window._p = {};
             }
             {
                 var ms = new Date().getTime() - start;
-                _putstat('anonymous', ms);
+                _putstat('blast.observe', ms);
             }
             return observed;
         }
         {
             var ms = new Date().getTime() - start;
-            _putstat('anonymous', ms);
+            _putstat('blast.observe', ms);
         }
         return observeObj(data);
     };
@@ -246,7 +241,7 @@ window._p = {};
         if (undef(model)) {
             {
                 var ms = new Date().getTime() - start;
-                _putstat('anonymous', ms);
+                _putstat('blast.json', ms);
             }
             return null;
         }
@@ -257,13 +252,13 @@ window._p = {};
             }
             {
                 var ms = new Date().getTime() - start;
-                _putstat('anonymous', ms);
+                _putstat('blast.json', ms);
             }
             return d;
         }
         {
             var ms = new Date().getTime() - start;
-            _putstat('anonymous', ms);
+            _putstat('blast.json', ms);
         }
         return toObj(model);
     };
@@ -277,7 +272,7 @@ window._p = {};
         }
         {
             var ms = new Date().getTime() - start;
-            _putstat('anonymous', ms);
+            _putstat('observeObj', ms);
         }
         return observed;
     }
@@ -291,7 +286,7 @@ window._p = {};
         }
         {
             var ms = new Date().getTime() - start;
-            _putstat('anonymous', ms);
+            _putstat('toObj', ms);
         }
         return obj;
     }
@@ -312,13 +307,13 @@ window._p = {};
         if (elem instanceof window.HTMLInputElement) {
             {
                 var ms = new Date().getTime() - start;
-                _putstat('anonymous', ms);
+                _putstat('getval', ms);
             }
             return elem.value;
         }
         {
             var ms = new Date().getTime() - start;
-            _putstat('anonymous', ms);
+            _putstat('getval', ms);
         }
         return elem.innerHTML;
     }
@@ -327,7 +322,7 @@ window._p = {};
         var root = parent ? parent : doc;
         {
             var ms = new Date().getTime() - start;
-            _putstat('anonymous', ms);
+            _putstat('elem', ms);
         }
         return root.querySelectorAll('[data-bind=' + prop + ']');
     }
@@ -345,7 +340,7 @@ window._p = {};
         var start = new Date().getTime();
         {
             var ms = new Date().getTime() - start;
-            _putstat('anonymous', ms);
+            _putstat('undef', ms);
         }
         return val === null || typeof val === 'undefined';
     }

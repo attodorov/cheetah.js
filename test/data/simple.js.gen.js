@@ -1,6 +1,17 @@
-function helloWorld() {
-    var start = new Date().getTime();
-    var x = 1 + 2;
-    console.log(new Date().getTime() - start);
-    return 'Hello World';
-}
+window._p = {};
+var x = Class.extend({
+        prop1: function () {
+            var start = new Date().getTime();
+            {
+                var ms = new Date().getTime() - start;
+                _putstat('prop1', ms);
+            }
+        },
+        prop2: function () {
+            var start = new Date().getTime();
+            {
+                var ms = new Date().getTime() - start;
+                _putstat('prop2', ms);
+            }
+        }
+    });
