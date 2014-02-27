@@ -46,7 +46,7 @@ fs.readFile(fname, function (err, data) {
 				// initialize
 				//var headScript = "{ var head = document.getElementsByTagName('head')[0], script = document.createElement('script'); script.src = 'cheetah-collect.js'; head.insertBefore(script, head.firstChild); }";
 				//var jqueryScript = "{ var head = document.getElementsByTagName('head')[0], script = document.createElement('script'); script.src = 'http://code.jquery.com/jquery-1.11.0.min.js'; head.insertBefore(script, head.firstChild); }";
-				node.body.unshift(esprima.parse("window._p = {};").body[0]);
+				node.body.unshift(esprima.parse("{ if (!window._p) {window._p = {}; } if (!window._callstack) {window._callstack = {}; }}").body[0]);
 				//node.body.unshift(esprima.parse(headScript).body[0]);
 				//node.body.unshift(esprima.parse(jqueryScript).body[0]);
 				// now add a statement that will push the results to our server
@@ -55,9 +55,15 @@ fs.readFile(fname, function (err, data) {
 				var funcname = node.id ? (node.id.name ? node.id.name : "anonymous") : "anonymous";
 				if (funcname === "anonymous" && parent) {
 					if (parent.type === "AssignmentExpression") {
-						funcname = "";
+						funcname = "NULL";
 						if (parent.left.object && parent.left.object.type === "Identifier") {
-							funcname += parent.left.object.name + "." + parent.left.property.name;
+							funcname = parent.left.object.name + "." + parent.left.property.name;
+						} else if (parent.left.type === "Identifier") {
+							funcname = parent.left.name;
+						} else if (parent.left.type === "MemberExpression") {
+							funcname = parent.left.property.name;
+						} else if (parent.left.type === "ThisExpression") {
+							funcname = "this." + parent.left.property.name;
 						}
 					} else if (parent.type === "VariableDeclarator") {
 						funcname = parent.id.name;

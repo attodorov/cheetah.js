@@ -7,7 +7,9 @@
     <link href="http://cdn-na.infragistics.com/jquery/20132/latest/css/structure/modules/infragistics.ui.chart.new.css" rel="stylesheet" />
 	</head>
 	<body>
-		<div id="stats"></div>
+		<div id="stats-avg"></div>
+		<div id="stats-sum"></div>
+		<div id="stats-count"></div>
 		<script src="http://code.jquery.com/jquery-1.11.0.min.js" type="text/javascript" charset="utf-8"></script>
 		<script src="http://modernizr.com/downloads/modernizr-latest.js"></script>
 		<script src="http://code.jquery.com/ui/1.10.3/jquery-ui.min.js"></script>
@@ -17,7 +19,7 @@
 			$(document).ready(function () {
 				// fetch data from server
 				$.getJSON("http://localhost:12346/api/stats", function (data) {
-					var normalizedData = [];
+					var normalizedData = [], normalizedDataAvg = [], normalizedDataSum = [], normalizedDataCount = [];
 					for (var key in data) {
 						if (data.hasOwnProperty(key)) {
 							var obj = data[key];
@@ -32,13 +34,35 @@
 							return -1;
 						return 0;
 					};
-					normalizedData = normalizedData.sort(byAvg);
+					var byCount = function (a, b) {
+						if (a.count < b.count)
+							return 1;
+						if (a.count > b.count)
+							return -1;
+						return 0;						
+					};
+					var bySum = function (a, b) {
+						if (a.sum < b.sum)
+							return 1;
+						if (a.sum > b.sum)
+							return -1;
+						return 0;	
+					};
+					//clone arrays so we can databind the bar charts with different data sources
+					normalizedDataAvg = normalizedData.slice(0);
+					normalizedDataCount = normalizedData.slice(0);
+					normalizedDataSum = normalizedData.slice(0);
+					normalizedDataAvg.sort(byAvg);
+					normalizedDataCount.sort(byCount);
+					normalizedDataSum.sort(bySum);
 					if (normalizedData.length > 10) {
-						normalizedData = normalizedData.slice(0, 10);
+						normalizedDataAvg = normalizedDataAvg.slice(0, 10);
+						normalizedDataCount = normalizedDataCount.slice(0, 10);
+						normalizedDataSum = normalizedDataSum.slice(0, 10);
 					}
-					$("#stats").igDataChart({
+					$("#stats-avg").igDataChart({
 						width: "95%",
-						dataSource: normalizedData,
+						dataSource: normalizedDataAvg,
 						title: "Function average times",
 						axes: [
 							{
@@ -63,6 +87,66 @@
 								xAxis: "xAxis",
 								yAxis: "yAxis",
 								valueMemberPath: "avg"
+							}
+						]
+					});
+					$("#stats-sum").igDataChart({
+						width: "95%",
+						dataSource: normalizedDataSum,
+						title: "Function total execution time (sum over all calls)",
+						axes: [
+							{
+								name: "xAxis",
+								type: "numericX",
+								title: "Total time (ms)"
+							},
+							{
+								name: "yAxis",
+								type: "categoryY",
+								label: "name",
+								interval: 1,
+								labelTopMargin: 5
+							}
+						],
+						series: [
+							{
+								name: "series1",
+								type: "bar",
+								isHighlightingEnabled: true,
+								isTransitionInEnabled: true,
+								xAxis: "xAxis",
+								yAxis: "yAxis",
+								valueMemberPath: "sum"
+							}
+						]
+					});
+					$("#stats-count").igDataChart({
+						width: "95%",
+						dataSource: normalizedDataCount,
+						title: "Function calls count",
+						axes: [
+							{
+								name: "xAxis",
+								type: "numericX",
+								title: "Count"
+							},
+							{
+								name: "yAxis",
+								type: "categoryY",
+								label: "name",
+								interval: 1,
+								labelTopMargin: 5
+							}
+						],
+						series: [
+							{
+								name: "series1",
+								type: "bar",
+								isHighlightingEnabled: true,
+								isTransitionInEnabled: true,
+								xAxis: "xAxis",
+								yAxis: "yAxis",
+								valueMemberPath: "count"
 							}
 						]
 					});

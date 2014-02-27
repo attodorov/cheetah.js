@@ -1,4 +1,11 @@
-window._p = {};
+{
+    if (!window._p) {
+        window._p = {};
+    }
+    if (!window._callstack) {
+        window._callstack = {};
+    }
+}
 (function ($) {
     var __start = new Date().getTime();
     $.ig = $.ig || {};
@@ -1098,7 +1105,7 @@ window._p = {};
         var __start = new Date().getTime();
         {
             var __ms = new Date().getTime() - __start;
-            _putstat('', __ms);
+            _putstat('Class', __ms);
         }
     };
     Class.extend = function (prop, doAugment) {
@@ -1168,7 +1175,7 @@ window._p = {};
                 var __start = new Date().getTime();
                 {
                     var __ms = new Date().getTime() - __start;
-                    _putstat('', __ms);
+                    _putstat('getType', __ms);
                 }
                 return this.$type;
             };
@@ -1177,14 +1184,14 @@ window._p = {};
                 if (this.$hashCode !== undefined) {
                     {
                         var __ms = new Date().getTime() - __start;
-                        _putstat('', __ms);
+                        _putstat('getHashCode', __ms);
                     }
                     return this.$hashCode;
                 }
                 this.$hashCode = $.ig.nextHashCode++;
                 {
                     var __ms = new Date().getTime() - __start;
-                    _putstat('', __ms);
+                    _putstat('getHashCode', __ms);
                 }
                 return this.$hashCode;
             };
@@ -1216,7 +1223,7 @@ window._p = {};
         var __start = new Date().getTime();
         {
             var __ms = new Date().getTime() - __start;
-            _putstat('', __ms);
+            _putstat('startsWith', __ms);
         }
         return this[0].innerHTML.indexOf(str) === 0;
     };
@@ -1309,7 +1316,7 @@ window._p = {};
         }
         {
             var __ms = new Date().getTime() - __start;
-            _putstat('', __ms);
+            _putstat('extendNativePrototype', __ms);
         }
     };
     Date.prototype.stdTimezoneOffset = function () {
@@ -1322,26 +1329,26 @@ window._p = {};
         if (janOffset > 0 && julOffset > 0) {
             {
                 var __ms = new Date().getTime() - __start;
-                _putstat('', __ms);
+                _putstat('stdTimezoneOffset', __ms);
             }
             return Math.max(janOffset, julOffset);
         } else {
             {
                 var __ms = new Date().getTime() - __start;
-                _putstat('', __ms);
+                _putstat('stdTimezoneOffset', __ms);
             }
             return Math.min(janOffset, julOffset);
         }
         {
             var __ms = new Date().getTime() - __start;
-            _putstat('', __ms);
+            _putstat('stdTimezoneOffset', __ms);
         }
     };
     Date.prototype.dst = function () {
         var __start = new Date().getTime();
         {
             var __ms = new Date().getTime() - __start;
-            _putstat('', __ms);
+            _putstat('dst', __ms);
         }
         return this.getTimezoneOffset() < this.stdTimezoneOffset();
     };
@@ -1360,7 +1367,7 @@ window._p = {};
         }
         {
             var __ms = new Date().getTime() - __start;
-            _putstat('', __ms);
+            _putstat('findPath', __ms);
         }
         return ds;
     }, $.ig.formatter = function (val, type, format, notTemplate, enableUTCDates, displayStyle) {
@@ -1372,14 +1379,14 @@ window._p = {};
             s += '<span style="display:block" class="' + (val ? '' : 'ui-igcheckbox-small-off ');
             {
                 var __ms = new Date().getTime() - __start;
-                _putstat('', __ms);
+                _putstat('formatter', __ms);
             }
             return s + 'ui-icon ui-icon-check ui-igcheckbox-small-on"></span></span></span>';
         }
         if (!val && val !== 0 && val !== false) {
             {
                 var __ms = new Date().getTime() - __start;
-                _putstat('', __ms);
+                _putstat('formatter', __ms);
             }
             return '&nbsp;';
         }
@@ -1387,14 +1394,14 @@ window._p = {};
             if (!val) {
                 {
                     var __ms = new Date().getTime() - __start;
-                    _putstat('', __ms);
+                    _putstat('formatter', __ms);
                 }
                 return '&nbsp;';
             }
             if (!d) {
                 {
                     var __ms = new Date().getTime() - __start;
-                    _putstat('', __ms);
+                    _putstat('formatter', __ms);
                 }
                 return val;
             }
@@ -1444,7 +1451,7 @@ window._p = {};
             pattern = pattern.replace('\x03', reg.dayNames[val.getDay()]).replace('\x04', reg.dayNamesShort[val.getDay()]);
             {
                 var __ms = new Date().getTime() - __start;
-                _putstat('', __ms);
+                _putstat('formatter', __ms);
             }
             return pattern;
         }
@@ -1466,7 +1473,7 @@ window._p = {};
             if (isNaN(val)) {
                 {
                     var __ms = new Date().getTime() - __start;
-                    _putstat('', __ms);
+                    _putstat('formatter', __ms);
                 }
                 return '&nbsp;';
             }
@@ -1551,7 +1558,7 @@ window._p = {};
             s = reg[prefix + 'Symbol'] || '';
             {
                 var __ms = new Date().getTime() - __start;
-                _putstat('', __ms);
+                _putstat('formatter', __ms);
             }
             return pattern.replace('-', reg.negativeSign).replace('n', val + e).replace('$', s);
         }
@@ -1559,21 +1566,21 @@ window._p = {};
             if (format.indexOf(s = '{0}') >= 0) {
                 {
                     var __ms = new Date().getTime() - __start;
-                    _putstat('', __ms);
+                    _putstat('formatter', __ms);
                 }
                 return format.replace(s, val);
             }
             if (format.indexOf(s = '[0]') >= 0) {
                 {
                     var __ms = new Date().getTime() - __start;
-                    _putstat('', __ms);
+                    _putstat('formatter', __ms);
                 }
                 return format.replace(s, val);
             }
         }
         {
             var __ms = new Date().getTime() - __start;
-            _putstat('', __ms);
+            _putstat('formatter', __ms);
         }
         return val || val === 0 ? val : '&nbsp;';
     };
@@ -1667,7 +1674,7 @@ window._p = {};
         }
         {
             var __ms = new Date().getTime() - __start;
-            _putstat('', __ms);
+            _putstat('setRegionalDefault', __ms);
         }
     };
     $.ig.calcSummaries = function (summaryFunction, data, caller, dataType) {
@@ -1694,13 +1701,13 @@ window._p = {};
                 if (dataType === 'date') {
                     {
                         var __ms = new Date().getTime() - __start;
-                        _putstat('', __ms);
+                        _putstat('calcSummaries', __ms);
                     }
                     return null;
                 }
                 {
                     var __ms = new Date().getTime() - __start;
-                    _putstat('', __ms);
+                    _putstat('calcSummaries', __ms);
                 }
                 return 0;
             }
@@ -1710,13 +1717,13 @@ window._p = {};
                 if (dataType === 'date') {
                     {
                         var __ms = new Date().getTime() - __start;
-                        _putstat('', __ms);
+                        _putstat('calcSummaries', __ms);
                     }
                     return null;
                 }
                 {
                     var __ms = new Date().getTime() - __start;
-                    _putstat('', __ms);
+                    _putstat('calcSummaries', __ms);
                 }
                 return 0;
             }
@@ -1727,7 +1734,7 @@ window._p = {};
             if (data.length === 0) {
                 {
                     var __ms = new Date().getTime() - __start;
-                    _putstat('', __ms);
+                    _putstat('calcSummaries', __ms);
                 }
                 return 0;
             }
@@ -1739,7 +1746,7 @@ window._p = {};
                 if ($.type(caller) === 'function') {
                     {
                         var __ms = new Date().getTime() - __start;
-                        _putstat('', __ms);
+                        _putstat('calcSummaries', __ms);
                     }
                     return caller(data);
                 }
@@ -1747,14 +1754,14 @@ window._p = {};
                     caller = eval(caller);
                     {
                         var __ms = new Date().getTime() - __start;
-                        _putstat('', __ms);
+                        _putstat('calcSummaries', __ms);
                     }
                     return caller(data);
                 }
             } else {
                 {
                     var __ms = new Date().getTime() - __start;
-                    _putstat('', __ms);
+                    _putstat('calcSummaries', __ms);
                 }
                 return null;
             }
@@ -1762,7 +1769,7 @@ window._p = {};
         }
         {
             var __ms = new Date().getTime() - __start;
-            _putstat('', __ms);
+            _putstat('calcSummaries', __ms);
         }
     };
     $.ig.getMaxZIndex = function (id) {
@@ -1783,7 +1790,7 @@ window._p = {};
         });
         {
             var __ms = new Date().getTime() - __start;
-            _putstat('', __ms);
+            _putstat('getMaxZIndex', __ms);
         }
         return maxZ;
     };
@@ -1791,7 +1798,7 @@ window._p = {};
         var __start = new Date().getTime();
         {
             var __ms = new Date().getTime() - __start;
-            _putstat('', __ms);
+            _putstat('uid', __ms);
         }
         return ((1 + Math.random()) * parseInt('10000', 16)).toString(16).substring(1, 5);
     };
@@ -1811,7 +1818,7 @@ window._p = {};
         }
         {
             var __ms = new Date().getTime() - __start;
-            _putstat('', __ms);
+            _putstat('ensureUniqueId', __ms);
         }
     };
     $.ig.getColType = function (o) {
@@ -1820,43 +1827,43 @@ window._p = {};
         if (t === 'undefined') {
             {
                 var __ms = new Date().getTime() - __start;
-                _putstat('', __ms);
+                _putstat('getColType', __ms);
             }
             return 'string';
         } else if (o && o.getTime && !isNaN(o.getTime()) && Object.prototype.toString.call(o) === '[object Date]') {
             {
                 var __ms = new Date().getTime() - __start;
-                _putstat('', __ms);
+                _putstat('getColType', __ms);
             }
             return 'date';
         } else if (t === 'boolean') {
             {
                 var __ms = new Date().getTime() - __start;
-                _putstat('', __ms);
+                _putstat('getColType', __ms);
             }
             return 'bool';
         } else if (t === 'number') {
             {
                 var __ms = new Date().getTime() - __start;
-                _putstat('', __ms);
+                _putstat('getColType', __ms);
             }
             return t;
         } else if (t === 'object') {
             {
                 var __ms = new Date().getTime() - __start;
-                _putstat('', __ms);
+                _putstat('getColType', __ms);
             }
             return 'object';
         } else {
             {
                 var __ms = new Date().getTime() - __start;
-                _putstat('', __ms);
+                _putstat('getColType', __ms);
             }
             return 'string';
         }
         {
             var __ms = new Date().getTime() - __start;
-            _putstat('', __ms);
+            _putstat('getColType', __ms);
         }
     };
     $.ig.typeIdentifierCache = {};
@@ -2327,7 +2334,7 @@ window._p = {};
         arr[arr.length] = item;
         {
             var __ms = new Date().getTime() - __start;
-            _putstat('', __ms);
+            _putstat('addToArray', __ms);
         }
     };
     $.ig.indexInArray = function (arr, item) {
@@ -2338,7 +2345,7 @@ window._p = {};
         }
         {
             var __ms = new Date().getTime() - __start;
-            _putstat('', __ms);
+            _putstat('indexInArray', __ms);
         }
         return -1;
     };
@@ -2347,7 +2354,7 @@ window._p = {};
         var index = arr.indexOf(item);
         {
             var __ms = new Date().getTime() - __start;
-            _putstat('', __ms);
+            _putstat('arrayContains', __ms);
         }
         return index >= 0;
     };
@@ -2379,7 +2386,7 @@ window._p = {};
         arr.length = from < 0 ? arr.length + from : from;
         {
             var __ms = new Date().getTime() - __start;
-            _putstat('', __ms);
+            _putstat('removeFromArray', __ms);
         }
         return arr.push.apply(arr, rest);
     };
@@ -2548,7 +2555,7 @@ window._p = {};
         var __start = new Date().getTime();
         {
             var __ms = new Date().getTime() - __start;
-            _putstat('', __ms);
+            _putstat('now', __ms);
         }
         return new Date();
     };
@@ -2556,7 +2563,7 @@ window._p = {};
         var __start = new Date().getTime();
         {
             var __ms = new Date().getTime() - __start;
-            _putstat('', __ms);
+            _putstat('minValue', __ms);
         }
         return new Date(1, 1, 1, 0, 0, 0, 0);
     };
@@ -2564,7 +2571,7 @@ window._p = {};
         var __start = new Date().getTime();
         {
             var __ms = new Date().getTime() - __start;
-            _putstat('', __ms);
+            _putstat('maxValue', __ms);
         }
         return new Date(9999, 12, 31, 23, 59, 59, 0.9999999);
     };
@@ -2572,7 +2579,7 @@ window._p = {};
         var __start = new Date().getTime();
         {
             var __ms = new Date().getTime() - __start;
-            _putstat('', __ms);
+            _putstat('fromMilliseconds', __ms);
         }
         return value;
     };
@@ -2581,7 +2588,7 @@ window._p = {};
         if ($.ig.Type.prototype.checkEquals(targetType, type)) {
             {
                 var __ms = new Date().getTime() - __start;
-                _putstat('', __ms);
+                _putstat('canAssign', __ms);
             }
             return true;
         }
@@ -2590,7 +2597,7 @@ window._p = {};
                 if ($.ig.util.canAssign(targetType, type.interfaces[i])) {
                     {
                         var __ms = new Date().getTime() - __start;
-                        _putstat('', __ms);
+                        _putstat('canAssign', __ms);
                     }
                     return true;
                 }
@@ -2599,13 +2606,13 @@ window._p = {};
         if (type.baseType) {
             {
                 var __ms = new Date().getTime() - __start;
-                _putstat('', __ms);
+                _putstat('canAssign', __ms);
             }
             return $.ig.util.canAssign(targetType, type.baseType);
         }
         {
             var __ms = new Date().getTime() - __start;
-            _putstat('', __ms);
+            _putstat('canAssign', __ms);
         }
         return false;
     };
@@ -2614,7 +2621,7 @@ window._p = {};
         if (obj == null) {
             {
                 var __ms = new Date().getTime() - __start;
-                _putstat('', __ms);
+                _putstat('cast', __ms);
             }
             return null;
         }
@@ -2625,19 +2632,19 @@ window._p = {};
         if ($.ig.util.canAssign(targetType, type)) {
             {
                 var __ms = new Date().getTime() - __start;
-                _putstat('', __ms);
+                _putstat('cast', __ms);
             }
             return obj;
         } else {
             {
                 var __ms = new Date().getTime() - __start;
-                _putstat('', __ms);
+                _putstat('cast', __ms);
             }
             return null;
         }
         {
             var __ms = new Date().getTime() - __start;
-            _putstat('', __ms);
+            _putstat('cast', __ms);
         }
     };
     $.ig.Dictionary = Class.extend({
@@ -2661,7 +2668,7 @@ window._p = {};
         dict.keysHolder = o;
         {
             var __ms = new Date().getTime() - __start;
-            _putstat('', __ms);
+            _putstat('getDictionary', __ms);
         }
         return dict;
     };
@@ -2669,7 +2676,7 @@ window._p = {};
         var __start = new Date().getTime();
         {
             var __ms = new Date().getTime() - __start;
-            _putstat('', __ms);
+            _putstat('containsKey', __ms);
         }
         return this.proxy[key] !== undefined;
     };
@@ -2677,7 +2684,7 @@ window._p = {};
         var __start = new Date().getTime();
         {
             var __ms = new Date().getTime() - __start;
-            _putstat('', __ms);
+            _putstat('count', __ms);
         }
         return this._count;
     };
@@ -2686,7 +2693,7 @@ window._p = {};
         if (arguments.length === 1) {
             {
                 var __ms = new Date().getTime() - __start;
-                _putstat('', __ms);
+                _putstat('item', __ms);
             }
             return this.proxy[key];
         } else {
@@ -2697,7 +2704,7 @@ window._p = {};
         }
         {
             var __ms = new Date().getTime() - __start;
-            _putstat('', __ms);
+            _putstat('item', __ms);
         }
     };
     $.ig.Dictionary.prototype.add = function (key, value) {
@@ -2708,7 +2715,7 @@ window._p = {};
         this.proxy[key] = value;
         {
             var __ms = new Date().getTime() - __start;
-            _putstat('', __ms);
+            _putstat('add', __ms);
         }
     };
     $.ig.Dictionary.prototype.remove = function (key) {
@@ -2717,14 +2724,14 @@ window._p = {};
         this._count--;
         {
             var __ms = new Date().getTime() - __start;
-            _putstat('', __ms);
+            _putstat('remove', __ms);
         }
     };
     $.ig.Dictionary.prototype.keys = function () {
         var __start = new Date().getTime();
         {
             var __ms = new Date().getTime() - __start;
-            _putstat('', __ms);
+            _putstat('keys', __ms);
         }
         return new $.ig.KeyEnumerator(this);
     };
@@ -2732,7 +2739,7 @@ window._p = {};
         var __start = new Date().getTime();
         {
             var __ms = new Date().getTime() - __start;
-            _putstat('', __ms);
+            _putstat('values', __ms);
         }
         return new $.ig.ValueEnumerator(this);
     };
@@ -2743,7 +2750,7 @@ window._p = {};
         this._count = 0;
         {
             var __ms = new Date().getTime() - __start;
-            _putstat('', __ms);
+            _putstat('clear', __ms);
         }
     };
     $.ig.EventArgs = $.ig.Object.extend({
@@ -2764,7 +2771,7 @@ window._p = {};
             return true;
         {
             var __ms = new Date().getTime() - __start;
-            _putstat('', __ms);
+            _putstat('isDigit', __ms);
         }
         return false;
     };
@@ -2773,7 +2780,7 @@ window._p = {};
         var __start = new Date().getTime();
         {
             var __ms = new Date().getTime() - __start;
-            _putstat('', __ms);
+            _putstat('parseInt', __ms);
         }
         return parseInt(a, b);
     };
@@ -2781,7 +2788,7 @@ window._p = {};
         var __start = new Date().getTime();
         {
             var __ms = new Date().getTime() - __start;
-            _putstat('', __ms);
+            _putstat('log10', __ms);
         }
         return Math.log(x) / Math.log(10);
     };
@@ -2790,7 +2797,7 @@ window._p = {};
         var __start = new Date().getTime();
         {
             var __ms = new Date().getTime() - __start;
-            _putstat('', __ms);
+            _putstat('parseFloat', __ms);
         }
         return parseFloat(s);
     };
@@ -2798,7 +2805,7 @@ window._p = {};
         var __start = new Date().getTime();
         {
             var __ms = new Date().getTime() - __start;
-            _putstat('', __ms);
+            _putstat('isInfinity', __ms);
         }
         return s === Infinity || s === -Infinity;
     };
@@ -2810,14 +2817,14 @@ window._p = {};
         if (!del1) {
             {
                 var __ms = new Date().getTime() - __start;
-                _putstat('', __ms);
+                _putstat('combine', __ms);
             }
             return del2;
         }
         if (!del2) {
             {
                 var __ms = new Date().getTime() - __start;
-                _putstat('', __ms);
+                _putstat('combine', __ms);
             }
             return del1;
         }
@@ -2853,7 +2860,7 @@ window._p = {};
         };
         {
             var __ms = new Date().getTime() - __start;
-            _putstat('', __ms);
+            _putstat('combine', __ms);
         }
         return ret;
     };
@@ -2862,14 +2869,14 @@ window._p = {};
         if (!del1) {
             {
                 var __ms = new Date().getTime() - __start;
-                _putstat('', __ms);
+                _putstat('remove', __ms);
             }
             return null;
         }
         if (!del2) {
             {
                 var __ms = new Date().getTime() - __start;
-                _putstat('', __ms);
+                _putstat('remove', __ms);
             }
             return del1;
         }
@@ -2893,7 +2900,7 @@ window._p = {};
         }
         {
             var __ms = new Date().getTime() - __start;
-            _putstat('', __ms);
+            _putstat('remove', __ms);
         }
         return del;
     };
@@ -2903,7 +2910,7 @@ window._p = {};
         if (typeof type.prototype[propertyName] === 'function') {
             {
                 var __ms = new Date().getTime() - __start;
-                _putstat('', __ms);
+                _putstat('getPropertyGetter', __ms);
             }
             return function (instance) {
                 var __start = new Date().getTime();
@@ -2916,7 +2923,7 @@ window._p = {};
         }
         {
             var __ms = new Date().getTime() - __start;
-            _putstat('', __ms);
+            _putstat('getPropertyGetter', __ms);
         }
         return function (instance) {
             var __start = new Date().getTime();
@@ -2979,7 +2986,7 @@ window._p = {};
         var __start = new Date().getTime();
         {
             var __ms = new Date().getTime() - __start;
-            _putstat('', __ms);
+            _putstat('message', __ms);
         }
         return this.__message;
     };
@@ -2987,7 +2994,7 @@ window._p = {};
         var __start = new Date().getTime();
         {
             var __ms = new Date().getTime() - __start;
-            _putstat('', __ms);
+            _putstat('innerException', __ms);
         }
         return this.__innerException;
     };
@@ -3102,19 +3109,19 @@ window._p = {};
         if (result >= 0) {
             {
                 var __ms = new Date().getTime() - __start;
-                _putstat('', __ms);
+                _putstat('intDivide', __ms);
             }
             return Math.floor(result);
         } else {
             {
                 var __ms = new Date().getTime() - __start;
-                _putstat('', __ms);
+                _putstat('intDivide', __ms);
             }
             return Math.ceil(result);
         }
         {
             var __ms = new Date().getTime() - __start;
-            _putstat('', __ms);
+            _putstat('intDivide', __ms);
         }
     };
     $.ig.Nullable = Class.extend({
@@ -3249,14 +3256,14 @@ window._p = {};
         if (value && value.isNullable) {
             {
                 var __ms = new Date().getTime() - __start;
-                _putstat('', __ms);
+                _putstat('toNullable', __ms);
             }
             return value;
         }
         var ret = new $.ig.Nullable$1(t, value);
         {
             var __ms = new Date().getTime() - __start;
-            _putstat('', __ms);
+            _putstat('toNullable', __ms);
         }
         return ret;
     };
@@ -3265,14 +3272,14 @@ window._p = {};
         if (v1.isNullable && !v1.hasValue()) {
             {
                 var __ms = new Date().getTime() - __start;
-                _putstat('', __ms);
+                _putstat('nullableAdd', __ms);
             }
             return null;
         }
         if (v2.isNullable && !v2.hasValue()) {
             {
                 var __ms = new Date().getTime() - __start;
-                _putstat('', __ms);
+                _putstat('nullableAdd', __ms);
             }
             return null;
         }
@@ -3286,7 +3293,7 @@ window._p = {};
         }
         {
             var __ms = new Date().getTime() - __start;
-            _putstat('', __ms);
+            _putstat('nullableAdd', __ms);
         }
         return $.ig.util.toNullable($.ig.Number.prototype.$type, val1 + val2);
     };
@@ -3295,14 +3302,14 @@ window._p = {};
         if (v1.isNullable && !v1.hasValue()) {
             {
                 var __ms = new Date().getTime() - __start;
-                _putstat('', __ms);
+                _putstat('nullableSubtract', __ms);
             }
             return null;
         }
         if (v2.isNullable && !v2.hasValue()) {
             {
                 var __ms = new Date().getTime() - __start;
-                _putstat('', __ms);
+                _putstat('nullableSubtract', __ms);
             }
             return null;
         }
@@ -3316,7 +3323,7 @@ window._p = {};
         }
         {
             var __ms = new Date().getTime() - __start;
-            _putstat('', __ms);
+            _putstat('nullableSubtract', __ms);
         }
         return $.ig.util.toNullable($.ig.Number.prototype.$type, val1 - val2);
     };
@@ -3325,14 +3332,14 @@ window._p = {};
         if (v1.isNullable && !v1.hasValue()) {
             {
                 var __ms = new Date().getTime() - __start;
-                _putstat('', __ms);
+                _putstat('nullableMultiply', __ms);
             }
             return null;
         }
         if (v2.isNullable && !v2.hasValue()) {
             {
                 var __ms = new Date().getTime() - __start;
-                _putstat('', __ms);
+                _putstat('nullableMultiply', __ms);
             }
             return null;
         }
@@ -3346,7 +3353,7 @@ window._p = {};
         }
         {
             var __ms = new Date().getTime() - __start;
-            _putstat('', __ms);
+            _putstat('nullableMultiply', __ms);
         }
         return $.ig.util.toNullable($.ig.Number.prototype.$type, val1 * val2);
     };
@@ -3355,14 +3362,14 @@ window._p = {};
         if (v1.isNullable && !v1.hasValue()) {
             {
                 var __ms = new Date().getTime() - __start;
-                _putstat('', __ms);
+                _putstat('nullableDivide', __ms);
             }
             return null;
         }
         if (v2.isNullable && !v2.hasValue()) {
             {
                 var __ms = new Date().getTime() - __start;
-                _putstat('', __ms);
+                _putstat('nullableDivide', __ms);
             }
             return null;
         }
@@ -3376,7 +3383,7 @@ window._p = {};
         }
         {
             var __ms = new Date().getTime() - __start;
-            _putstat('', __ms);
+            _putstat('nullableDivide', __ms);
         }
         return $.ig.util.toNullable($.ig.Number.prototype.$type, val1 / val2);
     };
@@ -3385,14 +3392,14 @@ window._p = {};
         if (v1.isNullable && !v1.hasValue()) {
             {
                 var __ms = new Date().getTime() - __start;
-                _putstat('', __ms);
+                _putstat('nullableModulus', __ms);
             }
             return null;
         }
         if (v2.isNullable && !v2.hasValue()) {
             {
                 var __ms = new Date().getTime() - __start;
-                _putstat('', __ms);
+                _putstat('nullableModulus', __ms);
             }
             return null;
         }
@@ -3406,7 +3413,7 @@ window._p = {};
         }
         {
             var __ms = new Date().getTime() - __start;
-            _putstat('', __ms);
+            _putstat('nullableModulus', __ms);
         }
         return $.ig.util.toNullable($.ig.Number.prototype.$type, val1 % val2);
     };
@@ -3415,14 +3422,14 @@ window._p = {};
         if (v1.isNullable && !v1.hasValue()) {
             {
                 var __ms = new Date().getTime() - __start;
-                _putstat('', __ms);
+                _putstat('nullableGreaterThan', __ms);
             }
             return false;
         }
         if (v2.isNullable && !v2.hasValue()) {
             {
                 var __ms = new Date().getTime() - __start;
-                _putstat('', __ms);
+                _putstat('nullableGreaterThan', __ms);
             }
             return false;
         }
@@ -3436,7 +3443,7 @@ window._p = {};
         }
         {
             var __ms = new Date().getTime() - __start;
-            _putstat('', __ms);
+            _putstat('nullableGreaterThan', __ms);
         }
         return val1 > val2;
     };
@@ -3445,14 +3452,14 @@ window._p = {};
         if (v1.isNullable && !v1.hasValue()) {
             {
                 var __ms = new Date().getTime() - __start;
-                _putstat('', __ms);
+                _putstat('nullableGreaterThanOrEqual', __ms);
             }
             return false;
         }
         if (v2.isNullable && !v2.hasValue()) {
             {
                 var __ms = new Date().getTime() - __start;
-                _putstat('', __ms);
+                _putstat('nullableGreaterThanOrEqual', __ms);
             }
             return false;
         }
@@ -3466,7 +3473,7 @@ window._p = {};
         }
         {
             var __ms = new Date().getTime() - __start;
-            _putstat('', __ms);
+            _putstat('nullableGreaterThanOrEqual', __ms);
         }
         return val1 >= val2;
     };
@@ -3475,14 +3482,14 @@ window._p = {};
         if (v1.isNullable && !v1.hasValue()) {
             {
                 var __ms = new Date().getTime() - __start;
-                _putstat('', __ms);
+                _putstat('nullableLessThan', __ms);
             }
             return false;
         }
         if (v2.isNullable && !v2.hasValue()) {
             {
                 var __ms = new Date().getTime() - __start;
-                _putstat('', __ms);
+                _putstat('nullableLessThan', __ms);
             }
             return false;
         }
@@ -3496,7 +3503,7 @@ window._p = {};
         }
         {
             var __ms = new Date().getTime() - __start;
-            _putstat('', __ms);
+            _putstat('nullableLessThan', __ms);
         }
         return val1 < val2;
     };
@@ -3505,14 +3512,14 @@ window._p = {};
         if (v1.isNullable && !v1.hasValue()) {
             {
                 var __ms = new Date().getTime() - __start;
-                _putstat('', __ms);
+                _putstat('nullableLessThanOrEqual', __ms);
             }
             return false;
         }
         if (v2.isNullable && !v2.hasValue()) {
             {
                 var __ms = new Date().getTime() - __start;
-                _putstat('', __ms);
+                _putstat('nullableLessThanOrEqual', __ms);
             }
             return false;
         }
@@ -3526,7 +3533,7 @@ window._p = {};
         }
         {
             var __ms = new Date().getTime() - __start;
-            _putstat('', __ms);
+            _putstat('nullableLessThanOrEqual', __ms);
         }
         return val1 <= val2;
     };
@@ -3537,14 +3544,14 @@ window._p = {};
         if (v1IsNull && v2IsNull) {
             {
                 var __ms = new Date().getTime() - __start;
-                _putstat('', __ms);
+                _putstat('nullableEquals', __ms);
             }
             return true;
         }
         if (v1IsNull != v2IsNull) {
             {
                 var __ms = new Date().getTime() - __start;
-                _putstat('', __ms);
+                _putstat('nullableEquals', __ms);
             }
             return false;
         }
@@ -3558,7 +3565,7 @@ window._p = {};
         }
         {
             var __ms = new Date().getTime() - __start;
-            _putstat('', __ms);
+            _putstat('nullableEquals', __ms);
         }
         return val1 == val2;
     };
@@ -3567,14 +3574,14 @@ window._p = {};
         if (v1.isNullable && !v1.hasValue()) {
             {
                 var __ms = new Date().getTime() - __start;
-                _putstat('', __ms);
+                _putstat('nullableNotEquals', __ms);
             }
             return false;
         }
         if (v2.isNullable && !v2.hasValue()) {
             {
                 var __ms = new Date().getTime() - __start;
-                _putstat('', __ms);
+                _putstat('nullableNotEquals', __ms);
             }
             return false;
         }
@@ -3588,7 +3595,7 @@ window._p = {};
         }
         {
             var __ms = new Date().getTime() - __start;
-            _putstat('', __ms);
+            _putstat('nullableNotEquals', __ms);
         }
         return val1 != val2;
     };
@@ -3749,7 +3756,7 @@ window._p = {};
         if (asColorName === 'transparent') {
             {
                 var __ms = new Date().getTime() - __start;
-                _putstat('', __ms);
+                _putstat('stringToColor', __ms);
             }
             return {
                 a: 0,
@@ -3788,7 +3795,7 @@ window._p = {};
         }
         {
             var __ms = new Date().getTime() - __start;
-            _putstat('', __ms);
+            _putstat('stringToColor', __ms);
         }
         return ret;
     };
@@ -3802,20 +3809,20 @@ window._p = {};
         } catch (e) {
             {
                 var __ms = new Date().getTime() - __start;
-                _putstat('', __ms);
+                _putstat('isResponseTypeSupported', __ms);
             }
             return false;
         }
         if (xhr === null) {
             {
                 var __ms = new Date().getTime() - __start;
-                _putstat('', __ms);
+                _putstat('isResponseTypeSupported', __ms);
             }
             return false;
         }
         {
             var __ms = new Date().getTime() - __start;
-            _putstat('', __ms);
+            _putstat('isResponseTypeSupported', __ms);
         }
         return xhr.responseType === responseType;
     };
@@ -3878,7 +3885,7 @@ window._p = {};
         req.send(null);
         {
             var __ms = new Date().getTime() - __start;
-            _putstat('', __ms);
+            _putstat('getBinary', __ms);
         }
     };
     $.ig.util.extCopy = function (source, bindings) {
@@ -3895,7 +3902,7 @@ window._p = {};
         }
         {
             var __ms = new Date().getTime() - __start;
-            _putstat('', __ms);
+            _putstat('extCopy', __ms);
         }
     };
     $.ig.util.bulkDefine = function (toDefine) {
@@ -3911,7 +3918,7 @@ window._p = {};
         }
         {
             var __ms = new Date().getTime() - __start;
-            _putstat('', __ms);
+            _putstat('bulkDefine', __ms);
         }
     };
     $.ig.util.defType = function (name, baseName, definition) {
@@ -3925,7 +3932,7 @@ window._p = {};
         }
         {
             var __ms = new Date().getTime() - __start;
-            _putstat('', __ms);
+            _putstat('defType', __ms);
         }
     };
     $.ig.util.getClassCount = function (classNamePrefix, isPrefix) {
@@ -3935,7 +3942,7 @@ window._p = {};
         if (!styleSheets) {
             {
                 var __ms = new Date().getTime() - __start;
-                _putstat('', __ms);
+                _putstat('getClassCount', __ms);
             }
             return 0;
         }
@@ -3971,7 +3978,7 @@ window._p = {};
         }
         {
             var __ms = new Date().getTime() - __start;
-            _putstat('', __ms);
+            _putstat('getClassCount', __ms);
         }
         return Math.max(numFound, count);
     };
@@ -3980,7 +3987,7 @@ window._p = {};
         var canvas = document.createElement('canvas');
         {
             var __ms = new Date().getTime() - __start;
-            _putstat('', __ms);
+            _putstat('_isCanvasSupported', __ms);
         }
         return !!(canvas.getContext && canvas.getContext('2d'));
     };
@@ -4019,7 +4026,7 @@ window._p = {};
         }
         {
             var __ms = new Date().getTime() - __start;
-            _putstat('', __ms);
+            _putstat('_renderUnsupportedBrowser', __ms);
         }
     };
     (function ($) {
@@ -4035,7 +4042,7 @@ window._p = {};
             methods[key][methods[key].length] = time;
             {
                 var __ms = new Date().getTime() - __start;
-                _putstat('', __ms);
+                _putstat('recordTime', __ms);
             }
         };
         $.ig.util.profiler.reset = function () {
@@ -4043,7 +4050,7 @@ window._p = {};
             methods = {};
             {
                 var __ms = new Date().getTime() - __start;
-                _putstat('', __ms);
+                _putstat('reset', __ms);
             }
         };
         $.ig.util.profiler.logReport = function () {
@@ -4100,7 +4107,7 @@ window._p = {};
             }
             {
                 var __ms = new Date().getTime() - __start;
-                _putstat('', __ms);
+                _putstat('logReport', __ms);
             }
         };
         {
@@ -4139,7 +4146,7 @@ window._p = {};
         var __start = new Date().getTime();
         {
             var __ms = new Date().getTime() - __start;
-            _putstat('', __ms);
+            _putstat('startsWith', __ms);
         }
         return this.indexOf(s) === 0;
     };
@@ -4148,7 +4155,7 @@ window._p = {};
         var offset = this.length - s.length;
         {
             var __ms = new Date().getTime() - __start;
-            _putstat('', __ms);
+            _putstat('endsWith', __ms);
         }
         return offset >= 0 && this.lastIndexOf(s) === offset;
     };
@@ -4157,13 +4164,13 @@ window._p = {};
         if (!count || index + count > this.length) {
             {
                 var __ms = new Date().getTime() - __start;
-                _putstat('', __ms);
+                _putstat('remove', __ms);
             }
             return this.substr(0, index);
         }
         {
             var __ms = new Date().getTime() - __start;
-            _putstat('', __ms);
+            _putstat('remove', __ms);
         }
         return this.substr(0, index) + this.substr(index + count);
     };
@@ -4172,20 +4179,20 @@ window._p = {};
         if (this == other) {
             {
                 var __ms = new Date().getTime() - __start;
-                _putstat('', __ms);
+                _putstat('compareTo', __ms);
             }
             return 0;
         }
         if (this < other) {
             {
                 var __ms = new Date().getTime() - __start;
-                _putstat('', __ms);
+                _putstat('compareTo', __ms);
             }
             return -1;
         }
         {
             var __ms = new Date().getTime() - __start;
-            _putstat('', __ms);
+            _putstat('compareTo', __ms);
         }
         return 1;
     };
@@ -4194,7 +4201,7 @@ window._p = {};
             var __start = new Date().getTime();
             {
                 var __ms = new Date().getTime() - __start;
-                _putstat('', __ms);
+                _putstat('trim', __ms);
             }
             return this.replace(/^\s\s*/, '').replace(/\s\s*$/, '');
         };
@@ -4203,7 +4210,7 @@ window._p = {};
         var __start = new Date().getTime();
         {
             var __ms = new Date().getTime() - __start;
-            _putstat('', __ms);
+            _putstat('fullTrim', __ms);
         }
         return this.replace(/(?:(?:^|\n)\s+|\s+(?:$|\n))/g, '').replace(/\s+/g, ' ');
     };
@@ -4219,7 +4226,7 @@ window._p = {};
         for (; args.indexOf(this.charAt(i)) > -1 && i < this.length; i++);
         {
             var __ms = new Date().getTime() - __start;
-            _putstat('', __ms);
+            _putstat('trimStart', __ms);
         }
         return this.substring(i);
     };
@@ -4233,7 +4240,7 @@ window._p = {};
         for (; i >= 0 && args.indexOf(this.charAt(i)) > -1; i--);
         {
             var __ms = new Date().getTime() - __start;
-            _putstat('', __ms);
+            _putstat('trimEnd', __ms);
         }
         return this.substring(0, i + 1);
     };
@@ -4329,7 +4336,7 @@ window._p = {};
         var __start = new Date().getTime();
         {
             var __ms = new Date().getTime() - __start;
-            _putstat('', __ms);
+            _putstat('equals', __ms);
         }
         return this == other;
     };
@@ -4337,7 +4344,7 @@ window._p = {};
         var __start = new Date().getTime();
         {
             var __ms = new Date().getTime() - __start;
-            _putstat('', __ms);
+            _putstat('contains', __ms);
         }
         return this.indexOf(s) > -1;
     };
@@ -4349,7 +4356,7 @@ window._p = {};
         }
         {
             var __ms = new Date().getTime() - __start;
-            _putstat('', __ms);
+            _putstat('padLeft', __ms);
         }
         return s;
     };
@@ -4361,7 +4368,7 @@ window._p = {};
         }
         {
             var __ms = new Date().getTime() - __start;
-            _putstat('', __ms);
+            _putstat('padRight', __ms);
         }
         return s;
     };
@@ -4369,7 +4376,7 @@ window._p = {};
         var __start = new Date().getTime();
         {
             var __ms = new Date().getTime() - __start;
-            _putstat('', __ms);
+            _putstat('capitalize', __ms);
         }
         return this.charAt(0).toUpperCase() + this.slice(1);
     };
@@ -4397,7 +4404,7 @@ window._p = {};
             }
             {
                 var __ms = new Date().getTime() - __start;
-                _putstat('', __ms);
+                _putstat('filter', __ms);
             }
             return res;
         };
@@ -4539,7 +4546,7 @@ window._p = {};
         }
         {
             var __ms = new Date().getTime() - __start;
-            _putstat('', __ms);
+            _putstat('jqueryCreateFlags', __ms);
         }
         return object;
     };
@@ -4753,7 +4760,7 @@ window._p = {};
             };
         {
             var __ms = new Date().getTime() - __start;
-            _putstat('', __ms);
+            _putstat('jqueryCallbacks', __ms);
         }
         return self;
     };
@@ -4887,7 +4894,7 @@ window._p = {};
         }
         {
             var __ms = new Date().getTime() - __start;
-            _putstat('', __ms);
+            _putstat('jqueryDeferred', __ms);
         }
         return deferred;
     };
@@ -4896,7 +4903,7 @@ window._p = {};
         $.ig.util.deferredDefined = !!($.Deferred !== undefined && $.Deferred().state);
         {
             var __ms = new Date().getTime() - __start;
-            _putstat('', __ms);
+            _putstat('checkDeferred', __ms);
         }
     };
     $.ig.util.deferred = function () {
@@ -4907,19 +4914,19 @@ window._p = {};
         if ($.ig.util.deferredDefined) {
             {
                 var __ms = new Date().getTime() - __start;
-                _putstat('', __ms);
+                _putstat('deferred', __ms);
             }
             return $.Deferred();
         } else {
             {
                 var __ms = new Date().getTime() - __start;
-                _putstat('', __ms);
+                _putstat('deferred', __ms);
             }
             return $.ig.util.jqueryDeferred();
         }
         {
             var __ms = new Date().getTime() - __start;
-            _putstat('', __ms);
+            _putstat('deferred', __ms);
         }
     };
     $.ig.util.ajax = function (url, contentType, data, method, requestOptions) {
@@ -5082,7 +5089,7 @@ window._p = {};
         });
         {
             var __ms = new Date().getTime() - __start;
-            _putstat('', __ms);
+            _putstat('ajax', __ms);
         }
         return deferred.promise();
     };
@@ -5098,7 +5105,7 @@ window._p = {};
         }
         {
             var __ms = new Date().getTime() - __start;
-            _putstat('', __ms);
+            _putstat('offset', __ms);
         }
         return xy;
     };
@@ -5119,7 +5126,7 @@ window._p = {};
         }
         {
             var __ms = new Date().getTime() - __start;
-            _putstat('', __ms);
+            _putstat('getRelativeOffset', __ms);
         }
         return o;
     };
@@ -5128,7 +5135,7 @@ window._p = {};
         if (!elem || !elem[0]) {
             {
                 var __ms = new Date().getTime() - __start;
-                _putstat('', __ms);
+                _putstat('setSize', __ms);
             }
             return;
         }
@@ -5142,7 +5149,7 @@ window._p = {};
             elem[0]._w_s_f = null;
             {
                 var __ms = new Date().getTime() - __start;
-                _putstat('', __ms);
+                _putstat('setSize', __ms);
             }
             return;
         }
@@ -5256,7 +5263,7 @@ window._p = {};
         }
         {
             var __ms = new Date().getTime() - __start;
-            _putstat('', __ms);
+            _putstat('setSize', __ms);
         }
     };
     $.ig.util.getEasingFunction = function (easingValue) {
@@ -5264,7 +5271,7 @@ window._p = {};
         if (easingValue === null || easingValue == 'null' || easingValue == 'linear') {
             {
                 var __ms = new Date().getTime() - __start;
-                _putstat('', __ms);
+                _putstat('getEasingFunction', __ms);
             }
             return null;
         }
@@ -5274,7 +5281,7 @@ window._p = {};
         }
         {
             var __ms = new Date().getTime() - __start;
-            _putstat('', __ms);
+            _putstat('getEasingFunction', __ms);
         }
         return easingValue;
     };
@@ -5283,7 +5290,7 @@ window._p = {};
         var overflow = $(elem).css('overflow-y');
         {
             var __ms = new Date().getTime() - __start;
-            _putstat('', __ms);
+            _putstat('hasVerticalScroll', __ms);
         }
         return overflow === 'scroll' || overflow === 'auto' && elem[0].scrollHeight > elem[0].clientHeight;
     };
@@ -5292,7 +5299,7 @@ window._p = {};
         var overflow = $(elem).css('overflow-x');
         {
             var __ms = new Date().getTime() - __start;
-            _putstat('', __ms);
+            _putstat('hasHorizontalScroll', __ms);
         }
         return overflow === 'scroll' || overflow === 'auto' && elem[0].scrollWidth > elem[0].clientWidth;
     };
@@ -5303,7 +5310,7 @@ window._p = {};
         el.remove();
         {
             var __ms = new Date().getTime() - __start;
-            _putstat('', __ms);
+            _putstat('getScrollWidth', __ms);
         }
         return scrollWidth;
     };
@@ -5314,7 +5321,7 @@ window._p = {};
         el.remove();
         {
             var __ms = new Date().getTime() - __start;
-            _putstat('', __ms);
+            _putstat('getScrollHeight', __ms);
         }
         return scrollHeight;
     };
@@ -5323,7 +5330,7 @@ window._p = {};
         var isJSONPExpr = /(=)\?(?=&|$)|\?\?/;
         {
             var __ms = new Date().getTime() - __start;
-            _putstat('', __ms);
+            _putstat('isJsonpUrl', __ms);
         }
         return isJSONPExpr.test(url);
     };
@@ -5350,7 +5357,7 @@ window._p = {};
         }
         {
             var __ms = new Date().getTime() - __start;
-            _putstat('', __ms);
+            _putstat('evtButton', __ms);
         }
         return e === 2 ? 2 : e ? 1 : 0;
     };
@@ -5358,7 +5365,7 @@ window._p = {};
         var __start = new Date().getTime();
         {
             var __ms = new Date().getTime() - __start;
-            _putstat('', __ms);
+            _putstat('animateRotate', __ms);
         }
         return this.each(function () {
             var __start = new Date().getTime();
@@ -5399,7 +5406,7 @@ window._p = {};
                 }
                 {
                     var __ms = new Date().getTime() - __start;
-                    _putstat('', __ms);
+                    _putstat('_createWidget', __ms);
                 }
                 return createWidget.apply(this, arguments);
             };
@@ -7707,7 +7714,7 @@ window._p = {};
                 }
                 {
                     var __ms = new Date().getTime() - __start;
-                    _putstat('', __ms);
+                    _putstat('sortF', __ms);
                 }
                 return function (obj1, obj2) {
                     var __start = new Date().getTime();
@@ -11379,7 +11386,7 @@ window._p = {};
                 var __start = new Date().getTime();
                 {
                     var __ms = new Date().getTime() - __start;
-                    _putstat('', __ms);
+                    _putstat('_mouseUpHandler', __ms);
                 }
                 return self._mouseStop(event);
             };
@@ -13584,7 +13591,7 @@ window._p = {};
                     event.preventDefault = originalPreventDefault;
                     {
                         var __ms = new Date().getTime() - __start;
-                        _putstat('', __ms);
+                        _putstat('_mouseDown', __ms);
                     }
                     return result;
                 };
