@@ -10,10 +10,12 @@
 		<div id="stats-avg"></div>
 		<div id="stats-sum"></div>
 		<div id="stats-count"></div>
+		<div id="callstack"></div>
 		<script src="http://code.jquery.com/jquery-1.11.0.min.js" type="text/javascript" charset="utf-8"></script>
 		<script src="http://modernizr.com/downloads/modernizr-latest.js"></script>
 		<script src="http://code.jquery.com/ui/1.10.3/jquery-ui.min.js"></script>
 		<script src="http://cdn-na.infragistics.com/jquery/20132/latest/js/infragistics.core.js"></script>
+		<script src="http://cdn-na.infragistics.com/jquery/20132/latest/js/infragistics.lob.js"></script>
 		<script src="http://cdn-na.infragistics.com/jquery/20132/latest/js/infragistics.dv.js"></script>
 		<script>
 			$(document).ready(function () {
@@ -21,7 +23,7 @@
 				$.getJSON("http://localhost:12346/api/stats", function (data) {
 					var normalizedData = [], normalizedDataAvg = [], normalizedDataSum = [], normalizedDataCount = [];
 					for (var key in data) {
-						if (data.hasOwnProperty(key)) {
+						if (data.hasOwnProperty(key) && key !== "__callstack") {
 							var obj = data[key];
 							obj.name = key;
 							normalizedData.push(obj);
@@ -60,6 +62,11 @@
 						normalizedDataCount = normalizedDataCount.slice(0, 10);
 						normalizedDataSum = normalizedDataSum.slice(0, 10);
 					}
+					// process call stack
+					//TBD
+					//var callstackData = data.__callstack;
+					var normalizedCallstackData = data.__callstack;
+
 					$("#stats-avg").igDataChart({
 						width: "95%",
 						dataSource: normalizedDataAvg,
@@ -149,6 +156,14 @@
 								valueMemberPath: "count"
 							}
 						]
+					});
+					$("#callstack").igTree({
+						dataSource: normalizedCallstackData,
+						bindings: {
+							textKey: "fn",
+							valueKey: "fn",
+							childDataProperty: "calls"
+						}
 					});
 				});
 			});

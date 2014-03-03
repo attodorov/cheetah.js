@@ -1,13 +1,7 @@
-{
-    if (!window._p) {
-        window._p = {};
-    }
-    if (!window._callstack) {
-        window._callstack = {};
-    }
-}
+__init__();
 (function ($) {
-    var __start = new Date().getTime();
+    __pushstack('anonymous');
+    var __start = _getstart();
     $.ig = $.ig || {};
     if (!$.ig.DataSourceLocale) {
         $.ig.DataSourceLocale = {};
@@ -39,13 +33,12 @@
             }
         });
     }
-    {
-        var __ms = new Date().getTime() - __start;
-        _putstat('anonymous', __ms);
-    }
+    _putstat('anonymous', __start);
+    __popstack();
 }(jQuery));
 (function ($) {
-    var __start = new Date().getTime();
+    __pushstack('anonymous');
+    var __start = _getstart();
     $.ig = $.ig || {};
     if (!$.ig.Chart) {
         $.ig.Chart = {};
@@ -62,37 +55,34 @@
             }
         });
     }
-    {
-        var __ms = new Date().getTime() - __start;
-        _putstat('anonymous', __ms);
-    }
+    _putstat('anonymous', __start);
+    __popstack();
 }(jQuery));
 (function ($) {
-    var __start = new Date().getTime();
+    __pushstack('anonymous');
+    var __start = _getstart();
     $.ig = $.ig || {};
     if (!$.ig.SharedLocale) {
         $.ig.SharedLocale = {};
         $.extend($.ig.SharedLocale, { locale: {} });
     }
-    {
-        var __ms = new Date().getTime() - __start;
-        _putstat('anonymous', __ms);
-    }
+    _putstat('anonymous', __start);
+    __popstack();
 }(jQuery));
 (function ($) {
-    var __start = new Date().getTime();
+    __pushstack('anonymous');
+    var __start = _getstart();
     $.ig = $.ig || {};
     if (!$.ig.Templating) {
         $.ig.Templating = {};
         $.extend($.ig.Templating, { locale: { undefinedArgument: 'An error has occurred while trying to retrieve data source property: ' } });
     }
-    {
-        var __ms = new Date().getTime() - __start;
-        _putstat('anonymous', __ms);
-    }
+    _putstat('anonymous', __start);
+    __popstack();
 }(jQuery));
 (function ($) {
-    var __start = new Date().getTime();
+    __pushstack('anonymous');
+    var __start = _getstart();
     $.ig = $.ig || {};
     if (!$.ig.Barcode) {
         $.ig.Barcode = {
@@ -135,13 +125,12 @@
             }
         };
     }
-    {
-        var __ms = new Date().getTime() - __start;
-        _putstat('anonymous', __ms);
-    }
+    _putstat('anonymous', __start);
+    __popstack();
 }(jQuery));
 (function ($) {
-    var __start = new Date().getTime();
+    __pushstack('anonymous');
+    var __start = _getstart();
     $.ig = $.ig || {};
     if (!$.ig.Combo) {
         $.ig.Combo = {
@@ -152,13 +141,12 @@
             }
         };
     }
-    {
-        var __ms = new Date().getTime() - __start;
-        _putstat('anonymous', __ms);
-    }
+    _putstat('anonymous', __start);
+    __popstack();
 }(jQuery));
 (function ($) {
-    var __start = new Date().getTime();
+    __pushstack('anonymous');
+    var __start = _getstart();
     $.ig = $.ig || {};
     if (!$.ig.Dialog) {
         $.ig.Dialog = {
@@ -172,25 +160,23 @@
             }
         };
     }
-    {
-        var __ms = new Date().getTime() - __start;
-        _putstat('anonymous', __ms);
-    }
+    _putstat('anonymous', __start);
+    __popstack();
 }(jQuery));
 (function ($) {
-    var __start = new Date().getTime();
+    __pushstack('anonymous');
+    var __start = _getstart();
     $.ig = $.ig || {};
     if (!$.ig.igDoughnutChart) {
         $.ig.igDoughnutChart = {};
         $.extend($.ig.igDoughnutChart, { locale: { invalidBaseElement: ' is not supported as base element. Use DIV instead.' } });
     }
-    {
-        var __ms = new Date().getTime() - __start;
-        _putstat('anonymous', __ms);
-    }
+    _putstat('anonymous', __start);
+    __popstack();
 }(jQuery));
 (function ($) {
-    var __start = new Date().getTime();
+    __pushstack('anonymous');
+    var __start = _getstart();
     $.ig = $.ig || {};
     if (!$.ig.Editor) {
         $.ig.Editor = {
@@ -204,13 +190,12 @@
             }
         };
     }
-    {
-        var __ms = new Date().getTime() - __start;
-        _putstat('anonymous', __ms);
-    }
+    _putstat('anonymous', __start);
+    __popstack();
 }(jQuery));
 (function ($) {
-    var __start = new Date().getTime();
+    __pushstack('anonymous');
+    var __start = _getstart();
     $.ig = $.ig || {};
     if (!$.ig.Grid) {
         $.ig.Grid = {};
@@ -480,13 +465,12 @@
             }
         });
     }
-    {
-        var __ms = new Date().getTime() - __start;
-        _putstat('anonymous', __ms);
-    }
+    _putstat('anonymous', __start);
+    __popstack();
 }(jQuery));
 (function ($) {
-    var __start = new Date().getTime();
+    __pushstack('anonymous');
+    var __start = _getstart();
     $.ig = $.ig || {};
     if (!$.ig.HtmlEditor) {
         $.ig.HtmlEditor = {};
@@ -763,13 +747,12 @@
             }
         });
     }
-    {
-        var __ms = new Date().getTime() - __start;
-        _putstat('anonymous', __ms);
-    }
+    _putstat('anonymous', __start);
+    __popstack();
 }(jQuery));
 (function ($) {
-    var __start = new Date().getTime();
+    __pushstack('anonymous');
+    var __start = _getstart();
     $.ig = $.ig || {};
     if (!$.ig.PivotShared) {
         $.ig.PivotShared = {};
@@ -786,13 +769,12 @@
             }
         });
     }
-    {
-        var __ms = new Date().getTime() - __start;
-        _putstat('anonymous', __ms);
-    }
+    _putstat('anonymous', __start);
+    __popstack();
 }(jQuery));
 (function ($) {
-    var __start = new Date().getTime();
+    __pushstack('anonymous');
+    var __start = _getstart();
     $.ig = $.ig || {};
     if (!$.ig.PivotDataSelector) {
         $.ig.PivotDataSelector = {};
@@ -813,13 +795,12 @@
             }
         });
     }
-    {
-        var __ms = new Date().getTime() - __start;
-        _putstat('anonymous', __ms);
-    }
+    _putstat('anonymous', __start);
+    __popstack();
 }(jQuery));
 (function ($) {
-    var __start = new Date().getTime();
+    __pushstack('anonymous');
+    var __start = _getstart();
     $.ig = $.ig || {};
     if (!$.ig.PivotGrid) {
         $.ig.PivotGrid = {};
@@ -837,13 +818,12 @@
             }
         });
     }
-    {
-        var __ms = new Date().getTime() - __start;
-        _putstat('anonymous', __ms);
-    }
+    _putstat('anonymous', __start);
+    __popstack();
 }(jQuery));
 (function ($) {
-    var __start = new Date().getTime();
+    __pushstack('anonymous');
+    var __start = _getstart();
     $.ig = $.ig || {};
     if (!$.ig.Popover) {
         $.ig.Popover = {};
@@ -854,25 +834,23 @@
             }
         });
     }
-    {
-        var __ms = new Date().getTime() - __start;
-        _putstat('anonymous', __ms);
-    }
+    _putstat('anonymous', __start);
+    __popstack();
 }(jQuery));
 (function ($) {
-    var __start = new Date().getTime();
+    __pushstack('anonymous');
+    var __start = _getstart();
     $.ig = $.ig || {};
     if (!$.ig.Splitter) {
         $.ig.Splitter = {};
         $.extend($.ig.Splitter, { locale: { errorPanels: 'The number of panels have to be no more than two.' } });
     }
-    {
-        var __ms = new Date().getTime() - __start;
-        _putstat('anonymous', __ms);
-    }
+    _putstat('anonymous', __start);
+    __popstack();
 }(jQuery));
 (function ($) {
-    var __start = new Date().getTime();
+    __pushstack('anonymous');
+    var __start = _getstart();
     $.ig = $.ig || {};
     if (!$.ig.TileManager) {
         $.ig.TileManager = {};
@@ -883,13 +861,12 @@
             }
         });
     }
-    {
-        var __ms = new Date().getTime() - __start;
-        _putstat('anonymous', __ms);
-    }
+    _putstat('anonymous', __start);
+    __popstack();
 }(jQuery));
 (function ($) {
-    var __start = new Date().getTime();
+    __pushstack('anonymous');
+    var __start = _getstart();
     $.ig = $.ig || {};
     if (!$.ig.Tree) {
         $.ig.Tree = {};
@@ -913,13 +890,12 @@
             }
         });
     }
-    {
-        var __ms = new Date().getTime() - __start;
-        _putstat('anonymous', __ms);
-    }
+    _putstat('anonymous', __start);
+    __popstack();
 }(jQuery));
 (function ($) {
-    var __start = new Date().getTime();
+    __pushstack('anonymous');
+    var __start = _getstart();
     $.ig = $.ig || {};
     if (!$.ig.Upload) {
         $.ig.Upload = {};
@@ -961,13 +937,12 @@
             }
         });
     }
-    {
-        var __ms = new Date().getTime() - __start;
-        _putstat('anonymous', __ms);
-    }
+    _putstat('anonymous', __start);
+    __popstack();
 }(jQuery));
 (function ($) {
-    var __start = new Date().getTime();
+    __pushstack('anonymous');
+    var __start = _getstart();
     $.ig = $.ig || {};
     if (!$.ig.Validator) {
         $.ig.Validator = {
@@ -992,13 +967,12 @@
             }
         };
     }
-    {
-        var __ms = new Date().getTime() - __start;
-        _putstat('anonymous', __ms);
-    }
+    _putstat('anonymous', __start);
+    __popstack();
 }(jQuery));
 (function ($) {
-    var __start = new Date().getTime();
+    __pushstack('anonymous');
+    var __start = _getstart();
     $.ig = $.ig || {};
     if (!$.ig.VideoPlayer) {
         $.ig.VideoPlayer = {};
@@ -1041,13 +1015,12 @@
             }
         });
     }
-    {
-        var __ms = new Date().getTime() - __start;
-        _putstat('anonymous', __ms);
-    }
+    _putstat('anonymous', __start);
+    __popstack();
 }(jQuery));
 (function ($) {
-    var __start = new Date().getTime();
+    __pushstack('anonymous');
+    var __start = _getstart();
     $.ig = $.ig || {};
     if (!$.ig.Zoombar) {
         $.ig.Zoombar = {};
@@ -1059,13 +1032,12 @@
             }
         });
     }
-    {
-        var __ms = new Date().getTime() - __start;
-        _putstat('anonymous', __ms);
-    }
+    _putstat('anonymous', __start);
+    __popstack();
 }(jQuery));
 (function ($) {
-    var __start = new Date().getTime();
+    __pushstack('anonymous');
+    var __start = _getstart();
     $.ig = $.ig || {};
     if (!$.ig.util) {
         $.ig.util = {};
@@ -1086,30 +1058,28 @@
             }
         });
     }
-    {
-        var __ms = new Date().getTime() - __start;
-        _putstat('anonymous', __ms);
-    }
+    _putstat('anonymous', __start);
+    __popstack();
 }(jQuery));
 (function () {
-    var __start = new Date().getTime();
+    __pushstack('anonymous');
+    var __start = _getstart();
     var initializing = false, fnTest = /xyz/.test(function () {
-            var __start = new Date().getTime();
+            __pushstack('anonymous');
+            var __start = _getstart();
             xyz();
-            {
-                var __ms = new Date().getTime() - __start;
-                _putstat('anonymous', __ms);
-            }
+            _putstat('anonymous', __start);
+            __popstack();
         }) ? /\b_super\b/ : /.*/;
     this.Class = function () {
-        var __start = new Date().getTime();
-        {
-            var __ms = new Date().getTime() - __start;
-            _putstat('Class', __ms);
-        }
+        __pushstack('Class');
+        var __start = _getstart();
+        _putstat('Class', __start);
+        __popstack();
     };
     Class.extend = function (prop, doAugment) {
-        var __start = new Date().getTime();
+        __pushstack('Class.extend');
+        var __start = _getstart();
         var doSuper = true, _super = this.prototype, prototype, name;
         if (doAugment) {
             doSuper = false;
@@ -1118,21 +1088,19 @@
         prototype = new this();
         initializing = false;
         function makeFn(name, fn) {
-            var __start = new Date().getTime();
-            {
-                var __ms = new Date().getTime() - __start;
-                _putstat('makeFn', __ms);
-            }
+            __pushstack('makeFn');
+            var __start = _getstart();
+            _putstat('makeFn', __start);
+            __popstack();
             return function () {
-                var __start = new Date().getTime();
+                __pushstack('anonymous');
+                var __start = _getstart();
                 var tmp = this._super, ret;
                 this._super = _super[name];
                 ret = fn.apply(this, arguments);
                 this._super = tmp;
-                {
-                    var __ms = new Date().getTime() - __start;
-                    _putstat('anonymous', __ms);
-                }
+                _putstat('anonymous', __start);
+                __popstack();
                 return ret;
             };
         }
@@ -1142,89 +1110,77 @@
             }
         }
         function Class() {
-            var __start = new Date().getTime();
+            __pushstack('Class');
+            var __start = _getstart();
             if (!initializing && this.init) {
                 this.init.apply(this, arguments);
             }
-            {
-                var __ms = new Date().getTime() - __start;
-                _putstat('Class', __ms);
-            }
+            _putstat('Class', __start);
+            __popstack();
         }
         Class.prototype = prototype;
         Class.constructor = Class;
         Class.extend = arguments.callee;
         if (doAugment) {
             Class.typeName = function () {
-                var __start = new Date().getTime();
-                {
-                    var __ms = new Date().getTime() - __start;
-                    _putstat('Class.typeName', __ms);
-                }
+                __pushstack('Class.typeName');
+                var __start = _getstart();
+                _putstat('Class.typeName', __start);
+                __popstack();
                 return this.prototype.$type;
             };
             Class.baseType = function () {
-                var __start = new Date().getTime();
-                {
-                    var __ms = new Date().getTime() - __start;
-                    _putstat('Class.baseType', __ms);
-                }
+                __pushstack('Class.baseType');
+                var __start = _getstart();
+                _putstat('Class.baseType', __start);
+                __popstack();
                 return this.$type.baseType;
             };
             Class.prototype.getType = function () {
-                var __start = new Date().getTime();
-                {
-                    var __ms = new Date().getTime() - __start;
-                    _putstat('getType', __ms);
-                }
+                __pushstack('getType');
+                var __start = _getstart();
+                _putstat('getType', __start);
+                __popstack();
                 return this.$type;
             };
             Class.prototype.getHashCode = function () {
-                var __start = new Date().getTime();
+                __pushstack('getHashCode');
+                var __start = _getstart();
                 if (this.$hashCode !== undefined) {
-                    {
-                        var __ms = new Date().getTime() - __start;
-                        _putstat('getHashCode', __ms);
-                    }
+                    _putstat('getHashCode', __start);
+                    __popstack();
                     return this.$hashCode;
                 }
                 this.$hashCode = $.ig.nextHashCode++;
-                {
-                    var __ms = new Date().getTime() - __start;
-                    _putstat('getHashCode', __ms);
-                }
+                _putstat('getHashCode', __start);
+                __popstack();
                 return this.$hashCode;
             };
         }
-        {
-            var __ms = new Date().getTime() - __start;
-            _putstat('Class.extend', __ms);
-        }
+        _putstat('Class.extend', __start);
+        __popstack();
         return Class;
     };
     if (typeof define === 'function' && define.amd && define.amd.jQuery) {
         define('ig.util', [], function () {
-            var __start = new Date().getTime();
-            {
-                var __ms = new Date().getTime() - __start;
-                _putstat('anonymous', __ms);
-            }
+            __pushstack('anonymous');
+            var __start = _getstart();
+            _putstat('anonymous', __start);
+            __popstack();
             return Class;
         });
     }
-    {
-        var __ms = new Date().getTime() - __start;
-        _putstat('anonymous', __ms);
-    }
+    _putstat('anonymous', __start);
+    __popstack();
 }());
 (function ($) {
-    var __start = new Date().getTime();
+    __pushstack('anonymous');
+    var __start = _getstart();
     $.fn.startsWith = function (str) {
-        var __start = new Date().getTime();
-        {
-            var __ms = new Date().getTime() - __start;
-            _putstat('startsWith', __ms);
-        }
+        __pushstack('startsWith');
+        var __start = _getstart();
+        _putstat('startsWith', __start);
+        __popstack();
         return this[0].innerHTML.indexOf(str) === 0;
     };
     $.ig = $.ig || {};
@@ -1256,7 +1212,8 @@
     $.ig.util.isSafari = !!(Object.prototype.toString.call(window.HTMLElement).indexOf('Constructor') > 0);
     $.ig.util.isWebKit = !!window.webkitURL;
     $.ajaxQueue = function (queueName, options) {
-        var __start = new Date().getTime();
+        __pushstack('$.ajaxQueue');
+        var __start = _getstart();
         var callback;
         if (typeof document.ajaxQueue === 'undefined') {
             document.ajaxQueue = { queue: {} };
@@ -1265,15 +1222,14 @@
             document.ajaxQueue.queue[queueName] = [];
         }
         if (typeof options === 'undefined') {
-            {
-                var __ms = new Date().getTime() - __start;
-                _putstat('$.ajaxQueue', __ms);
-            }
+            _putstat('$.ajaxQueue', __start);
+            __popstack();
             return;
         }
         callback = options.complete;
         options.complete = function (request, status) {
-            var __start = new Date().getTime();
+            __pushstack('options.complete');
+            var __start = _getstart();
             document.ajaxQueue.queue[queueName].shift();
             if (typeof callback !== 'undefined') {
                 callback(request, status);
@@ -1281,25 +1237,22 @@
             if (document.ajaxQueue.queue[queueName].length > 0) {
                 $.ajax(document.ajaxQueue.queue[queueName][0]);
             }
-            {
-                var __ms = new Date().getTime() - __start;
-                _putstat('options.complete', __ms);
-            }
+            _putstat('options.complete', __start);
+            __popstack();
         };
         document.ajaxQueue.queue[queueName].push(options);
         if (document.ajaxQueue.queue[queueName].length === 1) {
             $.ajax(document.ajaxQueue.queue[queueName][0]);
         }
-        {
-            var __ms = new Date().getTime() - __start;
-            _putstat('$.ajaxQueue', __ms);
-        }
+        _putstat('$.ajaxQueue', __start);
+        __popstack();
     };
     if (typeof $.ig.useDefineProperty === 'undefined') {
         $.ig.useDefineProperty = true;
     }
     $.ig.extendNativePrototype = function (proto, propName, val) {
-        var __start = new Date().getTime();
+        __pushstack('extendNativePrototype');
+        var __start = _getstart();
         if ($.ig.useDefineProperty) {
             try {
                 Object.defineProperty(proto, propName, {
@@ -1314,46 +1267,39 @@
         } else {
             proto[propName] = val;
         }
-        {
-            var __ms = new Date().getTime() - __start;
-            _putstat('extendNativePrototype', __ms);
-        }
+        _putstat('extendNativePrototype', __start);
+        __popstack();
     };
     Date.prototype.stdTimezoneOffset = function () {
-        var __start = new Date().getTime();
+        __pushstack('stdTimezoneOffset');
+        var __start = _getstart();
         var jan, jul, janOffset, julOffset;
         jan = new Date(this.getFullYear(), 0, 1);
         jul = new Date(this.getFullYear(), 6, 1);
         julOffset = jul.getTimezoneOffset();
         janOffset = jan.getTimezoneOffset();
         if (janOffset > 0 && julOffset > 0) {
-            {
-                var __ms = new Date().getTime() - __start;
-                _putstat('stdTimezoneOffset', __ms);
-            }
+            _putstat('stdTimezoneOffset', __start);
+            __popstack();
             return Math.max(janOffset, julOffset);
         } else {
-            {
-                var __ms = new Date().getTime() - __start;
-                _putstat('stdTimezoneOffset', __ms);
-            }
+            _putstat('stdTimezoneOffset', __start);
+            __popstack();
             return Math.min(janOffset, julOffset);
         }
-        {
-            var __ms = new Date().getTime() - __start;
-            _putstat('stdTimezoneOffset', __ms);
-        }
+        _putstat('stdTimezoneOffset', __start);
+        __popstack();
     };
     Date.prototype.dst = function () {
-        var __start = new Date().getTime();
-        {
-            var __ms = new Date().getTime() - __start;
-            _putstat('dst', __ms);
-        }
+        __pushstack('dst');
+        var __start = _getstart();
+        _putstat('dst', __start);
+        __popstack();
         return this.getTimezoneOffset() < this.stdTimezoneOffset();
     };
     $.ig.findPath = function (dsObj, resKey) {
-        var __start = new Date().getTime();
+        __pushstack('findPath');
+        var __start = _getstart();
         var resPath, ds = dsObj;
         resPath = resKey.split('.');
         if (resPath.length > 0) {
@@ -1365,44 +1311,35 @@
                 }
             }
         }
-        {
-            var __ms = new Date().getTime() - __start;
-            _putstat('findPath', __ms);
-        }
+        _putstat('findPath', __start);
+        __popstack();
         return ds;
     }, $.ig.formatter = function (val, type, format, notTemplate, enableUTCDates, displayStyle) {
-        var __start = new Date().getTime();
+        __pushstack('formatter');
+        var __start = _getstart();
         var min, y, h, m, s, ms, am, e, pattern, len, n, dot, gr, gr0, grps, curS, percS, cur, perc, prefix, i, d = val && val.getTime, reg = $.ig.regional.defaults, pow, display = displayStyle || 'inline-block';
         if (format === 'checkbox' && notTemplate) {
             s = '<span style="width:100%;display:' + display + ';overflow:hidden;text-align:center;">';
             s += '<span class="ui-state-default ui-corner-all ui-igcheckbox-small" style="display:inline-block">';
             s += '<span style="display:block" class="' + (val ? '' : 'ui-igcheckbox-small-off ');
-            {
-                var __ms = new Date().getTime() - __start;
-                _putstat('formatter', __ms);
-            }
+            _putstat('formatter', __start);
+            __popstack();
             return s + 'ui-icon ui-icon-check ui-igcheckbox-small-on"></span></span></span>';
         }
         if (!val && val !== 0 && val !== false) {
-            {
-                var __ms = new Date().getTime() - __start;
-                _putstat('formatter', __ms);
-            }
+            _putstat('formatter', __start);
+            __popstack();
             return '&nbsp;';
         }
         if (type === 'date' || d) {
             if (!val) {
-                {
-                    var __ms = new Date().getTime() - __start;
-                    _putstat('formatter', __ms);
-                }
+                _putstat('formatter', __start);
+                __popstack();
                 return '&nbsp;';
             }
             if (!d) {
-                {
-                    var __ms = new Date().getTime() - __start;
-                    _putstat('formatter', __ms);
-                }
+                _putstat('formatter', __start);
+                __popstack();
                 return val;
             }
             pattern = reg[format && format !== 'null' && format !== 'undefined' ? format + 'Pattern' : 'datePattern'] || format;
@@ -1449,10 +1386,8 @@
             pattern = pattern.replace('fff', ms < 10 ? '00' + ms : ms < 100 ? '0' + ms : ms).replace('ff', (ms = Math.round(ms / 10)) < 10 ? '0' + ms : ms).replace('f', Math.round(ms / 100));
             pattern = pattern.replace('\x01', reg.monthNames[m - 1]).replace('\x02', reg.monthNamesShort[m - 1]).replace('\x05', am);
             pattern = pattern.replace('\x03', reg.dayNames[val.getDay()]).replace('\x04', reg.dayNamesShort[val.getDay()]);
-            {
-                var __ms = new Date().getTime() - __start;
-                _putstat('formatter', __ms);
-            }
+            _putstat('formatter', __start);
+            __popstack();
             return pattern;
         }
         d = format === 'double';
@@ -1471,10 +1406,8 @@
                 val = parseFloat(val.replace('(', '-').replace(new RegExp('[^0-9\\-eE\\' + reg.numericDecimalSeparator + '\\+]', 'gm'), '').replace(reg.numericDecimalSeparator, '.'));
             }
             if (isNaN(val)) {
-                {
-                    var __ms = new Date().getTime() - __start;
-                    _putstat('formatter', __ms);
-                }
+                _putstat('formatter', __start);
+                __popstack();
                 return '&nbsp;';
             }
             prefix = cur ? curS : perc ? percS : 'numeric';
@@ -1556,32 +1489,24 @@
                 }
             }
             s = reg[prefix + 'Symbol'] || '';
-            {
-                var __ms = new Date().getTime() - __start;
-                _putstat('formatter', __ms);
-            }
+            _putstat('formatter', __start);
+            __popstack();
             return pattern.replace('-', reg.negativeSign).replace('n', val + e).replace('$', s);
         }
         if (format) {
             if (format.indexOf(s = '{0}') >= 0) {
-                {
-                    var __ms = new Date().getTime() - __start;
-                    _putstat('formatter', __ms);
-                }
+                _putstat('formatter', __start);
+                __popstack();
                 return format.replace(s, val);
             }
             if (format.indexOf(s = '[0]') >= 0) {
-                {
-                    var __ms = new Date().getTime() - __start;
-                    _putstat('formatter', __ms);
-                }
+                _putstat('formatter', __start);
+                __popstack();
                 return format.replace(s, val);
             }
         }
-        {
-            var __ms = new Date().getTime() - __start;
-            _putstat('formatter', __ms);
-        }
+        _putstat('formatter', __start);
+        __popstack();
         return val || val === 0 ? val : '&nbsp;';
     };
     $.ig._regional = {
@@ -1666,29 +1591,28 @@
     $.ig.regional = $.ig.regional || {};
     $.ig.regional.defaults = $.ig._regional;
     $.ig.setRegionalDefault = function (regional) {
-        var __start = new Date().getTime();
+        __pushstack('setRegionalDefault');
+        var __start = _getstart();
         if ($.ui && $.ui.igEditor) {
             $.ui.igEditor.setDefaultCulture(regional);
         } else {
             $.ig.regional.defaults = $.extend($.ig._regional, typeof regional === 'string' ? $.ig.regional[regional] : regional);
         }
-        {
-            var __ms = new Date().getTime() - __start;
-            _putstat('setRegionalDefault', __ms);
-        }
+        _putstat('setRegionalDefault', __start);
+        __popstack();
     };
     $.ig.calcSummaries = function (summaryFunction, data, caller, dataType) {
-        var __start = new Date().getTime();
+        __pushstack('calcSummaries');
+        var __start = _getstart();
         var sum = function (data) {
-            var __start = new Date().getTime();
+            __pushstack('sum');
+            var __start = _getstart();
             var sum = 0, i;
             for (i = 0; i < data.length; i++) {
                 sum += data[i];
             }
-            {
-                var __ms = new Date().getTime() - __start;
-                _putstat('sum', __ms);
-            }
+            _putstat('sum', __start);
+            __popstack();
             return sum;
         };
         summaryFunction = summaryFunction.toLowerCase();
@@ -1699,32 +1623,24 @@
         case 'min':
             if (data.length === 0) {
                 if (dataType === 'date') {
-                    {
-                        var __ms = new Date().getTime() - __start;
-                        _putstat('calcSummaries', __ms);
-                    }
+                    _putstat('calcSummaries', __start);
+                    __popstack();
                     return null;
                 }
-                {
-                    var __ms = new Date().getTime() - __start;
-                    _putstat('calcSummaries', __ms);
-                }
+                _putstat('calcSummaries', __start);
+                __popstack();
                 return 0;
             }
             return Math.min.apply(Math, data);
         case 'max':
             if (data.length === 0) {
                 if (dataType === 'date') {
-                    {
-                        var __ms = new Date().getTime() - __start;
-                        _putstat('calcSummaries', __ms);
-                    }
+                    _putstat('calcSummaries', __start);
+                    __popstack();
                     return null;
                 }
-                {
-                    var __ms = new Date().getTime() - __start;
-                    _putstat('calcSummaries', __ms);
-                }
+                _putstat('calcSummaries', __start);
+                __popstack();
                 return 0;
             }
             return Math.max.apply(Math, data);
@@ -1732,10 +1648,8 @@
             return sum(data);
         case 'avg':
             if (data.length === 0) {
-                {
-                    var __ms = new Date().getTime() - __start;
-                    _putstat('calcSummaries', __ms);
-                }
+                _putstat('calcSummaries', __start);
+                __popstack();
                 return 0;
             }
             return sum(data) / data.length;
@@ -1744,133 +1658,108 @@
         case 'custom':
             if (caller !== undefined && caller !== null) {
                 if ($.type(caller) === 'function') {
-                    {
-                        var __ms = new Date().getTime() - __start;
-                        _putstat('calcSummaries', __ms);
-                    }
+                    _putstat('calcSummaries', __start);
+                    __popstack();
                     return caller(data);
                 }
                 if ($.type(caller) === 'string') {
                     caller = eval(caller);
-                    {
-                        var __ms = new Date().getTime() - __start;
-                        _putstat('calcSummaries', __ms);
-                    }
+                    _putstat('calcSummaries', __start);
+                    __popstack();
                     return caller(data);
                 }
             } else {
-                {
-                    var __ms = new Date().getTime() - __start;
-                    _putstat('calcSummaries', __ms);
-                }
+                _putstat('calcSummaries', __start);
+                __popstack();
                 return null;
             }
             break;
         }
-        {
-            var __ms = new Date().getTime() - __start;
-            _putstat('calcSummaries', __ms);
-        }
+        _putstat('calcSummaries', __start);
+        __popstack();
     };
     $.ig.getMaxZIndex = function (id) {
-        var __start = new Date().getTime();
+        __pushstack('getMaxZIndex');
+        var __start = _getstart();
         var maxZ = 10000, thisZ;
         $('.ui-dialog').each(function () {
-            var __start = new Date().getTime();
+            __pushstack('anonymous');
+            var __start = _getstart();
             if (!id || $(this)[0].id !== id) {
                 thisZ = $(this).css('z-index');
                 if (!isNaN(thisZ)) {
                     maxZ = Math.max(maxZ, thisZ);
                 }
             }
-            {
-                var __ms = new Date().getTime() - __start;
-                _putstat('anonymous', __ms);
-            }
+            _putstat('anonymous', __start);
+            __popstack();
         });
-        {
-            var __ms = new Date().getTime() - __start;
-            _putstat('getMaxZIndex', __ms);
-        }
+        _putstat('getMaxZIndex', __start);
+        __popstack();
         return maxZ;
     };
     $.ig.uid = function () {
-        var __start = new Date().getTime();
-        {
-            var __ms = new Date().getTime() - __start;
-            _putstat('uid', __ms);
-        }
+        __pushstack('uid');
+        var __start = _getstart();
+        _putstat('uid', __start);
+        __popstack();
         return ((1 + Math.random()) * parseInt('10000', 16)).toString(16).substring(1, 5);
     };
     $.ig.nextHashCode = 0;
     $.ig.util.ensureUniqueId = function (obj) {
-        var __start = new Date().getTime();
+        __pushstack('ensureUniqueId');
+        var __start = _getstart();
         if (!obj.getHashCode) {
             var code = $.ig.nextHashCode++;
             obj.getHashCode = function () {
-                var __start = new Date().getTime();
-                {
-                    var __ms = new Date().getTime() - __start;
-                    _putstat('obj.getHashCode', __ms);
-                }
+                __pushstack('obj.getHashCode');
+                var __start = _getstart();
+                _putstat('obj.getHashCode', __start);
+                __popstack();
                 return code;
             };
         }
-        {
-            var __ms = new Date().getTime() - __start;
-            _putstat('ensureUniqueId', __ms);
-        }
+        _putstat('ensureUniqueId', __start);
+        __popstack();
     };
     $.ig.getColType = function (o) {
-        var __start = new Date().getTime();
+        __pushstack('getColType');
+        var __start = _getstart();
         var t = typeof o;
         if (t === 'undefined') {
-            {
-                var __ms = new Date().getTime() - __start;
-                _putstat('getColType', __ms);
-            }
+            _putstat('getColType', __start);
+            __popstack();
             return 'string';
         } else if (o && o.getTime && !isNaN(o.getTime()) && Object.prototype.toString.call(o) === '[object Date]') {
-            {
-                var __ms = new Date().getTime() - __start;
-                _putstat('getColType', __ms);
-            }
+            _putstat('getColType', __start);
+            __popstack();
             return 'date';
         } else if (t === 'boolean') {
-            {
-                var __ms = new Date().getTime() - __start;
-                _putstat('getColType', __ms);
-            }
+            _putstat('getColType', __start);
+            __popstack();
             return 'bool';
         } else if (t === 'number') {
-            {
-                var __ms = new Date().getTime() - __start;
-                _putstat('getColType', __ms);
-            }
+            _putstat('getColType', __start);
+            __popstack();
             return t;
         } else if (t === 'object') {
-            {
-                var __ms = new Date().getTime() - __start;
-                _putstat('getColType', __ms);
-            }
+            _putstat('getColType', __start);
+            __popstack();
             return 'object';
         } else {
-            {
-                var __ms = new Date().getTime() - __start;
-                _putstat('getColType', __ms);
-            }
+            _putstat('getColType', __start);
+            __popstack();
             return 'string';
         }
-        {
-            var __ms = new Date().getTime() - __start;
-            _putstat('getColType', __ms);
-        }
+        _putstat('getColType', __start);
+        __popstack();
     };
     $.ig.typeIdentifierCache = {};
     $.ig.nextTypeIdentifier = 0;
     $.ig.Type = Class.extend({
         init: function (identifier, baseType, interfaces) {
-            var __start = new Date().getTime();
+            __pushstack('init');
+            var __start = _getstart();
             this.specializationCache = {};
             this.name = identifier;
             this.typeArguments = null;
@@ -1888,45 +1777,35 @@
                 this.identifier = $.ig.nextTypeIdentifier++;
                 $.ig.typeIdentifierCache[identifier] = this.identifier;
             }
-            {
-                var __ms = new Date().getTime() - __start;
-                _putstat('init', __ms);
-            }
+            _putstat('init', __start);
+            __popstack();
         },
         typeName: function () {
-            var __start = new Date().getTime();
-            {
-                var __ms = new Date().getTime() - __start;
-                _putstat('typeName', __ms);
-            }
+            __pushstack('typeName');
+            var __start = _getstart();
+            _putstat('typeName', __start);
+            __popstack();
             return this.name;
         },
         getSpecId: function (types) {
-            var __start = new Date().getTime();
+            __pushstack('getSpecId');
+            var __start = _getstart();
             if (types.length === 1) {
                 if (!types[0]) {
-                    {
-                        var __ms = new Date().getTime() - __start;
-                        _putstat('getSpecId', __ms);
-                    }
+                    _putstat('getSpecId', __start);
+                    __popstack();
                     return 'undef';
                 } else if (!types[0].typeName) {
-                    {
-                        var __ms = new Date().getTime() - __start;
-                        _putstat('getSpecId', __ms);
-                    }
+                    _putstat('getSpecId', __start);
+                    __popstack();
                     return types[0].toString();
                 } else if (types[0].stringId) {
-                    {
-                        var __ms = new Date().getTime() - __start;
-                        _putstat('getSpecId', __ms);
-                    }
+                    _putstat('getSpecId', __start);
+                    __popstack();
                     return types[0].stringId;
                 } else {
-                    {
-                        var __ms = new Date().getTime() - __start;
-                        _putstat('getSpecId', __ms);
-                    }
+                    _putstat('getSpecId', __start);
+                    __popstack();
                     return types[0].identifier.toString();
                 }
             }
@@ -1943,57 +1822,49 @@
                     ret += types[0].identifier.toString();
                 }
             }
-            {
-                var __ms = new Date().getTime() - __start;
-                _putstat('getSpecId', __ms);
-            }
+            _putstat('getSpecId', __start);
+            __popstack();
             return ret;
         },
         _isGenericType: null,
         isGenericType: function () {
-            var __start = new Date().getTime();
+            __pushstack('isGenericType');
+            var __start = _getstart();
             if (this._isGenericType === null) {
                 this._isGenericType = this.name.indexOf('$') >= 0;
             }
-            {
-                var __ms = new Date().getTime() - __start;
-                _putstat('isGenericType', __ms);
-            }
+            _putstat('isGenericType', __start);
+            __popstack();
             return this._isGenericType;
         },
         isGenericTypeDefinition: function () {
-            var __start = new Date().getTime();
-            {
-                var __ms = new Date().getTime() - __start;
-                _putstat('isGenericTypeDefinition', __ms);
-            }
+            __pushstack('isGenericTypeDefinition');
+            var __start = _getstart();
+            _putstat('isGenericTypeDefinition', __start);
+            __popstack();
             return this.typeArguments === null && this.isGenericType();
         },
         genericTypeArguments: function () {
-            var __start = new Date().getTime();
-            {
-                var __ms = new Date().getTime() - __start;
-                _putstat('genericTypeArguments', __ms);
-            }
+            __pushstack('genericTypeArguments');
+            var __start = _getstart();
+            _putstat('genericTypeArguments', __start);
+            __popstack();
             return this.typeArguments;
         },
         specializationCache: null,
         specialize: function () {
-            var __start = new Date().getTime();
+            __pushstack('specialize');
+            var __start = _getstart();
             if (!this.isGenericType()) {
-                {
-                    var __ms = new Date().getTime() - __start;
-                    _putstat('specialize', __ms);
-                }
+                _putstat('specialize', __start);
+                __popstack();
                 return this;
             }
             var specId = this.getSpecId(arguments);
             var ret = this.specializationCache[specId];
             if (ret) {
-                {
-                    var __ms = new Date().getTime() - __start;
-                    _putstat('specialize', __ms);
-                }
+                _putstat('specialize', __start);
+                __popstack();
                 return ret;
             }
             ret = new $.ig.Type(this.name, this.baseType, this.interfaces);
@@ -2023,120 +1894,93 @@
             }
             this.specializationCache[specId] = ret;
             ret.stringId = ret.generateString();
-            {
-                var __ms = new Date().getTime() - __start;
-                _putstat('specialize', __ms);
-            }
+            _putstat('specialize', __start);
+            __popstack();
             return ret;
         },
         equals: function (other) {
-            var __start = new Date().getTime();
+            __pushstack('equals');
+            var __start = _getstart();
             if (!(other instanceof $.ig.Type)) {
-                {
-                    var __ms = new Date().getTime() - __start;
-                    _putstat('equals', __ms);
-                }
+                _putstat('equals', __start);
+                __popstack();
                 return false;
             }
             if (this.identifier !== other.identifier) {
-                {
-                    var __ms = new Date().getTime() - __start;
-                    _putstat('equals', __ms);
-                }
+                _putstat('equals', __start);
+                __popstack();
                 return false;
             }
             if (this.typeArguments === null && other.typeArguments === null) {
-                {
-                    var __ms = new Date().getTime() - __start;
-                    _putstat('equals', __ms);
-                }
+                _putstat('equals', __start);
+                __popstack();
                 return true;
             }
             if (this.typeArguments === null && other.typeArguments !== null) {
-                {
-                    var __ms = new Date().getTime() - __start;
-                    _putstat('equals', __ms);
-                }
+                _putstat('equals', __start);
+                __popstack();
                 return false;
             }
             if (this.typeArguments !== null && other.typeArguments === null) {
-                {
-                    var __ms = new Date().getTime() - __start;
-                    _putstat('equals', __ms);
-                }
+                _putstat('equals', __start);
+                __popstack();
                 return false;
             }
             if (this.typeArguments.length !== other.typeArguments.length) {
-                {
-                    var __ms = new Date().getTime() - __start;
-                    _putstat('equals', __ms);
-                }
+                _putstat('equals', __start);
+                __popstack();
                 return false;
             }
             for (var i = 0; i < this.typeArguments.Length; i++) {
                 if (!this.typeArguments[i].equals(other.typeArguements[i])) {
-                    {
-                        var __ms = new Date().getTime() - __start;
-                        _putstat('equals', __ms);
-                    }
+                    _putstat('equals', __start);
+                    __popstack();
                     return false;
                 }
             }
-            {
-                var __ms = new Date().getTime() - __start;
-                _putstat('equals', __ms);
-            }
+            _putstat('equals', __start);
+            __popstack();
             return true;
         },
         checkEquals: function (type1, type2) {
-            var __start = new Date().getTime();
+            __pushstack('checkEquals');
+            var __start = _getstart();
             if (type1 instanceof $.ig.Type) {
-                {
-                    var __ms = new Date().getTime() - __start;
-                    _putstat('checkEquals', __ms);
-                }
+                _putstat('checkEquals', __start);
+                __popstack();
                 return type1.equals(type2);
             } else if (type2 instanceof $.ig.Type) {
-                {
-                    var __ms = new Date().getTime() - __start;
-                    _putstat('checkEquals', __ms);
-                }
+                _putstat('checkEquals', __start);
+                __popstack();
                 return type2.equals(type1);
             } else {
-                {
-                    var __ms = new Date().getTime() - __start;
-                    _putstat('checkEquals', __ms);
-                }
+                _putstat('checkEquals', __start);
+                __popstack();
                 return type1 == type2;
             }
-            {
-                var __ms = new Date().getTime() - __start;
-                _putstat('checkEquals', __ms);
-            }
+            _putstat('checkEquals', __start);
+            __popstack();
         },
         op_Equality: function (type1, type2) {
-            var __start = new Date().getTime();
-            {
-                var __ms = new Date().getTime() - __start;
-                _putstat('op_Equality', __ms);
-            }
+            __pushstack('op_Equality');
+            var __start = _getstart();
+            _putstat('op_Equality', __start);
+            __popstack();
             return type1.equals(other);
         },
         op_Inequality: function (type1, type2) {
-            var __start = new Date().getTime();
-            {
-                var __ms = new Date().getTime() - __start;
-                _putstat('op_Inequality', __ms);
-            }
+            __pushstack('op_Inequality');
+            var __start = _getstart();
+            _putstat('op_Inequality', __start);
+            __popstack();
             return !type1.equals(type2);
         },
         generateString: function () {
-            var __start = new Date().getTime();
+            __pushstack('generateString');
+            var __start = _getstart();
             if (!this.typeArguments || this.typeArguments.length == 0) {
-                {
-                    var __ms = new Date().getTime() - __start;
-                    _putstat('generateString', __ms);
-                }
+                _putstat('generateString', __start);
+                __popstack();
                 return this.identifier.toString();
             } else {
                 var ret = this.identifier.toString() + '[';
@@ -2150,31 +1994,27 @@
                     ret += this.typeArguments[i].toString();
                 }
                 ret += ']';
-                {
-                    var __ms = new Date().getTime() - __start;
-                    _putstat('generateString', __ms);
-                }
+                _putstat('generateString', __start);
+                __popstack();
                 return ret;
             }
-            {
-                var __ms = new Date().getTime() - __start;
-                _putstat('generateString', __ms);
-            }
+            _putstat('generateString', __start);
+            __popstack();
         }
     }, true);
     $.ig.Object = Class.extend({
         init: function () {
-            var __start = new Date().getTime();
-            {
-                var __ms = new Date().getTime() - __start;
-                _putstat('init', __ms);
-            }
+            __pushstack('init');
+            var __start = _getstart();
+            _putstat('init', __start);
+            __popstack();
         },
         $type: new $.ig.Type('Object')
     }, true);
     $.ig.Enum = Class.extend({
         parse: function (enumType, value, ignoreCase) {
-            var __start = new Date().getTime();
+            __pushstack('parse');
+            var __start = _getstart();
             if ($.ig.util.canAssign(this.$type, enumType)) {
                 var p = $.ig[enumType.name].prototype;
                 if (p.hasOwnProperty(value))
@@ -2183,74 +2023,63 @@
                     var upper = value.toUpperCase();
                     for (var x in p) {
                         if (x.toUpperCase() === upper) {
-                            {
-                                var __ms = new Date().getTime() - __start;
-                                _putstat('parse', __ms);
-                            }
+                            _putstat('parse', __start);
+                            __popstack();
                             return p[x];
                         }
                     }
                 }
             }
-            {
-                var __ms = new Date().getTime() - __start;
-                _putstat('parse', __ms);
-            }
+            _putstat('parse', __start);
+            __popstack();
         },
         $type: new $.ig.Type('Enum', $.ig.Object.prototype.$type)
     }, true);
     $.ig.ValueType = Class.extend({
         init: function () {
-            var __start = new Date().getTime();
-            {
-                var __ms = new Date().getTime() - __start;
-                _putstat('init', __ms);
-            }
+            __pushstack('init');
+            var __start = _getstart();
+            _putstat('init', __start);
+            __popstack();
         },
         $type: new $.ig.Type('ValueType', $.ig.Object.prototype.$type)
     }, true);
     $.ig.INotifyPropertyChanged = Class.extend({
         init: function () {
-            var __start = new Date().getTime();
-            {
-                var __ms = new Date().getTime() - __start;
-                _putstat('init', __ms);
-            }
+            __pushstack('init');
+            var __start = _getstart();
+            _putstat('init', __start);
+            __popstack();
         },
         _PropertyChanged: function () {
-            var __start = new Date().getTime();
-            {
-                var __ms = new Date().getTime() - __start;
-                _putstat('_PropertyChanged', __ms);
-            }
+            __pushstack('_PropertyChanged');
+            var __start = _getstart();
+            _putstat('_PropertyChanged', __start);
+            __popstack();
         },
         $type: new $.ig.Type('INotifyPropertyChanged')
     }, true);
     $.ig.PropertyChangedEventArgs = $.ig.Object.extend({
         init: function (propertyName) {
-            var __start = new Date().getTime();
+            __pushstack('init');
+            var __start = _getstart();
             this._propertyName = propertyName;
-            {
-                var __ms = new Date().getTime() - __start;
-                _putstat('init', __ms);
-            }
+            _putstat('init', __start);
+            __popstack();
         },
         _propertyName: null,
         propertyName: function (value) {
-            var __start = new Date().getTime();
+            __pushstack('propertyName');
+            var __start = _getstart();
             if (arguments.length === 0) {
-                {
-                    var __ms = new Date().getTime() - __start;
-                    _putstat('propertyName', __ms);
-                }
+                _putstat('propertyName', __start);
+                __popstack();
                 return this._propertyName;
             } else {
                 this._propertyName = value;
             }
-            {
-                var __ms = new Date().getTime() - __start;
-                _putstat('propertyName', __ms);
-            }
+            _putstat('propertyName', __start);
+            __popstack();
         },
         $type: new $.ig.Type('PropertyChangedEventArgs', $.ig.Object.$type)
     }, true);
@@ -2282,7 +2111,8 @@
     }, true);
     $.ig.XmlDocumentParser = Class.extend({
         parse: function (markup) {
-            var __start = new Date().getTime();
+            __pushstack('parse');
+            var __start = _getstart();
             if (!window.DOMParser) {
                 var parsers = [
                         'Msxml2.DOMDocument.3.0',
@@ -2294,10 +2124,8 @@
                         xmlDOM.async = false;
                         xmlDOM.loadXML(markup);
                         xmlDOM.setProperty('SelectionLanguage', 'XPath');
-                        {
-                            var __ms = new Date().getTime() - __start;
-                            _putstat('parse', __ms);
-                        }
+                        _putstat('parse', __start);
+                        __popstack();
                         return xmlDOM;
                     } catch (ex) {
                     }
@@ -2305,324 +2133,276 @@
             } else {
                 try {
                     var domParser = new DOMParser();
-                    {
-                        var __ms = new Date().getTime() - __start;
-                        _putstat('parse', __ms);
-                    }
+                    _putstat('parse', __start);
+                    __popstack();
                     return domParser.parseFromString(markup, 'text/xml');
                 } catch (ex) {
                 }
             }
-            {
-                var __ms = new Date().getTime() - __start;
-                _putstat('parse', __ms);
-            }
+            _putstat('parse', __start);
+            __popstack();
             return null;
         }
     }, true);
     $.ig.Array = Array;
     $.ig.extendNativePrototype(Array.prototype, 'add', function (item) {
-        var __start = new Date().getTime();
+        __pushstack('anonymous');
+        var __start = _getstart();
         this[this.length] = item;
-        {
-            var __ms = new Date().getTime() - __start;
-            _putstat('anonymous', __ms);
-        }
+        _putstat('anonymous', __start);
+        __popstack();
     });
     $.ig.addToArray = function (arr, item) {
-        var __start = new Date().getTime();
+        __pushstack('addToArray');
+        var __start = _getstart();
         arr[arr.length] = item;
-        {
-            var __ms = new Date().getTime() - __start;
-            _putstat('addToArray', __ms);
-        }
+        _putstat('addToArray', __start);
+        __popstack();
     };
     $.ig.indexInArray = function (arr, item) {
-        var __start = new Date().getTime();
+        __pushstack('indexInArray');
+        var __start = _getstart();
         for (var i = 0; i < arr.length; i++) {
             if (arr[i] == item)
                 return i;
         }
-        {
-            var __ms = new Date().getTime() - __start;
-            _putstat('indexInArray', __ms);
-        }
+        _putstat('indexInArray', __start);
+        __popstack();
         return -1;
     };
     $.ig.arrayContains = function (arr, item) {
-        var __start = new Date().getTime();
+        __pushstack('arrayContains');
+        var __start = _getstart();
         var index = arr.indexOf(item);
-        {
-            var __ms = new Date().getTime() - __start;
-            _putstat('arrayContains', __ms);
-        }
+        _putstat('arrayContains', __start);
+        __popstack();
         return index >= 0;
     };
     $.ig.extendNativePrototype(Array.prototype, 'indexOf', function (item) {
-        var __start = new Date().getTime();
+        __pushstack('anonymous');
+        var __start = _getstart();
         for (var i = 0; i < this.length; i++) {
             if (this[i] == item)
                 return i;
         }
-        {
-            var __ms = new Date().getTime() - __start;
-            _putstat('anonymous', __ms);
-        }
+        _putstat('anonymous', __start);
+        __popstack();
         return -1;
     });
     $.ig.extendNativePrototype(Array.prototype, 'copy', function (source, sourceIndex, dest, destIndex, count) {
-        var __start = new Date().getTime();
+        __pushstack('anonymous');
+        var __start = _getstart();
         for (i = 0; i < count; i++) {
             dest[destIndex + i] = source[sourceIndex + i];
         }
-        {
-            var __ms = new Date().getTime() - __start;
-            _putstat('anonymous', __ms);
-        }
+        _putstat('anonymous', __start);
+        __popstack();
     });
     $.ig.removeFromArray = function (arr, from, to) {
-        var __start = new Date().getTime();
+        __pushstack('removeFromArray');
+        var __start = _getstart();
         var rest = arr.slice((to || from) + 1 || arr.length);
         arr.length = from < 0 ? arr.length + from : from;
-        {
-            var __ms = new Date().getTime() - __start;
-            _putstat('removeFromArray', __ms);
-        }
+        _putstat('removeFromArray', __start);
+        __popstack();
         return arr.push.apply(arr, rest);
     };
     $.ig.extendNativePrototype(Array.prototype, 'contains', function (item) {
-        var __start = new Date().getTime();
+        __pushstack('anonymous');
+        var __start = _getstart();
         var index = this.indexOf(item);
-        {
-            var __ms = new Date().getTime() - __start;
-            _putstat('anonymous', __ms);
-        }
+        _putstat('anonymous', __start);
+        __popstack();
         return index >= 0;
     });
     $.ig.extendNativePrototype(Array.prototype, 'insert', function (index, item) {
-        var __start = new Date().getTime();
+        __pushstack('anonymous');
+        var __start = _getstart();
         this.splice(index, 0, item);
-        {
-            var __ms = new Date().getTime() - __start;
-            _putstat('anonymous', __ms);
-        }
+        _putstat('anonymous', __start);
+        __popstack();
     });
     $.ig.extendNativePrototype(Array.prototype, 'removeAt', function (i) {
-        var __start = new Date().getTime();
+        __pushstack('anonymous');
+        var __start = _getstart();
         this.splice(i, 1);
-        {
-            var __ms = new Date().getTime() - __start;
-            _putstat('anonymous', __ms);
-        }
+        _putstat('anonymous', __start);
+        __popstack();
     });
     $.ig.extendNativePrototype(Array.prototype, 'removeItem', function (item) {
-        var __start = new Date().getTime();
+        __pushstack('anonymous');
+        var __start = _getstart();
         var index = this.indexOf(item);
         if (index >= 0) {
             this.splice(index, 1);
-            {
-                var __ms = new Date().getTime() - __start;
-                _putstat('anonymous', __ms);
-            }
+            _putstat('anonymous', __start);
+            __popstack();
             return true;
         }
-        {
-            var __ms = new Date().getTime() - __start;
-            _putstat('anonymous', __ms);
-        }
+        _putstat('anonymous', __start);
+        __popstack();
         return false;
     });
     $.ig.extendNativePrototype(Array.prototype, 'getEnumerator', function () {
-        var __start = new Date().getTime();
-        {
-            var __ms = new Date().getTime() - __start;
-            _putstat('anonymous', __ms);
-        }
+        __pushstack('anonymous');
+        var __start = _getstart();
+        _putstat('anonymous', __start);
+        __popstack();
         return new $.ig.ArrayEnumerator(this);
     });
     $.ig.extendNativePrototype(Array.prototype, 'count', function () {
-        var __start = new Date().getTime();
-        {
-            var __ms = new Date().getTime() - __start;
-            _putstat('anonymous', __ms);
-        }
+        __pushstack('anonymous');
+        var __start = _getstart();
+        _putstat('anonymous', __start);
+        __popstack();
         return this.length;
     });
     $.ig.extendNativePrototype(Array.prototype, 'item', function (index, value) {
-        var __start = new Date().getTime();
+        __pushstack('anonymous');
+        var __start = _getstart();
         if (arguments.length === 2) {
             this[index] = value;
-            {
-                var __ms = new Date().getTime() - __start;
-                _putstat('anonymous', __ms);
-            }
+            _putstat('anonymous', __start);
+            __popstack();
             return value;
         } else {
-            {
-                var __ms = new Date().getTime() - __start;
-                _putstat('anonymous', __ms);
-            }
+            _putstat('anonymous', __start);
+            __popstack();
             return this[index];
         }
-        {
-            var __ms = new Date().getTime() - __start;
-            _putstat('anonymous', __ms);
-        }
+        _putstat('anonymous', __start);
+        __popstack();
     });
     $.ig.extendNativePrototype(Array.prototype, 'getLength', function (dimension) {
-        var __start = new Date().getTime();
+        __pushstack('anonymous');
+        var __start = _getstart();
         if (dimension === 0) {
-            {
-                var __ms = new Date().getTime() - __start;
-                _putstat('anonymous', __ms);
-            }
+            _putstat('anonymous', __start);
+            __popstack();
             return this.length;
         } else {
-            {
-                var __ms = new Date().getTime() - __start;
-                _putstat('anonymous', __ms);
-            }
+            _putstat('anonymous', __start);
+            __popstack();
             return this.dimensionLength[dimension - 1];
         }
-        {
-            var __ms = new Date().getTime() - __start;
-            _putstat('anonymous', __ms);
-        }
+        _putstat('anonymous', __start);
+        __popstack();
     });
     $.ig.extendNativePrototype(Array.prototype, 'clear', function () {
-        var __start = new Date().getTime();
+        __pushstack('anonymous');
+        var __start = _getstart();
         this.length = 0;
-        {
-            var __ms = new Date().getTime() - __start;
-            _putstat('anonymous', __ms);
-        }
+        _putstat('anonymous', __start);
+        __popstack();
     });
     $.ig.extendNativePrototype(Array.prototype, 'resize', function () {
-        var __start = new Date().getTime();
+        __pushstack('anonymous');
+        var __start = _getstart();
         this.length = 0;
-        {
-            var __ms = new Date().getTime() - __start;
-            _putstat('anonymous', __ms);
-        }
+        _putstat('anonymous', __start);
+        __popstack();
     });
     $.ig.ArrayEnumerator = Class.extend({
         init: function (array) {
-            var __start = new Date().getTime();
+            __pushstack('init');
+            var __start = _getstart();
             this._array = array;
             this._index = -1;
-            {
-                var __ms = new Date().getTime() - __start;
-                _putstat('init', __ms);
-            }
+            _putstat('init', __start);
+            __popstack();
         },
         current: function () {
-            var __start = new Date().getTime();
-            {
-                var __ms = new Date().getTime() - __start;
-                _putstat('current', __ms);
-            }
+            __pushstack('current');
+            var __start = _getstart();
+            _putstat('current', __start);
+            __popstack();
             return this._array[this._index];
         },
         moveNext: function () {
-            var __start = new Date().getTime();
+            __pushstack('moveNext');
+            var __start = _getstart();
             this._index++;
-            {
-                var __ms = new Date().getTime() - __start;
-                _putstat('moveNext', __ms);
-            }
+            _putstat('moveNext', __start);
+            __popstack();
             return this._index < this._array.length;
         },
         reset: function () {
-            var __start = new Date().getTime();
+            __pushstack('reset');
+            var __start = _getstart();
             this._index = -1;
-            {
-                var __ms = new Date().getTime() - __start;
-                _putstat('reset', __ms);
-            }
+            _putstat('reset', __start);
+            __popstack();
         }
     }, true);
     $.ig.Date = Class.extend({
         init: function () {
-            var __start = new Date().getTime();
-            {
-                var __ms = new Date().getTime() - __start;
-                _putstat('init', __ms);
-            }
+            __pushstack('init');
+            var __start = _getstart();
+            _putstat('init', __start);
+            __popstack();
         },
         $type: new $.ig.Type('Date', $.ig.Object.$type)
     }, true);
     $.ig.Date.prototype.now = function () {
-        var __start = new Date().getTime();
-        {
-            var __ms = new Date().getTime() - __start;
-            _putstat('now', __ms);
-        }
+        __pushstack('now');
+        var __start = _getstart();
+        _putstat('now', __start);
+        __popstack();
         return new Date();
     };
     $.ig.Date.prototype.minValue = function () {
-        var __start = new Date().getTime();
-        {
-            var __ms = new Date().getTime() - __start;
-            _putstat('minValue', __ms);
-        }
+        __pushstack('minValue');
+        var __start = _getstart();
+        _putstat('minValue', __start);
+        __popstack();
         return new Date(1, 1, 1, 0, 0, 0, 0);
     };
     $.ig.Date.prototype.maxValue = function () {
-        var __start = new Date().getTime();
-        {
-            var __ms = new Date().getTime() - __start;
-            _putstat('maxValue', __ms);
-        }
+        __pushstack('maxValue');
+        var __start = _getstart();
+        _putstat('maxValue', __start);
+        __popstack();
         return new Date(9999, 12, 31, 23, 59, 59, 0.9999999);
     };
     $.ig.Date.prototype.fromMilliseconds = function (value) {
-        var __start = new Date().getTime();
-        {
-            var __ms = new Date().getTime() - __start;
-            _putstat('fromMilliseconds', __ms);
-        }
+        __pushstack('fromMilliseconds');
+        var __start = _getstart();
+        _putstat('fromMilliseconds', __start);
+        __popstack();
         return value;
     };
     $.ig.util.canAssign = function (targetType, type) {
-        var __start = new Date().getTime();
+        __pushstack('canAssign');
+        var __start = _getstart();
         if ($.ig.Type.prototype.checkEquals(targetType, type)) {
-            {
-                var __ms = new Date().getTime() - __start;
-                _putstat('canAssign', __ms);
-            }
+            _putstat('canAssign', __start);
+            __popstack();
             return true;
         }
         if (type.interfaces) {
             for (var i = 0; i < type.interfaces.length; i++) {
                 if ($.ig.util.canAssign(targetType, type.interfaces[i])) {
-                    {
-                        var __ms = new Date().getTime() - __start;
-                        _putstat('canAssign', __ms);
-                    }
+                    _putstat('canAssign', __start);
+                    __popstack();
                     return true;
                 }
             }
         }
         if (type.baseType) {
-            {
-                var __ms = new Date().getTime() - __start;
-                _putstat('canAssign', __ms);
-            }
+            _putstat('canAssign', __start);
+            __popstack();
             return $.ig.util.canAssign(targetType, type.baseType);
         }
-        {
-            var __ms = new Date().getTime() - __start;
-            _putstat('canAssign', __ms);
-        }
+        _putstat('canAssign', __start);
+        __popstack();
         return false;
     };
     $.ig.util.cast = function (targetType, obj) {
-        var __start = new Date().getTime();
+        __pushstack('cast');
+        var __start = _getstart();
         if (obj == null) {
-            {
-                var __ms = new Date().getTime() - __start;
-                _putstat('cast', __ms);
-            }
+            _putstat('cast', __start);
+            __popstack();
             return null;
         }
         var type = obj;
@@ -2630,71 +2410,60 @@
             type = obj.$type;
         }
         if ($.ig.util.canAssign(targetType, type)) {
-            {
-                var __ms = new Date().getTime() - __start;
-                _putstat('cast', __ms);
-            }
+            _putstat('cast', __start);
+            __popstack();
             return obj;
         } else {
-            {
-                var __ms = new Date().getTime() - __start;
-                _putstat('cast', __ms);
-            }
+            _putstat('cast', __start);
+            __popstack();
             return null;
         }
-        {
-            var __ms = new Date().getTime() - __start;
-            _putstat('cast', __ms);
-        }
+        _putstat('cast', __start);
+        __popstack();
     };
     $.ig.Dictionary = Class.extend({
         init: function () {
-            var __start = new Date().getTime();
+            __pushstack('init');
+            var __start = _getstart();
             this.proxy = {};
             this.keysHolder = this.proxy;
             this._count = 0;
-            {
-                var __ms = new Date().getTime() - __start;
-                _putstat('init', __ms);
-            }
+            _putstat('init', __start);
+            __popstack();
         },
         $type: new $.ig.Type('Dictionary', $.ig.Object.prototype.$type),
         proxy: null
     }, true);
     $.ig.Dictionary.prototype.getDictionary = function (o) {
-        var __start = new Date().getTime();
+        __pushstack('getDictionary');
+        var __start = _getstart();
         var dict = new $.ig.Dictionary();
         dict.proxy = o;
         dict.keysHolder = o;
-        {
-            var __ms = new Date().getTime() - __start;
-            _putstat('getDictionary', __ms);
-        }
+        _putstat('getDictionary', __start);
+        __popstack();
         return dict;
     };
     $.ig.Dictionary.prototype.containsKey = function (key) {
-        var __start = new Date().getTime();
-        {
-            var __ms = new Date().getTime() - __start;
-            _putstat('containsKey', __ms);
-        }
+        __pushstack('containsKey');
+        var __start = _getstart();
+        _putstat('containsKey', __start);
+        __popstack();
         return this.proxy[key] !== undefined;
     };
     $.ig.Dictionary.prototype.count = function () {
-        var __start = new Date().getTime();
-        {
-            var __ms = new Date().getTime() - __start;
-            _putstat('count', __ms);
-        }
+        __pushstack('count');
+        var __start = _getstart();
+        _putstat('count', __start);
+        __popstack();
         return this._count;
     };
     $.ig.Dictionary.prototype.item = function (key, value) {
-        var __start = new Date().getTime();
+        __pushstack('item');
+        var __start = _getstart();
         if (arguments.length === 1) {
-            {
-                var __ms = new Date().getTime() - __start;
-                _putstat('item', __ms);
-            }
+            _putstat('item', __start);
+            __popstack();
             return this.proxy[key];
         } else {
             if (!this.proxy[key]) {
@@ -2702,143 +2471,127 @@
             }
             this.proxy[key] = value;
         }
-        {
-            var __ms = new Date().getTime() - __start;
-            _putstat('item', __ms);
-        }
+        _putstat('item', __start);
+        __popstack();
     };
     $.ig.Dictionary.prototype.add = function (key, value) {
-        var __start = new Date().getTime();
+        __pushstack('add');
+        var __start = _getstart();
         if (!this.proxy[key]) {
             this._count++;
         }
         this.proxy[key] = value;
-        {
-            var __ms = new Date().getTime() - __start;
-            _putstat('add', __ms);
-        }
+        _putstat('add', __start);
+        __popstack();
     };
     $.ig.Dictionary.prototype.remove = function (key) {
-        var __start = new Date().getTime();
+        __pushstack('remove');
+        var __start = _getstart();
         delete this.proxy[key];
         this._count--;
-        {
-            var __ms = new Date().getTime() - __start;
-            _putstat('remove', __ms);
-        }
+        _putstat('remove', __start);
+        __popstack();
     };
     $.ig.Dictionary.prototype.keys = function () {
-        var __start = new Date().getTime();
-        {
-            var __ms = new Date().getTime() - __start;
-            _putstat('keys', __ms);
-        }
+        __pushstack('keys');
+        var __start = _getstart();
+        _putstat('keys', __start);
+        __popstack();
         return new $.ig.KeyEnumerator(this);
     };
     $.ig.Dictionary.prototype.values = function () {
-        var __start = new Date().getTime();
-        {
-            var __ms = new Date().getTime() - __start;
-            _putstat('values', __ms);
-        }
+        __pushstack('values');
+        var __start = _getstart();
+        _putstat('values', __start);
+        __popstack();
         return new $.ig.ValueEnumerator(this);
     };
     $.ig.Dictionary.prototype.clear = function () {
-        var __start = new Date().getTime();
+        __pushstack('clear');
+        var __start = _getstart();
         this.proxy = {};
         this.keysHolder = this.proxy;
         this._count = 0;
-        {
-            var __ms = new Date().getTime() - __start;
-            _putstat('clear', __ms);
-        }
+        _putstat('clear', __start);
+        __popstack();
     };
     $.ig.EventArgs = $.ig.Object.extend({
         init: function () {
-            var __start = new Date().getTime();
-            {
-                var __ms = new Date().getTime() - __start;
-                _putstat('init', __ms);
-            }
+            __pushstack('init');
+            var __start = _getstart();
+            _putstat('init', __start);
+            __popstack();
         }
     }, true);
     $.ig.String = Class.extend({ $type: new $.ig.Type('String', $.ig.Object.prototype.$type) }, true);
     $.ig.String.prototype.isDigit = function (str, index) {
-        var __start = new Date().getTime();
+        __pushstack('isDigit');
+        var __start = _getstart();
         index = index || 0;
         var ch = str.charAt(index);
         if (ch >= '0' && ch <= '9')
             return true;
-        {
-            var __ms = new Date().getTime() - __start;
-            _putstat('isDigit', __ms);
-        }
+        _putstat('isDigit', __start);
+        __popstack();
         return false;
     };
     $.ig.Number = Class.extend({ $type: new $.ig.Type('Number', $.ig.Object.prototype.$type) }, true);
     $.ig.Number.prototype.parseInt = function (a, b) {
-        var __start = new Date().getTime();
-        {
-            var __ms = new Date().getTime() - __start;
-            _putstat('parseInt', __ms);
-        }
+        __pushstack('parseInt');
+        var __start = _getstart();
+        _putstat('parseInt', __start);
+        __popstack();
         return parseInt(a, b);
     };
     $.ig.Number.prototype.log10 = function (x) {
-        var __start = new Date().getTime();
-        {
-            var __ms = new Date().getTime() - __start;
-            _putstat('log10', __ms);
-        }
+        __pushstack('log10');
+        var __start = _getstart();
+        _putstat('log10', __start);
+        __popstack();
         return Math.log(x) / Math.log(10);
     };
     $.ig.Single = Class.extend({}, true);
     $.ig.Single.prototype.parseFloat = function (s) {
-        var __start = new Date().getTime();
-        {
-            var __ms = new Date().getTime() - __start;
-            _putstat('parseFloat', __ms);
-        }
+        __pushstack('parseFloat');
+        var __start = _getstart();
+        _putstat('parseFloat', __start);
+        __popstack();
         return parseFloat(s);
     };
     $.ig.Single.prototype.isInfinity = function (s) {
-        var __start = new Date().getTime();
-        {
-            var __ms = new Date().getTime() - __start;
-            _putstat('isInfinity', __ms);
-        }
+        __pushstack('isInfinity');
+        var __start = _getstart();
+        _putstat('isInfinity', __start);
+        __popstack();
         return s === Infinity || s === -Infinity;
     };
     $.ig.Int32 = Class.extend({ $type: new $.ig.Type('Int32', $.ig.Object.prototype.$type) }, true);
     $.ig.Double = Class.extend({ $type: new $.ig.Type('Double', $.ig.Object.prototype.$type) }, true);
     $.ig.Delegate = Class.extend({ $type: new $.ig.Type('Delegate', $.ig.Object.prototype.$type) }, true);
     $.ig.Delegate.prototype.combine = function (del1, del2) {
-        var __start = new Date().getTime();
+        __pushstack('combine');
+        var __start = _getstart();
         if (!del1) {
-            {
-                var __ms = new Date().getTime() - __start;
-                _putstat('combine', __ms);
-            }
+            _putstat('combine', __start);
+            __popstack();
             return del2;
         }
         if (!del2) {
-            {
-                var __ms = new Date().getTime() - __start;
-                _putstat('combine', __ms);
-            }
+            _putstat('combine', __start);
+            __popstack();
             return del1;
         }
         var ret = function () {
-            var __start = new Date().getTime();
+            __pushstack('ret');
+            var __start = _getstart();
             del1.apply(null, arguments);
-            {
-                var __ms = new Date().getTime() - __start;
-                _putstat('ret', __ms);
-            }
+            _putstat('ret', __start);
+            __popstack();
             return del2.apply(null, arguments);
         };
         ret.enumerate = function (arr) {
-            var __start = new Date().getTime();
+            __pushstack('ret.enumerate');
+            var __start = _getstart();
             if (del1) {
                 if (del1.enumerate) {
                     del1.enumerate(arr);
@@ -2853,31 +2606,24 @@
                     arr.push(del2);
                 }
             }
-            {
-                var __ms = new Date().getTime() - __start;
-                _putstat('ret.enumerate', __ms);
-            }
+            _putstat('ret.enumerate', __start);
+            __popstack();
         };
-        {
-            var __ms = new Date().getTime() - __start;
-            _putstat('combine', __ms);
-        }
+        _putstat('combine', __start);
+        __popstack();
         return ret;
     };
     $.ig.Delegate.prototype.remove = function (del1, del2) {
-        var __start = new Date().getTime();
+        __pushstack('remove');
+        var __start = _getstart();
         if (!del1) {
-            {
-                var __ms = new Date().getTime() - __start;
-                _putstat('remove', __ms);
-            }
+            _putstat('remove', __start);
+            __popstack();
             return null;
         }
         if (!del2) {
-            {
-                var __ms = new Date().getTime() - __start;
-                _putstat('remove', __ms);
-            }
+            _putstat('remove', __start);
+            __popstack();
             return del1;
         }
         var arr = [];
@@ -2898,39 +2644,32 @@
             }
             del = $.ig.Delegate.prototype.combine(del, arr[i]);
         }
-        {
-            var __ms = new Date().getTime() - __start;
-            _putstat('remove', __ms);
-        }
+        _putstat('remove', __start);
+        __popstack();
         return del;
     };
     $.ig.ReflectionUtil = Class.extend({ $type: new $.ig.Type('ReflectionUtil', $.ig.Object.prototype.$type) }, true);
     $.ig.ReflectionUtil.prototype.getPropertyGetter = function (type, propertyName) {
-        var __start = new Date().getTime();
+        __pushstack('getPropertyGetter');
+        var __start = _getstart();
         if (typeof type.prototype[propertyName] === 'function') {
-            {
-                var __ms = new Date().getTime() - __start;
-                _putstat('getPropertyGetter', __ms);
-            }
+            _putstat('getPropertyGetter', __start);
+            __popstack();
             return function (instance) {
-                var __start = new Date().getTime();
-                {
-                    var __ms = new Date().getTime() - __start;
-                    _putstat('anonymous', __ms);
-                }
+                __pushstack('anonymous');
+                var __start = _getstart();
+                _putstat('anonymous', __start);
+                __popstack();
                 return type.prototype[propertyName].apply(instance, arguments);
             };
         }
-        {
-            var __ms = new Date().getTime() - __start;
-            _putstat('getPropertyGetter', __ms);
-        }
+        _putstat('getPropertyGetter', __start);
+        __popstack();
         return function (instance) {
-            var __start = new Date().getTime();
-            {
-                var __ms = new Date().getTime() - __start;
-                _putstat('anonymous', __ms);
-            }
+            __pushstack('anonymous');
+            var __start = _getstart();
+            _putstat('anonymous', __start);
+            __popstack();
             return instance[propertyName];
         };
     };
@@ -2940,7 +2679,8 @@
     $.ig.IList = Class.extend({ $type: new $.ig.Type('IList', null, [$.ig.IEnumerable.prototype.$type]) }, true);
     $.ig.Error = Class.extend({
         init: function (initNumber) {
-            var __start = new Date().getTime();
+            __pushstack('init');
+            var __start = _getstart();
             if (initNumber > 0) {
                 switch (initNumber) {
                 case 1:
@@ -2950,58 +2690,51 @@
                     this.init2.apply(this, arguments);
                     break;
                 }
-                {
-                    var __ms = new Date().getTime() - __start;
-                    _putstat('init', __ms);
-                }
+                _putstat('init', __start);
+                __popstack();
                 return;
             }
             this.__message = null;
             this.__innerException = null;
-            {
-                var __ms = new Date().getTime() - __start;
-                _putstat('init', __ms);
-            }
+            _putstat('init', __start);
+            __popstack();
         },
         init1: function (initNumber, message) {
-            var __start = new Date().getTime();
+            __pushstack('init1');
+            var __start = _getstart();
             this.__message = message;
-            {
-                var __ms = new Date().getTime() - __start;
-                _putstat('init1', __ms);
-            }
+            _putstat('init1', __start);
+            __popstack();
         },
         init2: function (initNumber, message, innerException) {
-            var __start = new Date().getTime();
+            __pushstack('init2');
+            var __start = _getstart();
             this.__message = message;
             this.__innerException = innerException;
-            {
-                var __ms = new Date().getTime() - __start;
-                _putstat('init2', __ms);
-            }
+            _putstat('init2', __start);
+            __popstack();
         },
         $type: new $.ig.Type('Error', $.ig.Object.prototype.$type)
     }, true);
     $.ig.Error.prototype.message = function () {
-        var __start = new Date().getTime();
-        {
-            var __ms = new Date().getTime() - __start;
-            _putstat('message', __ms);
-        }
+        __pushstack('message');
+        var __start = _getstart();
+        _putstat('message', __start);
+        __popstack();
         return this.__message;
     };
     $.ig.Error.prototype.innerException = function () {
-        var __start = new Date().getTime();
-        {
-            var __ms = new Date().getTime() - __start;
-            _putstat('innerException', __ms);
-        }
+        __pushstack('innerException');
+        var __start = _getstart();
+        _putstat('innerException', __start);
+        __popstack();
         return this.__innerException;
     };
     $.ig.IDictionary = Class.extend({ $type: new $.ig.Type('IDictionary', null) }, true);
     $.ig.ValueEnumerator = Class.extend({
         init: function (dict) {
-            var __start = new Date().getTime();
+            __pushstack('init');
+            var __start = _getstart();
             this._dict = dict;
             this._index = -1;
             this._count = 0;
@@ -3010,50 +2743,45 @@
                 this._values[this._count] = this._dict.proxy[item];
                 this._count++;
             }
-            {
-                var __ms = new Date().getTime() - __start;
-                _putstat('init', __ms);
-            }
+            _putstat('init', __start);
+            __popstack();
         },
         current: function () {
-            var __start = new Date().getTime();
-            {
-                var __ms = new Date().getTime() - __start;
-                _putstat('current', __ms);
-            }
+            __pushstack('current');
+            var __start = _getstart();
+            _putstat('current', __start);
+            __popstack();
             return this._values[this._index];
         },
         moveNext: function () {
-            var __start = new Date().getTime();
+            __pushstack('moveNext');
+            var __start = _getstart();
             this._index++;
-            {
-                var __ms = new Date().getTime() - __start;
-                _putstat('moveNext', __ms);
-            }
+            _putstat('moveNext', __start);
+            __popstack();
             return this._index < this._count;
         },
         reset: function () {
-            var __start = new Date().getTime();
+            __pushstack('reset');
+            var __start = _getstart();
             this._index = -1;
-            {
-                var __ms = new Date().getTime() - __start;
-                _putstat('reset', __ms);
-            }
+            _putstat('reset', __start);
+            __popstack();
         },
         getEnumerator: function () {
-            var __start = new Date().getTime();
+            __pushstack('getEnumerator');
+            var __start = _getstart();
             this.reset();
-            {
-                var __ms = new Date().getTime() - __start;
-                _putstat('getEnumerator', __ms);
-            }
+            _putstat('getEnumerator', __start);
+            __popstack();
             return this;
         },
         $type: new $.ig.Type('ValueEnumerator', $.ig.Object.prototype.$type, [$.ig.IEnumerable.prototype.$type])
     }, true);
     $.ig.KeyEnumerator = Class.extend({
         init: function (dict) {
-            var __start = new Date().getTime();
+            __pushstack('init');
+            var __start = _getstart();
             this._dict = dict;
             this._index = -1;
             this._count = 0;
@@ -3062,82 +2790,68 @@
                 this._keys[this._count] = item;
                 this._count++;
             }
-            {
-                var __ms = new Date().getTime() - __start;
-                _putstat('init', __ms);
-            }
+            _putstat('init', __start);
+            __popstack();
         },
         current: function () {
-            var __start = new Date().getTime();
-            {
-                var __ms = new Date().getTime() - __start;
-                _putstat('current', __ms);
-            }
+            __pushstack('current');
+            var __start = _getstart();
+            _putstat('current', __start);
+            __popstack();
             return this._keys[this._index];
         },
         moveNext: function () {
-            var __start = new Date().getTime();
+            __pushstack('moveNext');
+            var __start = _getstart();
             this._index++;
-            {
-                var __ms = new Date().getTime() - __start;
-                _putstat('moveNext', __ms);
-            }
+            _putstat('moveNext', __start);
+            __popstack();
             return this._index < this._count;
         },
         reset: function () {
-            var __start = new Date().getTime();
+            __pushstack('reset');
+            var __start = _getstart();
             this._index = -1;
-            {
-                var __ms = new Date().getTime() - __start;
-                _putstat('reset', __ms);
-            }
+            _putstat('reset', __start);
+            __popstack();
         },
         getEnumerator: function () {
-            var __start = new Date().getTime();
+            __pushstack('getEnumerator');
+            var __start = _getstart();
             this.reset();
-            {
-                var __ms = new Date().getTime() - __start;
-                _putstat('getEnumerator', __ms);
-            }
+            _putstat('getEnumerator', __start);
+            __popstack();
             return this;
         },
         $type: new $.ig.Type('KeyEnumerator', $.ig.Object.prototype.$type, [$.ig.IEnumerable.prototype.$type])
     }, true);
     $.ig.intDivide = function (int1, int2) {
-        var __start = new Date().getTime();
+        __pushstack('intDivide');
+        var __start = _getstart();
         var result = int1 / int2;
         if (result >= 0) {
-            {
-                var __ms = new Date().getTime() - __start;
-                _putstat('intDivide', __ms);
-            }
+            _putstat('intDivide', __start);
+            __popstack();
             return Math.floor(result);
         } else {
-            {
-                var __ms = new Date().getTime() - __start;
-                _putstat('intDivide', __ms);
-            }
+            _putstat('intDivide', __start);
+            __popstack();
             return Math.ceil(result);
         }
-        {
-            var __ms = new Date().getTime() - __start;
-            _putstat('intDivide', __ms);
-        }
+        _putstat('intDivide', __start);
+        __popstack();
     };
     $.ig.Nullable = Class.extend({
         getUnderlyingType: function (nullableType) {
-            var __start = new Date().getTime();
+            __pushstack('getUnderlyingType');
+            var __start = _getstart();
             if (nullableType.isGenericType !== undefined && nullableType.isGenericType() && !nullableType.isGenericTypeDefinition() && $.ig.Nullable$1.prototype.$type.typeName() == nullableType.typeName()) {
-                {
-                    var __ms = new Date().getTime() - __start;
-                    _putstat('getUnderlyingType', __ms);
-                }
+                _putstat('getUnderlyingType', __start);
+                __popstack();
                 return nullableType.genericTypeArguments()[0];
             }
-            {
-                var __ms = new Date().getTime() - __start;
-                _putstat('getUnderlyingType', __ms);
-            }
+            _putstat('getUnderlyingType', __start);
+            __popstack();
             return null;
         },
         $type: new $.ig.Type('Nullable', $.ig.Object.prototype.$type)
@@ -3145,142 +2859,114 @@
     $.ig.Nullable$1 = Class.extend({
         $t: null,
         init: function ($t, value) {
-            var __start = new Date().getTime();
+            __pushstack('init');
+            var __start = _getstart();
             this.$t = $t;
             this.$type = this.$type.specialize(this.$t);
             $.ig.Object.prototype.init.call(this);
             if (value !== undefined) {
                 this._value = value;
             }
-            {
-                var __ms = new Date().getTime() - __start;
-                _putstat('init', __ms);
-            }
+            _putstat('init', __start);
+            __popstack();
         },
         hasValue: function () {
-            var __start = new Date().getTime();
-            {
-                var __ms = new Date().getTime() - __start;
-                _putstat('hasValue', __ms);
-            }
+            __pushstack('hasValue');
+            var __start = _getstart();
+            _putstat('hasValue', __start);
+            __popstack();
             return this._value !== null;
         },
         _value: null,
         value: function (value) {
-            var __start = new Date().getTime();
+            __pushstack('value');
+            var __start = _getstart();
             if (arguments.length === 1) {
                 this._value = value;
             } else {
-                {
-                    var __ms = new Date().getTime() - __start;
-                    _putstat('value', __ms);
-                }
+                _putstat('value', __start);
+                __popstack();
                 return this._value;
             }
-            {
-                var __ms = new Date().getTime() - __start;
-                _putstat('value', __ms);
-            }
+            _putstat('value', __start);
+            __popstack();
         },
         getValueOrDefault: function () {
-            var __start = new Date().getTime();
+            __pushstack('getValueOrDefault');
+            var __start = _getstart();
             if (this.hasValue()) {
-                {
-                    var __ms = new Date().getTime() - __start;
-                    _putstat('getValueOrDefault', __ms);
-                }
+                _putstat('getValueOrDefault', __start);
+                __popstack();
                 return this._value;
             } else {
-                {
-                    var __ms = new Date().getTime() - __start;
-                    _putstat('getValueOrDefault', __ms);
-                }
+                _putstat('getValueOrDefault', __start);
+                __popstack();
                 return getDefaultValue();
             }
-            {
-                var __ms = new Date().getTime() - __start;
-                _putstat('getValueOrDefault', __ms);
-            }
+            _putstat('getValueOrDefault', __start);
+            __popstack();
         },
         getDefaultValue: function () {
-            var __start = new Date().getTime();
+            __pushstack('getDefaultValue');
+            var __start = _getstart();
             if ($.ig.util.canAssign($.ig.Number.prototype.$type, $t)) {
-                {
-                    var __ms = new Date().getTime() - __start;
-                    _putstat('getDefaultValue', __ms);
-                }
+                _putstat('getDefaultValue', __start);
+                __popstack();
                 return 0;
             } else if ($.ig.util.canAssign($.ig.Boolean.prototype.$type, $t)) {
-                {
-                    var __ms = new Date().getTime() - __start;
-                    _putstat('getDefaultValue', __ms);
-                }
+                _putstat('getDefaultValue', __start);
+                __popstack();
                 return false;
             } else {
-                {
-                    var __ms = new Date().getTime() - __start;
-                    _putstat('getDefaultValue', __ms);
-                }
+                _putstat('getDefaultValue', __start);
+                __popstack();
                 return null;
             }
-            {
-                var __ms = new Date().getTime() - __start;
-                _putstat('getDefaultValue', __ms);
-            }
+            _putstat('getDefaultValue', __start);
+            __popstack();
         },
         getValueOrDefault1: function (defaultValue) {
-            var __start = new Date().getTime();
+            __pushstack('getValueOrDefault1');
+            var __start = _getstart();
             if (this.hasValue()) {
-                {
-                    var __ms = new Date().getTime() - __start;
-                    _putstat('getValueOrDefault1', __ms);
-                }
+                _putstat('getValueOrDefault1', __start);
+                __popstack();
                 return this._value;
             } else {
-                {
-                    var __ms = new Date().getTime() - __start;
-                    _putstat('getValueOrDefault1', __ms);
-                }
+                _putstat('getValueOrDefault1', __start);
+                __popstack();
                 return defaultValue;
             }
-            {
-                var __ms = new Date().getTime() - __start;
-                _putstat('getValueOrDefault1', __ms);
-            }
+            _putstat('getValueOrDefault1', __start);
+            __popstack();
         },
         isNullable: true,
         $type: new $.ig.Type('Nullable$1', $.ig.Object.prototype.$type)
     }, true);
     $.ig.util.toNullable = function (t, value) {
-        var __start = new Date().getTime();
+        __pushstack('toNullable');
+        var __start = _getstart();
         if (value && value.isNullable) {
-            {
-                var __ms = new Date().getTime() - __start;
-                _putstat('toNullable', __ms);
-            }
+            _putstat('toNullable', __start);
+            __popstack();
             return value;
         }
         var ret = new $.ig.Nullable$1(t, value);
-        {
-            var __ms = new Date().getTime() - __start;
-            _putstat('toNullable', __ms);
-        }
+        _putstat('toNullable', __start);
+        __popstack();
         return ret;
     };
     $.ig.util.nullableAdd = function (v1, v2) {
-        var __start = new Date().getTime();
+        __pushstack('nullableAdd');
+        var __start = _getstart();
         if (v1.isNullable && !v1.hasValue()) {
-            {
-                var __ms = new Date().getTime() - __start;
-                _putstat('nullableAdd', __ms);
-            }
+            _putstat('nullableAdd', __start);
+            __popstack();
             return null;
         }
         if (v2.isNullable && !v2.hasValue()) {
-            {
-                var __ms = new Date().getTime() - __start;
-                _putstat('nullableAdd', __ms);
-            }
+            _putstat('nullableAdd', __start);
+            __popstack();
             return null;
         }
         var val1 = v1;
@@ -3291,26 +2977,21 @@
         if (v2.isNullable) {
             val2 = v2.value();
         }
-        {
-            var __ms = new Date().getTime() - __start;
-            _putstat('nullableAdd', __ms);
-        }
+        _putstat('nullableAdd', __start);
+        __popstack();
         return $.ig.util.toNullable($.ig.Number.prototype.$type, val1 + val2);
     };
     $.ig.util.nullableSubtract = function (v1, v2) {
-        var __start = new Date().getTime();
+        __pushstack('nullableSubtract');
+        var __start = _getstart();
         if (v1.isNullable && !v1.hasValue()) {
-            {
-                var __ms = new Date().getTime() - __start;
-                _putstat('nullableSubtract', __ms);
-            }
+            _putstat('nullableSubtract', __start);
+            __popstack();
             return null;
         }
         if (v2.isNullable && !v2.hasValue()) {
-            {
-                var __ms = new Date().getTime() - __start;
-                _putstat('nullableSubtract', __ms);
-            }
+            _putstat('nullableSubtract', __start);
+            __popstack();
             return null;
         }
         var val1 = v1;
@@ -3321,26 +3002,21 @@
         if (v2.isNullable) {
             val2 = v2.value();
         }
-        {
-            var __ms = new Date().getTime() - __start;
-            _putstat('nullableSubtract', __ms);
-        }
+        _putstat('nullableSubtract', __start);
+        __popstack();
         return $.ig.util.toNullable($.ig.Number.prototype.$type, val1 - val2);
     };
     $.ig.util.nullableMultiply = function (v1, v2) {
-        var __start = new Date().getTime();
+        __pushstack('nullableMultiply');
+        var __start = _getstart();
         if (v1.isNullable && !v1.hasValue()) {
-            {
-                var __ms = new Date().getTime() - __start;
-                _putstat('nullableMultiply', __ms);
-            }
+            _putstat('nullableMultiply', __start);
+            __popstack();
             return null;
         }
         if (v2.isNullable && !v2.hasValue()) {
-            {
-                var __ms = new Date().getTime() - __start;
-                _putstat('nullableMultiply', __ms);
-            }
+            _putstat('nullableMultiply', __start);
+            __popstack();
             return null;
         }
         var val1 = v1;
@@ -3351,26 +3027,21 @@
         if (v2.isNullable) {
             val2 = v2.value();
         }
-        {
-            var __ms = new Date().getTime() - __start;
-            _putstat('nullableMultiply', __ms);
-        }
+        _putstat('nullableMultiply', __start);
+        __popstack();
         return $.ig.util.toNullable($.ig.Number.prototype.$type, val1 * val2);
     };
     $.ig.util.nullableDivide = function (v1, v2) {
-        var __start = new Date().getTime();
+        __pushstack('nullableDivide');
+        var __start = _getstart();
         if (v1.isNullable && !v1.hasValue()) {
-            {
-                var __ms = new Date().getTime() - __start;
-                _putstat('nullableDivide', __ms);
-            }
+            _putstat('nullableDivide', __start);
+            __popstack();
             return null;
         }
         if (v2.isNullable && !v2.hasValue()) {
-            {
-                var __ms = new Date().getTime() - __start;
-                _putstat('nullableDivide', __ms);
-            }
+            _putstat('nullableDivide', __start);
+            __popstack();
             return null;
         }
         var val1 = v1;
@@ -3381,26 +3052,21 @@
         if (v2.isNullable) {
             val2 = v2.value();
         }
-        {
-            var __ms = new Date().getTime() - __start;
-            _putstat('nullableDivide', __ms);
-        }
+        _putstat('nullableDivide', __start);
+        __popstack();
         return $.ig.util.toNullable($.ig.Number.prototype.$type, val1 / val2);
     };
     $.ig.util.nullableModulus = function (v1, v2) {
-        var __start = new Date().getTime();
+        __pushstack('nullableModulus');
+        var __start = _getstart();
         if (v1.isNullable && !v1.hasValue()) {
-            {
-                var __ms = new Date().getTime() - __start;
-                _putstat('nullableModulus', __ms);
-            }
+            _putstat('nullableModulus', __start);
+            __popstack();
             return null;
         }
         if (v2.isNullable && !v2.hasValue()) {
-            {
-                var __ms = new Date().getTime() - __start;
-                _putstat('nullableModulus', __ms);
-            }
+            _putstat('nullableModulus', __start);
+            __popstack();
             return null;
         }
         var val1 = v1;
@@ -3411,26 +3077,21 @@
         if (v2.isNullable) {
             val2 = v2.value();
         }
-        {
-            var __ms = new Date().getTime() - __start;
-            _putstat('nullableModulus', __ms);
-        }
+        _putstat('nullableModulus', __start);
+        __popstack();
         return $.ig.util.toNullable($.ig.Number.prototype.$type, val1 % val2);
     };
     $.ig.util.nullableGreaterThan = function (v1, v2) {
-        var __start = new Date().getTime();
+        __pushstack('nullableGreaterThan');
+        var __start = _getstart();
         if (v1.isNullable && !v1.hasValue()) {
-            {
-                var __ms = new Date().getTime() - __start;
-                _putstat('nullableGreaterThan', __ms);
-            }
+            _putstat('nullableGreaterThan', __start);
+            __popstack();
             return false;
         }
         if (v2.isNullable && !v2.hasValue()) {
-            {
-                var __ms = new Date().getTime() - __start;
-                _putstat('nullableGreaterThan', __ms);
-            }
+            _putstat('nullableGreaterThan', __start);
+            __popstack();
             return false;
         }
         var val1 = v1;
@@ -3441,26 +3102,21 @@
         if (v2.isNullable) {
             val2 = v2.value();
         }
-        {
-            var __ms = new Date().getTime() - __start;
-            _putstat('nullableGreaterThan', __ms);
-        }
+        _putstat('nullableGreaterThan', __start);
+        __popstack();
         return val1 > val2;
     };
     $.ig.util.nullableGreaterThanOrEqual = function (v1, v2) {
-        var __start = new Date().getTime();
+        __pushstack('nullableGreaterThanOrEqual');
+        var __start = _getstart();
         if (v1.isNullable && !v1.hasValue()) {
-            {
-                var __ms = new Date().getTime() - __start;
-                _putstat('nullableGreaterThanOrEqual', __ms);
-            }
+            _putstat('nullableGreaterThanOrEqual', __start);
+            __popstack();
             return false;
         }
         if (v2.isNullable && !v2.hasValue()) {
-            {
-                var __ms = new Date().getTime() - __start;
-                _putstat('nullableGreaterThanOrEqual', __ms);
-            }
+            _putstat('nullableGreaterThanOrEqual', __start);
+            __popstack();
             return false;
         }
         var val1 = v1;
@@ -3471,26 +3127,21 @@
         if (v2.isNullable) {
             val2 = v2.value();
         }
-        {
-            var __ms = new Date().getTime() - __start;
-            _putstat('nullableGreaterThanOrEqual', __ms);
-        }
+        _putstat('nullableGreaterThanOrEqual', __start);
+        __popstack();
         return val1 >= val2;
     };
     $.ig.util.nullableLessThan = function (v1, v2) {
-        var __start = new Date().getTime();
+        __pushstack('nullableLessThan');
+        var __start = _getstart();
         if (v1.isNullable && !v1.hasValue()) {
-            {
-                var __ms = new Date().getTime() - __start;
-                _putstat('nullableLessThan', __ms);
-            }
+            _putstat('nullableLessThan', __start);
+            __popstack();
             return false;
         }
         if (v2.isNullable && !v2.hasValue()) {
-            {
-                var __ms = new Date().getTime() - __start;
-                _putstat('nullableLessThan', __ms);
-            }
+            _putstat('nullableLessThan', __start);
+            __popstack();
             return false;
         }
         var val1 = v1;
@@ -3501,26 +3152,21 @@
         if (v2.isNullable) {
             val2 = v2.value();
         }
-        {
-            var __ms = new Date().getTime() - __start;
-            _putstat('nullableLessThan', __ms);
-        }
+        _putstat('nullableLessThan', __start);
+        __popstack();
         return val1 < val2;
     };
     $.ig.util.nullableLessThanOrEqual = function (v1, v2) {
-        var __start = new Date().getTime();
+        __pushstack('nullableLessThanOrEqual');
+        var __start = _getstart();
         if (v1.isNullable && !v1.hasValue()) {
-            {
-                var __ms = new Date().getTime() - __start;
-                _putstat('nullableLessThanOrEqual', __ms);
-            }
+            _putstat('nullableLessThanOrEqual', __start);
+            __popstack();
             return false;
         }
         if (v2.isNullable && !v2.hasValue()) {
-            {
-                var __ms = new Date().getTime() - __start;
-                _putstat('nullableLessThanOrEqual', __ms);
-            }
+            _putstat('nullableLessThanOrEqual', __start);
+            __popstack();
             return false;
         }
         var val1 = v1;
@@ -3531,28 +3177,23 @@
         if (v2.isNullable) {
             val2 = v2.value();
         }
-        {
-            var __ms = new Date().getTime() - __start;
-            _putstat('nullableLessThanOrEqual', __ms);
-        }
+        _putstat('nullableLessThanOrEqual', __start);
+        __popstack();
         return val1 <= val2;
     };
     $.ig.util.nullableEquals = function (v1, v2) {
-        var __start = new Date().getTime();
+        __pushstack('nullableEquals');
+        var __start = _getstart();
         var v1IsNull = v1 == null || v1.IsNullable && !v1.hasValue();
         var v2IsNull = v2 == null || v2.IsNullable && !v2.hasValue();
         if (v1IsNull && v2IsNull) {
-            {
-                var __ms = new Date().getTime() - __start;
-                _putstat('nullableEquals', __ms);
-            }
+            _putstat('nullableEquals', __start);
+            __popstack();
             return true;
         }
         if (v1IsNull != v2IsNull) {
-            {
-                var __ms = new Date().getTime() - __start;
-                _putstat('nullableEquals', __ms);
-            }
+            _putstat('nullableEquals', __start);
+            __popstack();
             return false;
         }
         var val1 = v1;
@@ -3563,26 +3204,21 @@
         if (v2.isNullable) {
             val2 = v2.value();
         }
-        {
-            var __ms = new Date().getTime() - __start;
-            _putstat('nullableEquals', __ms);
-        }
+        _putstat('nullableEquals', __start);
+        __popstack();
         return val1 == val2;
     };
     $.ig.util.nullableNotEquals = function (v1, v2) {
-        var __start = new Date().getTime();
+        __pushstack('nullableNotEquals');
+        var __start = _getstart();
         if (v1.isNullable && !v1.hasValue()) {
-            {
-                var __ms = new Date().getTime() - __start;
-                _putstat('nullableNotEquals', __ms);
-            }
+            _putstat('nullableNotEquals', __start);
+            __popstack();
             return false;
         }
         if (v2.isNullable && !v2.hasValue()) {
-            {
-                var __ms = new Date().getTime() - __start;
-                _putstat('nullableNotEquals', __ms);
-            }
+            _putstat('nullableNotEquals', __start);
+            __popstack();
             return false;
         }
         var val1 = v1;
@@ -3593,10 +3229,8 @@
         if (v2.isNullable) {
             val2 = v2.value();
         }
-        {
-            var __ms = new Date().getTime() - __start;
-            _putstat('nullableNotEquals', __ms);
-        }
+        _putstat('nullableNotEquals', __start);
+        __popstack();
         return val1 != val2;
     };
     $.ig.util.wellKnownColors = {
@@ -3745,7 +3379,8 @@
         yellowgreen: '9acd32'
     };
     $.ig.util.stringToColor = function (str) {
-        var __start = new Date().getTime();
+        __pushstack('stringToColor');
+        var __start = _getstart();
         var ret = {
                 a: 255,
                 r: 0,
@@ -3754,10 +3389,8 @@
             };
         var asColorName = str.replace(' ', '').toLowerCase();
         if (asColorName === 'transparent') {
-            {
-                var __ms = new Date().getTime() - __start;
-                _putstat('stringToColor', __ms);
-            }
+            _putstat('stringToColor', __start);
+            __popstack();
             return {
                 a: 0,
                 r: 0,
@@ -3793,41 +3426,35 @@
                 ret.b = parseInt(str.substr(2, 1) + str.substr(2, 1), 16);
             }
         }
-        {
-            var __ms = new Date().getTime() - __start;
-            _putstat('stringToColor', __ms);
-        }
+        _putstat('stringToColor', __start);
+        __popstack();
         return ret;
     };
     $.ig.util.isResponseTypeSupported = function (responseType) {
-        var __start = new Date().getTime();
+        __pushstack('isResponseTypeSupported');
+        var __start = _getstart();
         var xhr = null;
         try {
             xhr = new XMLHttpRequest();
             xhr.open('GET', '/');
             xhr.responseType = responseType;
         } catch (e) {
-            {
-                var __ms = new Date().getTime() - __start;
-                _putstat('isResponseTypeSupported', __ms);
-            }
+            _putstat('isResponseTypeSupported', __start);
+            __popstack();
             return false;
         }
         if (xhr === null) {
-            {
-                var __ms = new Date().getTime() - __start;
-                _putstat('isResponseTypeSupported', __ms);
-            }
+            _putstat('isResponseTypeSupported', __start);
+            __popstack();
             return false;
         }
-        {
-            var __ms = new Date().getTime() - __start;
-            _putstat('isResponseTypeSupported', __ms);
-        }
+        _putstat('isResponseTypeSupported', __start);
+        __popstack();
         return xhr.responseType === responseType;
     };
     $.ig.util.getBinary = function (url, callback, error) {
-        var __start = new Date().getTime();
+        __pushstack('getBinary');
+        var __start = _getstart();
         var data, ret, req, useVbArray = false, arrayBufferSupported = $.ig.util.isResponseTypeSupported('arraybuffer') && typeof Uint8Array != 'undefined';
         if (typeof XMLHttpRequest == 'undefined') {
             try {
@@ -3852,7 +3479,8 @@
             }
         }
         req.onreadystatechange = function () {
-            var __start = new Date().getTime();
+            __pushstack('req.onreadystatechange');
+            var __start = _getstart();
             if (req.readyState == 4) {
                 if (req.status == 200) {
                     if (arrayBufferSupported) {
@@ -3873,23 +3501,20 @@
                     error(req.error);
                 }
             }
-            {
-                var __ms = new Date().getTime() - __start;
-                _putstat('req.onreadystatechange', __ms);
-            }
+            _putstat('req.onreadystatechange', __start);
+            __popstack();
         };
         req.open('GET', url, true);
         if (arrayBufferSupported) {
             req.responseType = 'arraybuffer';
         }
         req.send(null);
-        {
-            var __ms = new Date().getTime() - __start;
-            _putstat('getBinary', __ms);
-        }
+        _putstat('getBinary', __start);
+        __popstack();
     };
     $.ig.util.extCopy = function (source, bindings) {
-        var __start = new Date().getTime();
+        __pushstack('extCopy');
+        var __start = _getstart();
         var i, j, k;
         for (j = 0; j < bindings.length; j++) {
             var dests = bindings[j][0];
@@ -3900,13 +3525,12 @@
                 }
             }
         }
-        {
-            var __ms = new Date().getTime() - __start;
-            _putstat('extCopy', __ms);
-        }
+        _putstat('extCopy', __start);
+        __popstack();
     };
     $.ig.util.bulkDefine = function (toDefine) {
-        var __start = new Date().getTime();
+        __pushstack('bulkDefine');
+        var __start = _getstart();
         var i = 0, curr = null, els = null;
         for (i = 0; i < toDefine.length; i++) {
             curr = toDefine[i];
@@ -3916,13 +3540,12 @@
                 $placeholder: true
             }, true);
         }
-        {
-            var __ms = new Date().getTime() - __start;
-            _putstat('bulkDefine', __ms);
-        }
+        _putstat('bulkDefine', __start);
+        __popstack();
     };
     $.ig.util.defType = function (name, baseName, definition) {
-        var __start = new Date().getTime();
+        __pushstack('defType');
+        var __start = _getstart();
         var define = true;
         if ($.ig[name] && !$.ig[name].prototype.$placeholder) {
             define = false;
@@ -3930,20 +3553,17 @@
         if (define) {
             $.ig[name] = $.ig[baseName].extend(definition);
         }
-        {
-            var __ms = new Date().getTime() - __start;
-            _putstat('defType', __ms);
-        }
+        _putstat('defType', __start);
+        __popstack();
     };
     $.ig.util.getClassCount = function (classNamePrefix, isPrefix) {
-        var __start = new Date().getTime();
+        __pushstack('getClassCount');
+        var __start = _getstart();
         var styleSheets = document.styleSheets, numFound = 0, count = 0, currSheet, rules, currSelector, currVal;
         classNamePrefix = classNamePrefix.toLowerCase();
         if (!styleSheets) {
-            {
-                var __ms = new Date().getTime() - __start;
-                _putstat('getClassCount', __ms);
-            }
+            _putstat('getClassCount', __start);
+            __popstack();
             return 0;
         }
         for (var i = 0; i < styleSheets.length; i++) {
@@ -3976,23 +3596,21 @@
             } catch (e) {
             }
         }
-        {
-            var __ms = new Date().getTime() - __start;
-            _putstat('getClassCount', __ms);
-        }
+        _putstat('getClassCount', __start);
+        __popstack();
         return Math.max(numFound, count);
     };
     $.ig.util._isCanvasSupported = function () {
-        var __start = new Date().getTime();
+        __pushstack('_isCanvasSupported');
+        var __start = _getstart();
         var canvas = document.createElement('canvas');
-        {
-            var __ms = new Date().getTime() - __start;
-            _putstat('_isCanvasSupported', __ms);
-        }
+        _putstat('_isCanvasSupported', __start);
+        __popstack();
         return !!(canvas.getContext && canvas.getContext('2d'));
     };
     $.ig.util._renderUnsupportedBrowser = function (widget, locale) {
-        var __start = new Date().getTime();
+        __pushstack('_renderUnsupportedBrowser');
+        var __start = _getstart();
         if (!widget.events || !widget.events.browserNotSupported || widget._trigger(widget.events.browserNotSupported)) {
             var elem = widget.element, o = widget.options, locale = locale || $.ig.util.locale, container = $('<div></div>').css('overflow', 'auto').addClass(widget.css.unsupportedBrowserClass).appendTo(elem), ul, browserUnsupported;
             if ($.ig.util.isIE) {
@@ -4024,37 +3642,35 @@
                 elem.css('height', o.height);
             }
         }
-        {
-            var __ms = new Date().getTime() - __start;
-            _putstat('_renderUnsupportedBrowser', __ms);
-        }
+        _putstat('_renderUnsupportedBrowser', __start);
+        __popstack();
     };
     (function ($) {
-        var __start = new Date().getTime();
+        __pushstack('anonymous');
+        var __start = _getstart();
         $.ig.util.profiler = {};
         var methods = {};
         $.ig.util.profiler.recordTime = function (methodName, time) {
-            var __start = new Date().getTime();
+            __pushstack('recordTime');
+            var __start = _getstart();
             var key = 'meth: ' + methodName;
             if (!methods[key]) {
                 methods[key] = [];
             }
             methods[key][methods[key].length] = time;
-            {
-                var __ms = new Date().getTime() - __start;
-                _putstat('recordTime', __ms);
-            }
+            _putstat('recordTime', __start);
+            __popstack();
         };
         $.ig.util.profiler.reset = function () {
-            var __start = new Date().getTime();
+            __pushstack('reset');
+            var __start = _getstart();
             methods = {};
-            {
-                var __ms = new Date().getTime() - __start;
-                _putstat('reset', __ms);
-            }
+            _putstat('reset', __start);
+            __popstack();
         };
         $.ig.util.profiler.logReport = function () {
-            var __start = new Date().getTime();
+            __pushstack('logReport');
+            var __start = _getstart();
             var meths = [];
             var j = 0;
             var sum = 0;
@@ -4075,147 +3691,122 @@
                 }
             }
             meths.sort(function (m1, m2) {
-                var __start = new Date().getTime();
+                __pushstack('anonymous');
+                var __start = _getstart();
                 if (m1.avg < m2.avg) {
-                    {
-                        var __ms = new Date().getTime() - __start;
-                        _putstat('anonymous', __ms);
-                    }
+                    _putstat('anonymous', __start);
+                    __popstack();
                     return 1;
                 }
                 if (m1.avg > m2.avg) {
-                    {
-                        var __ms = new Date().getTime() - __start;
-                        _putstat('anonymous', __ms);
-                    }
+                    _putstat('anonymous', __start);
+                    __popstack();
                     return -1;
                 }
                 if (m1.avg == m2.avg) {
-                    {
-                        var __ms = new Date().getTime() - __start;
-                        _putstat('anonymous', __ms);
-                    }
+                    _putstat('anonymous', __start);
+                    __popstack();
                     return 0;
                 }
-                {
-                    var __ms = new Date().getTime() - __start;
-                    _putstat('anonymous', __ms);
-                }
+                _putstat('anonymous', __start);
+                __popstack();
             });
             for (var k = 0; k < Math.min(200, meths.length); k++) {
                 console.log(meths[k].name + ' avg: ' + meths[k].avg + ' callCount: ' + meths[k].callCount);
             }
-            {
-                var __ms = new Date().getTime() - __start;
-                _putstat('logReport', __ms);
-            }
+            _putstat('logReport', __start);
+            __popstack();
         };
-        {
-            var __ms = new Date().getTime() - __start;
-            _putstat('anonymous', __ms);
-        }
+        _putstat('anonymous', __start);
+        __popstack();
     }(jQuery));
     $.ig.extendNativePrototype(Function.prototype, 'invoke', function () {
-        var __start = new Date().getTime();
-        {
-            var __ms = new Date().getTime() - __start;
-            _putstat('anonymous', __ms);
-        }
+        __pushstack('anonymous');
+        var __start = _getstart();
+        _putstat('anonymous', __start);
+        __popstack();
         return this.apply(null, arguments);
     });
     $.ig.extendNativePrototype(Function.prototype, 'runOn', function (target) {
-        var __start = new Date().getTime();
+        __pushstack('anonymous');
+        var __start = _getstart();
         var self = this;
         var ret = function () {
-            var __start = new Date().getTime();
-            {
-                var __ms = new Date().getTime() - __start;
-                _putstat('ret', __ms);
-            }
+            __pushstack('ret');
+            var __start = _getstart();
+            _putstat('ret', __start);
+            __popstack();
             return self.apply(target, arguments);
         };
         ret.original = this;
         ret.target = target;
-        {
-            var __ms = new Date().getTime() - __start;
-            _putstat('anonymous', __ms);
-        }
+        _putstat('anonymous', __start);
+        __popstack();
         return ret;
     });
     String.prototype.startsWith = function (s) {
-        var __start = new Date().getTime();
-        {
-            var __ms = new Date().getTime() - __start;
-            _putstat('startsWith', __ms);
-        }
+        __pushstack('startsWith');
+        var __start = _getstart();
+        _putstat('startsWith', __start);
+        __popstack();
         return this.indexOf(s) === 0;
     };
     String.prototype.endsWith = function (s) {
-        var __start = new Date().getTime();
+        __pushstack('endsWith');
+        var __start = _getstart();
         var offset = this.length - s.length;
-        {
-            var __ms = new Date().getTime() - __start;
-            _putstat('endsWith', __ms);
-        }
+        _putstat('endsWith', __start);
+        __popstack();
         return offset >= 0 && this.lastIndexOf(s) === offset;
     };
     String.prototype.remove = function (index, count) {
-        var __start = new Date().getTime();
+        __pushstack('remove');
+        var __start = _getstart();
         if (!count || index + count > this.length) {
-            {
-                var __ms = new Date().getTime() - __start;
-                _putstat('remove', __ms);
-            }
+            _putstat('remove', __start);
+            __popstack();
             return this.substr(0, index);
         }
-        {
-            var __ms = new Date().getTime() - __start;
-            _putstat('remove', __ms);
-        }
+        _putstat('remove', __start);
+        __popstack();
         return this.substr(0, index) + this.substr(index + count);
     };
     String.prototype.compareTo = function (other) {
-        var __start = new Date().getTime();
+        __pushstack('compareTo');
+        var __start = _getstart();
         if (this == other) {
-            {
-                var __ms = new Date().getTime() - __start;
-                _putstat('compareTo', __ms);
-            }
+            _putstat('compareTo', __start);
+            __popstack();
             return 0;
         }
         if (this < other) {
-            {
-                var __ms = new Date().getTime() - __start;
-                _putstat('compareTo', __ms);
-            }
+            _putstat('compareTo', __start);
+            __popstack();
             return -1;
         }
-        {
-            var __ms = new Date().getTime() - __start;
-            _putstat('compareTo', __ms);
-        }
+        _putstat('compareTo', __start);
+        __popstack();
         return 1;
     };
     if (!String.prototype.trim) {
         String.prototype.trim = function () {
-            var __start = new Date().getTime();
-            {
-                var __ms = new Date().getTime() - __start;
-                _putstat('trim', __ms);
-            }
+            __pushstack('trim');
+            var __start = _getstart();
+            _putstat('trim', __start);
+            __popstack();
             return this.replace(/^\s\s*/, '').replace(/\s\s*$/, '');
         };
     }
     String.prototype.fullTrim = function () {
-        var __start = new Date().getTime();
-        {
-            var __ms = new Date().getTime() - __start;
-            _putstat('fullTrim', __ms);
-        }
+        __pushstack('fullTrim');
+        var __start = _getstart();
+        _putstat('fullTrim', __start);
+        __popstack();
         return this.replace(/(?:(?:^|\n)\s+|\s+(?:$|\n))/g, '').replace(/\s+/g, ' ');
     };
     String.prototype.trimStart = function () {
-        var __start = new Date().getTime();
+        __pushstack('trimStart');
+        var __start = _getstart();
         var args = [' '];
         if (arguments.length > 0) {
             args = Array.prototype.slice.call(arguments);
@@ -4224,165 +3815,147 @@
             return this;
         var i = 0;
         for (; args.indexOf(this.charAt(i)) > -1 && i < this.length; i++);
-        {
-            var __ms = new Date().getTime() - __start;
-            _putstat('trimStart', __ms);
-        }
+        _putstat('trimStart', __start);
+        __popstack();
         return this.substring(i);
     };
     String.prototype.trimEnd = function () {
-        var __start = new Date().getTime();
+        __pushstack('trimEnd');
+        var __start = _getstart();
         var args = [' '];
         if (arguments.length > 0) {
             args = Array.prototype.slice.call(arguments);
         }
         var i = this.length - 1;
         for (; i >= 0 && args.indexOf(this.charAt(i)) > -1; i--);
-        {
-            var __ms = new Date().getTime() - __start;
-            _putstat('trimEnd', __ms);
-        }
+        _putstat('trimEnd', __start);
+        __popstack();
         return this.substring(0, i + 1);
     };
     String.getHashCode = function () {
-        var __start = new Date().getTime();
-        {
-            var __ms = new Date().getTime() - __start;
-            _putstat('String.getHashCode', __ms);
-        }
+        __pushstack('String.getHashCode');
+        var __start = _getstart();
+        _putstat('String.getHashCode', __start);
+        __popstack();
         return this;
     };
     String.isNullOrEmpty = function (s) {
-        var __start = new Date().getTime();
-        {
-            var __ms = new Date().getTime() - __start;
-            _putstat('String.isNullOrEmpty', __ms);
-        }
+        __pushstack('String.isNullOrEmpty');
+        var __start = _getstart();
+        _putstat('String.isNullOrEmpty', __start);
+        __popstack();
         return !s || s.length < 1;
     };
     String.empty = function () {
-        var __start = new Date().getTime();
-        {
-            var __ms = new Date().getTime() - __start;
-            _putstat('String.empty', __ms);
-        }
+        __pushstack('String.empty');
+        var __start = _getstart();
+        _putstat('String.empty', __start);
+        __popstack();
         return '';
     };
     String.concat = function () {
-        var __start = new Date().getTime();
-        {
-            var __ms = new Date().getTime() - __start;
-            _putstat('String.concat', __ms);
-        }
+        __pushstack('String.concat');
+        var __start = _getstart();
+        _putstat('String.concat', __start);
+        __popstack();
         return [].join.call(arguments, '');
     };
     String.concat1 = function (o1, o2) {
-        var __start = new Date().getTime();
-        {
-            var __ms = new Date().getTime() - __start;
-            _putstat('String.concat1', __ms);
-        }
+        __pushstack('String.concat1');
+        var __start = _getstart();
+        _putstat('String.concat1', __start);
+        __popstack();
         return [].join.call(arguments, '');
     };
     String.concat2 = function (s1, s2) {
-        var __start = new Date().getTime();
-        {
-            var __ms = new Date().getTime() - __start;
-            _putstat('String.concat2', __ms);
-        }
+        __pushstack('String.concat2');
+        var __start = _getstart();
+        _putstat('String.concat2', __start);
+        __popstack();
         return [].join.call(arguments, '');
     };
     String.concat3 = function () {
-        var __start = new Date().getTime();
-        {
-            var __ms = new Date().getTime() - __start;
-            _putstat('String.concat3', __ms);
-        }
+        __pushstack('String.concat3');
+        var __start = _getstart();
+        _putstat('String.concat3', __start);
+        __popstack();
         return [].join.call(arguments, '');
     };
     String.concat4 = function (o1, o2, o3) {
-        var __start = new Date().getTime();
-        {
-            var __ms = new Date().getTime() - __start;
-            _putstat('String.concat4', __ms);
-        }
+        __pushstack('String.concat4');
+        var __start = _getstart();
+        _putstat('String.concat4', __start);
+        __popstack();
         return [].join.call(arguments, '');
     };
     String.concat5 = function (s1, s2, s3) {
-        var __start = new Date().getTime();
-        {
-            var __ms = new Date().getTime() - __start;
-            _putstat('String.concat5', __ms);
-        }
+        __pushstack('String.concat5');
+        var __start = _getstart();
+        _putstat('String.concat5', __start);
+        __popstack();
         return [].join.call(arguments, '');
     };
     String.concat6 = function (o1, o2, o3, o4) {
-        var __start = new Date().getTime();
-        {
-            var __ms = new Date().getTime() - __start;
-            _putstat('String.concat6', __ms);
-        }
+        __pushstack('String.concat6');
+        var __start = _getstart();
+        _putstat('String.concat6', __start);
+        __popstack();
         return [].join.call(arguments, '');
     };
     String.concat7 = function (s1, s2, s3, s4) {
-        var __start = new Date().getTime();
-        {
-            var __ms = new Date().getTime() - __start;
-            _putstat('String.concat7', __ms);
-        }
+        __pushstack('String.concat7');
+        var __start = _getstart();
+        _putstat('String.concat7', __start);
+        __popstack();
         return [].join.call(arguments, '');
     };
     String.prototype.equals = function (other) {
-        var __start = new Date().getTime();
-        {
-            var __ms = new Date().getTime() - __start;
-            _putstat('equals', __ms);
-        }
+        __pushstack('equals');
+        var __start = _getstart();
+        _putstat('equals', __start);
+        __popstack();
         return this == other;
     };
     String.prototype.contains = function (s) {
-        var __start = new Date().getTime();
-        {
-            var __ms = new Date().getTime() - __start;
-            _putstat('contains', __ms);
-        }
+        __pushstack('contains');
+        var __start = _getstart();
+        _putstat('contains', __start);
+        __popstack();
         return this.indexOf(s) > -1;
     };
     String.prototype.padLeft = function (len, c) {
-        var __start = new Date().getTime();
+        __pushstack('padLeft');
+        var __start = _getstart();
         var s = this, c = c || ' ';
         while (s.length < len) {
             s = c + s;
         }
-        {
-            var __ms = new Date().getTime() - __start;
-            _putstat('padLeft', __ms);
-        }
+        _putstat('padLeft', __start);
+        __popstack();
         return s;
     };
     String.prototype.padRight = function (len, c) {
-        var __start = new Date().getTime();
+        __pushstack('padRight');
+        var __start = _getstart();
         var s = this, c = c || ' ';
         while (s.length < len) {
             s += c;
         }
-        {
-            var __ms = new Date().getTime() - __start;
-            _putstat('padRight', __ms);
-        }
+        _putstat('padRight', __start);
+        __popstack();
         return s;
     };
     String.prototype.capitalize = function () {
-        var __start = new Date().getTime();
-        {
-            var __ms = new Date().getTime() - __start;
-            _putstat('capitalize', __ms);
-        }
+        __pushstack('capitalize');
+        var __start = _getstart();
+        _putstat('capitalize', __start);
+        __popstack();
         return this.charAt(0).toUpperCase() + this.slice(1);
     };
     if (!Array.prototype.filter) {
         Array.prototype.filter = function (fun) {
-            var __start = new Date().getTime();
+            __pushstack('filter');
+            var __start = _getstart();
             var t, len, res, thisp, val, i;
             if (this == null) {
                 throw new TypeError();
@@ -4402,15 +3975,14 @@
                     }
                 }
             }
-            {
-                var __ms = new Date().getTime() - __start;
-                _putstat('filter', __ms);
-            }
+            _putstat('filter', __start);
+            __popstack();
             return res;
         };
     }
     $.ig.extendNativePrototype(Array.prototype, 'insertRange', function (index, items) {
-        var __start = new Date().getTime();
+        __pushstack('anonymous');
+        var __start = _getstart();
         var i = 0;
         if (this.length == 0) {
             for (i = 0; i < items.length; i++) {
@@ -4421,13 +3993,12 @@
                 this.splice(index++, 0, items[i]);
             }
         }
-        {
-            var __ms = new Date().getTime() - __start;
-            _putstat('anonymous', __ms);
-        }
+        _putstat('anonymous', __start);
+        __popstack();
     });
     $.ig.extendNativePrototype(Array.prototype, 'insertRange1', function (index, items) {
-        var __start = new Date().getTime();
+        __pushstack('anonymous');
+        var __start = _getstart();
         var i = 0;
         if (this.length == 0) {
             for (i = 0; i < items.length; i++) {
@@ -4438,123 +4009,107 @@
                 this.splice(index++, 0, items[i]);
             }
         }
-        {
-            var __ms = new Date().getTime() - __start;
-            _putstat('anonymous', __ms);
-        }
+        _putstat('anonymous', __start);
+        __popstack();
     });
     $.ig.extendNativePrototype(Array.prototype, 'clone', function () {
-        var __start = new Date().getTime();
-        {
-            var __ms = new Date().getTime() - __start;
-            _putstat('anonymous', __ms);
-        }
+        __pushstack('anonymous');
+        var __start = _getstart();
+        _putstat('anonymous', __start);
+        __popstack();
         return $.extend(true, [], this);
     });
     $.ig.extendNativePrototype(Array.prototype, 'clear', function () {
-        var __start = new Date().getTime();
+        __pushstack('anonymous');
+        var __start = _getstart();
         this.length = 0;
-        {
-            var __ms = new Date().getTime() - __start;
-            _putstat('anonymous', __ms);
-        }
+        _putstat('anonymous', __start);
+        __popstack();
     });
     Math.log10 = function (n) {
-        var __start = new Date().getTime();
-        {
-            var __ms = new Date().getTime() - __start;
-            _putstat('Math.log10', __ms);
-        }
+        __pushstack('Math.log10');
+        var __start = _getstart();
+        _putstat('Math.log10', __start);
+        __popstack();
         return Math.log(n) / Math.log(10);
     };
     Math.logBase = function (n, n2) {
-        var __start = new Date().getTime();
-        {
-            var __ms = new Date().getTime() - __start;
-            _putstat('Math.logBase', __ms);
-        }
+        __pushstack('Math.logBase');
+        var __start = _getstart();
+        _putstat('Math.logBase', __start);
+        __popstack();
         return Math.log(n) / Math.log(n2);
     };
     Math.sign = function (n) {
-        var __start = new Date().getTime();
+        __pushstack('Math.sign');
+        var __start = _getstart();
         if (n < 0) {
-            {
-                var __ms = new Date().getTime() - __start;
-                _putstat('Math.sign', __ms);
-            }
+            _putstat('Math.sign', __start);
+            __popstack();
             return -1;
         } else if (n > 0) {
-            {
-                var __ms = new Date().getTime() - __start;
-                _putstat('Math.sign', __ms);
-            }
+            _putstat('Math.sign', __start);
+            __popstack();
             return 1;
         } else {
-            {
-                var __ms = new Date().getTime() - __start;
-                _putstat('Math.sign', __ms);
-            }
+            _putstat('Math.sign', __start);
+            __popstack();
             return 0;
         }
-        {
-            var __ms = new Date().getTime() - __start;
-            _putstat('Math.sign', __ms);
-        }
+        _putstat('Math.sign', __start);
+        __popstack();
     };
     Number.getHashCode = function () {
-        var __start = new Date().getTime();
-        {
-            var __ms = new Date().getTime() - __start;
-            _putstat('Number.getHashCode', __ms);
-        }
+        __pushstack('Number.getHashCode');
+        var __start = _getstart();
+        _putstat('Number.getHashCode', __start);
+        __popstack();
         return this;
     };
     Number.isInfinity = function (n) {
-        var __start = new Date().getTime();
-        {
-            var __ms = new Date().getTime() - __start;
-            _putstat('Number.isInfinity', __ms);
-        }
+        __pushstack('Number.isInfinity');
+        var __start = _getstart();
+        _putstat('Number.isInfinity', __start);
+        __popstack();
         return n === Infinity || n === -Infinity;
     };
     window.toStaticHTML = window.toStaticHTML || function (s) {
-        var __start = new Date().getTime();
-        {
-            var __ms = new Date().getTime() - __start;
-            _putstat('anonymous', __ms);
-        }
+        __pushstack('anonymous');
+        var __start = _getstart();
+        _putstat('anonymous', __start);
+        __popstack();
         return s;
     };
     window.MSApp = window.MSApp || {};
     window.MSApp.execUnsafeLocalFunction = window.MSApp.execUnsafeLocalFunction || function (fn) {
-        var __start = new Date().getTime();
+        __pushstack('anonymous');
+        var __start = _getstart();
         fn.apply();
-        {
-            var __ms = new Date().getTime() - __start;
-            _putstat('anonymous', __ms);
-        }
+        _putstat('anonymous', __start);
+        __popstack();
     };
     $.ig.util.jQueryUIMainVersion = $.ui && $.ui.version && $.ui.version.length > 0 ? parseInt($.ui.version.split('.', 1)[0], 10) : null;
     $.ig.util.jQueryUISubVersion = $.ui && $.ui.version && $.ui.version.length > 0 ? parseInt($.ui.version.split('.', 2)[1], 10) : null;
     $.ig.util.jqueryFlagsCache = {};
     $.ig.util.jqueryCreateFlags = function (flags) {
-        var __start = new Date().getTime();
+        __pushstack('jqueryCreateFlags');
+        var __start = _getstart();
         var object = $.ig.util.jqueryFlagsCache[flags] = {}, i, length;
         flags = flags.split(/\s+/);
         for (i = 0, length = flags.length; i < length; i++) {
             object[flags[i]] = true;
         }
-        {
-            var __ms = new Date().getTime() - __start;
-            _putstat('jqueryCreateFlags', __ms);
-        }
+        _putstat('jqueryCreateFlags', __start);
+        __popstack();
         return object;
     };
     $.ig.util.jqueryCallbacks = function (flags) {
-        var __start = new Date().getTime();
+        __pushstack('jqueryCallbacks');
+        var __start = _getstart();
         flags = flags ? $.ig.util.jqueryFlagsCache[flags] || $.ig.util.jqueryCreateFlags(flags) : {};
         var list = [], stack = [], memory, fired, firing, firingStart, firingLength, firingIndex, add = function (args) {
-                var __start = new Date().getTime();
+                __pushstack('add');
+                var __start = _getstart();
                 var i, length, elem, type, actual;
                 for (i = 0, length = args.length; i < length; i++) {
                     elem = args[i];
@@ -4567,12 +4122,11 @@
                         }
                     }
                 }
-                {
-                    var __ms = new Date().getTime() - __start;
-                    _putstat('add', __ms);
-                }
+                _putstat('add', __start);
+                __popstack();
             }, fire = function (context, args) {
-                var __start = new Date().getTime();
+                __pushstack('fire');
+                var __start = _getstart();
                 args = args || [];
                 memory = !flags.memory || [
                     context,
@@ -4602,13 +4156,12 @@
                         list = [];
                     }
                 }
-                {
-                    var __ms = new Date().getTime() - __start;
-                    _putstat('fire', __ms);
-                }
+                _putstat('fire', __start);
+                __popstack();
             }, self = {
                 add: function () {
-                    var __start = new Date().getTime();
+                    __pushstack('add');
+                    var __start = _getstart();
                     if (list) {
                         var length = list.length;
                         add(arguments);
@@ -4619,14 +4172,13 @@
                             fire(memory[0], memory[1]);
                         }
                     }
-                    {
-                        var __ms = new Date().getTime() - __start;
-                        _putstat('add', __ms);
-                    }
+                    _putstat('add', __start);
+                    __popstack();
                     return this;
                 },
                 remove: function () {
-                    var __start = new Date().getTime();
+                    __pushstack('remove');
+                    var __start = _getstart();
                     if (list) {
                         var args = arguments, argIndex = 0, argLength = args.length;
                         for (; argIndex < argLength; argIndex++) {
@@ -4648,80 +4200,71 @@
                             }
                         }
                     }
-                    {
-                        var __ms = new Date().getTime() - __start;
-                        _putstat('remove', __ms);
-                    }
+                    _putstat('remove', __start);
+                    __popstack();
                     return this;
                 },
                 has: function (fn) {
-                    var __start = new Date().getTime();
+                    __pushstack('has');
+                    var __start = _getstart();
                     if (list) {
                         var i = 0, length = list.length;
                         for (; i < length; i++) {
                             if (fn === list[i]) {
-                                {
-                                    var __ms = new Date().getTime() - __start;
-                                    _putstat('has', __ms);
-                                }
+                                _putstat('has', __start);
+                                __popstack();
                                 return true;
                             }
                         }
                     }
-                    {
-                        var __ms = new Date().getTime() - __start;
-                        _putstat('has', __ms);
-                    }
+                    _putstat('has', __start);
+                    __popstack();
                     return false;
                 },
                 empty: function () {
-                    var __start = new Date().getTime();
+                    __pushstack('empty');
+                    var __start = _getstart();
                     list = [];
-                    {
-                        var __ms = new Date().getTime() - __start;
-                        _putstat('empty', __ms);
-                    }
+                    _putstat('empty', __start);
+                    __popstack();
                     return this;
                 },
                 disable: function () {
-                    var __start = new Date().getTime();
+                    __pushstack('disable');
+                    var __start = _getstart();
                     list = stack = memory = undefined;
-                    {
-                        var __ms = new Date().getTime() - __start;
-                        _putstat('disable', __ms);
-                    }
+                    _putstat('disable', __start);
+                    __popstack();
                     return this;
                 },
                 disabled: function () {
-                    var __start = new Date().getTime();
-                    {
-                        var __ms = new Date().getTime() - __start;
-                        _putstat('disabled', __ms);
-                    }
+                    __pushstack('disabled');
+                    var __start = _getstart();
+                    _putstat('disabled', __start);
+                    __popstack();
                     return !list;
                 },
                 lock: function () {
-                    var __start = new Date().getTime();
+                    __pushstack('lock');
+                    var __start = _getstart();
                     stack = undefined;
                     if (!memory || memory === true) {
                         self.disable();
                     }
-                    {
-                        var __ms = new Date().getTime() - __start;
-                        _putstat('lock', __ms);
-                    }
+                    _putstat('lock', __start);
+                    __popstack();
                     return this;
                 },
                 locked: function () {
-                    var __start = new Date().getTime();
-                    {
-                        var __ms = new Date().getTime() - __start;
-                        _putstat('locked', __ms);
-                    }
+                    __pushstack('locked');
+                    var __start = _getstart();
+                    _putstat('locked', __start);
+                    __popstack();
                     return !stack;
                 },
                 fireWith: function (context, args) {
-                    var __start = new Date().getTime();
+                    __pushstack('fireWith');
+                    var __start = _getstart();
                     if (stack) {
                         if (firing) {
                             if (!flags.once) {
@@ -4734,38 +4277,33 @@
                             fire(context, args);
                         }
                     }
-                    {
-                        var __ms = new Date().getTime() - __start;
-                        _putstat('fireWith', __ms);
-                    }
+                    _putstat('fireWith', __start);
+                    __popstack();
                     return this;
                 },
                 fire: function () {
-                    var __start = new Date().getTime();
+                    __pushstack('fire');
+                    var __start = _getstart();
                     self.fireWith(this, arguments);
-                    {
-                        var __ms = new Date().getTime() - __start;
-                        _putstat('fire', __ms);
-                    }
+                    _putstat('fire', __start);
+                    __popstack();
                     return this;
                 },
                 fired: function () {
-                    var __start = new Date().getTime();
-                    {
-                        var __ms = new Date().getTime() - __start;
-                        _putstat('fired', __ms);
-                    }
+                    __pushstack('fired');
+                    var __start = _getstart();
+                    _putstat('fired', __start);
+                    __popstack();
                     return !!fired;
                 }
             };
-        {
-            var __ms = new Date().getTime() - __start;
-            _putstat('jqueryCallbacks', __ms);
-        }
+        _putstat('jqueryCallbacks', __start);
+        __popstack();
         return self;
     };
     $.ig.util.jqueryDeferred = function (func) {
-        var __start = new Date().getTime();
+        __pushstack('jqueryDeferred');
+        var __start = _getstart();
         var doneList = $.ig.util.jqueryCallbacks('once memory'), failList = $.ig.util.jqueryCallbacks('once memory'), progressList = $.ig.util.jqueryCallbacks('memory'), state = 'pending', lists = {
                 resolve: doneList,
                 reject: failList,
@@ -4775,41 +4313,38 @@
                 fail: failList.add,
                 progress: progressList.add,
                 state: function () {
-                    var __start = new Date().getTime();
-                    {
-                        var __ms = new Date().getTime() - __start;
-                        _putstat('state', __ms);
-                    }
+                    __pushstack('state');
+                    var __start = _getstart();
+                    _putstat('state', __start);
+                    __popstack();
                     return state;
                 },
                 isResolved: doneList.fired,
                 isRejected: failList.fired,
                 then: function (doneCallbacks, failCallbacks, progressCallbacks) {
-                    var __start = new Date().getTime();
+                    __pushstack('then');
+                    var __start = _getstart();
                     deferred.done(doneCallbacks).fail(failCallbacks).progress(progressCallbacks);
-                    {
-                        var __ms = new Date().getTime() - __start;
-                        _putstat('then', __ms);
-                    }
+                    _putstat('then', __start);
+                    __popstack();
                     return this;
                 },
                 always: function () {
-                    var __start = new Date().getTime();
+                    __pushstack('always');
+                    var __start = _getstart();
                     deferred.done.apply(deferred, arguments).fail.apply(deferred, arguments);
-                    {
-                        var __ms = new Date().getTime() - __start;
-                        _putstat('always', __ms);
-                    }
+                    _putstat('always', __start);
+                    __popstack();
                     return this;
                 },
                 pipe: function (fnDone, fnFail, fnProgress) {
-                    var __start = new Date().getTime();
-                    {
-                        var __ms = new Date().getTime() - __start;
-                        _putstat('pipe', __ms);
-                    }
+                    __pushstack('pipe');
+                    var __start = _getstart();
+                    _putstat('pipe', __start);
+                    __popstack();
                     return $.ig.util.jqueryDeferred(function (newDefer) {
-                        var __start = new Date().getTime();
+                        __pushstack('anonymous');
+                        var __start = _getstart();
                         jQuery.each({
                             done: [
                                 fnDone,
@@ -4824,38 +4359,35 @@
                                 'notify'
                             ]
                         }, function (handler, data) {
-                            var __start = new Date().getTime();
+                            __pushstack('anonymous');
+                            var __start = _getstart();
                             var fn = data[0], action = data[1], returned;
                             if (jQuery.isFunction(fn)) {
                                 deferred[handler](function () {
-                                    var __start = new Date().getTime();
+                                    __pushstack('anonymous');
+                                    var __start = _getstart();
                                     returned = fn.apply(this, arguments);
                                     if (returned && jQuery.isFunction(returned.promise)) {
                                         returned.promise().then(newDefer.resolve, newDefer.reject, newDefer.notify);
                                     } else {
                                         newDefer[action + 'With'](this === deferred ? newDefer : this, [returned]);
                                     }
-                                    {
-                                        var __ms = new Date().getTime() - __start;
-                                        _putstat('anonymous', __ms);
-                                    }
+                                    _putstat('anonymous', __start);
+                                    __popstack();
                                 });
                             } else {
                                 deferred[handler](newDefer[action]);
                             }
-                            {
-                                var __ms = new Date().getTime() - __start;
-                                _putstat('anonymous', __ms);
-                            }
+                            _putstat('anonymous', __start);
+                            __popstack();
                         });
-                        {
-                            var __ms = new Date().getTime() - __start;
-                            _putstat('anonymous', __ms);
-                        }
+                        _putstat('anonymous', __start);
+                        __popstack();
                     }).promise();
                 },
                 promise: function (obj) {
-                    var __start = new Date().getTime();
+                    __pushstack('promise');
+                    var __start = _getstart();
                     if (obj == null) {
                         obj = promise;
                     } else {
@@ -4863,10 +4395,8 @@
                             obj[key] = promise[key];
                         }
                     }
-                    {
-                        var __ms = new Date().getTime() - __start;
-                        _putstat('promise', __ms);
-                    }
+                    _putstat('promise', __start);
+                    __popstack();
                     return obj;
                 }
             }, deferred = promise.promise({}), key;
@@ -4875,62 +4405,53 @@
             deferred[key + 'With'] = lists[key].fireWith;
         }
         deferred.done(function () {
-            var __start = new Date().getTime();
+            __pushstack('anonymous');
+            var __start = _getstart();
             state = 'resolved';
-            {
-                var __ms = new Date().getTime() - __start;
-                _putstat('anonymous', __ms);
-            }
+            _putstat('anonymous', __start);
+            __popstack();
         }, failList.disable, progressList.lock).fail(function () {
-            var __start = new Date().getTime();
+            __pushstack('anonymous');
+            var __start = _getstart();
             state = 'rejected';
-            {
-                var __ms = new Date().getTime() - __start;
-                _putstat('anonymous', __ms);
-            }
+            _putstat('anonymous', __start);
+            __popstack();
         }, doneList.disable, progressList.lock);
         if (func) {
             func.call(deferred, deferred);
         }
-        {
-            var __ms = new Date().getTime() - __start;
-            _putstat('jqueryDeferred', __ms);
-        }
+        _putstat('jqueryDeferred', __start);
+        __popstack();
         return deferred;
     };
     $.ig.util.checkDeferred = function () {
-        var __start = new Date().getTime();
+        __pushstack('checkDeferred');
+        var __start = _getstart();
         $.ig.util.deferredDefined = !!($.Deferred !== undefined && $.Deferred().state);
-        {
-            var __ms = new Date().getTime() - __start;
-            _putstat('checkDeferred', __ms);
-        }
+        _putstat('checkDeferred', __start);
+        __popstack();
     };
     $.ig.util.deferred = function () {
-        var __start = new Date().getTime();
+        __pushstack('deferred');
+        var __start = _getstart();
         if ($.ig.util.deferredDefined === undefined) {
             $.ig.util.checkDeferred();
         }
         if ($.ig.util.deferredDefined) {
-            {
-                var __ms = new Date().getTime() - __start;
-                _putstat('deferred', __ms);
-            }
+            _putstat('deferred', __start);
+            __popstack();
             return $.Deferred();
         } else {
-            {
-                var __ms = new Date().getTime() - __start;
-                _putstat('deferred', __ms);
-            }
+            _putstat('deferred', __start);
+            __popstack();
             return $.ig.util.jqueryDeferred();
         }
-        {
-            var __ms = new Date().getTime() - __start;
-            _putstat('deferred', __ms);
-        }
+        _putstat('deferred', __start);
+        __popstack();
     };
     $.ig.util.ajax = function (url, contentType, data, method, requestOptions) {
-        var __start = new Date().getTime();
+        __pushstack('ajax');
+        var __start = _getstart();
         var deferred = $.ig.util.deferred();
         var isCrossDomain;
         if (requestOptions && 'isCrossDomain' in requestOptions) {
@@ -4939,100 +4460,89 @@
             isCrossDomain = $.support.cors;
         }
         var xhrObj = function (rOptions) {
-                var __start = new Date().getTime();
+                __pushstack('anonymous');
+                var __start = _getstart();
                 var xhr = new XMLHttpRequest();
                 if (isCrossDomain == true && !('withCredentials' in xhr || rOptions && 'withCredentials' in rOptions && rOptions.withCredentials == true) && typeof XDomainRequest != 'undefined') {
                     xhr = new XDomainRequest();
                     xhr.getResponseHeader = function () {
-                        var __start = new Date().getTime();
-                        {
-                            var __ms = new Date().getTime() - __start;
-                            _putstat('xhr.getResponseHeader', __ms);
-                        }
+                        __pushstack('xhr.getResponseHeader');
+                        var __start = _getstart();
+                        _putstat('xhr.getResponseHeader', __start);
+                        __popstack();
                         return null;
                     };
                     xhr.setRequestHeader = function () {
-                        var __start = new Date().getTime();
+                        __pushstack('xhr.setRequestHeader');
+                        var __start = _getstart();
                         xhr.status = 200;
-                        {
-                            var __ms = new Date().getTime() - __start;
-                            _putstat('xhr.setRequestHeader', __ms);
-                        }
+                        _putstat('xhr.setRequestHeader', __start);
+                        __popstack();
                     };
                     xhr.getAllResponseHeaders = function () {
-                        var __start = new Date().getTime();
-                        {
-                            var __ms = new Date().getTime() - __start;
-                            _putstat('xhr.getAllResponseHeaders', __ms);
-                        }
+                        __pushstack('xhr.getAllResponseHeaders');
+                        var __start = _getstart();
+                        _putstat('xhr.getAllResponseHeaders', __start);
+                        __popstack();
                         return null;
                     };
                     xhr.onload = function () {
-                        var __start = new Date().getTime();
+                        __pushstack('xhr.onload');
+                        var __start = _getstart();
                         xhr.readyState = 4;
                         xhr.status = 200;
                         xhr.statusText = 'success';
                         xhr.getAllResponseHeaders = function () {
-                            var __start = new Date().getTime();
-                            {
-                                var __ms = new Date().getTime() - __start;
-                                _putstat('xhr.getAllResponseHeaders', __ms);
-                            }
+                            __pushstack('xhr.getAllResponseHeaders');
+                            var __start = _getstart();
+                            _putstat('xhr.getAllResponseHeaders', __start);
+                            __popstack();
                         };
                         xhr.onreadystatechange();
-                        {
-                            var __ms = new Date().getTime() - __start;
-                            _putstat('xhr.onload', __ms);
-                        }
+                        _putstat('xhr.onload', __start);
+                        __popstack();
                     };
                     xhr.onerror = function () {
-                        var __start = new Date().getTime();
+                        __pushstack('xhr.onerror');
+                        var __start = _getstart();
                         xhr.readyState = 4;
                         xhr.status = 0;
                         xhr.statusText = 'error';
                         xhr.getAllResponseHeaders = function () {
-                            var __start = new Date().getTime();
-                            {
-                                var __ms = new Date().getTime() - __start;
-                                _putstat('xhr.getAllResponseHeaders', __ms);
-                            }
+                            __pushstack('xhr.getAllResponseHeaders');
+                            var __start = _getstart();
+                            _putstat('xhr.getAllResponseHeaders', __start);
+                            __popstack();
                         };
                         xhr.onreadystatechange();
-                        {
-                            var __ms = new Date().getTime() - __start;
-                            _putstat('xhr.onerror', __ms);
-                        }
+                        _putstat('xhr.onerror', __start);
+                        __popstack();
                     };
                     xhr.ontimeout = function () {
-                        var __start = new Date().getTime();
+                        __pushstack('xhr.ontimeout');
+                        var __start = _getstart();
                         xhr.readyState = 4;
                         xhr.status = 0;
                         xhr.statusText = 'timeout';
                         xhr.getAllResponseHeaders = function () {
-                            var __start = new Date().getTime();
-                            {
-                                var __ms = new Date().getTime() - __start;
-                                _putstat('xhr.getAllResponseHeaders', __ms);
-                            }
+                            __pushstack('xhr.getAllResponseHeaders');
+                            var __start = _getstart();
+                            _putstat('xhr.getAllResponseHeaders', __start);
+                            __popstack();
                         };
                         xhr.onreadystatechange();
-                        {
-                            var __ms = new Date().getTime() - __start;
-                            _putstat('xhr.ontimeout', __ms);
-                        }
+                        _putstat('xhr.ontimeout', __start);
+                        __popstack();
                     };
                     xhr.onprogress = function () {
-                        var __start = new Date().getTime();
-                        {
-                            var __ms = new Date().getTime() - __start;
-                            _putstat('xhr.onprogress', __ms);
-                        }
+                        __pushstack('xhr.onprogress');
+                        var __start = _getstart();
+                        _putstat('xhr.onprogress', __start);
+                        __popstack();
                     };
                 }
-                {
-                    var __ms = new Date().getTime() - __start;
-                    _putstat('anonymous', __ms);
-                }
+                _putstat('anonymous', __start);
+                __popstack();
                 return xhr;
             }(requestOptions);
         var xhrFields;
@@ -5040,17 +4550,16 @@
             xhrFields = { withCredentials: true };
         }
         var beforeSend = function (jqXHR, options) {
-            var __start = new Date().getTime();
+            __pushstack('beforeSend');
+            var __start = _getstart();
             if (requestOptions) {
                 if ($.isFunction(requestOptions.beforeSend)) {
                     jqXHR.setRequestHeader('Content-Type', contentType);
                     requestOptions.beforeSend.call(this, jqXHR, options, requestOptions);
                 }
             }
-            {
-                var __ms = new Date().getTime() - __start;
-                _putstat('beforeSend', __ms);
-            }
+            _putstat('beforeSend', __start);
+            __popstack();
         };
         $.ajax({
             crossDomain: isCrossDomain == true,
@@ -5063,38 +4572,34 @@
             xhrFields: xhrFields,
             beforeSend: beforeSend,
             xhr: function () {
-                var __start = new Date().getTime();
-                {
-                    var __ms = new Date().getTime() - __start;
-                    _putstat('xhr', __ms);
-                }
+                __pushstack('xhr');
+                var __start = _getstart();
+                _putstat('xhr', __start);
+                __popstack();
                 return xhrObj;
             },
             success: function (responce, textStatus, jqXHR) {
-                var __start = new Date().getTime();
+                __pushstack('success');
+                var __start = _getstart();
                 deferred.resolve(responce);
-                {
-                    var __ms = new Date().getTime() - __start;
-                    _putstat('success', __ms);
-                }
+                _putstat('success', __start);
+                __popstack();
             },
             error: function (jqXHR, textStatus, errorThrown) {
-                var __start = new Date().getTime();
+                __pushstack('error');
+                var __start = _getstart();
                 deferred.reject(errorThrown);
-                {
-                    var __ms = new Date().getTime() - __start;
-                    _putstat('error', __ms);
-                }
+                _putstat('error', __start);
+                __popstack();
             }
         });
-        {
-            var __ms = new Date().getTime() - __start;
-            _putstat('ajax', __ms);
-        }
+        _putstat('ajax', __start);
+        __popstack();
         return deferred.promise();
     };
     $.ig.util.offset = function (e, xy) {
-        var __start = new Date().getTime();
+        __pushstack('offset');
+        var __start = _getstart();
         xy = xy || e.offset();
         e = e ? e[0].ownerDocument : document;
         e = e ? e.documentElement : null;
@@ -5103,14 +4608,13 @@
             xy.left += e.scrollLeft - window.pageXOffset;
             xy.top += e.scrollTop - window.pageYOffset;
         }
-        {
-            var __ms = new Date().getTime() - __start;
-            _putstat('offset', __ms);
-        }
+        _putstat('offset', __start);
+        __popstack();
         return xy;
     };
     $.ig.util.getRelativeOffset = function (e) {
-        var __start = new Date().getTime();
+        __pushstack('getRelativeOffset');
+        var __start = _getstart();
         var elem = e.parent(), o = {
                 left: 0,
                 top: 0
@@ -5124,19 +4628,16 @@
             }
             elem = elem.parent();
         }
-        {
-            var __ms = new Date().getTime() - __start;
-            _putstat('getRelativeOffset', __ms);
-        }
+        _putstat('getRelativeOffset', __start);
+        __popstack();
         return o;
     };
     $.ig.util.setSize = function (elem, prop, val, chart, notifyResized) {
-        var __start = new Date().getTime();
+        __pushstack('setSize');
+        var __start = _getstart();
         if (!elem || !elem[0]) {
-            {
-                var __ms = new Date().getTime() - __start;
-                _putstat('setSize', __ms);
-            }
+            _putstat('setSize', __start);
+            __popstack();
             return;
         }
         var timer, px, obj = elem[0]._w_s_f = elem[0]._w_s_f || {}, perc = obj.perc;
@@ -5147,10 +4648,8 @@
             delete obj.elem;
             delete obj.chart;
             elem[0]._w_s_f = null;
-            {
-                var __ms = new Date().getTime() - __start;
-                _putstat('setSize', __ms);
-            }
+            _putstat('setSize', __start);
+            __popstack();
             return;
         }
         if (!val) {
@@ -5205,44 +4704,38 @@
             obj.chart = chart;
             obj.notify = notifyResized;
             obj.onTick = obj.onTick || function (stop) {
-                var __start = new Date().getTime();
+                __pushstack('anonymous');
+                var __start = _getstart();
                 var resize, obj = this, chart = obj.chart, elem = obj.elem, perc = obj.perc || '', wait = obj.wait || '', stop = stop === true || !perc && !wait, width = stop || elem[0].offsetWidth, height = stop || elem[0].offsetHeight, oldWidth = obj.oldWidth || 0, oldHeight = obj.oldHeight || 0;
                 if (stop) {
                     if (obj.tickID) {
                         clearInterval(obj.tickID);
                     }
                     delete obj.tickID;
-                    {
-                        var __ms = new Date().getTime() - __start;
-                        _putstat('anonymous', __ms);
-                    }
+                    _putstat('anonymous', __start);
+                    __popstack();
                     return;
                 }
                 if (!obj.tickID && (!width || !height || perc)) {
                     obj.tickID = setInterval(function () {
-                        var __start = new Date().getTime();
+                        __pushstack('anonymous');
+                        var __start = _getstart();
                         obj.onTick();
-                        {
-                            var __ms = new Date().getTime() - __start;
-                            _putstat('anonymous', __ms);
-                        }
+                        _putstat('anonymous', __start);
+                        __popstack();
                     }, 200);
                 }
                 if (!width || !height) {
-                    {
-                        var __ms = new Date().getTime() - __start;
-                        _putstat('anonymous', __ms);
-                    }
+                    _putstat('anonymous', __start);
+                    __popstack();
                     return;
                 }
                 delete obj.wait;
                 obj.oldWidth = width;
                 obj.oldHeight = height;
                 if (!chart) {
-                    {
-                        var __ms = new Date().getTime() - __start;
-                        _putstat('anonymous', __ms);
-                    }
+                    _putstat('anonymous', __start);
+                    __popstack();
                     return;
                 }
                 if (chart.width && (perc.indexOf('width') >= 0 && width !== oldWidth || wait.indexOf('width') >= 0)) {
@@ -5254,88 +4747,77 @@
                 if (resize && obj.notify) {
                     chart[obj.notify]();
                 }
-                {
-                    var __ms = new Date().getTime() - __start;
-                    _putstat('anonymous', __ms);
-                }
+                _putstat('anonymous', __start);
+                __popstack();
             };
             obj.onTick();
         }
-        {
-            var __ms = new Date().getTime() - __start;
-            _putstat('setSize', __ms);
-        }
+        _putstat('setSize', __start);
+        __popstack();
     };
     $.ig.util.getEasingFunction = function (easingValue) {
-        var __start = new Date().getTime();
+        __pushstack('getEasingFunction');
+        var __start = _getstart();
         if (easingValue === null || easingValue == 'null' || easingValue == 'linear') {
-            {
-                var __ms = new Date().getTime() - __start;
-                _putstat('getEasingFunction', __ms);
-            }
+            _putstat('getEasingFunction', __start);
+            __popstack();
             return null;
         }
         switch (easingValue) {
         case 'cubic':
             return $.ig.EasingFunctions.prototype.cubicEase;
         }
-        {
-            var __ms = new Date().getTime() - __start;
-            _putstat('getEasingFunction', __ms);
-        }
+        _putstat('getEasingFunction', __start);
+        __popstack();
         return easingValue;
     };
     $.ig.util.hasVerticalScroll = function (elem) {
-        var __start = new Date().getTime();
+        __pushstack('hasVerticalScroll');
+        var __start = _getstart();
         var overflow = $(elem).css('overflow-y');
-        {
-            var __ms = new Date().getTime() - __start;
-            _putstat('hasVerticalScroll', __ms);
-        }
+        _putstat('hasVerticalScroll', __start);
+        __popstack();
         return overflow === 'scroll' || overflow === 'auto' && elem[0].scrollHeight > elem[0].clientHeight;
     };
     $.ig.util.hasHorizontalScroll = function (elem) {
-        var __start = new Date().getTime();
+        __pushstack('hasHorizontalScroll');
+        var __start = _getstart();
         var overflow = $(elem).css('overflow-x');
-        {
-            var __ms = new Date().getTime() - __start;
-            _putstat('hasHorizontalScroll', __ms);
-        }
+        _putstat('hasHorizontalScroll', __start);
+        __popstack();
         return overflow === 'scroll' || overflow === 'auto' && elem[0].scrollWidth > elem[0].clientWidth;
     };
     $.ig.util.getScrollWidth = function () {
-        var __start = new Date().getTime();
+        __pushstack('getScrollWidth');
+        var __start = _getstart();
         var el = $('<div style="width: 100px; height: 100px; position: absolute; top: -10000px; left: -10000px; overflow: scroll"></div>').appendTo($(document.body)), scrollWidth;
         scrollWidth = el[0].offsetWidth - el[0].clientWidth;
         el.remove();
-        {
-            var __ms = new Date().getTime() - __start;
-            _putstat('getScrollWidth', __ms);
-        }
+        _putstat('getScrollWidth', __start);
+        __popstack();
         return scrollWidth;
     };
     $.ig.util.getScrollHeight = function () {
-        var __start = new Date().getTime();
+        __pushstack('getScrollHeight');
+        var __start = _getstart();
         var el = $('<div style="width: 100px; height: 100px; position: absolute; top: -10000px; left: -10000px; overflow: scroll"></div>').appendTo($(document.body)), scrollWidth;
         scrollHeight = el[0].offsetHeight - el[0].clientHeight;
         el.remove();
-        {
-            var __ms = new Date().getTime() - __start;
-            _putstat('getScrollHeight', __ms);
-        }
+        _putstat('getScrollHeight', __start);
+        __popstack();
         return scrollHeight;
     };
     $.ig.util.isJsonpUrl = function (url) {
-        var __start = new Date().getTime();
+        __pushstack('isJsonpUrl');
+        var __start = _getstart();
         var isJSONPExpr = /(=)\?(?=&|$)|\?\?/;
-        {
-            var __ms = new Date().getTime() - __start;
-            _putstat('isJsonpUrl', __ms);
-        }
+        _putstat('isJsonpUrl', __start);
+        __popstack();
         return isJSONPExpr.test(url);
     };
     $.ig.util.evtButton = function (e) {
-        var __start = new Date().getTime();
+        __pushstack('evtButton');
+        var __start = _getstart();
         e = e ? e.button : null;
         if (e === 1) {
             e = this._ie_8;
@@ -5355,26 +4837,25 @@
             }
             e = e < 0 ? 1 : 0;
         }
-        {
-            var __ms = new Date().getTime() - __start;
-            _putstat('evtButton', __ms);
-        }
+        _putstat('evtButton', __start);
+        __popstack();
         return e === 2 ? 2 : e ? 1 : 0;
     };
     $.fn.animateRotate = function (startAngle, endAngle, duration, easing, complete) {
-        var __start = new Date().getTime();
-        {
-            var __ms = new Date().getTime() - __start;
-            _putstat('animateRotate', __ms);
-        }
+        __pushstack('animateRotate');
+        var __start = _getstart();
+        _putstat('animateRotate', __start);
+        __popstack();
         return this.each(function () {
-            var __start = new Date().getTime();
+            __pushstack('anonymous');
+            var __start = _getstart();
             var elem = $(this);
             $({ deg: startAngle }).animate({ deg: endAngle }, {
                 duration: duration,
                 easing: easing,
                 step: function (now) {
-                    var __start = new Date().getTime();
+                    __pushstack('step');
+                    var __start = _getstart();
                     elem.css({
                         '-moz-transform': 'rotate(' + now + 'deg)',
                         '-webkit-transform': 'rotate(' + now + 'deg)',
@@ -5382,47 +4863,40 @@
                         '-ms-transform': 'rotate(' + now + 'deg)',
                         transform: 'rotate(' + now + 'deg)'
                     });
-                    {
-                        var __ms = new Date().getTime() - __start;
-                        _putstat('step', __ms);
-                    }
+                    _putstat('step', __start);
+                    __popstack();
                 },
                 complete: complete || $.noop
             });
-            {
-                var __ms = new Date().getTime() - __start;
-                _putstat('anonymous', __ms);
-            }
+            _putstat('anonymous', __start);
+            __popstack();
         });
     };
     if ($.Widget) {
         (function (createWidget) {
-            var __start = new Date().getTime();
+            __pushstack('anonymous');
+            var __start = _getstart();
             $.Widget.prototype._createWidget = function (options, element) {
-                var __start = new Date().getTime();
+                __pushstack('_createWidget');
+                var __start = _getstart();
                 var el = $(element || this.defaultElement || this)[0];
                 if (el !== this) {
                     $.data(el, this.widgetName, this);
                 }
-                {
-                    var __ms = new Date().getTime() - __start;
-                    _putstat('_createWidget', __ms);
-                }
+                _putstat('_createWidget', __start);
+                __popstack();
                 return createWidget.apply(this, arguments);
             };
-            {
-                var __ms = new Date().getTime() - __start;
-                _putstat('anonymous', __ms);
-            }
+            _putstat('anonymous', __start);
+            __popstack();
         }($.Widget.prototype._createWidget));
     }
-    {
-        var __ms = new Date().getTime() - __start;
-        _putstat('anonymous', __ms);
-    }
+    _putstat('anonymous', __start);
+    __popstack();
 }(jQuery));
 (function ($) {
-    var __start = new Date().getTime();
+    __pushstack('anonymous');
+    var __start = _getstart();
     $.ig = $.ig || {};
     $.ig.DataSource = $.ig.DataSource || Class.extend({
         settings: {
@@ -5498,7 +4972,8 @@
             rowDeleted: null
         },
         init: function (options) {
-            var __start = new Date().getTime();
+            __pushstack('init');
+            var __start = _getstart();
             var tempSource, tempCallee, arrayAlready = false, metadata;
             if (options) {
                 tempSource = options.dataSource;
@@ -5554,14 +5029,13 @@
             this._filteredDataView = [];
             this._transactionLog = [];
             this._accumulatedTransactionLog = [];
-            {
-                var __ms = new Date().getTime() - __start;
-                _putstat('init', __ms);
-            }
+            _putstat('init', __start);
+            __popstack();
             return this;
         },
         _initSchema: function () {
-            var __start = new Date().getTime();
+            __pushstack('_initSchema');
+            var __start = _getstart();
             if (this.settings.schema) {
                 if (this.settings.schema instanceof $.ig.DataSchema) {
                     this._schema = this.settings.schema;
@@ -5574,142 +5048,111 @@
                     this._schema._pk = this.settings.primaryKey;
                 }
             }
-            {
-                var __ms = new Date().getTime() - __start;
-                _putstat('_initSchema', __ms);
-            }
+            _putstat('_initSchema', __start);
+            __popstack();
         },
         fields: function (fields) {
-            var __start = new Date().getTime();
+            __pushstack('fields');
+            var __start = _getstart();
             if (fields === undefined || fields === null) {
-                {
-                    var __ms = new Date().getTime() - __start;
-                    _putstat('fields', __ms);
-                }
+                _putstat('fields', __start);
+                __popstack();
                 return this.settings.fields;
             }
             this.settings.fields = fields;
-            {
-                var __ms = new Date().getTime() - __start;
-                _putstat('fields', __ms);
-            }
+            _putstat('fields', __start);
+            __popstack();
             return this;
         },
         analyzeDataSource: function () {
-            var __start = new Date().getTime();
+            __pushstack('analyzeDataSource');
+            var __start = _getstart();
             var ds = this.dataSource(), dc;
             if (ds === undefined || ds === null) {
-                {
-                    var __ms = new Date().getTime() - __start;
-                    _putstat('analyzeDataSource', __ms);
-                }
+                _putstat('analyzeDataSource', __start);
+                __popstack();
                 return 'empty';
             }
             if ($.type(ds) === 'function') {
-                {
-                    var __ms = new Date().getTime() - __start;
-                    _putstat('analyzeDataSource', __ms);
-                }
+                _putstat('analyzeDataSource', __start);
+                __popstack();
                 return 'function';
             }
             if ($.type(ds) === 'array') {
-                {
-                    var __ms = new Date().getTime() - __start;
-                    _putstat('analyzeDataSource', __ms);
-                }
+                _putstat('analyzeDataSource', __start);
+                __popstack();
                 return 'array';
             }
             if ($.type(ds) === 'number' || $.type(ds) === 'boolean' || $.type(ds) === 'date') {
-                {
-                    var __ms = new Date().getTime() - __start;
-                    _putstat('analyzeDataSource', __ms);
-                }
+                _putstat('analyzeDataSource', __start);
+                __popstack();
                 return 'invalid';
             }
             if ($.type(ds) === 'string') {
                 ds = $.trim(ds);
                 if (ds.startsWith('/')) {
-                    {
-                        var __ms = new Date().getTime() - __start;
-                        _putstat('analyzeDataSource', __ms);
-                    }
+                    _putstat('analyzeDataSource', __start);
+                    __popstack();
                     return 'remoteUrl';
                 }
                 if ($('#' + this.settings.id).length > 0 && ds.toLowerCase().startsWith('<table')) {
-                    {
-                        var __ms = new Date().getTime() - __start;
-                        _putstat('analyzeDataSource', __ms);
-                    }
+                    _putstat('analyzeDataSource', __start);
+                    __popstack();
                     return 'htmlTableString';
                 }
                 if (ds.toLowerCase().startsWith('<table')) {
                     dc = '<div id=\'' + this.settings.id + '\' style=\'display:none;visibility:hidden;\'>' + ds + '</div>';
                     $(dc).appendTo($('body'));
-                    {
-                        var __ms = new Date().getTime() - __start;
-                        _putstat('analyzeDataSource', __ms);
-                    }
+                    _putstat('analyzeDataSource', __start);
+                    __popstack();
                     return 'htmlTableString';
                 }
                 if (!ds.startsWith('[') && !ds.startsWith('{') && !ds.startsWith('<')) {
                     if (!ds.startsWith('http://') && !ds.startsWith('https://') && $('#' + ds).length > 0 && $('#' + ds)[0].nodeName.toLowerCase() === 'table') {
-                        {
-                            var __ms = new Date().getTime() - __start;
-                            _putstat('analyzeDataSource', __ms);
-                        }
+                        _putstat('analyzeDataSource', __start);
+                        __popstack();
                         return 'htmlTableId';
                     }
                     this._url = ds;
-                    {
-                        var __ms = new Date().getTime() - __start;
-                        _putstat('analyzeDataSource', __ms);
-                    }
+                    _putstat('analyzeDataSource', __start);
+                    __popstack();
                     return 'remoteUrl';
                 }
-                {
-                    var __ms = new Date().getTime() - __start;
-                    _putstat('analyzeDataSource', __ms);
-                }
+                _putstat('analyzeDataSource', __start);
+                __popstack();
                 return 'unknown';
             }
             if (ds.nodeName && ds.nodeName.toLowerCase() === 'table') {
-                {
-                    var __ms = new Date().getTime() - __start;
-                    _putstat('analyzeDataSource', __ms);
-                }
+                _putstat('analyzeDataSource', __start);
+                __popstack();
                 return 'htmlTableDom';
             }
             if (ds.nodeName && (ds.nodeName.toLowerCase() === 'ul' || ds.nodeName.toLowerCase() === 'ol')) {
-                {
-                    var __ms = new Date().getTime() - __start;
-                    _putstat('analyzeDataSource', __ms);
-                }
+                _putstat('analyzeDataSource', __start);
+                __popstack();
                 return 'htmlListDom';
             }
-            {
-                var __ms = new Date().getTime() - __start;
-                _putstat('analyzeDataSource', __ms);
-            }
+            _putstat('analyzeDataSource', __start);
+            __popstack();
             return 'unknown';
         },
         dataView: function () {
-            var __start = new Date().getTime();
-            {
-                var __ms = new Date().getTime() - __start;
-                _putstat('dataView', __ms);
-            }
+            __pushstack('dataView');
+            var __start = _getstart();
+            _putstat('dataView', __start);
+            __popstack();
             return this._dataView;
         },
         data: function () {
-            var __start = new Date().getTime();
-            {
-                var __ms = new Date().getTime() - __start;
-                _putstat('data', __ms);
-            }
+            __pushstack('data');
+            var __start = _getstart();
+            _putstat('data', __start);
+            __popstack();
             return this._data;
         },
         transformedData: function (transformedExecution) {
-            var __start = new Date().getTime();
+            __pushstack('transformedData');
+            var __start = _getstart();
             switch (transformedExecution) {
             case 'priortofilteringandpaging':
                 this._transformedData = this._data;
@@ -5723,31 +5166,27 @@
                 this._transformedData = this._dataView;
                 break;
             }
-            {
-                var __ms = new Date().getTime() - __start;
-                _putstat('transformedData', __ms);
-            }
+            _putstat('transformedData', __start);
+            __popstack();
             return this._transformedData;
         },
         dataSummaries: function () {
-            var __start = new Date().getTime();
+            __pushstack('dataSummaries');
+            var __start = _getstart();
             var s = this.settings.summaries, type = s.type;
             if (type === 'local') {
                 this._dataSummaries = this.transformedData(s.summaryExecution);
             }
-            {
-                var __ms = new Date().getTime() - __start;
-                _putstat('dataSummaries', __ms);
-            }
+            _putstat('dataSummaries', __start);
+            __popstack();
             return this._dataSummaries;
         },
         schema: function (s, t) {
-            var __start = new Date().getTime();
+            __pushstack('schema');
+            var __start = _getstart();
             if (s === undefined || s === null) {
-                {
-                    var __ms = new Date().getTime() - __start;
-                    _putstat('schema', __ms);
-                }
+                _putstat('schema', __start);
+                __popstack();
                 return this._schema;
             }
             if (s instanceof $.ig.DataSchema) {
@@ -5760,141 +5199,117 @@
                 }
                 this._schema._pk = this.settings.primaryKey;
             }
-            {
-                var __ms = new Date().getTime() - __start;
-                _putstat('schema', __ms);
-            }
+            _putstat('schema', __start);
+            __popstack();
             return this;
         },
         pagingSettings: function (p) {
-            var __start = new Date().getTime();
+            __pushstack('pagingSettings');
+            var __start = _getstart();
             if (p === undefined || p === null) {
-                {
-                    var __ms = new Date().getTime() - __start;
-                    _putstat('pagingSettings', __ms);
-                }
+                _putstat('pagingSettings', __start);
+                __popstack();
                 return this.settings.paging;
             }
             this.settings.paging = p;
-            {
-                var __ms = new Date().getTime() - __start;
-                _putstat('pagingSettings', __ms);
-            }
+            _putstat('pagingSettings', __start);
+            __popstack();
             return this;
         },
         filterSettings: function (f) {
-            var __start = new Date().getTime();
+            __pushstack('filterSettings');
+            var __start = _getstart();
             if (f === undefined || f === null) {
-                {
-                    var __ms = new Date().getTime() - __start;
-                    _putstat('filterSettings', __ms);
-                }
+                _putstat('filterSettings', __start);
+                __popstack();
                 return this.settings.filtering;
             }
             this.settings.filtering = f;
-            {
-                var __ms = new Date().getTime() - __start;
-                _putstat('filterSettings', __ms);
-            }
+            _putstat('filterSettings', __start);
+            __popstack();
             return this;
         },
         sortSettings: function (s) {
-            var __start = new Date().getTime();
+            __pushstack('sortSettings');
+            var __start = _getstart();
             if (s === undefined || s === null) {
-                {
-                    var __ms = new Date().getTime() - __start;
-                    _putstat('sortSettings', __ms);
-                }
+                _putstat('sortSettings', __start);
+                __popstack();
                 return this.settings.sorting;
             }
             this.settings.sorting = s;
-            {
-                var __ms = new Date().getTime() - __start;
-                _putstat('sortSettings', __ms);
-            }
+            _putstat('sortSettings', __start);
+            __popstack();
             return this;
         },
         summariesSettings: function (s) {
-            var __start = new Date().getTime();
+            __pushstack('summariesSettings');
+            var __start = _getstart();
             if (s === undefined || s === null) {
-                {
-                    var __ms = new Date().getTime() - __start;
-                    _putstat('summariesSettings', __ms);
-                }
+                _putstat('summariesSettings', __start);
+                __popstack();
                 return this.settings.summaries;
             }
             this.settings.summaries = s;
-            {
-                var __ms = new Date().getTime() - __start;
-                _putstat('summariesSettings', __ms);
-            }
+            _putstat('summariesSettings', __start);
+            __popstack();
             return this;
         },
         dataSource: function (ds) {
-            var __start = new Date().getTime();
+            __pushstack('dataSource');
+            var __start = _getstart();
             if (ds === undefined || ds === null) {
-                {
-                    var __ms = new Date().getTime() - __start;
-                    _putstat('dataSource', __ms);
-                }
+                _putstat('dataSource', __start);
+                __popstack();
                 return this.settings.dataSource;
             }
             this.settings.dataSource = ds;
             this.analyzeDataSource();
-            {
-                var __ms = new Date().getTime() - __start;
-                _putstat('dataSource', __ms);
-            }
+            _putstat('dataSource', __start);
+            __popstack();
             return this;
         },
         type: function (t) {
-            var __start = new Date().getTime();
+            __pushstack('type');
+            var __start = _getstart();
             if (t === undefined || t === null) {
-                {
-                    var __ms = new Date().getTime() - __start;
-                    _putstat('type', __ms);
-                }
+                _putstat('type', __start);
+                __popstack();
                 return this._runtimeType;
             }
             this.settings.type = t;
-            {
-                var __ms = new Date().getTime() - __start;
-                _putstat('type', __ms);
-            }
+            _putstat('type', __start);
+            __popstack();
             return this;
         },
         findRecordByKey: function (key, ds) {
-            var __start = new Date().getTime();
+            __pushstack('findRecordByKey');
+            var __start = _getstart();
             var i;
             if (!ds) {
                 for (i = 0; i < this._data.length; i++) {
                     if (this._data[i][this.settings.primaryKey] === key) {
-                        {
-                            var __ms = new Date().getTime() - __start;
-                            _putstat('findRecordByKey', __ms);
-                        }
+                        _putstat('findRecordByKey', __start);
+                        __popstack();
                         return this._data[i];
                     }
                 }
             } else {
                 for (i = 0; i < ds.length; i++) {
                     if (ds[i][this.settings.primaryKey] === key) {
-                        {
-                            var __ms = new Date().getTime() - __start;
-                            _putstat('findRecordByKey', __ms);
-                        }
+                        _putstat('findRecordByKey', __start);
+                        __popstack();
                         return ds[i];
                     }
                 }
             }
-            {
-                var __ms = new Date().getTime() - __start;
-                _putstat('findRecordByKey', __ms);
-            }
+            _putstat('findRecordByKey', __start);
+            __popstack();
             return null;
         },
         removeRecordByKey: function (key, origDs) {
-            var __start = new Date().getTime();
+            __pushstack('removeRecordByKey');
+            var __start = _getstart();
             var i, len, data, count = 0, all = [
                     this._data,
                     this._dataView,
@@ -5914,19 +5329,16 @@
                     count++;
                 }
             }
-            {
-                var __ms = new Date().getTime() - __start;
-                _putstat('removeRecordByKey', __ms);
-            }
+            _putstat('removeRecordByKey', __start);
+            __popstack();
         },
         removeRecordByIndex: function (index, origDs) {
-            var __start = new Date().getTime();
+            __pushstack('removeRecordByIndex');
+            var __start = _getstart();
             var i, len, record, data = this._data, view = this._dataView, filter = this._filteredData;
             if (!data || isNaN(index) || index < 0 || index >= data.length) {
-                {
-                    var __ms = new Date().getTime() - __start;
-                    _putstat('removeRecordByIndex', __ms);
-                }
+                _putstat('removeRecordByIndex', __start);
+                __popstack();
                 return;
             }
             record = data[index];
@@ -5944,34 +5356,30 @@
                     }
                 }
                 if (data === filter) {
-                    {
-                        var __ms = new Date().getTime() - __start;
-                        _putstat('removeRecordByIndex', __ms);
-                    }
+                    _putstat('removeRecordByIndex', __start);
+                    __popstack();
                     return;
                 }
                 data = filter;
             }
-            {
-                var __ms = new Date().getTime() - __start;
-                _putstat('removeRecordByIndex', __ms);
-            }
+            _putstat('removeRecordByIndex', __start);
+            __popstack();
         },
         setCellValue: function (rowId, colId, val, autoCommit) {
-            var __start = new Date().getTime();
+            __pushstack('setCellValue');
+            var __start = _getstart();
             var t = this._createCellTransaction(rowId, colId, val);
             this._addTransaction(t);
             if (autoCommit === true) {
                 this.commit(rowId);
             }
-            {
-                var __ms = new Date().getTime() - __start;
-                _putstat('setCellValue', __ms);
-            }
+            _putstat('setCellValue', __start);
+            __popstack();
             return t;
         },
         updateRow: function (rowId, rowObject, autoCommit) {
-            var __start = new Date().getTime();
+            __pushstack('updateRow');
+            var __start = _getstart();
             var t = this._createRowTransaction(rowId, rowObject), oldRow = this.settings.primaryKey === null ? this._data[parseInt(rowId, 10)] : this.findRecordByKey(rowId), rowIndex = this.settings.primaryKey === null ? rowId : $.ig.indexInArray(this._data, oldRow);
             this._addTransaction(t);
             if (autoCommit === true) {
@@ -5995,14 +5403,13 @@
                     }, this);
                 }
             }
-            {
-                var __ms = new Date().getTime() - __start;
-                _putstat('updateRow', __ms);
-            }
+            _putstat('updateRow', __start);
+            __popstack();
             return t;
         },
         addRow: function (rowId, rowObject, autoCommit) {
-            var __start = new Date().getTime();
+            __pushstack('addRow');
+            var __start = _getstart();
             var t = this._createNewRowTransaction(rowId, rowObject);
             this._addTransaction(t);
             if (autoCommit === true) {
@@ -6024,14 +5431,13 @@
                     }, this);
                 }
             }
-            {
-                var __ms = new Date().getTime() - __start;
-                _putstat('addRow', __ms);
-            }
+            _putstat('addRow', __start);
+            __popstack();
             return t;
         },
         insertRow: function (rowId, rowObject, rowIndex, autoCommit) {
-            var __start = new Date().getTime();
+            __pushstack('insertRow');
+            var __start = _getstart();
             var t = this._createInsertRowTransaction(rowId, rowObject, rowIndex);
             this._addTransaction(t);
             if (autoCommit === true) {
@@ -6055,14 +5461,13 @@
                     }, this);
                 }
             }
-            {
-                var __ms = new Date().getTime() - __start;
-                _putstat('insertRow', __ms);
-            }
+            _putstat('insertRow', __start);
+            __popstack();
             return t;
         },
         deleteRow: function (rowId, autoCommit) {
-            var __start = new Date().getTime();
+            __pushstack('deleteRow');
+            var __start = _getstart();
             var t = this._createDeleteRowTransaction(rowId), row = this.settings.primaryKey === null ? this._data[parseInt(rowId, 10)] : this.findRecordByKey(rowId), rowIndex = this.settings.primaryKey === null ? rowId : $.ig.indexInArray(this._data, row), isNewRow = false, i, j;
             for (i = 0; this.settings.aggregateTransactions && i < this._transactionLog.length; i++) {
                 if (this._transactionLog[i].type === 'newrow' && this._transactionLog[i].rowId === rowId) {
@@ -6101,31 +5506,28 @@
                     }
                 }
             }
-            {
-                var __ms = new Date().getTime() - __start;
-                _putstat('deleteRow', __ms);
-            }
+            _putstat('deleteRow', __start);
+            __popstack();
         },
         addNode: function (data) {
-            var __start = new Date().getTime();
+            __pushstack('addNode');
+            var __start = _getstart();
             var t = this._createAddNodeTransaction(data);
             this._addTransaction(t);
-            {
-                var __ms = new Date().getTime() - __start;
-                _putstat('addNode', __ms);
-            }
+            _putstat('addNode', __start);
+            __popstack();
         },
         removeNode: function (data) {
-            var __start = new Date().getTime();
+            __pushstack('removeNode');
+            var __start = _getstart();
             var t = this._createRemoveNodeTransaction(data);
             this._addTransaction(t);
-            {
-                var __ms = new Date().getTime() - __start;
-                _putstat('removeNode', __ms);
-            }
+            _putstat('removeNode', __start);
+            __popstack();
         },
         getDetachedRecord: function (t) {
-            var __start = new Date().getTime();
+            __pushstack('getDetachedRecord');
+            var __start = _getstart();
             var o = $.type(this._data[0]) === 'array' ? [] : {}, i, originalRec;
             if (this.settings.primaryKey === null) {
                 originalRec = this._data[parseInt(t.rowId, 10)];
@@ -6145,10 +5547,8 @@
             }
             if (t.type === 'cell') {
                 o[t.col] = t.value;
-                {
-                    var __ms = new Date().getTime() - __start;
-                    _putstat('getDetachedRecord', __ms);
-                }
+                _putstat('getDetachedRecord', __start);
+                __popstack();
                 return o;
             }
             if (o !== 'array') {
@@ -6162,14 +5562,13 @@
                     o[i] = t.row[i];
                 }
             }
-            {
-                var __ms = new Date().getTime() - __start;
-                _putstat('getDetachedRecord', __ms);
-            }
+            _putstat('getDetachedRecord', __start);
+            __popstack();
             return o;
         },
         commit: function (id) {
-            var __start = new Date().getTime();
+            __pushstack('commit');
+            var __start = _getstart();
             if (id !== null && id !== undefined) {
                 this._commitTransactionsByRowId(id);
             } else {
@@ -6178,13 +5577,12 @@
                     this._commitTransaction(this._transactionLog.pop());
                 }
             }
-            {
-                var __ms = new Date().getTime() - __start;
-                _putstat('commit', __ms);
-            }
+            _putstat('commit', __start);
+            __popstack();
         },
         rollback: function (id) {
-            var __start = new Date().getTime();
+            __pushstack('rollback');
+            var __start = _getstart();
             var i;
             if (id !== null && id !== undefined) {
                 this._rollbackTransactionsByRowId(id);
@@ -6194,33 +5592,28 @@
                     this._rollbackTransaction(this._transactionLog[i]);
                 }
             }
-            {
-                var __ms = new Date().getTime() - __start;
-                _putstat('rollback', __ms);
-            }
+            _putstat('rollback', __start);
+            __popstack();
         },
         pendingTransactions: function () {
-            var __start = new Date().getTime();
-            {
-                var __ms = new Date().getTime() - __start;
-                _putstat('pendingTransactions', __ms);
-            }
+            __pushstack('pendingTransactions');
+            var __start = _getstart();
+            _putstat('pendingTransactions', __start);
+            __popstack();
             return this._transactionLog;
         },
         allTransactions: function () {
-            var __start = new Date().getTime();
-            {
-                var __ms = new Date().getTime() - __start;
-                _putstat('allTransactions', __ms);
-            }
+            __pushstack('allTransactions');
+            var __start = _getstart();
+            _putstat('allTransactions', __start);
+            __popstack();
             return this._accumulatedTransactionLog;
         },
         _createCellTransaction: function (rowId, colId, val) {
-            var __start = new Date().getTime();
-            {
-                var __ms = new Date().getTime() - __start;
-                _putstat('_createCellTransaction', __ms);
-            }
+            __pushstack('_createCellTransaction');
+            var __start = _getstart();
+            _putstat('_createCellTransaction', __start);
+            __popstack();
             return {
                 type: 'cell',
                 rowId: rowId,
@@ -6230,11 +5623,10 @@
             };
         },
         _createRowTransaction: function (rowId, rowObject) {
-            var __start = new Date().getTime();
-            {
-                var __ms = new Date().getTime() - __start;
-                _putstat('_createRowTransaction', __ms);
-            }
+            __pushstack('_createRowTransaction');
+            var __start = _getstart();
+            _putstat('_createRowTransaction', __start);
+            __popstack();
             return {
                 type: 'row',
                 tid: this._generateTransactionId(),
@@ -6243,11 +5635,10 @@
             };
         },
         _createNewRowTransaction: function (rowId, rowObject) {
-            var __start = new Date().getTime();
-            {
-                var __ms = new Date().getTime() - __start;
-                _putstat('_createNewRowTransaction', __ms);
-            }
+            __pushstack('_createNewRowTransaction');
+            var __start = _getstart();
+            _putstat('_createNewRowTransaction', __start);
+            __popstack();
             return {
                 type: 'newrow',
                 tid: this._generateTransactionId(),
@@ -6256,11 +5647,10 @@
             };
         },
         _createInsertRowTransaction: function (rowId, rowObject, rowIndex) {
-            var __start = new Date().getTime();
-            {
-                var __ms = new Date().getTime() - __start;
-                _putstat('_createInsertRowTransaction', __ms);
-            }
+            __pushstack('_createInsertRowTransaction');
+            var __start = _getstart();
+            _putstat('_createInsertRowTransaction', __start);
+            __popstack();
             return {
                 type: 'insertrow',
                 tid: this._generateTransactionId(),
@@ -6270,11 +5660,10 @@
             };
         },
         _createDeleteRowTransaction: function (rowId) {
-            var __start = new Date().getTime();
-            {
-                var __ms = new Date().getTime() - __start;
-                _putstat('_createDeleteRowTransaction', __ms);
-            }
+            __pushstack('_createDeleteRowTransaction');
+            var __start = _getstart();
+            _putstat('_createDeleteRowTransaction', __start);
+            __popstack();
             return {
                 type: 'deleterow',
                 tid: this._generateTransactionId(),
@@ -6282,11 +5671,10 @@
             };
         },
         _createAddNodeTransaction: function (data) {
-            var __start = new Date().getTime();
-            {
-                var __ms = new Date().getTime() - __start;
-                _putstat('_createAddNodeTransaction', __ms);
-            }
+            __pushstack('_createAddNodeTransaction');
+            var __start = _getstart();
+            _putstat('_createAddNodeTransaction', __start);
+            __popstack();
             return {
                 type: 'addnode',
                 tid: this._generateTransactionId(),
@@ -6294,11 +5682,10 @@
             };
         },
         _createRemoveNodeTransaction: function (data) {
-            var __start = new Date().getTime();
-            {
-                var __ms = new Date().getTime() - __start;
-                _putstat('_createRemoveNodeTransaction', __ms);
-            }
+            __pushstack('_createRemoveNodeTransaction');
+            var __start = _getstart();
+            _putstat('_createRemoveNodeTransaction', __start);
+            __popstack();
             return {
                 type: 'removenode',
                 tid: this._generateTransactionId(),
@@ -6306,7 +5693,8 @@
             };
         },
         _addTransaction: function (t) {
-            var __start = new Date().getTime();
+            __pushstack('_addTransaction');
+            var __start = _getstart();
             var exists = false, i = 0, prop, globalt, j, dirty = true, k;
             if (t.type === 'cell') {
                 for (i = 0; i < this._transactionLog.length; i++) {
@@ -6339,10 +5727,8 @@
                             this._transactionLog[j].row[t.col] = t.value;
                         }
                         this._syncGlobalTransaction(this._transactionLog[j]);
-                        {
-                            var __ms = new Date().getTime() - __start;
-                            _putstat('_addTransaction', __ms);
-                        }
+                        _putstat('_addTransaction', __start);
+                        __popstack();
                         return;
                     }
                 }
@@ -6367,10 +5753,8 @@
                                 if (this._transactionLog[j].type === 'newrow' && this._transactionLog[j].rowId === t.rowId) {
                                     this._transactionLog[j].row = t.row;
                                     this._syncGlobalTransaction(this._transactionLog[j]);
-                                    {
-                                        var __ms = new Date().getTime() - __start;
-                                        _putstat('_addTransaction', __ms);
-                                    }
+                                    _putstat('_addTransaction', __start);
+                                    __popstack();
                                     return;
                                 }
                             }
@@ -6390,10 +5774,8 @@
                 }
             } else if (t.type === 'addnode' || t.type === 'removenode') {
                 this._transactionLog.push(t);
-                {
-                    var __ms = new Date().getTime() - __start;
-                    _putstat('_addTransaction', __ms);
-                }
+                _putstat('_addTransaction', __start);
+                __popstack();
                 return;
             }
             if (!exists) {
@@ -6410,19 +5792,16 @@
                 }
                 this._accumulatedTransactionLog.push(globalt);
             }
-            {
-                var __ms = new Date().getTime() - __start;
-                _putstat('_addTransaction', __ms);
-            }
+            _putstat('_addTransaction', __start);
+            __popstack();
         },
         _syncGlobalTransaction: function (t) {
-            var __start = new Date().getTime();
+            __pushstack('_syncGlobalTransaction');
+            var __start = _getstart();
             var i, prop;
             if (!t) {
-                {
-                    var __ms = new Date().getTime() - __start;
-                    _putstat('_syncGlobalTransaction', __ms);
-                }
+                _putstat('_syncGlobalTransaction', __start);
+                __popstack();
                 return;
             }
             if (t.type === 'cell') {
@@ -6451,13 +5830,12 @@
                     }
                 }
             }
-            {
-                var __ms = new Date().getTime() - __start;
-                _putstat('_syncGlobalTransaction', __ms);
-            }
+            _putstat('_syncGlobalTransaction', __start);
+            __popstack();
         },
         _removeTransactionByTransactionId: function (tid, removeFromAll) {
-            var __start = new Date().getTime();
+            __pushstack('_removeTransactionByTransactionId');
+            var __start = _getstart();
             var i;
             for (i = 0; i < this._transactionLog.length; i++) {
                 if (this._transactionLog[i].tid === tid) {
@@ -6473,13 +5851,12 @@
                     }
                 }
             }
-            {
-                var __ms = new Date().getTime() - __start;
-                _putstat('_removeTransactionByTransactionId', __ms);
-            }
+            _putstat('_removeTransactionByTransactionId', __start);
+            __popstack();
         },
         _removeTransactionsByRecordId: function (id) {
-            var __start = new Date().getTime();
+            __pushstack('_removeTransactionsByRecordId');
+            var __start = _getstart();
             var i;
             for (i = 0; i < this._transactionLog.length; i++) {
                 if (this._transactionLog[i].rowId === id) {
@@ -6487,13 +5864,12 @@
                     break;
                 }
             }
-            {
-                var __ms = new Date().getTime() - __start;
-                _putstat('_removeTransactionsByRecordId', __ms);
-            }
+            _putstat('_removeTransactionsByRecordId', __start);
+            __popstack();
         },
         _addRow: function (row, index, origDs) {
-            var __start = new Date().getTime();
+            __pushstack('_addRow');
+            var __start = _getstart();
             var data, key, count = 0, schema = this.settings.schema, layouts = schema ? schema.layouts : null, lo, all = [
                     this._data,
                     this._dataView,
@@ -6528,13 +5904,12 @@
                     count++;
                 }
             }
-            {
-                var __ms = new Date().getTime() - __start;
-                _putstat('_addRow', __ms);
-            }
+            _putstat('_addRow', __start);
+            __popstack();
         },
         _commitTransaction: function (t) {
-            var __start = new Date().getTime();
+            __pushstack('_commitTransaction');
+            var __start = _getstart();
             var i, prop, rec, origRec, origDs = this.settings.localSchemaTransform ? this._origDs : null;
             if (origDs === this._data) {
                 origDs = null;
@@ -6585,63 +5960,57 @@
                 this._addRow(t.row, t.rowIndex, origDs);
             }
             this._removeTransactionByTransactionId(t.tid);
-            {
-                var __ms = new Date().getTime() - __start;
-                _putstat('_commitTransaction', __ms);
-            }
+            _putstat('_commitTransaction', __start);
+            __popstack();
         },
         _rollbackTransaction: function (t) {
-            var __start = new Date().getTime();
+            __pushstack('_rollbackTransaction');
+            var __start = _getstart();
             this._removeTransactionByTransactionId(t.tid, true);
-            {
-                var __ms = new Date().getTime() - __start;
-                _putstat('_rollbackTransaction', __ms);
-            }
+            _putstat('_rollbackTransaction', __start);
+            __popstack();
         },
         _commitTransactionsByRowId: function (id) {
-            var __start = new Date().getTime();
+            __pushstack('_commitTransactionsByRowId');
+            var __start = _getstart();
             var i;
             for (i = 0; i < this._transactionLog.length; i++) {
                 if (this._transactionLog[i].rowId === id) {
                     this._commitTransaction(this._transactionLog[i]);
                 }
             }
-            {
-                var __ms = new Date().getTime() - __start;
-                _putstat('_commitTransactionsByRowId', __ms);
-            }
+            _putstat('_commitTransactionsByRowId', __start);
+            __popstack();
         },
         _rollbackTransactionsByRowId: function (id) {
-            var __start = new Date().getTime();
+            __pushstack('_rollbackTransactionsByRowId');
+            var __start = _getstart();
             var i;
             for (i = 0; i < this._transactionLog.length; i++) {
                 if (this._transactionLog[i].rowId === id) {
                     this._rollbackTransaction(this._transactionLog[i]);
                 }
             }
-            {
-                var __ms = new Date().getTime() - __start;
-                _putstat('_rollbackTransactionsByRowId', __ms);
-            }
+            _putstat('_rollbackTransactionsByRowId', __start);
+            __popstack();
         },
         transactionsAsString: function () {
-            var __start = new Date().getTime();
-            {
-                var __ms = new Date().getTime() - __start;
-                _putstat('transactionsAsString', __ms);
-            }
+            __pushstack('transactionsAsString');
+            var __start = _getstart();
+            _putstat('transactionsAsString', __start);
+            __popstack();
             return JSON.stringify(this._accumulatedTransactionLog);
         },
         _generateTransactionId: function () {
-            var __start = new Date().getTime();
-            {
-                var __ms = new Date().getTime() - __start;
-                _putstat('_generateTransactionId', __ms);
-            }
+            __pushstack('_generateTransactionId');
+            var __start = _getstart();
+            _putstat('_generateTransactionId', __start);
+            __popstack();
             return ((1 + Math.random()) * parseInt('10000', 16)).toString(16).substring(1, 5);
         },
         saveChanges: function (success, error) {
-            var __start = new Date().getTime();
+            __pushstack('saveChanges');
+            var __start = _getstart();
             if (this.settings.updateUrl !== null) {
                 var me = this, opts;
                 opts = {
@@ -6649,37 +6018,34 @@
                     url: this.settings.updateUrl,
                     data: { ig_transactions: JSON.stringify(this._accumulatedTransactionLog) },
                     success: function (data, textStatus, jqXHR) {
-                        var __start = new Date().getTime();
+                        __pushstack('success');
+                        var __start = _getstart();
                         me._saveChangesSuccess(data, textStatus, jqXHR);
                         if (success) {
                             success(data, textStatus, jqXHR);
                         }
-                        {
-                            var __ms = new Date().getTime() - __start;
-                            _putstat('success', __ms);
-                        }
+                        _putstat('success', __start);
+                        __popstack();
                     },
                     error: function (jqXHR, textStatus, errorThrown) {
-                        var __start = new Date().getTime();
+                        __pushstack('error');
+                        var __start = _getstart();
                         me._saveChangesError(jqXHR, textStatus, errorThrown);
                         if (error) {
                             error(jqXHR, textStatus, errorThrown);
                         }
-                        {
-                            var __ms = new Date().getTime() - __start;
-                            _putstat('error', __ms);
-                        }
+                        _putstat('error', __start);
+                        __popstack();
                     }
                 };
                 $.ajax(opts);
             }
-            {
-                var __ms = new Date().getTime() - __start;
-                _putstat('saveChanges', __ms);
-            }
+            _putstat('saveChanges', __start);
+            __popstack();
         },
         _saveChangesSuccess: function (data, textStatus, jqXHR) {
-            var __start = new Date().getTime();
+            __pushstack('_saveChangesSuccess');
+            var __start = _getstart();
             if (data.Success) {
                 this.commit();
                 this._transactionLog = [];
@@ -6689,72 +6055,66 @@
             while (i-- > 0) {
                 schs[i](data, textStatus, jqXHR);
             }
-            {
-                var __ms = new Date().getTime() - __start;
-                _putstat('_saveChangesSuccess', __ms);
-            }
+            _putstat('_saveChangesSuccess', __start);
+            __popstack();
         },
         _saveChangesError: function (jqXHR, textStatus, errorThrown) {
-            var __start = new Date().getTime();
+            __pushstack('_saveChangesError');
+            var __start = _getstart();
             var sche = this._saveChangesErrorHandlers, i = sche ? sche.length : 0;
             while (i-- > 0) {
                 sche[i](jqXHR, textStatus, errorThrown);
             }
-            {
-                var __ms = new Date().getTime() - __start;
-                _putstat('_saveChangesError', __ms);
-            }
+            _putstat('_saveChangesError', __start);
+            __popstack();
         },
         _addChangesSuccessHandler: function (functionDelegate) {
-            var __start = new Date().getTime();
+            __pushstack('_addChangesSuccessHandler');
+            var __start = _getstart();
             if (this._saveChangesHandlers === undefined) {
                 this._saveChangesHandlers = [];
             }
             this._saveChangesHandlers[this._saveChangesHandlers.length] = functionDelegate;
-            {
-                var __ms = new Date().getTime() - __start;
-                _putstat('_addChangesSuccessHandler', __ms);
-            }
+            _putstat('_addChangesSuccessHandler', __start);
+            __popstack();
         },
         _removeChangesSuccessHandler: function (functionDelegate) {
-            var __start = new Date().getTime();
+            __pushstack('_removeChangesSuccessHandler');
+            var __start = _getstart();
             if (this._saveChangesHandlers !== undefined) {
                 var index = $.ig.indexInArray(this._saveChangesHandlers, functionDelegate);
                 if (index > -1) {
                     this._saveChangesHandlers = this._saveChangesHandlers.slice(0, index).concat(this._saveChangesHandlers.slice(index + 1, this._saveChangesHandlers.length));
                 }
             }
-            {
-                var __ms = new Date().getTime() - __start;
-                _putstat('_removeChangesSuccessHandler', __ms);
-            }
+            _putstat('_removeChangesSuccessHandler', __start);
+            __popstack();
         },
         _addChangesErrorHandler: function (functionDelegate) {
-            var __start = new Date().getTime();
+            __pushstack('_addChangesErrorHandler');
+            var __start = _getstart();
             if (this._saveChangesErrorHandlers === undefined) {
                 this._saveChangesErrorHandlers = [];
             }
             this._saveChangesErrorHandlers[this._saveChangesErrorHandlers.length] = functionDelegate;
-            {
-                var __ms = new Date().getTime() - __start;
-                _putstat('_addChangesErrorHandler', __ms);
-            }
+            _putstat('_addChangesErrorHandler', __start);
+            __popstack();
         },
         _removeChangesErrorHandler: function (functionDelegate) {
-            var __start = new Date().getTime();
+            __pushstack('_removeChangesErrorHandler');
+            var __start = _getstart();
             if (this._saveChangesErrorHandlers !== undefined) {
                 var index = $.ig.indexInArray(this._saveChangesErrorHandlers, functionDelegate);
                 if (index > -1) {
                     this._saveChangesErrorHandlers = this._saveChangesErrorHandlers.slice(0, index).concat(this._saveChangesErrorHandlers.slice(index + 1, this._saveChangesErrorHandlers.length));
                 }
             }
-            {
-                var __ms = new Date().getTime() - __start;
-                _putstat('_removeChangesErrorHandler', __ms);
-            }
+            _putstat('_removeChangesErrorHandler', __start);
+            __popstack();
         },
         dataBind: function (callback, callee) {
-            var __start = new Date().getTime();
+            __pushstack('dataBind');
+            var __start = _getstart();
             var table, tableObj, dsObj, ds, s, p = this.settings, args, resKey, noCancel = true;
             this._transactionLog = [];
             this._accumulatedTransactionLog = [];
@@ -6899,14 +6259,13 @@
                     p.dataBound(this);
                 }
             }
-            {
-                var __ms = new Date().getTime() - __start;
-                _putstat('dataBind', __ms);
-            }
+            _putstat('dataBind', __start);
+            __popstack();
             return this;
         },
         summariesResponse: function (key, dsObj) {
-            var __start = new Date().getTime();
+            __pushstack('summariesResponse');
+            var __start = _getstart();
             var rec, resPath, i, schema, func, offsets, offset, obj;
             if (key !== null && key !== '') {
                 rec = dsObj;
@@ -6945,25 +6304,23 @@
                     }
                 }
             }
-            {
-                var __ms = new Date().getTime() - __start;
-                _putstat('summariesResponse', __ms);
-            }
+            _putstat('summariesResponse', __start);
+            __popstack();
         },
         _populateTransformedData: function (data) {
-            var __start = new Date().getTime();
+            __pushstack('_populateTransformedData');
+            var __start = _getstart();
             if (data !== null && data !== undefined) {
                 this._transformedData = data;
             } else {
                 this._transformedData = this._data;
             }
-            {
-                var __ms = new Date().getTime() - __start;
-                _putstat('_populateTransformedData', __ms);
-            }
+            _putstat('_populateTransformedData', __start);
+            __popstack();
         },
         _invokeCallback: function (callee, callback) {
-            var __start = new Date().getTime();
+            __pushstack('_invokeCallback');
+            var __start = _getstart();
             var cbResolved, calleeResolved;
             cbResolved = callback || this.settings.callback;
             calleeResolved = callee || this.settings.callee;
@@ -6978,13 +6335,12 @@
                     cbResolved(true, '', this);
                 }
             }
-            {
-                var __ms = new Date().getTime() - __start;
-                _putstat('_invokeCallback', __ms);
-            }
+            _putstat('_invokeCallback', __start);
+            __popstack();
         },
         _remoteData: function (callback, callee) {
-            var __start = new Date().getTime();
+            __pushstack('_remoteData');
+            var __start = _getstart();
             var params, url = this.settings.dataSource, dataType = this.settings.responseDataType, contentType = this.settings.responseContentType, options, verb = this.settings.requestType;
             params = this._encodeUrl();
             if (callback) {
@@ -7007,24 +6363,22 @@
                 complete: this._completeCallback,
                 converters: {
                     'text json': function (value) {
-                        var __start = new Date().getTime();
-                        {
-                            var __ms = new Date().getTime() - __start;
-                            _putstat('undefined', __ms);
-                        }
+                        __pushstack('undefined');
+                        var __start = _getstart();
+                        _putstat('undefined', __start);
+                        __popstack();
                         return value;
                     }
                 },
                 error: this._errorCallback
             };
             this._processRequest(options);
-            {
-                var __ms = new Date().getTime() - __start;
-                _putstat('_remoteData', __ms);
-            }
+            _putstat('_remoteData', __start);
+            __popstack();
         },
         _dataFilter: function (data, type) {
-            var __start = new Date().getTime();
+            __pushstack('_dataFilter');
+            var __start = _getstart();
             var ds, schema = this.context.schema(), rawData, t = this.context.settings.type, ver, returnString = false;
             if (type === undefined || type === null) {
                 if (typeof data === 'object' && data && typeof data.charAt !== 'function') {
@@ -7093,14 +6447,13 @@
                 }
                 this.context._alreadySet = true;
             }
-            {
-                var __ms = new Date().getTime() - __start;
-                _putstat('_dataFilter', __ms);
-            }
+            _putstat('_dataFilter', __start);
+            __popstack();
             return ds;
         },
         _successCallback: function (data) {
-            var __start = new Date().getTime();
+            __pushstack('_successCallback');
+            var __start = _getstart();
             var x, len = data ? data.length : 0;
             if ((data === undefined || data === null) && !this._alreadySet) {
                 this._data = [];
@@ -7125,13 +6478,12 @@
             this._isFilteringReq = false;
             this._isSortingReq = false;
             this._isSummariesReq = false;
-            {
-                var __ms = new Date().getTime() - __start;
-                _putstat('_successCallback', __ms);
-            }
+            _putstat('_successCallback', __start);
+            __popstack();
         },
         _errorCallback: function (req, status, error) {
-            var __start = new Date().getTime();
+            __pushstack('_errorCallback');
+            var __start = _getstart();
             var f = this._customCallback || this.settings.callback, errmsg, statusMsg;
             this._isPagingReq = false;
             this._isFilteringReq = false;
@@ -7148,13 +6500,12 @@
             } else if (f) {
                 f(false, errmsg, this);
             }
-            {
-                var __ms = new Date().getTime() - __start;
-                _putstat('_errorCallback', __ms);
-            }
+            _putstat('_errorCallback', __start);
+            __popstack();
         },
         _completeCallback: function (req, status) {
-            var __start = new Date().getTime();
+            __pushstack('_completeCallback');
+            var __start = _getstart();
             var f, callee, s = this.settings.sorting, p = this.settings.paging;
             if (s.type === 'local' && s.defaultFields.length > 0) {
                 this.sort(s.defaultFields, s.defaultDirection, false);
@@ -7173,13 +6524,12 @@
             } else if (f) {
                 f(true, '', this);
             }
-            {
-                var __ms = new Date().getTime() - __start;
-                _putstat('_completeCallback', __ms);
-            }
+            _putstat('_completeCallback', __start);
+            __popstack();
         },
         _processRequest: function (options) {
-            var __start = new Date().getTime();
+            __pushstack('_processRequest');
+            var __start = _getstart();
             var o, s;
             if (this.settings.responseDataType === 'jsonp') {
                 o = {
@@ -7200,13 +6550,12 @@
             } else {
                 $.ajax(options);
             }
-            {
-                var __ms = new Date().getTime() - __start;
-                _putstat('_processRequest', __ms);
-            }
+            _putstat('_processRequest', __start);
+            __popstack();
         },
         _jsonpFilter: function (data, type) {
-            var __start = new Date().getTime();
+            __pushstack('_jsonpFilter');
+            var __start = _getstart();
             var resp, x;
             this.context = this;
             resp = this._dataFilter(data, 'json');
@@ -7223,13 +6572,12 @@
             }
             this._populateTransformedData();
             this._completeCallback();
-            {
-                var __ms = new Date().getTime() - __start;
-                _putstat('_jsonpFilter', __ms);
-            }
+            _putstat('_jsonpFilter', __start);
+            __popstack();
         },
         _processJsonResponse: function (data, context) {
-            var __start = new Date().getTime();
+            __pushstack('_processJsonResponse');
+            var __start = _getstart();
             var ds, schema = context.schema(), resKey, resPath, i;
             if (this._response_data) {
                 this._response_data(data);
@@ -7262,14 +6610,13 @@
                 this._metadata = data.Metadata;
             }
             this.summariesResponse(this.settings.summaries.summariesResponseKey, data);
-            {
-                var __ms = new Date().getTime() - __start;
-                _putstat('_processJsonResponse', __ms);
-            }
+            _putstat('_processJsonResponse', __start);
+            __popstack();
             return ds;
         },
         _processXmlResponse: function (data, isParsed, context) {
-            var __start = new Date().getTime();
+            __pushstack('_processXmlResponse');
+            var __start = _getstart();
             var ds, schema = context.schema(), tmpSchema, resKey;
             if (schema && schema.fields && schema.fields().length > 0) {
                 ds = this.settings.localSchemaTransform ? schema.transform(data) : data;
@@ -7282,14 +6629,13 @@
                     ds = context._xmlToArray(data);
                 }
             }
-            {
-                var __ms = new Date().getTime() - __start;
-                _putstat('_processXmlResponse', __ms);
-            }
+            _putstat('_processXmlResponse', __start);
+            __popstack();
             return ds;
         },
         _xmlToArray: function (data) {
-            var __start = new Date().getTime();
+            __pushstack('_xmlToArray');
+            var __start = _getstart();
             var ds = [], root = data, i, r, j, name, val, o;
             o = window.ActiveXObject;
             if (data && data.childNodes && data.childNodes.length === 1) {
@@ -7304,14 +6650,13 @@
                     ds[i][name] = val;
                 }
             }
-            {
-                var __ms = new Date().getTime() - __start;
-                _putstat('_xmlToArray', __ms);
-            }
+            _putstat('_xmlToArray', __start);
+            __popstack();
             return ds;
         },
         _encodeUrl: function () {
-            var __start = new Date().getTime();
+            __pushstack('_encodeUrl');
+            var __start = _getstart();
             var props = this.settings, sParams = {}, fParams = {}, pParams = {}, params, selParams = {}, sumParams = {}, extraParams = {}, pkParams = {}, noCancel = true;
             params = {
                 sortingParams: sParams,
@@ -7339,25 +6684,23 @@
                     props.urlParamsEncoded(this, params);
                 }
             }
-            {
-                var __ms = new Date().getTime() - __start;
-                _putstat('_encodeUrl', __ms);
-            }
+            _putstat('_encodeUrl', __start);
+            __popstack();
             return $.extend(true, {}, params.sortingParams, params.filteringParams, params.pagingParams, params.selectParams, params.summariesParams, params.extraParams, params.pkParams);
         },
         _encodePkParams: function (params) {
-            var __start = new Date().getTime();
+            __pushstack('_encodePkParams');
+            var __start = _getstart();
             var p = this.settings.paging, s = this.settings.sorting, f = this.settings.filtering, sm = this.settings.summaries, pk = this._schema ? this._schema._pk : null;
             if (pk && (p.enabled && p.type === 'remote' || s.type === 'remote' || f.type === 'remote' || sm.type === 'remote')) {
                 params.pkParams.pk = pk;
             }
-            {
-                var __ms = new Date().getTime() - __start;
-                _putstat('_encodePkParams', __ms);
-            }
+            _putstat('_encodePkParams', __start);
+            __popstack();
         },
         _encodeSelectParams: function (params) {
-            var __start = new Date().getTime();
+            __pushstack('_encodeSelectParams');
+            var __start = _getstart();
             var selParams = params.selectParams, i;
             if (!this.settings.localSchemaTransform && this.schema() && this.schema().fields().length > 0) {
                 selParams.$select = '';
@@ -7370,13 +6713,12 @@
             } else if (!this.settings.localSchemaTransform && this.schema() && this.schema().fields().length === 0) {
                 selParams.$select = '*';
             }
-            {
-                var __ms = new Date().getTime() - __start;
-                _putstat('_encodeSelectParams', __ms);
-            }
+            _putstat('_encodeSelectParams', __start);
+            __popstack();
         },
         _encodePagingParams: function (params) {
-            var __start = new Date().getTime();
+            __pushstack('_encodePagingParams');
+            var __start = _getstart();
             var p = this.settings.paging;
             if (p.enabled && p.type === 'remote') {
                 this._isPagingReq = true;
@@ -7392,13 +6734,12 @@
                     }
                 }
             }
-            {
-                var __ms = new Date().getTime() - __start;
-                _putstat('_encodePagingParams', __ms);
-            }
+            _putstat('_encodePagingParams', __start);
+            __popstack();
         },
         _encodeSortingParams: function (params) {
-            var __start = new Date().getTime();
+            __pushstack('_encodeSortingParams');
+            var __start = _getstart();
             var s = this.settings.sorting, tmpdir, i, sfields, url, urlQS, hlayout = null;
             if (s.type === 'remote') {
                 if (s.exprString) {
@@ -7443,13 +6784,12 @@
                     }
                 }
             }
-            {
-                var __ms = new Date().getTime() - __start;
-                _putstat('_encodeSortingParams', __ms);
-            }
+            _putstat('_encodeSortingParams', __start);
+            __popstack();
         },
         _encodeFilteringParams: function (params) {
-            var __start = new Date().getTime();
+            __pushstack('_encodeFilteringParams');
+            var __start = _getstart();
             var f = this.settings.filtering, ffields, i, key, exprNotReq, cond, d, day, month, year, curDate, expr, fieldName;
             if (f.type === 'remote') {
                 if (f.exprString) {
@@ -7608,13 +6948,12 @@
                     params.filteringParams[f.filterLogicUrlKey] = ffields[0].logic;
                 }
             }
-            {
-                var __ms = new Date().getTime() - __start;
-                _putstat('_encodeFilteringParams', __ms);
-            }
+            _putstat('_encodeFilteringParams', __start);
+            __popstack();
         },
         _encodeSummariesParams: function (params) {
-            var __start = new Date().getTime();
+            __pushstack('_encodeSummariesParams');
+            var __start = _getstart();
             var i, j, s = this.settings.summaries, cs = s.columnSettings, methodsStr, csLength = cs.length;
             if (s.type === 'remote') {
                 for (i = 0; i < csLength; i++) {
@@ -7632,13 +6971,12 @@
                     }
                 }
             }
-            {
-                var __ms = new Date().getTime() - __start;
-                _putstat('_encodeSummariesParams', __ms);
-            }
+            _putstat('_encodeSummariesParams', __start);
+            __popstack();
         },
         _page: function (keepRecords) {
-            var __start = new Date().getTime();
+            __pushstack('_page');
+            var __start = _getstart();
             var count = 0, startIndex, endIndex, i = 0;
             if (keepRecords === undefined) {
                 keepRecords = false;
@@ -7661,22 +6999,23 @@
                     this._dataView[count++] = this._filteredData[i];
                 }
             }
-            {
-                var __ms = new Date().getTime() - __start;
-                _putstat('_page', __ms);
-            }
+            _putstat('_page', __start);
+            __popstack();
         },
         sort: function (fields, direction, keepSortState) {
-            var __start = new Date().getTime();
+            __pushstack('sort');
+            var __start = _getstart();
             var s = this.settings.sorting, schema, sortF, convertFunc, p = this.settings.paging, data, resetPaging = false, settings = this.settings;
             if (fields === undefined || fields === null) {
                 throw new Error($.ig.DataSourceLocale.locale.noSortingFields);
             }
             sortF = function (grid, fields, schema, reverse, convertf) {
-                var __start = new Date().getTime();
+                __pushstack('sortF');
+                var __start = _getstart();
                 reverse = reverse ? -1 : 1;
                 function compareVals(format, enableUTCDates, rowTemplate, x, y) {
-                    var __start = new Date().getTime();
+                    __pushstack('compareVals');
+                    var __start = _getstart();
                     if (format) {
                         if ($.type(x) === 'date' && $.type(y) === 'date') {
                             if (format === 'time' || format === 'timeLong' || format === 'h:mm:ss tt') {
@@ -7686,38 +7025,29 @@
                         }
                     }
                     if ((x === null || x === undefined) && (y === null || y === undefined)) {
-                        {
-                            var __ms = new Date().getTime() - __start;
-                            _putstat('compareVals', __ms);
-                        }
+                        _putstat('compareVals', __start);
+                        __popstack();
                         return 0;
                     }
                     if ((x === null || x === undefined) && y !== null && y !== undefined) {
-                        {
-                            var __ms = new Date().getTime() - __start;
-                            _putstat('compareVals', __ms);
-                        }
+                        _putstat('compareVals', __start);
+                        __popstack();
                         return -1;
                     }
                     if (x !== null && x !== undefined && (y === null || y === undefined)) {
-                        {
-                            var __ms = new Date().getTime() - __start;
-                            _putstat('compareVals', __ms);
-                        }
+                        _putstat('compareVals', __start);
+                        __popstack();
                         return 1;
                     }
-                    {
-                        var __ms = new Date().getTime() - __start;
-                        _putstat('compareVals', __ms);
-                    }
+                    _putstat('compareVals', __start);
+                    __popstack();
                     return x > y ? 1 : x < y ? -1 : 0;
                 }
-                {
-                    var __ms = new Date().getTime() - __start;
-                    _putstat('sortF', __ms);
-                }
+                _putstat('sortF', __start);
+                __popstack();
                 return function (obj1, obj2) {
-                    var __start = new Date().getTime();
+                    __pushstack('anonymous');
+                    var __start = _getstart();
                     var i, f, arr1 = [], arr2 = [], a, b, key, col, format, o, enableUTCDates, rowTemplate;
                     if (grid) {
                         o = grid.options;
@@ -7774,23 +7104,17 @@
                         }
                     }
                     if (arr1 < arr2) {
-                        {
-                            var __ms = new Date().getTime() - __start;
-                            _putstat('anonymous', __ms);
-                        }
+                        _putstat('anonymous', __start);
+                        __popstack();
                         return -1;
                     }
                     if (arr1 > arr2) {
-                        {
-                            var __ms = new Date().getTime() - __start;
-                            _putstat('anonymous', __ms);
-                        }
+                        _putstat('anonymous', __start);
+                        __popstack();
                         return 1;
                     }
-                    {
-                        var __ms = new Date().getTime() - __start;
-                        _putstat('anonymous', __ms);
-                    }
+                    _putstat('anonymous', __start);
+                    __popstack();
                     return 0;
                 };
             };
@@ -7836,14 +7160,13 @@
                 this._dataView = data;
             }
             this._populateTransformedData(data);
-            {
-                var __ms = new Date().getTime() - __start;
-                _putstat('sort', __ms);
-            }
+            _putstat('sort', __start);
+            __popstack();
             return this;
         },
         clearLocalSorting: function () {
-            var __start = new Date().getTime();
+            __pushstack('clearLocalSorting');
+            var __start = _getstart();
             var s = this.settings.sorting, p = this.settings.paging, data, resetPaging = false;
             if (s.applyToAllData && s.type === 'local') {
                 if (this._filter && (p.type === 'local' && p.enabled === true || p.enabled === false)) {
@@ -7866,14 +7189,13 @@
                 this._dataView = data;
             }
             this._populateTransformedData();
-            {
-                var __ms = new Date().getTime() - __start;
-                _putstat('clearLocalSorting', __ms);
-            }
+            _putstat('clearLocalSorting', __start);
+            __popstack();
             return this;
         },
         _parseSortExpressions: function (s) {
-            var __start = new Date().getTime();
+            __pushstack('_parseSortExpressions');
+            var __start = _getstart();
             var fields = [], tmp, tmp2, i;
             tmp = s.split(',');
             for (i = 0; i < tmp.length; i++) {
@@ -7882,14 +7204,13 @@
                 fields[i].fieldName = tmp2[0];
                 fields[i].dir = tmp2[1];
             }
-            {
-                var __ms = new Date().getTime() - __start;
-                _putstat('_parseSortExpressions', __ms);
-            }
+            _putstat('_parseSortExpressions', __start);
+            __popstack();
             return fields;
         },
         filter: function (fieldExpressions, boolLogic, keepFilterState, fieldExpressionsOnStrings) {
-            var __start = new Date().getTime();
+            __pushstack('filter');
+            var __start = _getstart();
             var i, j, expr = null, count = 0, skipRec = false, f = this.settings.filtering, p = this.settings.paging, data, t, k, schema, fields, tmpbool, resetPaging, allFieldsExpr, stringVal;
             schema = this.schema();
             if (schema === null || schema === undefined) {
@@ -7904,10 +7225,8 @@
                 fieldExpressionsOnStrings = [];
             }
             if ($.type(fieldExpressions) === 'array' && fieldExpressions.length === 0 && $.type(fieldExpressionsOnStrings) === 'array' && fieldExpressionsOnStrings.length === 0) {
-                {
-                    var __ms = new Date().getTime() - __start;
-                    _putstat('filter', __ms);
-                }
+                _putstat('filter', __start);
+                __popstack();
                 return;
             }
             if (f.applyToAllData && f.type === 'local') {
@@ -8012,14 +7331,13 @@
                 }
             }
             this._populateTransformedData(this._filteredData);
-            {
-                var __ms = new Date().getTime() - __start;
-                _putstat('filter', __ms);
-            }
+            _putstat('filter', __start);
+            __popstack();
             return this;
         },
         clearLocalFilter: function () {
-            var __start = new Date().getTime();
+            __pushstack('clearLocalFilter');
+            var __start = _getstart();
             var i, f = this.settings.filtering, p = this.settings.paging, data, resetPaging;
             if (f.applyToAllData && f.type === 'local') {
                 data = this.data();
@@ -8048,14 +7366,13 @@
                 }
             }
             this._populateTransformedData(this._filteredData);
-            {
-                var __ms = new Date().getTime() - __start;
-                _putstat('clearLocalFilter', __ms);
-            }
+            _putstat('clearLocalFilter', __start);
+            __popstack();
             return this;
         },
         _parseFilterExprString: function (expr) {
-            var __start = new Date().getTime();
+            __pushstack('_parseFilterExprString');
+            var __start = _getstart();
             var exprs = $.trim(expr).split(/(?=AND+)|(?=OR+)/i), i, j, fields = [], tmp, tmp2, isInvalid = true;
             for (i = 0; i < exprs.length; i++) {
                 fields[i] = {};
@@ -8136,35 +7453,28 @@
                     throw new Error($.ig.DataSourceLocale.locale.unrecognizedCondition + expr);
                 }
             }
-            {
-                var __ms = new Date().getTime() - __start;
-                _putstat('_parseFilterExprString', __ms);
-            }
+            _putstat('_parseFilterExprString', __start);
+            __popstack();
             return fields;
         },
         _findMatch: function (val, expr, t, ignoreCase, cond) {
-            var __start = new Date().getTime();
+            __pushstack('_findMatch');
+            var __start = _getstart();
             var tmpExpr, exprNotReq = cond === 'false' || cond === 'true' || cond === 'today' || cond === 'yesterday' || cond === 'thisMonth' || cond === 'lastMonth' || cond === 'nextMonth' || cond === 'thisYear' || cond === 'lastYear' || cond === 'nextYear' || cond === 'null' || cond === 'notNull' || cond === 'empty' || cond === 'notEmpty';
             if (expr === '' && !exprNotReq) {
-                {
-                    var __ms = new Date().getTime() - __start;
-                    _putstat('_findMatch', __ms);
-                }
+                _putstat('_findMatch', __start);
+                __popstack();
                 return true;
             }
             tmpExpr = $.trim(expr);
             if (t === 'regexp' || t === 'string' && tmpExpr.startsWith('/') && tmpExpr.endsWith('/')) {
                 if (t === 'regexp') {
-                    {
-                        var __ms = new Date().getTime() - __start;
-                        _putstat('_findMatch', __ms);
-                    }
+                    _putstat('_findMatch', __start);
+                    __popstack();
                     return this._findRegExpMatch(val, expr, false);
                 }
-                {
-                    var __ms = new Date().getTime() - __start;
-                    _putstat('_findMatch', __ms);
-                }
+                _putstat('_findMatch', __start);
+                __popstack();
                 return this._findRegExpMatch(val, tmpExpr.substring(1, tmpExpr.length - 1), true);
             }
             if ($.type(val) === 'date' && (t === undefined || t === null) || t === 'date') {
@@ -8172,34 +7482,27 @@
                     expr = this._parser.toDate(expr);
                 } catch (ignore) {
                 }
-                {
-                    var __ms = new Date().getTime() - __start;
-                    _putstat('_findMatch', __ms);
-                }
+                _putstat('_findMatch', __start);
+                __popstack();
                 return this._findDateMatch(val, expr, cond);
             }
             if ($.type(val) === 'boolean' && (t === undefined || t === null) || t === 'boolean' || t === 'bool') {
-                {
-                    var __ms = new Date().getTime() - __start;
-                    _putstat('_findMatch', __ms);
-                }
+                _putstat('_findMatch', __start);
+                __popstack();
                 return this._findBoolMatch(val, cond);
             }
             if ($.type(val) === 'number' && (t === undefined || t === null) || t === 'number') {
-                {
-                    var __ms = new Date().getTime() - __start;
-                    _putstat('_findMatch', __ms);
-                }
+                _putstat('_findMatch', __start);
+                __popstack();
                 return this._findNumericMatch(val, expr, cond);
             }
-            {
-                var __ms = new Date().getTime() - __start;
-                _putstat('_findMatch', __ms);
-            }
+            _putstat('_findMatch', __start);
+            __popstack();
             return this._findStringMatch(val, expr, ignoreCase, cond);
         },
         _findStringMatch: function (val, expr, ignoreCase, cond) {
-            var __start = new Date().getTime();
+            __pushstack('_findStringMatch');
+            var __start = _getstart();
             var localVal;
             if (val !== null && val !== undefined) {
                 localVal = ignoreCase ? val.toString().toLowerCase() : val || '';
@@ -8210,229 +7513,171 @@
                 expr = ignoreCase ? expr.toString().toLowerCase() : expr.toString();
             }
             if (cond === 'startsWith') {
-                {
-                    var __ms = new Date().getTime() - __start;
-                    _putstat('_findStringMatch', __ms);
-                }
+                _putstat('_findStringMatch', __start);
+                __popstack();
                 return localVal !== null && localVal !== undefined && localVal.startsWith(expr);
             }
             if (cond === 'endsWith') {
-                {
-                    var __ms = new Date().getTime() - __start;
-                    _putstat('_findStringMatch', __ms);
-                }
+                _putstat('_findStringMatch', __start);
+                __popstack();
                 return localVal !== null && localVal !== undefined && localVal.endsWith(expr);
             }
             if (cond === 'contains') {
-                {
-                    var __ms = new Date().getTime() - __start;
-                    _putstat('_findStringMatch', __ms);
-                }
+                _putstat('_findStringMatch', __start);
+                __popstack();
                 return localVal !== null && localVal !== undefined && localVal.indexOf(expr) !== -1;
             }
             if (cond === 'doesNotContain') {
-                {
-                    var __ms = new Date().getTime() - __start;
-                    _putstat('_findStringMatch', __ms);
-                }
+                _putstat('_findStringMatch', __start);
+                __popstack();
                 return localVal !== null && localVal !== undefined && localVal.indexOf(expr) === -1;
             }
             if (cond === 'equals') {
-                {
-                    var __ms = new Date().getTime() - __start;
-                    _putstat('_findStringMatch', __ms);
-                }
+                _putstat('_findStringMatch', __start);
+                __popstack();
                 return localVal !== null && localVal !== undefined && localVal === expr;
             }
             if (cond === 'doesNotEqual') {
-                {
-                    var __ms = new Date().getTime() - __start;
-                    _putstat('_findStringMatch', __ms);
-                }
+                _putstat('_findStringMatch', __start);
+                __popstack();
                 return localVal !== null && localVal !== undefined && localVal !== expr;
             }
             if (cond === 'null') {
-                {
-                    var __ms = new Date().getTime() - __start;
-                    _putstat('_findStringMatch', __ms);
-                }
+                _putstat('_findStringMatch', __start);
+                __popstack();
                 return localVal === null;
             }
             if (cond === 'notNull') {
-                {
-                    var __ms = new Date().getTime() - __start;
-                    _putstat('_findStringMatch', __ms);
-                }
+                _putstat('_findStringMatch', __start);
+                __popstack();
                 return localVal !== null;
             }
             if (cond === 'empty') {
-                {
-                    var __ms = new Date().getTime() - __start;
-                    _putstat('_findStringMatch', __ms);
-                }
+                _putstat('_findStringMatch', __start);
+                __popstack();
                 return localVal === null || localVal === undefined || localVal.length === 0;
             }
             if (cond === 'notEmpty') {
-                {
-                    var __ms = new Date().getTime() - __start;
-                    _putstat('_findStringMatch', __ms);
-                }
+                _putstat('_findStringMatch', __start);
+                __popstack();
                 return localVal === null || localVal === undefined || localVal.length !== 0;
             }
             throw new Error($.ig.DataSourceLocale.locale.errorUnrecognizedFilterCondition + cond);
-            {
-                var __ms = new Date().getTime() - __start;
-                _putstat('_findStringMatch', __ms);
-            }
+            _putstat('_findStringMatch', __start);
+            __popstack();
         },
         _findRegExpMatch: function (val, expr, str) {
-            var __start = new Date().getTime();
+            __pushstack('_findRegExpMatch');
+            var __start = _getstart();
             if (str) {
-                {
-                    var __ms = new Date().getTime() - __start;
-                    _putstat('_findRegExpMatch', __ms);
-                }
+                _putstat('_findRegExpMatch', __start);
+                __popstack();
                 return new RegExp(expr).test(val);
             }
-            {
-                var __ms = new Date().getTime() - __start;
-                _putstat('_findRegExpMatch', __ms);
-            }
+            _putstat('_findRegExpMatch', __start);
+            __popstack();
             return val.match(expr);
         },
         _findNumericMatch: function (val, expr, cond) {
-            var __start = new Date().getTime();
+            __pushstack('_findNumericMatch');
+            var __start = _getstart();
             if ($.type(expr) !== 'number') {
                 expr = this._parser.toNumber(expr);
             }
             if (cond === 'equals') {
-                {
-                    var __ms = new Date().getTime() - __start;
-                    _putstat('_findNumericMatch', __ms);
-                }
+                _putstat('_findNumericMatch', __start);
+                __popstack();
                 return val === expr;
             }
             if (cond === 'doesNotEqual') {
-                {
-                    var __ms = new Date().getTime() - __start;
-                    _putstat('_findNumericMatch', __ms);
-                }
+                _putstat('_findNumericMatch', __start);
+                __popstack();
                 return val !== expr;
             }
             if (cond === 'greaterThan') {
-                {
-                    var __ms = new Date().getTime() - __start;
-                    _putstat('_findNumericMatch', __ms);
-                }
+                _putstat('_findNumericMatch', __start);
+                __popstack();
                 return val > expr;
             }
             if (cond === 'lessThan') {
-                {
-                    var __ms = new Date().getTime() - __start;
-                    _putstat('_findNumericMatch', __ms);
-                }
+                _putstat('_findNumericMatch', __start);
+                __popstack();
                 return val < expr;
             }
             if (cond === 'greaterThanOrEqualTo') {
-                {
-                    var __ms = new Date().getTime() - __start;
-                    _putstat('_findNumericMatch', __ms);
-                }
+                _putstat('_findNumericMatch', __start);
+                __popstack();
                 return val >= expr;
             }
             if (cond === 'lessThanOrEqualTo') {
-                {
-                    var __ms = new Date().getTime() - __start;
-                    _putstat('_findNumericMatch', __ms);
-                }
+                _putstat('_findNumericMatch', __start);
+                __popstack();
                 return val <= expr;
             }
             if (cond === 'null') {
-                {
-                    var __ms = new Date().getTime() - __start;
-                    _putstat('_findNumericMatch', __ms);
-                }
+                _putstat('_findNumericMatch', __start);
+                __popstack();
                 return val === null;
             }
             if (cond === 'notNull') {
-                {
-                    var __ms = new Date().getTime() - __start;
-                    _putstat('_findNumericMatch', __ms);
-                }
+                _putstat('_findNumericMatch', __start);
+                __popstack();
                 return val !== null;
             }
             if (cond === 'empty') {
-                {
-                    var __ms = new Date().getTime() - __start;
-                    _putstat('_findNumericMatch', __ms);
-                }
+                _putstat('_findNumericMatch', __start);
+                __popstack();
                 return val === null || val === undefined || isNaN(val);
             }
             if (cond === 'notEmpty') {
-                {
-                    var __ms = new Date().getTime() - __start;
-                    _putstat('_findNumericMatch', __ms);
-                }
+                _putstat('_findNumericMatch', __start);
+                __popstack();
                 return val !== null && val !== undefined && !isNaN(val);
             }
             throw new Error($.ig.DataSourceLocale.locale.errorUnrecognizedFilterCondition + cond);
-            {
-                var __ms = new Date().getTime() - __start;
-                _putstat('_findNumericMatch', __ms);
-            }
+            _putstat('_findNumericMatch', __start);
+            __popstack();
         },
         _findBoolMatch: function (val, cond) {
-            var __start = new Date().getTime();
+            __pushstack('_findBoolMatch');
+            var __start = _getstart();
             if (cond === 'true') {
-                {
-                    var __ms = new Date().getTime() - __start;
-                    _putstat('_findBoolMatch', __ms);
-                }
+                _putstat('_findBoolMatch', __start);
+                __popstack();
                 return val;
             }
             if (cond === 'false') {
-                {
-                    var __ms = new Date().getTime() - __start;
-                    _putstat('_findBoolMatch', __ms);
-                }
+                _putstat('_findBoolMatch', __start);
+                __popstack();
                 return !val;
             }
             if (cond === 'null') {
-                {
-                    var __ms = new Date().getTime() - __start;
-                    _putstat('_findBoolMatch', __ms);
-                }
+                _putstat('_findBoolMatch', __start);
+                __popstack();
                 return val === null;
             }
             if (cond === 'notNull') {
-                {
-                    var __ms = new Date().getTime() - __start;
-                    _putstat('_findBoolMatch', __ms);
-                }
+                _putstat('_findBoolMatch', __start);
+                __popstack();
                 return val !== null;
             }
             if (cond === 'empty') {
-                {
-                    var __ms = new Date().getTime() - __start;
-                    _putstat('_findBoolMatch', __ms);
-                }
+                _putstat('_findBoolMatch', __start);
+                __popstack();
                 return val === null || val === undefined;
             }
             if (cond === 'notEmpty') {
-                {
-                    var __ms = new Date().getTime() - __start;
-                    _putstat('_findBoolMatch', __ms);
-                }
+                _putstat('_findBoolMatch', __start);
+                __popstack();
                 return val !== null && val !== undefined;
             }
             throw new Error($.ig.DataSourceLocale.locale.errorUnrecognizedFilterCondition + cond);
-            {
-                var __ms = new Date().getTime() - __start;
-                _putstat('_findBoolMatch', __ms);
-            }
+            _putstat('_findBoolMatch', __start);
+            __popstack();
         },
         _findDateMatch: function (val, expr, cond) {
-            var __start = new Date().getTime();
+            __pushstack('_findDateMatch');
+            var __start = _getstart();
             var day1, mins1, hs1, yrs1, day2, mins2, hs2, yrs2, month1, month2, eq, cur, yrs3, month3, mday1, mday2, mday3, yesterday;
             if (val !== null && val !== undefined) {
                 day1 = val.getDay();
@@ -8460,153 +7705,112 @@
             month3 = cur.getMonth();
             eq = day1 === day2 && mins1 === mins2 && hs1 === hs2 && yrs1 === yrs2 && month1 === month2;
             if (cond === 'equals') {
-                {
-                    var __ms = new Date().getTime() - __start;
-                    _putstat('_findDateMatch', __ms);
-                }
+                _putstat('_findDateMatch', __start);
+                __popstack();
                 return eq;
             }
             if (cond === 'doesNotEqual') {
-                {
-                    var __ms = new Date().getTime() - __start;
-                    _putstat('_findDateMatch', __ms);
-                }
+                _putstat('_findDateMatch', __start);
+                __popstack();
                 return !eq;
             }
             if (cond === 'before') {
-                {
-                    var __ms = new Date().getTime() - __start;
-                    _putstat('_findDateMatch', __ms);
-                }
+                _putstat('_findDateMatch', __start);
+                __popstack();
                 return val < expr;
             }
             if (cond === 'after') {
-                {
-                    var __ms = new Date().getTime() - __start;
-                    _putstat('_findDateMatch', __ms);
-                }
+                _putstat('_findDateMatch', __start);
+                __popstack();
                 return val > expr;
             }
             if (cond === 'today') {
-                {
-                    var __ms = new Date().getTime() - __start;
-                    _putstat('_findDateMatch', __ms);
-                }
+                _putstat('_findDateMatch', __start);
+                __popstack();
                 return mday1 === mday3 && month1 === month3 && yrs1 === yrs3;
             }
             if (cond === 'yesterday') {
-                {
-                    var __ms = new Date().getTime() - __start;
-                    _putstat('_findDateMatch', __ms);
-                }
+                _putstat('_findDateMatch', __start);
+                __popstack();
                 return yesterday.getDay() === val.getDay() && yesterday.getMonth() === val.getMonth() && yesterday.getFullYear() === val.getFullYear();
             }
             if (cond === 'thisMonth') {
-                {
-                    var __ms = new Date().getTime() - __start;
-                    _putstat('_findDateMatch', __ms);
-                }
+                _putstat('_findDateMatch', __start);
+                __popstack();
                 return month1 === month3 && yrs1 === yrs3;
             }
             if (cond === 'lastMonth') {
                 if (month3 === 0) {
-                    {
-                        var __ms = new Date().getTime() - __start;
-                        _putstat('_findDateMatch', __ms);
-                    }
+                    _putstat('_findDateMatch', __start);
+                    __popstack();
                     return month1 === 11 && yrs1 === yrs3 - 1;
                 }
-                {
-                    var __ms = new Date().getTime() - __start;
-                    _putstat('_findDateMatch', __ms);
-                }
+                _putstat('_findDateMatch', __start);
+                __popstack();
                 return month1 === month3 - 1 && yrs1 === yrs3;
             }
             if (cond === 'nextMonth') {
                 if (month3 === 11) {
-                    {
-                        var __ms = new Date().getTime() - __start;
-                        _putstat('_findDateMatch', __ms);
-                    }
+                    _putstat('_findDateMatch', __start);
+                    __popstack();
                     return month1 === 0 && yrs1 === yrs3 + 1;
                 }
-                {
-                    var __ms = new Date().getTime() - __start;
-                    _putstat('_findDateMatch', __ms);
-                }
+                _putstat('_findDateMatch', __start);
+                __popstack();
                 return month1 === month3 + 1 && yrs1 === yrs3;
             }
             if (cond === 'thisYear') {
-                {
-                    var __ms = new Date().getTime() - __start;
-                    _putstat('_findDateMatch', __ms);
-                }
+                _putstat('_findDateMatch', __start);
+                __popstack();
                 return yrs1 === yrs3;
             }
             if (cond === 'lastYear') {
-                {
-                    var __ms = new Date().getTime() - __start;
-                    _putstat('_findDateMatch', __ms);
-                }
+                _putstat('_findDateMatch', __start);
+                __popstack();
                 return yrs1 === yrs3 - 1;
             }
             if (cond === 'nextYear') {
-                {
-                    var __ms = new Date().getTime() - __start;
-                    _putstat('_findDateMatch', __ms);
-                }
+                _putstat('_findDateMatch', __start);
+                __popstack();
                 return yrs1 === yrs3 + 1;
             }
             if (cond === 'on') {
-                {
-                    var __ms = new Date().getTime() - __start;
-                    _putstat('_findDateMatch', __ms);
-                }
+                _putstat('_findDateMatch', __start);
+                __popstack();
                 return yrs1 === yrs2 && month1 === month2 && mday1 === mday2;
             }
             if (cond === 'notOn') {
-                {
-                    var __ms = new Date().getTime() - __start;
-                    _putstat('_findDateMatch', __ms);
-                }
+                _putstat('_findDateMatch', __start);
+                __popstack();
                 return !(yrs1 === yrs2 && month1 === month2 && mday1 === mday2);
             }
             if (cond === 'null') {
-                {
-                    var __ms = new Date().getTime() - __start;
-                    _putstat('_findDateMatch', __ms);
-                }
+                _putstat('_findDateMatch', __start);
+                __popstack();
                 return val === null;
             }
             if (cond === 'notNull') {
-                {
-                    var __ms = new Date().getTime() - __start;
-                    _putstat('_findDateMatch', __ms);
-                }
+                _putstat('_findDateMatch', __start);
+                __popstack();
                 return val !== null;
             }
             if (cond === 'empty') {
-                {
-                    var __ms = new Date().getTime() - __start;
-                    _putstat('_findDateMatch', __ms);
-                }
+                _putstat('_findDateMatch', __start);
+                __popstack();
                 return val === null || val === undefined;
             }
             if (cond === 'notEmpty') {
-                {
-                    var __ms = new Date().getTime() - __start;
-                    _putstat('_findDateMatch', __ms);
-                }
+                _putstat('_findDateMatch', __start);
+                __popstack();
                 return val !== null && val !== undefined;
             }
             throw new Error($.ig.DataSourceLocale.locale.errorUnrecognizedFilterCondition + cond);
-            {
-                var __ms = new Date().getTime() - __start;
-                _putstat('_findDateMatch', __ms);
-            }
+            _putstat('_findDateMatch', __start);
+            __popstack();
         },
         totalRecordsCount: function (count, key, dsObj, context) {
-            var __start = new Date().getTime();
+            __pushstack('totalRecordsCount');
+            var __start = _getstart();
             var rec, totalRecPath, i;
             if (context !== undefined && context !== null) {
                 if (key) {
@@ -8635,59 +7839,49 @@
             } else if (count !== undefined && count !== null) {
                 this._recCount = count;
             }
-            {
-                var __ms = new Date().getTime() - __start;
-                _putstat('totalRecordsCount', __ms);
-            }
+            _putstat('totalRecordsCount', __start);
+            __popstack();
             return this._recCount;
         },
         hasTotalRecordsCount: function (hasCount) {
-            var __start = new Date().getTime();
+            __pushstack('hasTotalRecordsCount');
+            var __start = _getstart();
             if (hasCount === undefined || hasCount === null) {
-                {
-                    var __ms = new Date().getTime() - __start;
-                    _putstat('hasTotalRecordsCount', __ms);
-                }
+                _putstat('hasTotalRecordsCount', __start);
+                __popstack();
                 return this._hasCount;
             }
             this._hasCount = hasCount;
-            {
-                var __ms = new Date().getTime() - __start;
-                _putstat('hasTotalRecordsCount', __ms);
-            }
+            _putstat('hasTotalRecordsCount', __start);
+            __popstack();
         },
         metadata: function (key) {
-            var __start = new Date().getTime();
+            __pushstack('metadata');
+            var __start = _getstart();
             if (key === null || key === undefined || key === '' || this._metadata === null || this._metadata === undefined) {
-                {
-                    var __ms = new Date().getTime() - __start;
-                    _putstat('metadata', __ms);
-                }
+                _putstat('metadata', __start);
+                __popstack();
                 return this._metadata;
             }
-            {
-                var __ms = new Date().getTime() - __start;
-                _putstat('metadata', __ms);
-            }
+            _putstat('metadata', __start);
+            __popstack();
             return this._metadata[key];
         },
         totalLocalRecordsCount: function () {
-            var __start = new Date().getTime();
+            __pushstack('totalLocalRecordsCount');
+            var __start = _getstart();
             if (!this._filter) {
-                {
-                    var __ms = new Date().getTime() - __start;
-                    _putstat('totalLocalRecordsCount', __ms);
-                }
+                _putstat('totalLocalRecordsCount', __start);
+                __popstack();
                 return this._data.length;
             }
-            {
-                var __ms = new Date().getTime() - __start;
-                _putstat('totalLocalRecordsCount', __ms);
-            }
+            _putstat('totalLocalRecordsCount', __start);
+            __popstack();
             return this._dataView.length;
         },
         pageCount: function () {
-            var __start = new Date().getTime();
+            __pushstack('pageCount');
+            var __start = _getstart();
             var c, realCount;
             if (!this._filter) {
                 realCount = this.totalRecordsCount() > 0 ? this.totalRecordsCount() : this._data.length;
@@ -8695,19 +7889,16 @@
                 realCount = this.totalRecordsCount() > 0 ? this.totalRecordsCount() : this._filteredData.length;
             }
             c = Math.ceil(realCount / this.settings.paging.pageSize);
-            {
-                var __ms = new Date().getTime() - __start;
-                _putstat('pageCount', __ms);
-            }
+            _putstat('pageCount', __start);
+            __popstack();
             return c === 0 ? 1 : c;
         },
         pageIndex: function (index) {
-            var __start = new Date().getTime();
+            __pushstack('pageIndex');
+            var __start = _getstart();
             if (index === undefined || index === null) {
-                {
-                    var __ms = new Date().getTime() - __start;
-                    _putstat('pageIndex', __ms);
-                }
+                _putstat('pageIndex', __start);
+                __popstack();
                 return this.settings.paging.pageIndex === undefined ? 0 : this.settings.paging.pageIndex;
             }
             this.settings.paging.pageIndex = parseInt(index, 10);
@@ -8718,44 +7909,37 @@
             } else {
                 this.dataBind();
             }
-            {
-                var __ms = new Date().getTime() - __start;
-                _putstat('pageIndex', __ms);
-            }
+            _putstat('pageIndex', __start);
+            __popstack();
             return this;
         },
         prevPage: function () {
-            var __start = new Date().getTime();
+            __pushstack('prevPage');
+            var __start = _getstart();
             this.pageIndex(this.pageIndex() === 0 ? 0 : this.pageIndex() - 1);
-            {
-                var __ms = new Date().getTime() - __start;
-                _putstat('prevPage', __ms);
-            }
+            _putstat('prevPage', __start);
+            __popstack();
             return this;
         },
         nextPage: function () {
-            var __start = new Date().getTime();
+            __pushstack('nextPage');
+            var __start = _getstart();
             if (this.pageIndex() >= this.pageCount() - 1) {
-                {
-                    var __ms = new Date().getTime() - __start;
-                    _putstat('nextPage', __ms);
-                }
+                _putstat('nextPage', __start);
+                __popstack();
                 return this;
             }
             this.pageIndex(this.pageIndex() + 1);
-            {
-                var __ms = new Date().getTime() - __start;
-                _putstat('nextPage', __ms);
-            }
+            _putstat('nextPage', __start);
+            __popstack();
             return this;
         },
         pageSize: function (s) {
-            var __start = new Date().getTime();
+            __pushstack('pageSize');
+            var __start = _getstart();
             if (s === undefined || s === null) {
-                {
-                    var __ms = new Date().getTime() - __start;
-                    _putstat('pageSize', __ms);
-                }
+                _putstat('pageSize', __start);
+                __popstack();
                 return this.settings.paging.pageSize;
             }
             this.settings.paging.pageSize = parseInt(s, 10);
@@ -8769,29 +7953,25 @@
             } else {
                 this.dataBind();
             }
-            {
-                var __ms = new Date().getTime() - __start;
-                _putstat('pageSize', __ms);
-            }
+            _putstat('pageSize', __start);
+            __popstack();
             return this;
         },
         pageSizeDirty: function (dirty) {
-            var __start = new Date().getTime();
+            __pushstack('pageSizeDirty');
+            var __start = _getstart();
             if (dirty === undefined || dirty === null) {
-                {
-                    var __ms = new Date().getTime() - __start;
-                    _putstat('pageSizeDirty', __ms);
-                }
+                _putstat('pageSizeDirty', __start);
+                __popstack();
                 return this._dirty;
             }
             this._dirty = dirty;
-            {
-                var __ms = new Date().getTime() - __start;
-                _putstat('pageSizeDirty', __ms);
-            }
+            _putstat('pageSizeDirty', __start);
+            __popstack();
         },
         recordsForPage: function (p) {
-            var __start = new Date().getTime();
+            __pushstack('recordsForPage');
+            var __start = _getstart();
             var d = [], si, ps, ei, i, c = 0;
             ps = this.pageSize();
             si = p * ps;
@@ -8799,14 +7979,13 @@
             for (i = si; i < ei; i++) {
                 d[c++] = this._data[i];
             }
-            {
-                var __ms = new Date().getTime() - __start;
-                _putstat('recordsForPage', __ms);
-            }
+            _putstat('recordsForPage', __start);
+            __popstack();
             return d;
         },
         tableToObject: function (tableDOM) {
-            var __start = new Date().getTime();
+            __pushstack('tableToObject');
+            var __start = _getstart();
             try {
                 var rows = $(tableDOM).children('tbody').children(), len, data, i, j;
                 len = rows.length > 0 ? rows[0].cells.length : 0;
@@ -8817,51 +7996,44 @@
                         data[i][j] = rows[i].cells[j].innerHTML;
                     }
                 }
-                {
-                    var __ms = new Date().getTime() - __start;
-                    _putstat('tableToObject', __ms);
-                }
+                _putstat('tableToObject', __start);
+                __popstack();
                 return data;
             } catch (e) {
                 throw new Error($.ig.DataSourceLocale.locale.errorParsingHtmlTableNoSchema + e.message);
             }
-            {
-                var __ms = new Date().getTime() - __start;
-                _putstat('tableToObject', __ms);
-            }
+            _putstat('tableToObject', __start);
+            __popstack();
         },
         _validateTable: function (obj) {
-            var __start = new Date().getTime();
+            __pushstack('_validateTable');
+            var __start = _getstart();
             if (obj.length === 0) {
                 throw new Error($.ig.DataSourceLocale.locale.errorTableWithIdNotFound + this.dataSource());
             } else {
-                {
-                    var __ms = new Date().getTime() - __start;
-                    _putstat('_validateTable', __ms);
-                }
+                _putstat('_validateTable', __start);
+                __popstack();
                 return obj[0];
             }
-            {
-                var __ms = new Date().getTime() - __start;
-                _putstat('_validateTable', __ms);
-            }
+            _putstat('_validateTable', __start);
+            __popstack();
         },
         stringToJSONObject: function (s) {
-            var __start = new Date().getTime();
+            __pushstack('stringToJSONObject');
+            var __start = _getstart();
             var data = {};
             try {
                 data = JSON.parse(s);
             } catch (e) {
                 throw new Error($.ig.DataSourceLocale.locale.errorParsingJsonNoSchema + e.message);
             }
-            {
-                var __ms = new Date().getTime() - __start;
-                _putstat('stringToJSONObject', __ms);
-            }
+            _putstat('stringToJSONObject', __start);
+            __popstack();
             return data;
         },
         stringToXmlObject: function (s) {
-            var __start = new Date().getTime();
+            __pushstack('stringToXmlObject');
+            var __start = _getstart();
             var doc, parser;
             try {
                 if (window.ActiveXObject) {
@@ -8875,125 +8047,100 @@
             } catch (e) {
                 throw new Error($.ig.DataSourceLocale.locale.errorParsingXmlNoSchema + e.message);
             }
-            {
-                var __ms = new Date().getTime() - __start;
-                _putstat('stringToXmlObject', __ms);
-            }
+            _putstat('stringToXmlObject', __start);
+            __popstack();
             return doc;
         }
     });
     $.ig.TypeParser = $.ig.TypeParser || Class.extend({
         toStr: function (obj) {
-            var __start = new Date().getTime();
-            {
-                var __ms = new Date().getTime() - __start;
-                _putstat('toStr', __ms);
-            }
+            __pushstack('toStr');
+            var __start = _getstart();
+            _putstat('toStr', __start);
+            __popstack();
             return this.isNullOrUndefined(obj) ? '' : obj + this.empty();
         },
         toDate: function (obj, pk, key) {
-            var __start = new Date().getTime();
+            __pushstack('toDate');
+            var __start = _getstart();
             if (this.isNullOrUndefined(obj) || obj === '' || $.type(obj) === 'function') {
-                {
-                    var __ms = new Date().getTime() - __start;
-                    _putstat('toDate', __ms);
-                }
+                _putstat('toDate', __start);
+                __popstack();
                 return null;
             }
             if ($.type(obj) === 'date') {
-                {
-                    var __ms = new Date().getTime() - __start;
-                    _putstat('toDate', __ms);
-                }
+                _putstat('toDate', __start);
+                __popstack();
                 return obj;
             }
             if (obj.length && obj.indexOf('/Date(') !== -1) {
                 if (this._serverOffsets === undefined || this._serverOffsets[pk] === undefined) {
-                    {
-                        var __ms = new Date().getTime() - __start;
-                        _putstat('toDate', __ms);
-                    }
+                    _putstat('toDate', __start);
+                    __popstack();
                     return new Date(parseInt(obj.replace('/Date(', '').replace(')/', ''), 10) + this._serverOffset);
                 }
                 if (this._serverOffsets[pk][key] !== undefined && this._serverOffsets[pk][key] !== null) {
-                    {
-                        var __ms = new Date().getTime() - __start;
-                        _putstat('toDate', __ms);
-                    }
+                    _putstat('toDate', __start);
+                    __popstack();
                     return new Date(parseInt(obj.replace('/Date(', '').replace(')/', ''), 10) + this._serverOffsets[pk][key]);
                 }
-                {
-                    var __ms = new Date().getTime() - __start;
-                    _putstat('toDate', __ms);
-                }
+                _putstat('toDate', __start);
+                __popstack();
                 return new Date(parseInt(obj.replace('/Date(', '').replace(')/', ''), 10));
             }
-            {
-                var __ms = new Date().getTime() - __start;
-                _putstat('toDate', __ms);
-            }
+            _putstat('toDate', __start);
+            __popstack();
             return new Date(obj);
         },
         toNumber: function (obj) {
-            var __start = new Date().getTime();
-            {
-                var __ms = new Date().getTime() - __start;
-                _putstat('toNumber', __ms);
-            }
+            __pushstack('toNumber');
+            var __start = _getstart();
+            _putstat('toNumber', __start);
+            __popstack();
             return this.isNullOrUndefined(obj) || $.type(obj) === 'function' ? null : obj * this.num();
         },
         toBool: function (obj) {
-            var __start = new Date().getTime();
+            __pushstack('toBool');
+            var __start = _getstart();
             var typeObj = $.type(obj);
             if (typeObj === 'boolean') {
-                {
-                    var __ms = new Date().getTime() - __start;
-                    _putstat('toBool', __ms);
-                }
+                _putstat('toBool', __start);
+                __popstack();
                 return obj;
             }
             if (this.isNullOrUndefined(obj) || typeObj === 'function') {
-                {
-                    var __ms = new Date().getTime() - __start;
-                    _putstat('toBool', __ms);
-                }
+                _putstat('toBool', __start);
+                __popstack();
                 return false;
             }
             if (obj === '1' || obj === 1 || typeObj === 'string' && obj.toLowerCase() === 'true') {
-                {
-                    var __ms = new Date().getTime() - __start;
-                    _putstat('toBool', __ms);
-                }
+                _putstat('toBool', __start);
+                __popstack();
                 return true;
             }
-            {
-                var __ms = new Date().getTime() - __start;
-                _putstat('toBool', __ms);
-            }
+            _putstat('toBool', __start);
+            __popstack();
             return false;
         },
         isNullOrUndefined: function (obj) {
-            var __start = new Date().getTime();
-            {
-                var __ms = new Date().getTime() - __start;
-                _putstat('isNullOrUndefined', __ms);
-            }
+            __pushstack('isNullOrUndefined');
+            var __start = _getstart();
+            _putstat('isNullOrUndefined', __start);
+            __popstack();
             return obj === null || obj === undefined;
         },
         empty: function () {
-            var __start = new Date().getTime();
-            {
-                var __ms = new Date().getTime() - __start;
-                _putstat('empty', __ms);
-            }
+            __pushstack('empty');
+            var __start = _getstart();
+            _putstat('empty', __start);
+            __popstack();
             return '';
         },
         num: function () {
-            var __start = new Date().getTime();
-            {
-                var __ms = new Date().getTime() - __start;
-                _putstat('num', __ms);
-            }
+            __pushstack('num');
+            var __start = _getstart();
+            _putstat('num', __start);
+            __popstack();
             return 1;
         }
     });
@@ -9004,20 +8151,20 @@
             outputResultsName: null
         },
         init: function (type, options) {
-            var __start = new Date().getTime();
+            __pushstack('init');
+            var __start = _getstart();
             if (options) {
                 this.schema = $.extend(true, {}, $.ig.DataSchema.prototype.schema, options);
             }
             this._type = type;
             this._parser = new $.ig.TypeParser();
             this._parser._serverOffset = 0;
-            {
-                var __ms = new Date().getTime() - __start;
-                _putstat('init', __ms);
-            }
+            _putstat('init', __start);
+            __popstack();
         },
         transform: function (data) {
-            var __start = new Date().getTime();
+            __pushstack('transform');
+            var __start = _getstart();
             var ndata = [];
             switch (this._type) {
             case 'array':
@@ -9038,66 +8185,53 @@
             default:
                 throw new Error('unknown data source type: ' + this._type);
             }
-            {
-                var __ms = new Date().getTime() - __start;
-                _putstat('transform', __ms);
-            }
+            _putstat('transform', __start);
+            __popstack();
             return ndata;
         },
         _setResKey: function (resKey, out) {
-            var __start = new Date().getTime();
+            __pushstack('_setResKey');
+            var __start = _getstart();
             if (!this.isEmpty(resKey)) {
                 out[resKey] = [];
-                {
-                    var __ms = new Date().getTime() - __start;
-                    _putstat('_setResKey', __ms);
-                }
+                _putstat('_setResKey', __start);
+                __popstack();
                 return out[resKey];
             }
-            {
-                var __ms = new Date().getTime() - __start;
-                _putstat('_setResKey', __ms);
-            }
+            _putstat('_setResKey', __start);
+            __popstack();
             return out;
         },
         _convertType: function (t, obj, pk, key) {
-            var __start = new Date().getTime();
+            __pushstack('_convertType');
+            var __start = _getstart();
             if (t === 'string') {
-                {
-                    var __ms = new Date().getTime() - __start;
-                    _putstat('_convertType', __ms);
-                }
+                _putstat('_convertType', __start);
+                __popstack();
                 return this._parser.toStr(obj);
             }
             if (t === 'date') {
-                {
-                    var __ms = new Date().getTime() - __start;
-                    _putstat('_convertType', __ms);
-                }
+                _putstat('_convertType', __start);
+                __popstack();
                 return this._parser.toDate(obj, pk, key);
             }
             if (t === 'number') {
-                {
-                    var __ms = new Date().getTime() - __start;
-                    _putstat('_convertType', __ms);
-                }
+                _putstat('_convertType', __start);
+                __popstack();
                 return this._parser.toNumber(obj);
             }
             if (t === 'boolean' || t === 'bool') {
-                {
-                    var __ms = new Date().getTime() - __start;
-                    _putstat('_convertType', __ms);
-                }
+                _putstat('_convertType', __start);
+                __popstack();
                 return this._parser.toBool(obj);
             }
-            {
-                var __ms = new Date().getTime() - __start;
-                _putstat('_convertType', __ms);
-            }
+            _putstat('_convertType', __start);
+            __popstack();
             return obj;
         },
         _val: function (field, val, results, i, rec) {
-            var __start = new Date().getTime();
+            __pushstack('_val');
+            var __start = _getstart();
             var t = field.type, j = null;
             if (!this.isEmpty(t)) {
                 if (this.isEmpty(field.name)) {
@@ -9120,21 +8254,19 @@
                     }
                 }
             }
-            {
-                var __ms = new Date().getTime() - __start;
-                _putstat('_val', __ms);
-            }
+            _putstat('_val', __start);
+            __popstack();
         },
         isEmpty: function (o) {
-            var __start = new Date().getTime();
-            {
-                var __ms = new Date().getTime() - __start;
-                _putstat('isEmpty', __ms);
-            }
+            __pushstack('isEmpty');
+            var __start = _getstart();
+            _putstat('isEmpty', __start);
+            __popstack();
             return o === undefined || o === null || o === '';
         },
         _arrays: function (data) {
-            var __start = new Date().getTime();
+            __pushstack('_arrays');
+            var __start = _getstart();
             var i, j, tmp, hasArrays, resKey = this.schema.outputResultsName, out = {}, results;
             results = this._setResKey(resKey, out);
             if (this.isObjEmpty(results) && $.type(results) !== 'array') {
@@ -9162,14 +8294,13 @@
             } catch (e) {
                 throw new Error($.ig.DataSourceLocale.locale.errorParsingArrays + e.message);
             }
-            {
-                var __ms = new Date().getTime() - __start;
-                _putstat('_arrays', __ms);
-            }
+            _putstat('_arrays', __start);
+            __popstack();
             return out;
         },
         _json: function (data) {
-            var __start = new Date().getTime();
+            __pushstack('_json');
+            var __start = _getstart();
             var i, j, root, resKey = this.schema.outputResultsName, out = {}, results, pkObj = {};
             results = this._setResKey(resKey, out);
             if (this.isObjEmpty(results)) {
@@ -9226,14 +8357,13 @@
             } catch (e) {
                 throw new Error($.ig.DataSourceLocale.locale.errorParsingJson + e.message);
             }
-            {
-                var __ms = new Date().getTime() - __start;
-                _putstat('_json', __ms);
-            }
+            _putstat('_json', __start);
+            __popstack();
             return out;
         },
         _xml: function (data, recursiveSF) {
-            var __start = new Date().getTime();
+            __pushstack('_xml');
+            var __start = _getstart();
             var i, j, root, resNode, item, resKey = this.schema.outputResultsName, out = {}, results, namespaced, sf, k, r, rc, len1, len2, o, carrysf, ireal = 0, s;
             o = window.ActiveXObject;
             results = this._setResKey(resKey, out);
@@ -9342,14 +8472,13 @@
             } catch (e) {
                 throw new Error($.ig.DataSourceLocale.locale.errorParsingXml + e.message);
             }
-            {
-                var __ms = new Date().getTime() - __start;
-                _putstat('_xml', __ms);
-            }
+            _putstat('_xml', __start);
+            __popstack();
             return out;
         },
         _findXmlRecordsRoot: function (data, field) {
-            var __start = new Date().getTime();
+            __pushstack('_findXmlRecordsRoot');
+            var __start = _getstart();
             var i, len, r, o, ret;
             o = window.ActiveXObject;
             if ((o === undefined ? data.localName : data.baseName) === field) {
@@ -9363,60 +8492,50 @@
                     }
                 }
             }
-            {
-                var __ms = new Date().getTime() - __start;
-                _putstat('_findXmlRecordsRoot', __ms);
-            }
+            _putstat('_findXmlRecordsRoot', __start);
+            __popstack();
             return ret;
         },
         _xmlHasNamespaces: function (data) {
-            var __start = new Date().getTime();
+            __pushstack('_xmlHasNamespaces');
+            var __start = _getstart();
             var i, ns, r, len, fc;
             if (data.childNodes && data.childNodes.length && data.childNodes.length > 0) {
                 len = data.childNodes.length;
                 for (i = 0; i < len; i++) {
                     r = data.childNodes[i];
                     if (!r) {
-                        {
-                            var __ms = new Date().getTime() - __start;
-                            _putstat('_xmlHasNamespaces', __ms);
-                        }
+                        _putstat('_xmlHasNamespaces', __start);
+                        __popstack();
                         return false;
                     }
                     ns = r.namespaceURI;
                     if (ns !== '' && ns !== undefined && ns !== null) {
-                        {
-                            var __ms = new Date().getTime() - __start;
-                            _putstat('_xmlHasNamespaces', __ms);
-                        }
+                        _putstat('_xmlHasNamespaces', __start);
+                        __popstack();
                         return true;
                     }
                 }
                 if (r && r.childNodes && r.childNodes.length > 0) {
                     fc = r.childNodes[0];
                     if (!fc) {
-                        {
-                            var __ms = new Date().getTime() - __start;
-                            _putstat('_xmlHasNamespaces', __ms);
-                        }
+                        _putstat('_xmlHasNamespaces', __start);
+                        __popstack();
                         return false;
                     }
                     ns = fc.namespaceURI;
-                    {
-                        var __ms = new Date().getTime() - __start;
-                        _putstat('_xmlHasNamespaces', __ms);
-                    }
+                    _putstat('_xmlHasNamespaces', __start);
+                    __popstack();
                     return ns !== '' && ns !== undefined && ns !== null;
                 }
             }
-            {
-                var __ms = new Date().getTime() - __start;
-                _putstat('_xmlHasNamespaces', __ms);
-            }
+            _putstat('_xmlHasNamespaces', __start);
+            __popstack();
             return false;
         },
         _table: function (data) {
-            var __start = new Date().getTime();
+            __pushstack('_table');
+            var __start = _getstart();
             var i, j, r, tbody, rows, resKey = this.schema.outputResultsName, out = {}, results;
             tbody = $(data).find('tbody')[0];
             results = this._setResKey(resKey, out);
@@ -9440,14 +8559,13 @@
             } catch (e) {
                 throw new Error($.ig.DataSourceLocale.locale.errorParsingHtmlTable + e.message);
             }
-            {
-                var __ms = new Date().getTime() - __start;
-                _putstat('_table', __ms);
-            }
+            _putstat('_table', __start);
+            __popstack();
             return out;
         },
         _list: function (data) {
-            var __start = new Date().getTime();
+            __pushstack('_list');
+            var __start = _getstart();
             var parsedData, img, anchor, id, li, ul, self = this, d = $(data), text, i, header, descriptions, counts, jqmNS = 'data-';
             if ($.mobile && $.mobile.ns) {
                 jqmNS += $.mobile.ns;
@@ -9455,7 +8573,8 @@
             parsedData = [];
             if (d && (d.is('ul') || d.is('ol')) && d.children().length > 0) {
                 d.children('li:not([' + jqmNS + 'role="itemTemplate"], [' + jqmNS + 'role="detailsTemplate"], [' + jqmNS + 'role="dividerTemplate"])').each(function (index) {
-                    var __start = new Date().getTime();
+                    __pushstack('anonymous');
+                    var __start = _getstart();
                     li = $(this);
                     img = li.children('img');
                     parsedData[index] = {};
@@ -9487,16 +8606,15 @@
                             img = anchor.children('img');
                             if (img.length > 0) {
                                 img.each(function () {
-                                    var __start = new Date().getTime();
+                                    __pushstack('anonymous');
+                                    var __start = _getstart();
                                     if (this.outerHTML) {
                                         text = text.replace(this.outerHTML, '');
                                     } else {
                                         text = text.replace($('<div>').append(this).html(), '');
                                     }
-                                    {
-                                        var __ms = new Date().getTime() - __start;
-                                        _putstat('anonymous', __ms);
-                                    }
+                                    _putstat('anonymous', __start);
+                                    __popstack();
                                 });
                             }
                             if (img.length > 0 && img.attr('src')) {
@@ -9521,16 +8639,15 @@
                         if (header.length > 0) {
                             self._val(self.schema.header, header.text(), parsedData, index);
                             header.each(function () {
-                                var __start = new Date().getTime();
+                                __pushstack('anonymous');
+                                var __start = _getstart();
                                 if (this.outerHTML) {
                                     text = text.replace(this.outerHTML, '');
                                 } else {
                                     text = text.replace($('<div>').append(this).html(), '');
                                 }
-                                {
-                                    var __ms = new Date().getTime() - __start;
-                                    _putstat('anonymous', __ms);
-                                }
+                                _putstat('anonymous', __start);
+                                __popstack();
                             });
                         }
                     }
@@ -9542,16 +8659,15 @@
                         if (descriptions.length > 0) {
                             self._val(self.schema.description, descriptions.text(), parsedData, index);
                             descriptions.each(function () {
-                                var __start = new Date().getTime();
+                                __pushstack('anonymous');
+                                var __start = _getstart();
                                 if (this.outerHTML) {
                                     text = text.replace(this.outerHTML, '');
                                 } else {
                                     text = text.replace($('<div>').append(this).html(), '');
                                 }
-                                {
-                                    var __ms = new Date().getTime() - __start;
-                                    _putstat('anonymous', __ms);
-                                }
+                                _putstat('anonymous', __start);
+                                __popstack();
                             });
                         }
                     }
@@ -9563,16 +8679,15 @@
                         if (counts.length > 0) {
                             self._val(self.schema.count, parseInt(counts.text(), 10), parsedData, index);
                             counts.each(function () {
-                                var __start = new Date().getTime();
+                                __pushstack('anonymous');
+                                var __start = _getstart();
                                 if (this.outerHTML) {
                                     text = text.replace(this.outerHTML, '');
                                 } else {
                                     text = text.replace($('<div>').append(this).html(), '');
                                 }
-                                {
-                                    var __ms = new Date().getTime() - __start;
-                                    _putstat('anonymous', __ms);
-                                }
+                                _putstat('anonymous', __start);
+                                __popstack();
                             });
                         }
                     }
@@ -9591,72 +8706,62 @@
                             parsedData[index][self.schema.childData.name] = self._list(ul);
                         }
                     }
-                    {
-                        var __ms = new Date().getTime() - __start;
-                        _putstat('anonymous', __ms);
-                    }
+                    _putstat('anonymous', __start);
+                    __popstack();
                 });
             }
-            {
-                var __ms = new Date().getTime() - __start;
-                _putstat('_list', __ms);
-            }
+            _putstat('_list', __start);
+            __popstack();
             return parsedData;
         },
         isObjEmpty: function (obj) {
-            var __start = new Date().getTime();
+            __pushstack('isObjEmpty');
+            var __start = _getstart();
             var prop;
             for (prop in obj) {
                 if (obj.hasOwnProperty(prop)) {
-                    {
-                        var __ms = new Date().getTime() - __start;
-                        _putstat('isObjEmpty', __ms);
-                    }
+                    _putstat('isObjEmpty', __start);
+                    __popstack();
                     return false;
                 }
             }
-            {
-                var __ms = new Date().getTime() - __start;
-                _putstat('isObjEmpty', __ms);
-            }
+            _putstat('isObjEmpty', __start);
+            __popstack();
             return true;
         },
         fields: function () {
-            var __start = new Date().getTime();
-            {
-                var __ms = new Date().getTime() - __start;
-                _putstat('fields', __ms);
-            }
+            __pushstack('fields');
+            var __start = _getstart();
+            _putstat('fields', __start);
+            __popstack();
             return this.schema.fields;
         }
     });
     $.ig.RemoteDataSource = $.ig.RemoteDataSource || $.ig.DataSource.extend({
         init: function (options) {
-            var __start = new Date().getTime();
+            __pushstack('init');
+            var __start = _getstart();
             if (!options) {
                 options = {};
             }
             options.type = 'remoteUrl';
             this._super(options);
-            {
-                var __ms = new Date().getTime() - __start;
-                _putstat('init', __ms);
-            }
+            _putstat('init', __start);
+            __popstack();
             return this;
         }
     });
     $.ig.JSONDataSource = $.ig.JSONDataSource || $.ig.DataSource.extend({
         init: function (options) {
-            var __start = new Date().getTime();
+            __pushstack('init');
+            var __start = _getstart();
             if (!options) {
                 options = {};
             }
             options.type = 'json';
             this._super(options);
-            {
-                var __ms = new Date().getTime() - __start;
-                _putstat('init', __ms);
-            }
+            _putstat('init', __start);
+            __popstack();
             return this;
         }
     });
@@ -9684,7 +8789,8 @@
             }
         },
         init: function (options) {
-            var __start = new Date().getTime();
+            __pushstack('init');
+            var __start = _getstart();
             if (!options) {
                 options = {};
             }
@@ -9693,14 +8799,13 @@
             this._createLogVerbMapping();
             this._setLazyUrls();
             this._super(options);
-            {
-                var __ms = new Date().getTime() - __start;
-                _putstat('init', __ms);
-            }
+            _putstat('init', __start);
+            __popstack();
             return this;
         },
         saveChanges: function () {
-            var __start = new Date().getTime();
+            __pushstack('saveChanges');
+            var __start = _getstart();
             var log, verb, batchOps = {
                     POST: [],
                     PUT: [],
@@ -9735,24 +8840,22 @@
                 this._asyncCallbackCount++;
                 this._saveAllDeleteChanges(batchOps.DELETE);
             }
-            {
-                var __ms = new Date().getTime() - __start;
-                _putstat('saveChanges', __ms);
-            }
+            _putstat('saveChanges', __start);
+            __popstack();
         },
         _saveSingleChange: function (verb, change) {
-            var __start = new Date().getTime();
+            __pushstack('_saveSingleChange');
+            var __start = _getstart();
             var data, url;
             data = verb === 'POST' || verb === 'PUT' ? change.row : null;
             url = this._getProperUrl(verb, false, verb === 'DELETE' || verb === 'PUT' ? change.rowId : undefined);
             this._call(verb, url, data);
-            {
-                var __ms = new Date().getTime() - __start;
-                _putstat('_saveSingleChange', __ms);
-            }
+            _putstat('_saveSingleChange', __start);
+            __popstack();
         },
         _saveAllCellChanges: function (cellLogs) {
-            var __start = new Date().getTime();
+            __pushstack('_saveAllCellChanges');
+            var __start = _getstart();
             var i, combined = {}, rowLogs = [], cl;
             for (i = 0; i < cellLogs.length; i++) {
                 cl = cellLogs[i];
@@ -9763,13 +8866,12 @@
                 combined[cl.rowId].row[cl.col] = cl.value;
             }
             $.each(combined, function (key, value) {
-                var __start = new Date().getTime();
+                __pushstack('anonymous');
+                var __start = _getstart();
                 value.rowId = key;
                 rowLogs.push(value);
-                {
-                    var __ms = new Date().getTime() - __start;
-                    _putstat('anonymous', __ms);
-                }
+                _putstat('anonymous', __start);
+                __popstack();
             });
             if (this._isBatch('PUT') === true) {
                 this._asyncCallbackCount++;
@@ -9780,38 +8882,35 @@
                     this._saveSingleChange('PUT', rowLogs[i]);
                 }
             }
-            {
-                var __ms = new Date().getTime() - __start;
-                _putstat('_saveAllCellChanges', __ms);
-            }
+            _putstat('_saveAllCellChanges', __start);
+            __popstack();
         },
         _saveAllCreateChanges: function (createLogs) {
-            var __start = new Date().getTime();
+            __pushstack('_saveAllCreateChanges');
+            var __start = _getstart();
             var data = [], i;
             for (i = 0; i < createLogs.length; i++) {
                 data.push(createLogs[i].row);
             }
             this._call('POST', this._getProperUrl('POST', true), data);
-            {
-                var __ms = new Date().getTime() - __start;
-                _putstat('_saveAllCreateChanges', __ms);
-            }
+            _putstat('_saveAllCreateChanges', __start);
+            __popstack();
         },
         _saveAllUpdateChanges: function (updateLogs) {
-            var __start = new Date().getTime();
+            __pushstack('_saveAllUpdateChanges');
+            var __start = _getstart();
             var data = [], urlParams = '?', i;
             for (i = 0; i < updateLogs.length; i++) {
                 data.push(updateLogs[i].row);
                 urlParams += 'index=' + updateLogs[i].rowId + (i !== updateLogs.length - 1 ? '&' : '');
             }
             this._call('PUT', this._getProperUrl('PUT', true) + urlParams, data);
-            {
-                var __ms = new Date().getTime() - __start;
-                _putstat('_saveAllUpdateChanges', __ms);
-            }
+            _putstat('_saveAllUpdateChanges', __start);
+            __popstack();
         },
         _saveAllDeleteChanges: function (deleteLogs) {
-            var __start = new Date().getTime();
+            __pushstack('_saveAllDeleteChanges');
+            var __start = _getstart();
             var urlParams = '', i, data = null;
             if (this.settings.restSettings.encodeRemoveInRequestUri === true) {
                 urlParams = '?';
@@ -9825,13 +8924,12 @@
                 }
             }
             this._call('DELETE', this._getProperUrl('DELETE', true) + urlParams, data);
-            {
-                var __ms = new Date().getTime() - __start;
-                _putstat('_saveAllDeleteChanges', __ms);
-            }
+            _putstat('_saveAllDeleteChanges', __start);
+            __popstack();
         },
         _createHttpHandlers: function () {
-            var __start = new Date().getTime();
+            __pushstack('_createHttpHandlers');
+            var __start = _getstart();
             this._okHandler = $.proxy(this._responseOk, this);
             this._createdHandler = $.proxy(this._responseCreated, this);
             this._noContentHandler = $.proxy(this._responseNoContent, this);
@@ -9847,29 +8945,28 @@
                     204: this._noContentHandler
                 }
             };
-            {
-                var __ms = new Date().getTime() - __start;
-                _putstat('_createHttpHandlers', __ms);
-            }
+            _putstat('_createHttpHandlers', __start);
+            __popstack();
         },
         _createLogVerbMapping: function () {
-            var __start = new Date().getTime();
+            __pushstack('_createLogVerbMapping');
+            var __start = _getstart();
             this._logVerbMap = {
                 newrow: 'POST',
                 row: 'PUT',
                 deleterow: 'DELETE',
                 cell: 'PUT'
             };
-            {
-                var __ms = new Date().getTime() - __start;
-                _putstat('_createLogVerbMapping', __ms);
-            }
+            _putstat('_createLogVerbMapping', __start);
+            __popstack();
         },
         _setLazyUrls: function () {
-            var __start = new Date().getTime();
+            __pushstack('_setLazyUrls');
+            var __start = _getstart();
             var rs = this.settings.restSettings, tempUrl = null, tempTmpl = null;
             $.each(rs, function (key, value) {
-                var __start = new Date().getTime();
+                __pushstack('anonymous');
+                var __start = _getstart();
                 if (value) {
                     if (value.url) {
                         tempUrl = value.url;
@@ -9878,13 +8975,12 @@
                         tempTmpl = value.template;
                     }
                 }
-                {
-                    var __ms = new Date().getTime() - __start;
-                    _putstat('anonymous', __ms);
-                }
+                _putstat('anonymous', __start);
+                __popstack();
             });
             $.each(rs, function (key, value) {
-                var __start = new Date().getTime();
+                __pushstack('anonymous');
+                var __start = _getstart();
                 if (value) {
                     if (value.url !== undefined && value.url === null) {
                         value.url = tempUrl;
@@ -9893,10 +8989,8 @@
                         value.template = tempTmpl;
                     }
                 }
-                {
-                    var __ms = new Date().getTime() - __start;
-                    _putstat('anonymous', __ms);
-                }
+                _putstat('anonymous', __start);
+                __popstack();
             });
             this._putUrl = rs.update.url;
             this._putTmpl = rs.update.template;
@@ -9904,13 +8998,12 @@
             this._postTmpl = rs.create.template;
             this._deleteUrl = rs.remove.url;
             this._deleteTmpl = rs.remove.template;
-            {
-                var __ms = new Date().getTime() - __start;
-                _putstat('_setLazyUrls', __ms);
-            }
+            _putstat('_setLazyUrls', __start);
+            __popstack();
         },
         _getProperUrl: function (verb, batch, id) {
-            var __start = new Date().getTime();
+            __pushstack('_getProperUrl');
+            var __start = _getstart();
             var vL = verb.toLowerCase(), url = this['_' + vL + 'Url'];
             if (url && url.length > 0 && url.substr(url.length - 1) !== '/') {
                 url += '/';
@@ -9927,47 +9020,43 @@
                     }
                 }
             }
-            {
-                var __ms = new Date().getTime() - __start;
-                _putstat('_getProperUrl', __ms);
-            }
+            _putstat('_getProperUrl', __start);
+            __popstack();
             return url;
         },
         _responseOk: function (data, textStatus, jqXHR) {
-            var __start = new Date().getTime();
+            __pushstack('_responseOk');
+            var __start = _getstart();
             this._asyncCallbackCount--;
             if (this._asyncCallbackCount === 0) {
                 this._saveChangesSuccess({ Success: textStatus === 'success' }, textStatus, jqXHR);
             }
-            {
-                var __ms = new Date().getTime() - __start;
-                _putstat('_responseOk', __ms);
-            }
+            _putstat('_responseOk', __start);
+            __popstack();
         },
         _responseCreated: function (data, textStatus, jqXHR) {
-            var __start = new Date().getTime();
+            __pushstack('_responseCreated');
+            var __start = _getstart();
             this._asyncCallbackCount--;
             if (this._asyncCallbackCount === 0) {
                 this._saveChangesSuccess({ Success: textStatus === 'success' }, textStatus, jqXHR);
             }
-            {
-                var __ms = new Date().getTime() - __start;
-                _putstat('_responseCreated', __ms);
-            }
+            _putstat('_responseCreated', __start);
+            __popstack();
         },
         _responseNoContent: function (data, textStatus, jqXHR) {
-            var __start = new Date().getTime();
+            __pushstack('_responseNoContent');
+            var __start = _getstart();
             this._asyncCallbackCount--;
             if (this._asyncCallbackCount === 0) {
                 this._saveChangesSuccess({ Success: textStatus === 'success' || textStatus === 'nocontent' }, textStatus, jqXHR);
             }
-            {
-                var __ms = new Date().getTime() - __start;
-                _putstat('_responseNoContent', __ms);
-            }
+            _putstat('_responseNoContent', __start);
+            __popstack();
         },
         _isBatch: function (verb) {
-            var __start = new Date().getTime();
+            __pushstack('_isBatch');
+            var __start = _getstart();
             switch (verb) {
             case 'POST':
                 return this.settings.restSettings.create.batch;
@@ -9978,13 +9067,12 @@
             default:
                 return false;
             }
-            {
-                var __ms = new Date().getTime() - __start;
-                _putstat('_isBatch', __ms);
-            }
+            _putstat('_isBatch', __start);
+            __popstack();
         },
         _call: function (verb, url, data) {
-            var __start = new Date().getTime();
+            __pushstack('_call');
+            var __start = _getstart();
             var dataString, ct = this.settings.restSettings.contentType, serializer = this.settings.restSettings.contentSerializer;
             if (serializer !== null) {
                 if (typeof serializer === 'string') {
@@ -10006,10 +9094,8 @@
                 cache: false,
                 processData: true
             });
-            {
-                var __ms = new Date().getTime() - __start;
-                _putstat('_call', __ms);
-            }
+            _putstat('_call', __start);
+            __popstack();
         }
     });
     $.ig.JSONPDataSource = $.ig.JSONPDataSource || $.ig.DataSource.extend({
@@ -10018,76 +9104,71 @@
             jsonpCallback: null
         },
         init: function (options) {
-            var __start = new Date().getTime();
+            __pushstack('init');
+            var __start = _getstart();
             if (!options) {
                 options = {};
             }
             options.responseDataType = 'jsonp';
             this._super(options);
-            {
-                var __ms = new Date().getTime() - __start;
-                _putstat('init', __ms);
-            }
+            _putstat('init', __start);
+            __popstack();
             return this;
         }
     });
     $.ig.XmlDataSource = $.ig.XmlDataSource || $.ig.DataSource.extend({
         init: function (options) {
-            var __start = new Date().getTime();
+            __pushstack('init');
+            var __start = _getstart();
             if (!options) {
                 options = {};
             }
             options.type = 'xml';
             this._super(options);
-            {
-                var __ms = new Date().getTime() - __start;
-                _putstat('init', __ms);
-            }
+            _putstat('init', __start);
+            __popstack();
             return this;
         }
     });
     $.ig.FunctionDataSource = $.ig.FunctionDataSource || $.ig.DataSource.extend({
         init: function (options) {
-            var __start = new Date().getTime();
+            __pushstack('init');
+            var __start = _getstart();
             if (!options) {
                 options = {};
             }
             options.type = 'function';
             this._super(options);
-            {
-                var __ms = new Date().getTime() - __start;
-                _putstat('init', __ms);
-            }
+            _putstat('init', __start);
+            __popstack();
             return this;
         }
     });
     $.ig.HtmlTableDataSource = $.ig.HtmlTableDataSource || $.ig.DataSource.extend({
         init: function (options) {
-            var __start = new Date().getTime();
+            __pushstack('init');
+            var __start = _getstart();
             if (!options) {
                 options = {};
             }
             options.type = 'htmlTableDom';
             this._super(options);
-            {
-                var __ms = new Date().getTime() - __start;
-                _putstat('init', __ms);
-            }
+            _putstat('init', __start);
+            __popstack();
             return this;
         }
     });
     $.ig.ArrayDataSource = $.ig.ArrayDataSource || $.ig.DataSource.extend({
         init: function (options) {
-            var __start = new Date().getTime();
+            __pushstack('init');
+            var __start = _getstart();
             if (!options) {
                 options = {};
             }
             options.type = 'array';
             this._super(options);
-            {
-                var __ms = new Date().getTime() - __start;
-                _putstat('init', __ms);
-            }
+            _putstat('init', __start);
+            __popstack();
             return this;
         }
     });
@@ -10097,7 +9178,8 @@
             dataSource: []
         },
         init: function (options) {
-            var __start = new Date().getTime();
+            __pushstack('init');
+            var __start = _getstart();
             this._super(options);
             if (options) {
                 this.settings = $.extend(true, {}, $.ig.DataSource.prototype.settings, options);
@@ -10107,14 +9189,13 @@
             this._dataBindingComplete = false;
             this._sourcesStatus = [];
             this._hashedDataViews = [];
-            {
-                var __ms = new Date().getTime() - __start;
-                _putstat('init', __ms);
-            }
+            _putstat('init', __start);
+            __popstack();
             return this;
         },
         _checkDataBindingComplete: function (status, msg, ownerDs) {
-            var __start = new Date().getTime();
+            __pushstack('_checkDataBindingComplete');
+            var __start = _getstart();
             var i, j, k, hasPrimaryKeys = true, totalLength = 0, data = [], merged = [], d, rindex, keyVal, prop, keyIndexHash;
             this._dataBindingComplete = true;
             for (i = 0; i < this._sources.length; i++) {
@@ -10198,13 +9279,12 @@
                 this._runtimeType = this.analyzeDataSource();
                 this.dataBind();
             }
-            {
-                var __ms = new Date().getTime() - __start;
-                _putstat('_checkDataBindingComplete', __ms);
-            }
+            _putstat('_checkDataBindingComplete', __start);
+            __popstack();
         },
         dataBind: function () {
-            var __start = new Date().getTime();
+            __pushstack('dataBind');
+            var __start = _getstart();
             var i, ds = this.settings.dataSource;
             if (this._dataBindingComplete) {
                 this._dataBindingComplete = false;
@@ -10227,10 +9307,8 @@
                     this._sources[i].dataBind();
                 }
             }
-            {
-                var __ms = new Date().getTime() - __start;
-                _putstat('dataBind', __ms);
-            }
+            _putstat('dataBind', __start);
+            __popstack();
             return this;
         }
     });
@@ -10260,7 +9338,8 @@
             schema: []
         },
         init: function (options) {
-            var __start = new Date().getTime();
+            __pushstack('init');
+            var __start = _getstart();
             if (options) {
                 this.__ds = options.dataSource;
                 options.dataSource = null;
@@ -10286,32 +9365,29 @@
                     this._rootds = new $.ig.DataSource(this._rootopts);
                 }
             }
-            {
-                var __ms = new Date().getTime() - __start;
-                _putstat('init', __ms);
-            }
+            _putstat('init', __start);
+            __popstack();
         },
         dataBind: function (callback, callee) {
-            var __start = new Date().getTime();
+            __pushstack('dataBind');
+            var __start = _getstart();
             this._rootds.dataBind(callback, callee);
-            {
-                var __ms = new Date().getTime() - __start;
-                _putstat('dataBind', __ms);
-            }
+            _putstat('dataBind', __start);
+            __popstack();
         },
         root: function () {
-            var __start = new Date().getTime();
+            __pushstack('root');
+            var __start = _getstart();
             if (!this._rootds) {
                 this._rootds = new $.ig.DataSource(this._rootopts);
             }
-            {
-                var __ms = new Date().getTime() - __start;
-                _putstat('root', __ms);
-            }
+            _putstat('root', __start);
+            __popstack();
             return this._rootds;
         },
         dataAt: function (path, keyspath) {
-            var __start = new Date().getTime();
+            __pushstack('dataAt');
+            var __start = _getstart();
             var data = this.root().data(), paths = path.split('/'), kp = keyspath.split('/'), k, i, searchField = 'Records', j, cd = null, ckey = this.settings.primaryKey, ckeyval = '', ckeys = [], ckeyvals = [], match = false;
             for (i = 0; i < paths.length; i++) {
                 ckey = paths[i].split(':')[0];
@@ -10348,22 +9424,20 @@
                     data = cd;
                 }
             }
-            {
-                var __ms = new Date().getTime() - __start;
-                _putstat('dataAt', __ms);
-            }
+            _putstat('dataAt', __start);
+            __popstack();
             return cd;
         },
         _encodeUrlPath: function (rowid, name) {
-            var __start = new Date().getTime();
-            {
-                var __ms = new Date().getTime() - __start;
-                _putstat('_encodeUrlPath', __ms);
-            }
+            __pushstack('_encodeUrlPath');
+            var __start = _getstart();
+            _putstat('_encodeUrlPath', __start);
+            __popstack();
             return 'path=' + rowid + '&layout=' + name;
         },
         _encodeHierarchicalUrlParams: function (owner, args) {
-            var __start = new Date().getTime();
+            __pushstack('_encodeHierarchicalUrlParams');
+            var __start = _getstart();
             var expand = '', layouts = this.settings.schema.layouts, i, j, tmp, name, lc = 0;
             if (this.settings.odata && this.settings.initialDataBindDepth !== 0) {
                 i = j = 0;
@@ -10396,33 +9470,30 @@
             } else {
                 args.selectParams.dbdepth = this.settings.initialDataBindDepth;
             }
-            {
-                var __ms = new Date().getTime() - __start;
-                _putstat('_encodeHierarchicalUrlParams', __ms);
-            }
+            _putstat('_encodeHierarchicalUrlParams', __start);
+            __popstack();
         }
     });
     if (typeof define === 'function' && define.amd && define.amd.jQuery) {
         define('ig.datasource', ['ig.util'], function () {
-            var __start = new Date().getTime();
-            {
-                var __ms = new Date().getTime() - __start;
-                _putstat('anonymous', __ms);
-            }
+            __pushstack('anonymous');
+            var __start = _getstart();
+            _putstat('anonymous', __start);
+            __popstack();
             return $.ig.DataSource;
         });
     }
-    {
-        var __ms = new Date().getTime() - __start;
-        _putstat('anonymous', __ms);
-    }
+    _putstat('anonymous', __start);
+    __popstack();
 }(jQuery));
 (function ($) {
-    var __start = new Date().getTime();
+    __pushstack('anonymous');
+    var __start = _getstart();
     $.ig = $.ig || {};
     $.extend($.ig, {
         tmpl: function (template, data, args) {
-            var __start = new Date().getTime();
+            __pushstack('tmpl');
+            var __start = _getstart();
             var tmpl = template, cacheConst;
             tmpl = tmpl.replace(this.regExp.lineBreak, '');
             tmpl = tmpl.replace(this.regExp.comment, '');
@@ -10459,10 +9530,8 @@
                 this._internalTmplCache[cacheConst].tmpl = tmpl;
             }
             if (!this.tokens) {
-                {
-                    var __ms = new Date().getTime() - __start;
-                    _putstat('tmpl', __ms);
-                }
+                _putstat('tmpl', __start);
+                __popstack();
                 return tmpl;
             }
             if (this._hasBlock) {
@@ -10474,27 +9543,23 @@
             delete this.tokens;
             delete this._hasBlock;
             delete this.i;
-            {
-                var __ms = new Date().getTime() - __start;
-                _putstat('tmpl', __ms);
-            }
+            _putstat('tmpl', __start);
+            __popstack();
             return tmpl;
         },
         clearTmplCache: function () {
-            var __start = new Date().getTime();
+            __pushstack('clearTmplCache');
+            var __start = _getstart();
             delete this._internalTmplCache;
             this._internalTmplCache = {};
-            {
-                var __ms = new Date().getTime() - __start;
-                _putstat('clearTmplCache', __ms);
-            }
+            _putstat('clearTmplCache', __start);
+            __popstack();
         },
         encode: function (value) {
-            var __start = new Date().getTime();
-            {
-                var __ms = new Date().getTime() - __start;
-                _putstat('encode', __ms);
-            }
+            __pushstack('encode');
+            var __start = _getstart();
+            _putstat('encode', __start);
+            __popstack();
             return value !== null && value !== undefined ? value.toString().replace(this.regExp.lt, '&lt;').replace(this.regExp.gt, '&gt;').replace(this.regExp.ap, '&#39;').replace(this.regExp.ic, '&#34;') : '';
         },
         regExp: {
@@ -10537,7 +9602,8 @@
         },
         _internalTmplCache: {},
         _tokenizeTemplate: function (template) {
-            var __start = new Date().getTime();
+            __pushstack('_tokenizeTemplate');
+            var __start = _getstart();
             var tempToken, splitName;
             if (this.regExp.sub.test(template)) {
                 tempToken = this.regExp.sub.exec(template);
@@ -10563,13 +9629,12 @@
                     tempToken = this.regExp.nonEncodeSub.exec(template);
                 }
             }
-            {
-                var __ms = new Date().getTime() - __start;
-                _putstat('_tokenizeTemplate', __ms);
-            }
+            _putstat('_tokenizeTemplate', __start);
+            __popstack();
         },
         _tokenizeDirectives: function (template) {
-            var __start = new Date().getTime();
+            __pushstack('_tokenizeDirectives');
+            var __start = _getstart();
             var tmpl = 'var result = "";', tokens = this.regExp.block.exec(template), temp;
             if (template.indexOf(tokens[0]) > 0 || template.length !== tokens[0].length) {
                 temp = template.split(tokens[0]);
@@ -10584,14 +9649,13 @@
                 tmpl += 'result += args[' + this.i++ + '];';
             }
             tmpl += 'return result;';
-            {
-                var __ms = new Date().getTime() - __start;
-                _putstat('_tokenizeDirectives', __ms);
-            }
+            _putstat('_tokenizeDirectives', __start);
+            __popstack();
             return tmpl;
         },
         _handleCompleteBlock: function (tokens) {
-            var __start = new Date().getTime();
+            __pushstack('_handleCompleteBlock');
+            var __start = _getstart();
             var tmpl = tokens[0], template = '', blocks = [], tempTokens = [], i, temp;
             tmpl = tmpl.replace('{{' + tokens[1], this._directives[tokens[1]].start);
             if (tokens[1] === 'each') {
@@ -10617,14 +9681,13 @@
             } else if (tokens[1] === 'if') {
                 template += this._handleIfElse(tmpl, tokens);
             }
-            {
-                var __ms = new Date().getTime() - __start;
-                _putstat('_handleCompleteBlock', __ms);
-            }
+            _putstat('_handleCompleteBlock', __start);
+            __popstack();
             return template;
         },
         _handleEach: function (template, tokens) {
-            var __start = new Date().getTime();
+            __pushstack('_handleEach');
+            var __start = _getstart();
             var tmpl = template, eachVar, body, forSub, sub, expr, inner;
             eachVar = this.regExp.sub.exec(tmpl);
             tmpl = tmpl.replace(eachVar[0], '');
@@ -10655,14 +9718,13 @@
                 this.args.push(sub[0]);
                 sub = this.regExp.sub.exec(tmpl);
             }
-            {
-                var __ms = new Date().getTime() - __start;
-                _putstat('_handleEach', __ms);
-            }
+            _putstat('_handleEach', __start);
+            __popstack();
             return tmpl;
         },
         _handleIfElse: function (template, tokens) {
-            var __start = new Date().getTime();
+            __pushstack('_handleIfElse');
+            var __start = _getstart();
             var tmpl = template, i = 0, htmlStrings, sub, inner, index, tmplArr = [];
             tmpl = tmpl.replace(/\}\}/, this._directives[tokens[1]].close);
             index = tmpl.lastIndexOf(tokens[3]);
@@ -10693,14 +9755,13 @@
                 this.args.push(sub[0]);
                 sub = this.regExp.sub.exec(tmpl);
             }
-            {
-                var __ms = new Date().getTime() - __start;
-                _putstat('_handleIfElse', __ms);
-            }
+            _putstat('_handleIfElse', __start);
+            __popstack();
             return tmpl;
         },
         _populateTemplate: function (template, data) {
-            var __start = new Date().getTime();
+            __pushstack('_populateTemplate');
+            var __start = _getstart();
             var i, j, result = '', temp;
             if (!data.length) {
                 for (i = 0; i < this.tokens.length; i++) {
@@ -10717,14 +9778,13 @@
                     result += temp;
                 }
             }
-            {
-                var __ms = new Date().getTime() - __start;
-                _putstat('_populateTemplate', __ms);
-            }
+            _putstat('_populateTemplate', __start);
+            __popstack();
             return result;
         },
         _compileTemplate: function (template, data) {
-            var __start = new Date().getTime();
+            __pushstack('_compileTemplate');
+            var __start = _getstart();
             var i, j, k, result = '', temp, tempArgs = [], arg = '', f;
             if (!data.length) {
                 for (j = 0; j < this.args.length; j++) {
@@ -10774,14 +9834,13 @@
                     result += f.call(this, tempArgs) || '';
                 }
             }
-            {
-                var __ms = new Date().getTime() - __start;
-                _putstat('_compileTemplate', __ms);
-            }
+            _putstat('_compileTemplate', __start);
+            __popstack();
             return result;
         },
         _getArgumentValue: function (data, token, arg) {
-            var __start = new Date().getTime();
+            __pushstack('_getArgumentValue');
+            var __start = _getstart();
             var tempData, l;
             if (token[1].length && token[1].length > 1) {
                 tempData = data;
@@ -10805,14 +9864,13 @@
                     arg = data[token[1]];
                 }
             }
-            {
-                var __ms = new Date().getTime() - __start;
-                _putstat('_getArgumentValue', __ms);
-            }
+            _putstat('_getArgumentValue', __start);
+            __popstack();
             return arg;
         },
         _populateArgumentValue: function (data, token, arg) {
-            var __start = new Date().getTime();
+            __pushstack('_populateArgumentValue');
+            var __start = _getstart();
             var tempData, l, self = this;
             if (token[1].length && token[1].length > 1) {
                 tempData = data;
@@ -10826,58 +9884,51 @@
                 }
                 if (token[2] && typeof tempData === 'string') {
                     arg = arg.replace(token[3], function () {
-                        var __start = new Date().getTime();
-                        {
-                            var __ms = new Date().getTime() - __start;
-                            _putstat('anonymous', __ms);
-                        }
+                        __pushstack('anonymous');
+                        var __start = _getstart();
+                        _putstat('anonymous', __start);
+                        __popstack();
                         return self.encode(tempData);
                     });
                 } else {
                     arg = arg.replace(token[3], function () {
-                        var __start = new Date().getTime();
-                        {
-                            var __ms = new Date().getTime() - __start;
-                            _putstat('anonymous', __ms);
-                        }
+                        __pushstack('anonymous');
+                        var __start = _getstart();
+                        _putstat('anonymous', __start);
+                        __popstack();
                         return tempData === null ? '' : tempData;
                     });
                 }
             } else {
                 if (token[2]) {
                     arg = arg.replace(token[3], function () {
-                        var __start = new Date().getTime();
-                        {
-                            var __ms = new Date().getTime() - __start;
-                            _putstat('anonymous', __ms);
-                        }
+                        __pushstack('anonymous');
+                        var __start = _getstart();
+                        _putstat('anonymous', __start);
+                        __popstack();
                         return self.encode(data[token[1]]);
                     });
                 } else {
                     arg = arg.replace(token[3], function () {
-                        var __start = new Date().getTime();
-                        {
-                            var __ms = new Date().getTime() - __start;
-                            _putstat('anonymous', __ms);
-                        }
+                        __pushstack('anonymous');
+                        var __start = _getstart();
+                        _putstat('anonymous', __start);
+                        __popstack();
                         return data[token[1]] === null ? '' : data[token[1]];
                     });
                 }
             }
-            {
-                var __ms = new Date().getTime() - __start;
-                _putstat('_populateArgumentValue', __ms);
-            }
+            _putstat('_populateArgumentValue', __start);
+            __popstack();
             return arg;
         }
     });
-    {
-        var __ms = new Date().getTime() - __start;
-        _putstat('anonymous', __ms);
-    }
+    _putstat('anonymous', __start);
+    __popstack();
 }(jQuery));
 (function ($) {
-    var __start = new Date().getTime();
+    __pushstack('anonymous');
+    var __start = _getstart();
     $.widget('ui.igLoading', {
         options: {
             cssClass: null,
@@ -10885,7 +9936,8 @@
         },
         _indicator: null,
         _create: function () {
-            var __start = new Date().getTime();
+            __pushstack('_create');
+            var __start = _getstart();
             var offset, css;
             css = this.options.cssClass === null ? 'ui-igloadingmsg' : this.options.cssClass;
             this._hgrid = this.element.closest('.ui-iggrid-root').closest('.ui-iggrid');
@@ -10895,29 +9947,26 @@
                 this.refreshPos();
             }
             this._yShift = this._indicator ? Math.round(this._indicator.height() / 2) : 0;
-            {
-                var __ms = new Date().getTime() - __start;
-                _putstat('_create', __ms);
-            }
+            _putstat('_create', __start);
+            __popstack();
         },
         indicatorElement: function () {
-            var __start = new Date().getTime();
-            {
-                var __ms = new Date().getTime() - __start;
-                _putstat('indicatorElement', __ms);
-            }
+            __pushstack('indicatorElement');
+            var __start = _getstart();
+            _putstat('indicatorElement', __start);
+            __popstack();
             return this._indicator;
         },
         indicator: function () {
-            var __start = new Date().getTime();
-            {
-                var __ms = new Date().getTime() - __start;
-                _putstat('indicator', __ms);
-            }
+            __pushstack('indicator');
+            var __start = _getstart();
+            _putstat('indicator', __start);
+            __popstack();
             return this;
         },
         show: function (refresh) {
-            var __start = new Date().getTime();
+            __pushstack('show');
+            var __start = _getstart();
             if (refresh !== false) {
                 this.refreshPos();
             }
@@ -10926,47 +9975,40 @@
             }
             this._resId = setInterval($.proxy(this._resizeContainer, this), 300);
             this._indicator.css('display', '').css('visibility', 'visible');
-            {
-                var __ms = new Date().getTime() - __start;
-                _putstat('show', __ms);
-            }
+            _putstat('show', __start);
+            __popstack();
         },
         hide: function () {
-            var __start = new Date().getTime();
+            __pushstack('hide');
+            var __start = _getstart();
             this._indicator.css('display', 'none').css('visibility', 'hidden');
             clearInterval(this._resId);
             this._resId = null;
-            {
-                var __ms = new Date().getTime() - __start;
-                _putstat('hide', __ms);
-            }
+            _putstat('hide', __start);
+            __popstack();
         },
         _resizeContainer: function () {
-            var __start = new Date().getTime();
+            __pushstack('_resizeContainer');
+            var __start = _getstart();
             var offset = this.element.offset();
             if (offset.top + this.element.innerHeight() / 2 - this._yShift !== this._indicator.css('top')) {
                 this.refreshPos();
             }
-            {
-                var __ms = new Date().getTime() - __start;
-                _putstat('_resizeContainer', __ms);
-            }
+            _putstat('_resizeContainer', __start);
+            __popstack();
         },
         refreshPos: function () {
-            var __start = new Date().getTime();
+            __pushstack('refreshPos');
+            var __start = _getstart();
             var offset = this.element.offset(), top = offset.top + this.element.innerHeight() / 2 - this._yShift, left = offset.left + this.element.innerWidth() / 2, verticalOffset, relativeOffset;
             if (this._hgrid.length > 0 && top > this._hgrid.offset().top + this._hgrid.height()) {
-                {
-                    var __ms = new Date().getTime() - __start;
-                    _putstat('refreshPos', __ms);
-                }
+                _putstat('refreshPos', __start);
+                __popstack();
                 return;
             }
             if (this._hgrid.length > 0 && left > this._hgrid.offset().left + this._hgrid.width()) {
-                {
-                    var __ms = new Date().getTime() - __start;
-                    _putstat('refreshPos', __ms);
-                }
+                _putstat('refreshPos', __start);
+                __popstack();
                 return;
             }
             if (this.options.includeVerticalOffset && top > $(window).height()) {
@@ -10977,19 +10019,16 @@
             top -= relativeOffset.top;
             left -= relativeOffset.left;
             this._indicator.css('left', left).css('top', top);
-            {
-                var __ms = new Date().getTime() - __start;
-                _putstat('refreshPos', __ms);
-            }
+            _putstat('refreshPos', __start);
+            __popstack();
         },
         destroy: function () {
-            var __start = new Date().getTime();
+            __pushstack('destroy');
+            var __start = _getstart();
             clearInterval(this._resId);
             this._indicator.remove();
-            {
-                var __ms = new Date().getTime() - __start;
-                _putstat('destroy', __ms);
-            }
+            _putstat('destroy', __start);
+            __popstack();
         }
     });
     $.extend($.ui.igLoading, { version: '13.2.20132.2157' });
@@ -11030,24 +10069,23 @@
         },
         _numpages: 5,
         widget: function () {
-            var __start = new Date().getTime();
-            {
-                var __ms = new Date().getTime() - __start;
-                _putstat('widget', __ms);
-            }
+            __pushstack('widget');
+            var __start = _getstart();
+            _putstat('widget', __start);
+            __popstack();
             return this.element;
         },
         _createWidget: function (options, element) {
-            var __start = new Date().getTime();
+            __pushstack('_createWidget');
+            var __start = _getstart();
             this.options.bookmarks = [];
             $.Widget.prototype._createWidget.apply(this, arguments);
-            {
-                var __ms = new Date().getTime() - __start;
-                _putstat('_createWidget', __ms);
-            }
+            _putstat('_createWidget', __start);
+            __popstack();
         },
         _create: function () {
-            var __start = new Date().getTime();
+            __pushstack('_create');
+            var __start = _getstart();
             var o = this.options, self = this, css = this.css;
             this._keySliding = false;
             this._mouseSliding = false;
@@ -11064,60 +10102,54 @@
             }
             this.handles = $('.ui-igslider-handle', this.element).addClass('ui-state-default' + ' ui-corner-all').bind({
                 click: function (event) {
-                    var __start = new Date().getTime();
+                    __pushstack('click');
+                    var __start = _getstart();
                     event.preventDefault();
-                    {
-                        var __ms = new Date().getTime() - __start;
-                        _putstat('click', __ms);
-                    }
+                    _putstat('click', __start);
+                    __popstack();
                 },
                 mouseover: function () {
-                    var __start = new Date().getTime();
+                    __pushstack('mouseover');
+                    var __start = _getstart();
                     if (!o.disabled) {
                         $(this).addClass('ui-state-hover');
                     }
-                    {
-                        var __ms = new Date().getTime() - __start;
-                        _putstat('mouseover', __ms);
-                    }
+                    _putstat('mouseover', __start);
+                    __popstack();
                 },
                 mouseout: function () {
-                    var __start = new Date().getTime();
+                    __pushstack('mouseout');
+                    var __start = _getstart();
                     $(this).removeClass('ui-state-hover');
-                    {
-                        var __ms = new Date().getTime() - __start;
-                        _putstat('mouseout', __ms);
-                    }
+                    _putstat('mouseout', __start);
+                    __popstack();
                 },
                 focus: function () {
-                    var __start = new Date().getTime();
+                    __pushstack('focus');
+                    var __start = _getstart();
                     if (!o.disabled) {
                         $('.ui-igslider .ui-state-focus').removeClass('ui-state-focus');
                         $(this).addClass('ui-state-focus');
                     } else {
                         $(this).blur();
                     }
-                    {
-                        var __ms = new Date().getTime() - __start;
-                        _putstat('focus', __ms);
-                    }
+                    _putstat('focus', __start);
+                    __popstack();
                 },
                 blur: function () {
-                    var __start = new Date().getTime();
+                    __pushstack('blur');
+                    var __start = _getstart();
                     $(this).removeClass('ui-state-focus');
-                    {
-                        var __ms = new Date().getTime() - __start;
-                        _putstat('blur', __ms);
-                    }
+                    _putstat('blur', __start);
+                    __popstack();
                 },
                 keydown: function (event) {
-                    var __start = new Date().getTime();
+                    __pushstack('keydown');
+                    var __start = _getstart();
                     var ret = true, index = $(this).data('index.ui-igslider-handle'), allowed, curVal, newVal, step;
                     if (self.options.disabled) {
-                        {
-                            var __ms = new Date().getTime() - __start;
-                            _putstat('keydown', __ms);
-                        }
+                        _putstat('keydown', __start);
+                        __popstack();
                         return;
                     }
                     switch (event.keyCode) {
@@ -11135,10 +10167,8 @@
                             $(this).addClass('ui-state-active');
                             allowed = self._start(event, index);
                             if (allowed === false) {
-                                {
-                                    var __ms = new Date().getTime() - __start;
-                                    _putstat('keydown', __ms);
-                                }
+                                _putstat('keydown', __start);
+                                __popstack();
                                 return;
                             }
                         }
@@ -11162,10 +10192,8 @@
                     case $.ui.keyCode.UP:
                     case $.ui.keyCode.RIGHT:
                         if (curVal === self.options.max) {
-                            {
-                                var __ms = new Date().getTime() - __start;
-                                _putstat('keydown', __ms);
-                            }
+                            _putstat('keydown', __start);
+                            __popstack();
                             return;
                         }
                         newVal = self._trimValue(curVal + step);
@@ -11173,24 +10201,21 @@
                     case $.ui.keyCode.DOWN:
                     case $.ui.keyCode.LEFT:
                         if (curVal === self.options.min) {
-                            {
-                                var __ms = new Date().getTime() - __start;
-                                _putstat('keydown', __ms);
-                            }
+                            _putstat('keydown', __start);
+                            __popstack();
                             return;
                         }
                         newVal = self._trimValue(curVal - step);
                         break;
                     }
                     self._slide(event, index, newVal);
-                    {
-                        var __ms = new Date().getTime() - __start;
-                        _putstat('keydown', __ms);
-                    }
+                    _putstat('keydown', __start);
+                    __popstack();
                     return ret;
                 },
                 keyup: function (event) {
-                    var __start = new Date().getTime();
+                    __pushstack('keyup');
+                    var __start = _getstart();
                     var index = $(this).data('index.ui-igslider-handle');
                     if (self._keySliding) {
                         self._keySliding = false;
@@ -11198,30 +10223,26 @@
                         self._change(event, index);
                         $(this).removeClass('ui-state-active');
                     }
-                    {
-                        var __ms = new Date().getTime() - __start;
-                        _putstat('keyup', __ms);
-                    }
+                    _putstat('keyup', __start);
+                    __popstack();
                 }
             }).each(function (i) {
-                var __start = new Date().getTime();
+                __pushstack('anonymous');
+                var __start = _getstart();
                 $(this).data('index.ui-igslider-handle', i);
-                {
-                    var __ms = new Date().getTime() - __start;
-                    _putstat('anonymous', __ms);
-                }
+                _putstat('anonymous', __start);
+                __popstack();
             });
             this.handle = this.handles.eq(0);
             this._renderBookmarks();
             this._refreshValue();
             this._animateOff = false;
-            {
-                var __ms = new Date().getTime() - __start;
-                _putstat('_create', __ms);
-            }
+            _putstat('_create', __start);
+            __popstack();
         },
         _renderBookmarks: function () {
-            var __start = new Date().getTime();
+            __pushstack('_renderBookmarks');
+            var __start = _getstart();
             if (this.options.bookmarks && this.options.bookmarks.length > 0) {
                 var len = this.options.bookmarks.length, i = 0, o = this.options, css = this.css, mark, self = this;
                 for (i; i < len; i++) {
@@ -11230,7 +10251,8 @@
                 }
                 this.bookmarks = $('.ui-igslider-bookmark', this.element).addClass('ui-state-default').bind({
                     mousedown: function (event) {
-                        var __start = new Date().getTime();
+                        __pushstack('mousedown');
+                        var __start = _getstart();
                         var noCancel = true, bookmarkIndex = $(this).data('index.ui-igslider-bookmark');
                         event.preventDefault();
                         event.stopPropagation();
@@ -11238,121 +10260,107 @@
                         if (self.options.syncHandleWithBookmark && noCancel) {
                             self._slide(event, 0, self.options.bookmarks[bookmarkIndex].value);
                         }
-                        {
-                            var __ms = new Date().getTime() - __start;
-                            _putstat('mousedown', __ms);
-                        }
+                        _putstat('mousedown', __start);
+                        __popstack();
                     },
                     mouseover: function (event) {
-                        var __start = new Date().getTime();
+                        __pushstack('mouseover');
+                        var __start = _getstart();
                         if (!o.disabled) {
                             $(this).addClass('ui-state-hover');
                             if (self.options.showBookmarkTitle) {
                                 self._showBookmarkTitle($(this), event);
                             }
                         }
-                        {
-                            var __ms = new Date().getTime() - __start;
-                            _putstat('mouseover', __ms);
-                        }
+                        _putstat('mouseover', __start);
+                        __popstack();
                     },
                     mouseout: function () {
-                        var __start = new Date().getTime();
+                        __pushstack('mouseout');
+                        var __start = _getstart();
                         if (!o.disabled) {
                             $(this).removeClass('ui-state-hover');
                             if (self.options.showBookmarkTitle) {
                                 self._hideBookmarkTitle($(this));
                             }
                         }
-                        {
-                            var __ms = new Date().getTime() - __start;
-                            _putstat('mouseout', __ms);
-                        }
+                        _putstat('mouseout', __start);
+                        __popstack();
                     },
                     click: function (event) {
-                        var __start = new Date().getTime();
+                        __pushstack('click');
+                        var __start = _getstart();
                         event.preventDefault();
-                        {
-                            var __ms = new Date().getTime() - __start;
-                            _putstat('click', __ms);
-                        }
+                        _putstat('click', __start);
+                        __popstack();
                     }
                 });
                 this._createBookmarkTooltip();
                 this._buildBookmarkHit();
             }
-            {
-                var __ms = new Date().getTime() - __start;
-                _putstat('_renderBookmarks', __ms);
-            }
+            _putstat('_renderBookmarks', __start);
+            __popstack();
         },
         destroy: function () {
-            var __start = new Date().getTime();
+            __pushstack('destroy');
+            var __start = _getstart();
             this.handles.remove();
             this.clearBookmarks();
             this.element.removeClass(this.css.baseClasses + ' ui-igslider-horizontal' + ' ui-igslider-vertical' + ' ui-igslider-disabled').removeData('slider').unbind('.slider');
             this._mouseDestroy();
-            {
-                var __ms = new Date().getTime() - __start;
-                _putstat('destroy', __ms);
-            }
+            _putstat('destroy', __start);
+            __popstack();
             return this;
         },
         _id: function (suffix) {
-            var __start = new Date().getTime();
-            {
-                var __ms = new Date().getTime() - __start;
-                _putstat('_id', __ms);
-            }
+            __pushstack('_id');
+            var __start = _getstart();
+            _putstat('_id', __start);
+            __popstack();
             return this.element[0].id + suffix;
         },
         _showBookmarkTitle: function (bookmark, browserEvent) {
-            var __start = new Date().getTime();
+            __pushstack('_showBookmarkTitle');
+            var __start = _getstart();
             var tooltip = $('#' + this._id('_tooltip')), title = this.options.bookmarks[bookmark.data('index.ui-igslider-bookmark')].title;
             if (title && title.length > 0) {
                 tooltip.igTooltip('option', 'text', title);
                 tooltip.css('top', browserEvent.pageY - tooltip.outerHeight() - 5).css('left', browserEvent.pageX - tooltip.width() / 2 + bookmark.width() / 2).show();
             }
-            {
-                var __ms = new Date().getTime() - __start;
-                _putstat('_showBookmarkTitle', __ms);
-            }
+            _putstat('_showBookmarkTitle', __start);
+            __popstack();
         },
         _hideBookmarkTitle: function (bookmark) {
-            var __start = new Date().getTime();
+            __pushstack('_hideBookmarkTitle');
+            var __start = _getstart();
             $('#' + this._id('_tooltip')).hide();
-            {
-                var __ms = new Date().getTime() - __start;
-                _putstat('_hideBookmarkTitle', __ms);
-            }
+            _putstat('_hideBookmarkTitle', __start);
+            __popstack();
         },
         _createBookmarkTooltip: function () {
-            var __start = new Date().getTime();
+            __pushstack('_createBookmarkTooltip');
+            var __start = _getstart();
             var html = '<div id="' + this._id('_tooltip') + '" class="' + this.css.bookmarkTooltipClass + '"></div>';
             $(html).appendTo($(document.body)).igTooltip({ arrowLocation: 'bottom' }).hide();
-            {
-                var __ms = new Date().getTime() - __start;
-                _putstat('_createBookmarkTooltip', __ms);
-            }
+            _putstat('_createBookmarkTooltip', __start);
+            __popstack();
         },
         clearBookmarks: function () {
-            var __start = new Date().getTime();
+            __pushstack('clearBookmarks');
+            var __start = _getstart();
             if (this.bookmarks) {
                 this.bookmarks.remove();
             }
-            {
-                var __ms = new Date().getTime() - __start;
-                _putstat('clearBookmarks', __ms);
-            }
+            _putstat('clearBookmarks', __start);
+            __popstack();
         },
         _mouseCapture: function (event) {
-            var __start = new Date().getTime();
+            __pushstack('_mouseCapture');
+            var __start = _getstart();
             var o = this.options, position, normValue, index = 0, handle = this.handles.eq(index), self = this, offset, mouseOverHandle;
             if (o.disabled) {
-                {
-                    var __ms = new Date().getTime() - __start;
-                    _putstat('_mouseCapture', __ms);
-                }
+                _putstat('_mouseCapture', __start);
+                __popstack();
                 return false;
             }
             this.elementSize = {
@@ -11383,67 +10391,61 @@
             this._slide(event, index, normValue);
             this._animateOff = true;
             this._mouseUpHandler = function (event) {
-                var __start = new Date().getTime();
-                {
-                    var __ms = new Date().getTime() - __start;
-                    _putstat('_mouseUpHandler', __ms);
-                }
+                __pushstack('_mouseUpHandler');
+                var __start = _getstart();
+                _putstat('_mouseUpHandler', __start);
+                __popstack();
                 return self._mouseStop(event);
             };
             $(document).bind('mouseup.' + this.widgetName, this._mouseUpHandler);
-            {
-                var __ms = new Date().getTime() - __start;
-                _putstat('_mouseCapture', __ms);
-            }
+            _putstat('_mouseCapture', __start);
+            __popstack();
             return true;
         },
         _mouseStart: function (event) {
-            var __start = new Date().getTime();
+            __pushstack('_mouseStart');
+            var __start = _getstart();
             $(document).unbind('mouseup.' + this.widgetName, this._mouseUpHandler);
-            {
-                var __ms = new Date().getTime() - __start;
-                _putstat('_mouseStart', __ms);
-            }
+            _putstat('_mouseStart', __start);
+            __popstack();
             return this._start(event, this._handleIndex);
         },
         _mouseDrag: function (event) {
-            var __start = new Date().getTime();
+            __pushstack('_mouseDrag');
+            var __start = _getstart();
             var position = {
                     x: event.pageX,
                     y: event.pageY
                 }, normValue = this._normValueFromMouse(position);
             this._slide(event, this._handleIndex, normValue);
-            {
-                var __ms = new Date().getTime() - __start;
-                _putstat('_mouseDrag', __ms);
-            }
+            _putstat('_mouseDrag', __start);
+            __popstack();
             return false;
         },
         _mouseStop: function (event) {
-            var __start = new Date().getTime();
+            __pushstack('_mouseStop');
+            var __start = _getstart();
             var self = this;
             this.handles.removeClass('ui-state-active');
             setTimeout(function () {
-                var __start = new Date().getTime();
+                __pushstack('anonymous');
+                var __start = _getstart();
                 self._mouseSliding = false;
-                {
-                    var __ms = new Date().getTime() - __start;
-                    _putstat('anonymous', __ms);
-                }
+                _putstat('anonymous', __start);
+                __popstack();
             }, 1000);
             this._stop(event, this._handleIndex);
             this._change(event, this._handleIndex);
             this._handleIndex = null;
             this._clickOffset = null;
             this._animateOff = false;
-            {
-                var __ms = new Date().getTime() - __start;
-                _putstat('_mouseStop', __ms);
-            }
+            _putstat('_mouseStop', __start);
+            __popstack();
             return false;
         },
         _detectOrientation: function () {
-            var __start = new Date().getTime();
+            __pushstack('_detectOrientation');
+            var __start = _getstart();
             var o = this.options, css = this.css;
             if (o.orientation === 'vertical') {
                 this.orientation = 'vertical';
@@ -11452,13 +10454,12 @@
                 this.orientation = 'horizontal';
                 this.element.removeClass(css.verticalOrientationClass).addClass(css.horizontalOrientationClass);
             }
-            {
-                var __ms = new Date().getTime() - __start;
-                _putstat('_detectOrientation', __ms);
-            }
+            _putstat('_detectOrientation', __start);
+            __popstack();
         },
         _normValueFromMouse: function (position) {
-            var __start = new Date().getTime();
+            __pushstack('_normValueFromMouse');
+            var __start = _getstart();
             var pixelTotal, pixelMouse, percentMouse, valueTotal, valueMouse;
             if (this.orientation === 'horizontal') {
                 pixelTotal = this.elementSize.width;
@@ -11479,26 +10480,24 @@
             }
             valueTotal = this.options.max - this.options.min;
             valueMouse = this.options.min + percentMouse * valueTotal;
-            {
-                var __ms = new Date().getTime() - __start;
-                _putstat('_normValueFromMouse', __ms);
-            }
+            _putstat('_normValueFromMouse', __start);
+            __popstack();
             return this._trimValue(valueMouse);
         },
         _start: function (event, index) {
-            var __start = new Date().getTime();
+            __pushstack('_start');
+            var __start = _getstart();
             var uiHash = {
                     handle: this.handles[index],
                     value: this.value()
                 };
-            {
-                var __ms = new Date().getTime() - __start;
-                _putstat('_start', __ms);
-            }
+            _putstat('_start', __start);
+            __popstack();
             return this._trigger(this.events.start, event, uiHash);
         },
         _slide: function (event, index, newVal) {
-            var __start = new Date().getTime();
+            __pushstack('_slide');
+            var __start = _getstart();
             var allowed;
             if (newVal !== this.value()) {
                 allowed = this._trigger(this.events.slide, event, {
@@ -11509,25 +10508,23 @@
                     this.value(newVal);
                 }
             }
-            {
-                var __ms = new Date().getTime() - __start;
-                _putstat('_slide', __ms);
-            }
+            _putstat('_slide', __start);
+            __popstack();
         },
         _stop: function (event, index) {
-            var __start = new Date().getTime();
+            __pushstack('_stop');
+            var __start = _getstart();
             var uiHash = {
                     handle: this.handles[index],
                     value: this.value()
                 };
             this._trigger(this.events.stop, event, uiHash);
-            {
-                var __ms = new Date().getTime() - __start;
-                _putstat('_stop', __ms);
-            }
+            _putstat('_stop', __start);
+            __popstack();
         },
         _change: function (event, index) {
-            var __start = new Date().getTime();
+            __pushstack('_change');
+            var __start = _getstart();
             if (!this._keySliding && !this._mouseSliding) {
                 var uiHash = {
                         handle: this.handles[index],
@@ -11539,25 +10536,23 @@
                     this._buildBookmarkHit();
                 }
             }
-            {
-                var __ms = new Date().getTime() - __start;
-                _putstat('_change', __ms);
-            }
+            _putstat('_change', __start);
+            __popstack();
         },
         _checkBookmarkHit: function (currentValue, event) {
-            var __start = new Date().getTime();
+            __pushstack('_checkBookmarkHit');
+            var __start = _getstart();
             if (this._marksHit && this._marksHit.length > 0 && currentValue >= this._marksHit[0].value) {
                 var index = this._marksHit[0].index;
                 this._marksHit.shift();
                 this._bookmarkHit(event, index);
             }
-            {
-                var __ms = new Date().getTime() - __start;
-                _putstat('_checkBookmarkHit', __ms);
-            }
+            _putstat('_checkBookmarkHit', __start);
+            __popstack();
         },
         _buildBookmarkHit: function () {
-            var __start = new Date().getTime();
+            __pushstack('_buildBookmarkHit');
+            var __start = _getstart();
             var b = this.options.bookmarks || [], i = b.length - 1;
             this._marksHit = [];
             for (i; i >= 0; i--) {
@@ -11570,33 +10565,30 @@
             }
             this._marksHit.sort(this._sortBookmarksJSON);
             this._marksHit = $.extend(true, [], this._marksHit);
-            {
-                var __ms = new Date().getTime() - __start;
-                _putstat('_buildBookmarkHit', __ms);
-            }
+            _putstat('_buildBookmarkHit', __start);
+            __popstack();
         },
         _sortBookmarksJSON: function (a, b) {
-            var __start = new Date().getTime();
-            {
-                var __ms = new Date().getTime() - __start;
-                _putstat('_sortBookmarksJSON', __ms);
-            }
+            __pushstack('_sortBookmarksJSON');
+            var __start = _getstart();
+            _putstat('_sortBookmarksJSON', __start);
+            __popstack();
             return a.value - b.value;
         },
         _bookmarkClicked: function (event, index) {
-            var __start = new Date().getTime();
+            __pushstack('_bookmarkClicked');
+            var __start = _getstart();
             var uiHash = {
                     bookmarkElement: this.bookmarks[index],
                     bookmark: this.options.bookmarks[index]
                 };
-            {
-                var __ms = new Date().getTime() - __start;
-                _putstat('_bookmarkClicked', __ms);
-            }
+            _putstat('_bookmarkClicked', __start);
+            __popstack();
             return this._trigger(this.events.bookmarkClick, event, uiHash);
         },
         _bookmarkHit: function (event, index) {
-            var __start = new Date().getTime();
+            __pushstack('_bookmarkHit');
+            var __start = _getstart();
             var uiHash = {
                     bookmarkElement: this.bookmarks[index],
                     bookmark: this.options.bookmarks[index]
@@ -11604,26 +10596,24 @@
             if (uiHash.bookmarkElement) {
                 this._trigger(this.events.bookmarkHit, event, uiHash);
             }
-            {
-                var __ms = new Date().getTime() - __start;
-                _putstat('_bookmarkHit', __ms);
-            }
+            _putstat('_bookmarkHit', __start);
+            __popstack();
         },
         value: function (newValue) {
-            var __start = new Date().getTime();
+            __pushstack('value');
+            var __start = _getstart();
             if (arguments.length) {
                 this.options.value = this._trimValue(newValue);
                 this._refreshValue();
                 this._change(null, 0);
             }
-            {
-                var __ms = new Date().getTime() - __start;
-                _putstat('value', __ms);
-            }
+            _putstat('value', __start);
+            __popstack();
             return this._value();
         },
         _setOption: function (key, value) {
-            var __start = new Date().getTime();
+            __pushstack('_setOption');
+            var __start = _getstart();
             $.Widget.prototype._setOption.apply(this, arguments);
             switch (key) {
             case 'disabled':
@@ -11643,10 +10633,8 @@
                 break;
             case 'value':
                 if (this._mouseSliding === true) {
-                    {
-                        var __ms = new Date().getTime() - __start;
-                        _putstat('_setOption', __ms);
-                    }
+                    _putstat('_setOption', __start);
+                    __popstack();
                     return;
                 }
                 this._animateOff = true;
@@ -11659,47 +10647,40 @@
                 this._renderBookmarks();
                 break;
             }
-            {
-                var __ms = new Date().getTime() - __start;
-                _putstat('_setOption', __ms);
-            }
+            _putstat('_setOption', __start);
+            __popstack();
         },
         _value: function () {
-            var __start = new Date().getTime();
-            {
-                var __ms = new Date().getTime() - __start;
-                _putstat('_value', __ms);
-            }
+            __pushstack('_value');
+            var __start = _getstart();
+            _putstat('_value', __start);
+            __popstack();
             return this._trimValue(this.options.value);
         },
         _trimValue: function (val) {
-            var __start = new Date().getTime();
+            __pushstack('_trimValue');
+            var __start = _getstart();
             if (val < this.options.min) {
-                {
-                    var __ms = new Date().getTime() - __start;
-                    _putstat('_trimValue', __ms);
-                }
+                _putstat('_trimValue', __start);
+                __popstack();
                 return this.options.min;
             }
             if (val > this.options.max) {
-                {
-                    var __ms = new Date().getTime() - __start;
-                    _putstat('_trimValue', __ms);
-                }
+                _putstat('_trimValue', __start);
+                __popstack();
                 return this.options.max;
             }
             var step = this.options.step > 0 ? this.options.step : 1, valModStep = val % step, alignValue = val - valModStep;
             if (Math.abs(valModStep) * 2 >= step) {
                 alignValue += valModStep > 0 ? step : -step;
             }
-            {
-                var __ms = new Date().getTime() - __start;
-                _putstat('_trimValue', __ms);
-            }
+            _putstat('_trimValue', __start);
+            __popstack();
             return parseFloat(alignValue.toFixed(5));
         },
         _normPercentValue: function (val) {
-            var __start = new Date().getTime();
+            __pushstack('_normPercentValue');
+            var __start = _getstart();
             var decrease = 0, retVal = val;
             if (this.orientation === 'vertical') {
                 decrease = (this.handle.outerHeight() / this.element.outerHeight()).toFixed(2) * 100;
@@ -11707,21 +10688,18 @@
             if (val - decrease > 0) {
                 retVal = val - decrease;
             }
-            {
-                var __ms = new Date().getTime() - __start;
-                _putstat('_normPercentValue', __ms);
-            }
+            _putstat('_normPercentValue', __start);
+            __popstack();
             return retVal;
         },
         _refreshValue: function () {
-            var __start = new Date().getTime();
+            __pushstack('_refreshValue');
+            var __start = _getstart();
             var o = this.options, control = this, animate = !this._animateOff ? o.animate : false, _set = {}, value = this.value(), valueMin = this.options.min, valueMax = this.options.max, valPercent = valueMax !== valueMin ? (value - valueMin) / (valueMax - valueMin) * 100 : 0;
             _set[control.orientation === 'horizontal' ? 'left' : 'bottom'] = this._normPercentValue(valPercent) + '%';
             this.handle.stop(1, 1)[animate ? 'animate' : 'css'](_set, o.animate);
-            {
-                var __ms = new Date().getTime() - __start;
-                _putstat('_refreshValue', __ms);
-            }
+            _putstat('_refreshValue', __start);
+            __popstack();
         }
     });
     $.extend($.ui.igSlider, { version: '13.2.20132.2157' });
@@ -11748,15 +10726,15 @@
         events: { change: 'change' },
         _animationOff: true,
         widget: function () {
-            var __start = new Date().getTime();
-            {
-                var __ms = new Date().getTime() - __start;
-                _putstat('widget', __ms);
-            }
+            __pushstack('widget');
+            var __start = _getstart();
+            _putstat('widget', __start);
+            __popstack();
             return this.element;
         },
         _detectOrientation: function () {
-            var __start = new Date().getTime();
+            __pushstack('_detectOrientation');
+            var __start = _getstart();
             var css = this.css;
             if (this.options.orientation === 'vertical') {
                 this.orientation = 'vertical';
@@ -11765,21 +10743,19 @@
                 this.orientation = 'horizontal';
                 this.element.removeClass(css.verticalOrientationClass).addClass(css.horizontalOrientationClass);
             }
-            {
-                var __ms = new Date().getTime() - __start;
-                _putstat('_detectOrientation', __ms);
-            }
+            _putstat('_detectOrientation', __start);
+            __popstack();
         },
         _id: function (suffix) {
-            var __start = new Date().getTime();
-            {
-                var __ms = new Date().getTime() - __start;
-                _putstat('_id', __ms);
-            }
+            __pushstack('_id');
+            var __start = _getstart();
+            _putstat('_id', __start);
+            __popstack();
             return this.element[0].id + suffix;
         },
         _create: function () {
-            var __start = new Date().getTime();
+            __pushstack('_create');
+            var __start = _getstart();
             var o = this.options, css = this.css;
             this._detectOrientation();
             this.element.addClass(css.baseClasses);
@@ -11798,45 +10774,41 @@
                 $('<div id="' + this._id('_progress') + '" class="' + css.progressRangeClass + '" style="height:0%; bottom:0%; left:0px; width:100%;"></div>').appendTo(this.element);
             }
             this._refreshValue();
-            {
-                var __ms = new Date().getTime() - __start;
-                _putstat('_create', __ms);
-            }
+            _putstat('_create', __start);
+            __popstack();
         },
         destroy: function () {
-            var __start = new Date().getTime();
+            __pushstack('destroy');
+            var __start = _getstart();
             this.element.removeClass('ui-igprogressbar' + ' ui-igprogressbar-horizontal' + ' ui-igprogressbar-vertical' + ' ui-igprogressbar-disabled' + ' ui-widget' + ' ui-widget-content' + ' ui-corner-all').removeData('igProgressBar').unbind('.igProgressBar');
             $('#' + this._id('_progress')).remove();
-            {
-                var __ms = new Date().getTime() - __start;
-                _putstat('destroy', __ms);
-            }
+            _putstat('destroy', __start);
+            __popstack();
             return this;
         },
         _change: function (event) {
-            var __start = new Date().getTime();
+            __pushstack('_change');
+            var __start = _getstart();
             var uiHash = { value: this.value() };
             this._trigger(this.events.change, event, uiHash);
-            {
-                var __ms = new Date().getTime() - __start;
-                _putstat('_change', __ms);
-            }
+            _putstat('_change', __start);
+            __popstack();
         },
         value: function (newValue) {
-            var __start = new Date().getTime();
+            __pushstack('value');
+            var __start = _getstart();
             if (arguments.length) {
                 this.options.value = this._trimValue(newValue);
                 this._refreshValue();
                 this._change(null);
             }
-            {
-                var __ms = new Date().getTime() - __start;
-                _putstat('value', __ms);
-            }
+            _putstat('value', __start);
+            __popstack();
             return this.options.value;
         },
         _setOption: function (key, value) {
-            var __start = new Date().getTime();
+            __pushstack('_setOption');
+            var __start = _getstart();
             $.Widget.prototype._setOption.apply(this, arguments);
             var o = this.options;
             switch (key) {
@@ -11883,35 +10855,29 @@
             default:
                 break;
             }
-            {
-                var __ms = new Date().getTime() - __start;
-                _putstat('_setOption', __ms);
-            }
+            _putstat('_setOption', __start);
+            __popstack();
         },
         _trimValue: function (val) {
-            var __start = new Date().getTime();
+            __pushstack('_trimValue');
+            var __start = _getstart();
             if (val < this.options.min) {
-                {
-                    var __ms = new Date().getTime() - __start;
-                    _putstat('_trimValue', __ms);
-                }
+                _putstat('_trimValue', __start);
+                __popstack();
                 return this.options.min;
             }
             if (val > this.options.max) {
-                {
-                    var __ms = new Date().getTime() - __start;
-                    _putstat('_trimValue', __ms);
-                }
+                _putstat('_trimValue', __start);
+                __popstack();
                 return this.options.max;
             }
-            {
-                var __ms = new Date().getTime() - __start;
-                _putstat('_trimValue', __ms);
-            }
+            _putstat('_trimValue', __start);
+            __popstack();
             return parseInt(val, 10);
         },
         _refreshValue: function () {
-            var __start = new Date().getTime();
+            __pushstack('_refreshValue');
+            var __start = _getstart();
             var o = this.options, value = o.value, valueMin = o.min, valueMax = o.max, valueEnd = o.endValue, valPercent = valueMax !== valueMin ? (value - valueMin) / (valueMax - valueMin) * 100 : 0, valueEndPercent = value !== valueEnd ? (valueEnd - value) / (valueMax - valueMin) * 100 : 0, progressBar = $('#' + this._id('_progress'));
             if (o.range) {
                 if (o.orientation === 'horizontal') {
@@ -11948,10 +10914,8 @@
                     }
                 }
             }
-            {
-                var __ms = new Date().getTime() - __start;
-                _putstat('_refreshValue', __ms);
-            }
+            _putstat('_refreshValue', __start);
+            __popstack();
         }
     });
     $.extend($.ui.igProgressBar, { version: '13.2.20132.2157' });
@@ -11975,15 +10939,15 @@
             title: false
         },
         _id: function (suffix) {
-            var __start = new Date().getTime();
-            {
-                var __ms = new Date().getTime() - __start;
-                _putstat('_id', __ms);
-            }
+            __pushstack('_id');
+            var __start = _getstart();
+            _putstat('_id', __start);
+            __popstack();
             return this.element[0].id + suffix;
         },
         _create: function () {
-            var __start = new Date().getTime();
+            __pushstack('_create');
+            var __start = _getstart();
             var self = this, o = self.options, e = this.element, inputType, css = {
                     buttonClassIE6: 'ui-ie6',
                     buttonClasses: 'ui-button ui-igbutton ui-widget ui-widget-content ui-corner-all ui-state-default',
@@ -12013,19 +10977,15 @@
                 if (inputType === 'BUTTON' || inputType === 'SUBMIT' || inputType === 'RESET') {
                     self._renderInput();
                 } else {
-                    {
-                        var __ms = new Date().getTime() - __start;
-                        _putstat('_create', __ms);
-                    }
+                    _putstat('_create', __start);
+                    __popstack();
                     return;
                 }
             } else if (e.is('button')) {
                 self._renderButton();
             } else {
-                {
-                    var __ms = new Date().getTime() - __start;
-                    _putstat('_create', __ms);
-                }
+                _putstat('_create', __start);
+                __popstack();
                 return;
             }
             if (o.width !== null) {
@@ -12048,77 +11008,69 @@
             e.attr('aria-disabled', 'false');
             self._attachButtonEvents();
             self.setTitle(o.title);
-            {
-                var __ms = new Date().getTime() - __start;
-                _putstat('_create', __ms);
-            }
+            _putstat('_create', __start);
+            __popstack();
             return this;
         },
         setTitle: function (title) {
-            var __start = new Date().getTime();
+            __pushstack('setTitle');
+            var __start = _getstart();
             var e = this.element;
             if (title === false) {
                 e.removeAttr('title');
             } else {
                 e.attr('title', title);
             }
-            {
-                var __ms = new Date().getTime() - __start;
-                _putstat('setTitle', __ms);
-            }
+            _putstat('setTitle', __start);
+            __popstack();
         },
         widget: function () {
-            var __start = new Date().getTime();
-            {
-                var __ms = new Date().getTime() - __start;
-                _putstat('widget', __ms);
-            }
+            __pushstack('widget');
+            var __start = _getstart();
+            _putstat('widget', __start);
+            __popstack();
             return this.element;
         },
         _isRedirect: function () {
-            var __start = new Date().getTime();
-            {
-                var __ms = new Date().getTime() - __start;
-                _putstat('_isRedirect', __ms);
-            }
+            __pushstack('_isRedirect');
+            var __start = _getstart();
+            _putstat('_isRedirect', __start);
+            __popstack();
             return this.options.link.href !== null;
         },
         _renderDivButton: function () {
-            var __start = new Date().getTime();
+            __pushstack('_renderDivButton');
+            var __start = _getstart();
             this._setLabel();
-            {
-                var __ms = new Date().getTime() - __start;
-                _putstat('_renderDivButton', __ms);
-            }
+            _putstat('_renderDivButton', __start);
+            __popstack();
         },
         _renderAHref: function () {
-            var __start = new Date().getTime();
+            __pushstack('_renderAHref');
+            var __start = _getstart();
             this._setLinkOptions(true);
             this._setLabel();
-            {
-                var __ms = new Date().getTime() - __start;
-                _putstat('_renderAHref', __ms);
-            }
+            _putstat('_renderAHref', __start);
+            __popstack();
         },
         _renderInput: function () {
-            var __start = new Date().getTime();
+            __pushstack('_renderInput');
+            var __start = _getstart();
             var e = this.element;
             e.attr('value', this.options.labelText);
-            {
-                var __ms = new Date().getTime() - __start;
-                _putstat('_renderInput', __ms);
-            }
+            _putstat('_renderInput', __start);
+            __popstack();
         },
         _renderButton: function () {
-            var __start = new Date().getTime();
+            __pushstack('_renderButton');
+            var __start = _getstart();
             this._setLabel();
-            {
-                var __ms = new Date().getTime() - __start;
-                _putstat('_renderButton', __ms);
-            }
+            _putstat('_renderButton', __start);
+            __popstack();
         },
         _disableButton: function () {
-            var __start = new Date().getTime();
+            __pushstack('_disableButton');
+            var __start = _getstart();
             var self = this, e = self.element;
             e.addClass(self.options.css.buttonDisabledClass);
             if (e.is('a') === true) {
@@ -12128,13 +11080,12 @@
             } else {
                 e.attr('disabled', 'true');
             }
-            {
-                var __ms = new Date().getTime() - __start;
-                _putstat('_disableButton', __ms);
-            }
+            _putstat('_disableButton', __start);
+            __popstack();
         },
         _enableButton: function () {
-            var __start = new Date().getTime();
+            __pushstack('_enableButton');
+            var __start = _getstart();
             var self = this, e = self.element, o = this.options;
             if (e.hasClass(o.css.buttonDisabledClass)) {
                 e.removeClass(o.css.buttonDisabledClass);
@@ -12143,21 +11094,18 @@
             if (e.is('a') === true) {
                 self._setLinkOptions(true);
             }
-            {
-                var __ms = new Date().getTime() - __start;
-                _putstat('_enableButton', __ms);
-            }
+            _putstat('_enableButton', __start);
+            __popstack();
         },
         _setLabel: function () {
-            var __start = new Date().getTime();
+            __pushstack('_setLabel');
+            var __start = _getstart();
             var e = this.element, o = this.options, icons = o.icons, css = o.css, html = '', isSetPrimary = this._isSetPrimaryIcon(), isSetSecondary = this._isSetSecondaryIcon(), labelText = o.labelText === null || o.labelText === '' ? e.text() : o.labelText;
             e.attr('title', o.labelText);
             if (e.is('input')) {
                 e.attr('value', o.labelText);
-                {
-                    var __ms = new Date().getTime() - __start;
-                    _putstat('_setLabel', __ms);
-                }
+                _putstat('_setLabel', __start);
+                __popstack();
                 return;
             }
             if (isSetPrimary) {
@@ -12179,13 +11127,12 @@
                 e.addClass(css.buttonTextOnlyClass);
             }
             e.html(html);
-            {
-                var __ms = new Date().getTime() - __start;
-                _putstat('_setLabel', __ms);
-            }
+            _putstat('_setLabel', __start);
+            __popstack();
         },
         _setOnlyIcons: function () {
-            var __start = new Date().getTime();
+            __pushstack('_setOnlyIcons');
+            var __start = _getstart();
             var e = this.element, css = this.options.css;
             if (this.options.onlyIcons === false) {
                 if (e.hasClass(css.buttonIconsOnly)) {
@@ -12204,13 +11151,12 @@
                     e.addClass(css.buttonIconOnly);
                 }
             }
-            {
-                var __ms = new Date().getTime() - __start;
-                _putstat('_setOnlyIcons', __ms);
-            }
+            _putstat('_setOnlyIcons', __start);
+            __popstack();
         },
         _setLinkOptions: function (isAHref) {
-            var __start = new Date().getTime();
+            __pushstack('_setLinkOptions');
+            var __start = _getstart();
             var self = this, e = self.element, o = this.options;
             if (isAHref) {
                 if (o.link !== null && o.link.href !== null) {
@@ -12229,39 +11175,36 @@
                     e.removeAttr('title');
                 }
             }
-            {
-                var __ms = new Date().getTime() - __start;
-                _putstat('_setLinkOptions', __ms);
-            }
+            _putstat('_setLinkOptions', __start);
+            __popstack();
         },
         _setWidth: function (value) {
-            var __start = new Date().getTime();
+            __pushstack('_setWidth');
+            var __start = _getstart();
             var e = this.element;
             if (value === null) {
                 e.css('width', '');
             } else {
                 e.css('width', value);
             }
-            {
-                var __ms = new Date().getTime() - __start;
-                _putstat('_setWidth', __ms);
-            }
+            _putstat('_setWidth', __start);
+            __popstack();
         },
         _setHeight: function (value) {
-            var __start = new Date().getTime();
+            __pushstack('_setHeight');
+            var __start = _getstart();
             var e = this.element;
             if (value === null) {
                 e.css('height', '');
             } else {
                 e.css('height', value);
             }
-            {
-                var __ms = new Date().getTime() - __start;
-                _putstat('_setHeight', __ms);
-            }
+            _putstat('_setHeight', __start);
+            __popstack();
         },
         _setOption: function (key, val) {
-            var __start = new Date().getTime();
+            __pushstack('_setOption');
+            var __start = _getstart();
             var e = this.element, self = this;
             $.Widget.prototype._setOption.apply(this, [
                 key,
@@ -12309,26 +11252,24 @@
             default:
                 break;
             }
-            {
-                var __ms = new Date().getTime() - __start;
-                _putstat('_setOption', __ms);
-            }
+            _putstat('_setOption', __start);
+            __popstack();
         },
         _centerLabel: function () {
-            var __start = new Date().getTime();
+            __pushstack('_centerLabel');
+            var __start = _getstart();
             var self = this, e = self.element, l = $('#' + self._id('_lbl')), left = (e.width() - l.width()) / 2, top = (e.height() - l.height()) / 2;
             l.css({
                 position: 'relative',
                 top: top + 'px',
                 left: left + 'px'
             });
-            {
-                var __ms = new Date().getTime() - __start;
-                _putstat('_centerLabel', __ms);
-            }
+            _putstat('_centerLabel', __start);
+            __popstack();
         },
         _removeCenterLabel: function () {
-            var __start = new Date().getTime();
+            __pushstack('_removeCenterLabel');
+            var __start = _getstart();
             var self = this, l = $('#' + self._id('_lbl'));
             if (l.length > 0) {
                 l.css({
@@ -12337,68 +11278,58 @@
                     left: ''
                 });
             }
-            {
-                var __ms = new Date().getTime() - __start;
-                _putstat('_removeCenterLabel', __ms);
-            }
+            _putstat('_removeCenterLabel', __start);
+            __popstack();
         },
         _dettachEvents: function () {
-            var __start = new Date().getTime();
+            __pushstack('_dettachEvents');
+            var __start = _getstart();
             var self = this, e = self.element;
             this._attached = false;
             e.unbind(this._events);
-            {
-                var __ms = new Date().getTime() - __start;
-                _putstat('_dettachEvents', __ms);
-            }
+            _putstat('_dettachEvents', __start);
+            __popstack();
             return;
         },
         _onMouseOver: function (event) {
-            var __start = new Date().getTime();
+            __pushstack('_onMouseOver');
+            var __start = _getstart();
             var noCancel;
             if (this.options.disabled === true) {
-                {
-                    var __ms = new Date().getTime() - __start;
-                    _putstat('_onMouseOver', __ms);
-                }
+                _putstat('_onMouseOver', __start);
+                __popstack();
                 return;
             }
             noCancel = this._trigger('mouseover', event);
             if (noCancel) {
                 this.element.addClass(this.options.css.buttonHoverClasses);
             }
-            {
-                var __ms = new Date().getTime() - __start;
-                _putstat('_onMouseOver', __ms);
-            }
+            _putstat('_onMouseOver', __start);
+            __popstack();
         },
         _onMouseOut: function (event) {
-            var __start = new Date().getTime();
+            __pushstack('_onMouseOut');
+            var __start = _getstart();
             var self = this, e = self.element, o = this.options, noCancel;
             if (o.disabled === true) {
-                {
-                    var __ms = new Date().getTime() - __start;
-                    _putstat('_onMouseOut', __ms);
-                }
+                _putstat('_onMouseOut', __start);
+                __popstack();
                 return;
             }
             noCancel = self._trigger('mouseout', event);
             if (noCancel) {
                 e.removeClass(o.css.buttonHoverClasses);
             }
-            {
-                var __ms = new Date().getTime() - __start;
-                _putstat('_onMouseOut', __ms);
-            }
+            _putstat('_onMouseOut', __start);
+            __popstack();
         },
         _onClick: function (event) {
-            var __start = new Date().getTime();
+            __pushstack('_onClick');
+            var __start = _getstart();
             var e = this.element, self = this, o = this.options, noCancel;
             if (o.disabled === true) {
-                {
-                    var __ms = new Date().getTime() - __start;
-                    _putstat('_onClick', __ms);
-                }
+                _putstat('_onClick', __start);
+                __popstack();
                 return;
             }
             noCancel = self._trigger('click', event);
@@ -12412,19 +11343,16 @@
                     }
                 }
             }
-            {
-                var __ms = new Date().getTime() - __start;
-                _putstat('_onClick', __ms);
-            }
+            _putstat('_onClick', __start);
+            __popstack();
         },
         _onMouseDown: function (event) {
-            var __start = new Date().getTime();
+            __pushstack('_onMouseDown');
+            var __start = _getstart();
             var e = this.element, o = this.options, noCancel;
             if (o.disabled === true) {
-                {
-                    var __ms = new Date().getTime() - __start;
-                    _putstat('_onMouseDown', __ms);
-                }
+                _putstat('_onMouseDown', __start);
+                __popstack();
                 return;
             }
             noCancel = this._trigger('mousedown', event);
@@ -12432,19 +11360,16 @@
                 e.removeClass(o.css.buttonHoverClasses);
                 e.addClass(o.css.buttonActiveClasses);
             }
-            {
-                var __ms = new Date().getTime() - __start;
-                _putstat('_onMouseDown', __ms);
-            }
+            _putstat('_onMouseDown', __start);
+            __popstack();
         },
         _onMouseUp: function (event) {
-            var __start = new Date().getTime();
+            __pushstack('_onMouseUp');
+            var __start = _getstart();
             var o = this.options, noCancel;
             if (o.disabled === true) {
-                {
-                    var __ms = new Date().getTime() - __start;
-                    _putstat('_onMouseUp', __ms);
-                }
+                _putstat('_onMouseUp', __start);
+                __popstack();
                 return;
             }
             noCancel = this._trigger('mouseup', event);
@@ -12452,38 +11377,32 @@
                 this.element.removeClass(o.css.buttonHoverClasses);
                 this.element.removeClass(o.css.buttonActiveClasses);
             }
-            {
-                var __ms = new Date().getTime() - __start;
-                _putstat('_onMouseUp', __ms);
-            }
+            _putstat('_onMouseUp', __start);
+            __popstack();
         },
         _onFocus: function (event) {
-            var __start = new Date().getTime();
+            __pushstack('_onFocus');
+            var __start = _getstart();
             var o = this.options, noCancel;
             if (o.disabled === true) {
-                {
-                    var __ms = new Date().getTime() - __start;
-                    _putstat('_onFocus', __ms);
-                }
+                _putstat('_onFocus', __start);
+                __popstack();
                 return;
             }
             noCancel = this._trigger('focus', event);
             if (noCancel) {
                 this.element.addClass(o.css.buttonFocusClasses);
             }
-            {
-                var __ms = new Date().getTime() - __start;
-                _putstat('_onFocus', __ms);
-            }
+            _putstat('_onFocus', __start);
+            __popstack();
         },
         _onBlur: function (event) {
-            var __start = new Date().getTime();
+            __pushstack('_onBlur');
+            var __start = _getstart();
             var o = this.options, noCancel;
             if (o.disabled === true) {
-                {
-                    var __ms = new Date().getTime() - __start;
-                    _putstat('_onBlur', __ms);
-                }
+                _putstat('_onBlur', __start);
+                __popstack();
                 return;
             }
             noCancel = this._trigger('blur', event);
@@ -12491,159 +11410,140 @@
                 this.element.removeClass(o.css.buttonActiveClasses);
                 this.element.removeClass(o.css.buttonFocusClasses);
             }
-            {
-                var __ms = new Date().getTime() - __start;
-                _putstat('_onBlur', __ms);
-            }
+            _putstat('_onBlur', __start);
+            __popstack();
         },
         _onKeyDown: function (event) {
-            var __start = new Date().getTime();
+            __pushstack('_onKeyDown');
+            var __start = _getstart();
             var o = this.options;
             if (o.disabled === true) {
-                {
-                    var __ms = new Date().getTime() - __start;
-                    _putstat('_onKeyDown', __ms);
-                }
+                _putstat('_onKeyDown', __start);
+                __popstack();
                 return;
             }
             this._trigger('keydown', event);
-            {
-                var __ms = new Date().getTime() - __start;
-                _putstat('_onKeyDown', __ms);
-            }
+            _putstat('_onKeyDown', __start);
+            __popstack();
         },
         _attachButtonEvents: function () {
-            var __start = new Date().getTime();
+            __pushstack('_attachButtonEvents');
+            var __start = _getstart();
             var self = this, e = self.element;
             if (this._attached === true) {
-                {
-                    var __ms = new Date().getTime() - __start;
-                    _putstat('_attachButtonEvents', __ms);
-                }
+                _putstat('_attachButtonEvents', __start);
+                __popstack();
                 return;
             }
             this._attached = true;
             this._events = {
                 mouseover: function (e) {
-                    var __start = new Date().getTime();
+                    __pushstack('mouseover');
+                    var __start = _getstart();
                     self._onMouseOver(e, self);
-                    {
-                        var __ms = new Date().getTime() - __start;
-                        _putstat('mouseover', __ms);
-                    }
+                    _putstat('mouseover', __start);
+                    __popstack();
                 },
                 click: function (e) {
-                    var __start = new Date().getTime();
+                    __pushstack('click');
+                    var __start = _getstart();
                     self._onClick(e);
-                    {
-                        var __ms = new Date().getTime() - __start;
-                        _putstat('click', __ms);
-                    }
+                    _putstat('click', __start);
+                    __popstack();
                 },
                 mouseout: function (e) {
-                    var __start = new Date().getTime();
+                    __pushstack('mouseout');
+                    var __start = _getstart();
                     self._onMouseOut(e);
-                    {
-                        var __ms = new Date().getTime() - __start;
-                        _putstat('mouseout', __ms);
-                    }
+                    _putstat('mouseout', __start);
+                    __popstack();
                 },
                 mousedown: function (e) {
-                    var __start = new Date().getTime();
+                    __pushstack('mousedown');
+                    var __start = _getstart();
                     self._onMouseDown(e);
-                    {
-                        var __ms = new Date().getTime() - __start;
-                        _putstat('mousedown', __ms);
-                    }
+                    _putstat('mousedown', __start);
+                    __popstack();
                 },
                 mouseup: function (e) {
-                    var __start = new Date().getTime();
+                    __pushstack('mouseup');
+                    var __start = _getstart();
                     self._onMouseUp(e);
-                    {
-                        var __ms = new Date().getTime() - __start;
-                        _putstat('mouseup', __ms);
-                    }
+                    _putstat('mouseup', __start);
+                    __popstack();
                 },
                 focus: function (e) {
-                    var __start = new Date().getTime();
+                    __pushstack('focus');
+                    var __start = _getstart();
                     self._onFocus(e);
-                    {
-                        var __ms = new Date().getTime() - __start;
-                        _putstat('focus', __ms);
-                    }
+                    _putstat('focus', __start);
+                    __popstack();
                 },
                 blur: function (e) {
-                    var __start = new Date().getTime();
+                    __pushstack('blur');
+                    var __start = _getstart();
                     self._onBlur(e);
-                    {
-                        var __ms = new Date().getTime() - __start;
-                        _putstat('blur', __ms);
-                    }
+                    _putstat('blur', __start);
+                    __popstack();
                 },
                 keydown: function (e) {
-                    var __start = new Date().getTime();
+                    __pushstack('keydown');
+                    var __start = _getstart();
                     self._onKeyDown(e);
-                    {
-                        var __ms = new Date().getTime() - __start;
-                        _putstat('keydown', __ms);
-                    }
+                    _putstat('keydown', __start);
+                    __popstack();
                 }
             };
             e.bind(this._events);
-            {
-                var __ms = new Date().getTime() - __start;
-                _putstat('_attachButtonEvents', __ms);
-            }
+            _putstat('_attachButtonEvents', __start);
+            __popstack();
         },
         _isSetPrimaryIcon: function () {
-            var __start = new Date().getTime();
+            __pushstack('_isSetPrimaryIcon');
+            var __start = _getstart();
             var primary = this.options.icons.primary, isSet = false;
             if (primary !== undefined && primary !== null) {
                 isSet = true;
             }
-            {
-                var __ms = new Date().getTime() - __start;
-                _putstat('_isSetPrimaryIcon', __ms);
-            }
+            _putstat('_isSetPrimaryIcon', __start);
+            __popstack();
             return isSet;
         },
         _isSetSecondaryIcon: function () {
-            var __start = new Date().getTime();
+            __pushstack('_isSetSecondaryIcon');
+            var __start = _getstart();
             var secondary = this.options.icons.secondary, isSet = false;
             if (secondary !== undefined && secondary !== null) {
                 isSet = true;
             }
-            {
-                var __ms = new Date().getTime() - __start;
-                _putstat('_isSetSecondaryIcon', __ms);
-            }
+            _putstat('_isSetSecondaryIcon', __start);
+            __popstack();
             return isSet;
         },
         _setAttribute: function (e, attr, attrName) {
-            var __start = new Date().getTime();
+            __pushstack('_setAttribute');
+            var __start = _getstart();
             if (attr !== undefined && attr !== '' && attr !== null) {
                 e.attr(attrName, attr);
             } else {
                 e.removeAttr(attrName);
             }
-            {
-                var __ms = new Date().getTime() - __start;
-                _putstat('_setAttribute', __ms);
-            }
+            _putstat('_setAttribute', __start);
+            __popstack();
         },
         destroy: function () {
-            var __start = new Date().getTime();
+            __pushstack('destroy');
+            var __start = _getstart();
             this._dettachEvents();
             this._rollbackInitValues();
             this._events = null;
             $.Widget.prototype.destroy.apply(this, arguments);
-            {
-                var __ms = new Date().getTime() - __start;
-                _putstat('destroy', __ms);
-            }
+            _putstat('destroy', __start);
+            __popstack();
         },
         _getInitValues: function () {
-            var __start = new Date().getTime();
+            __pushstack('_getInitValues');
+            var __start = _getstart();
             var e = this.element;
             this._innerHTML = e.html();
             this._cssClasses = e.attr('class');
@@ -12655,13 +11555,12 @@
             this._height = e.attr('height');
             this._disabled = e.attr('disabled');
             this._value = e.val();
-            {
-                var __ms = new Date().getTime() - __start;
-                _putstat('_getInitValues', __ms);
-            }
+            _putstat('_getInitValues', __start);
+            __popstack();
         },
         _rollbackInitValues: function () {
-            var __start = new Date().getTime();
+            __pushstack('_rollbackInitValues');
+            var __start = _getstart();
             var e = this.element;
             e.html(this._innerHTML);
             if (e.is('a')) {
@@ -12676,10 +11575,8 @@
             this._setAttribute(e, this._cssClasses, 'class');
             this._setAttribute(e, this._role, 'role');
             this._setAttribute(e, this._disabled, 'disabled');
-            {
-                var __ms = new Date().getTime() - __start;
-                _putstat('_rollbackInitValues', __ms);
-            }
+            _putstat('_rollbackInitValues', __start);
+            __popstack();
         }
     });
     $.extend($.ui.igButton, { version: '13.2.20132.2157' });
@@ -12693,7 +11590,8 @@
             arrowLocation: 'top'
         },
         _setOption: function (key, value) {
-            var __start = new Date().getTime();
+            __pushstack('_setOption');
+            var __start = _getstart();
             $.Widget.prototype._setOption.apply(this, arguments);
             switch (key) {
             case 'text':
@@ -12704,24 +11602,22 @@
                 this._renderTooltip();
                 break;
             }
-            {
-                var __ms = new Date().getTime() - __start;
-                _putstat('_setOption', __ms);
-            }
+            _putstat('_setOption', __start);
+            __popstack();
         },
         _create: function () {
-            var __start = new Date().getTime();
+            __pushstack('_create');
+            var __start = _getstart();
             if (this.element.is('div')) {
                 this._renderTooltip();
                 this.element.addClass(this.css.baseClasses);
             }
-            {
-                var __ms = new Date().getTime() - __start;
-                _putstat('_create', __ms);
-            }
+            _putstat('_create', __start);
+            __popstack();
         },
         _renderTooltip: function () {
-            var __start = new Date().getTime();
+            __pushstack('_renderTooltip');
+            var __start = _getstart();
             switch (this.options.arrowLocation) {
             case 'top':
                 this._createArrowDiv();
@@ -12736,36 +11632,31 @@
             case 'right':
                 break;
             }
-            {
-                var __ms = new Date().getTime() - __start;
-                _putstat('_renderTooltip', __ms);
-            }
+            _putstat('_renderTooltip', __start);
+            __popstack();
         },
         _createContentDiv: function () {
-            var __start = new Date().getTime();
+            __pushstack('_createContentDiv');
+            var __start = _getstart();
             var t = this.options.text && this.options.text.length > 0 ? this.options.text : '';
             $('<div class="ui-widget-content ui-corner-all">' + t + '</div>').appendTo(this.element);
-            {
-                var __ms = new Date().getTime() - __start;
-                _putstat('_createContentDiv', __ms);
-            }
+            _putstat('_createContentDiv', __start);
+            __popstack();
         },
         _createArrowDiv: function () {
-            var __start = new Date().getTime();
+            __pushstack('_createArrowDiv');
+            var __start = _getstart();
             $('<div class="' + this.css.arrowImageBaseClass + this.options.arrowLocation + '"></div>').appendTo(this.element);
-            {
-                var __ms = new Date().getTime() - __start;
-                _putstat('_createArrowDiv', __ms);
-            }
+            _putstat('_createArrowDiv', __start);
+            __popstack();
         },
         destroy: function () {
-            var __start = new Date().getTime();
+            __pushstack('destroy');
+            var __start = _getstart();
             this.element.children().remove();
             this.element.removeClass(this.css.baseClasses);
-            {
-                var __ms = new Date().getTime() - __start;
-                _putstat('destroy', __ms);
-            }
+            _putstat('destroy', __start);
+            __popstack();
         }
     });
     $.extend($.ui.igTooltip, { version: '13.2.20132.2157' });
@@ -12803,32 +11694,30 @@
             igToolbarSeparator: 'ig-toolbar-separator ui-widget-content'
         },
         _id: function (id) {
-            var __start = new Date().getTime();
-            {
-                var __ms = new Date().getTime() - __start;
-                _putstat('_id', __ms);
-            }
+            __pushstack('_id');
+            var __start = _getstart();
+            _putstat('_id', __start);
+            __popstack();
             return this.element[0].id + id;
         },
         widget: function () {
-            var __start = new Date().getTime();
-            {
-                var __ms = new Date().getTime() - __start;
-                _putstat('widget', __ms);
-            }
+            __pushstack('widget');
+            var __start = _getstart();
+            _putstat('widget', __start);
+            __popstack();
             return this.element;
         },
         _create: function () {
-            var __start = new Date().getTime();
+            __pushstack('_create');
+            var __start = _getstart();
             this._render();
             this._createItems();
-            {
-                var __ms = new Date().getTime() - __start;
-                _putstat('_create', __ms);
-            }
+            _putstat('_create', __start);
+            __popstack();
         },
         _init: function () {
-            var __start = new Date().getTime();
+            __pushstack('_init');
+            var __start = _getstart();
             this._attachEvents();
             if (!this.options.isExpanded) {
                 this.buttonsList.hide();
@@ -12836,13 +11725,12 @@
             }
             this._width = this.collapseBtn.outerWidth(true) + this.buttonsList.width();
             this._height = this.element.height();
-            {
-                var __ms = new Date().getTime() - __start;
-                _putstat('_init', __ms);
-            }
+            _putstat('_init', __start);
+            __popstack();
         },
         _render: function () {
-            var __start = new Date().getTime();
+            __pushstack('_render');
+            var __start = _getstart();
             var o = this.options;
             this.element.addClass(this.css.toolbarWidget);
             this.element.width(this.options.width).height(this.options.height);
@@ -12854,19 +11742,16 @@
             });
             this.toolbarBody = this.element.find('#' + this._id('_toolbar'));
             this.buttonsList = $('<span id="' + this._id('_toolbar_buttons') + '" style="display:inline-block"></span>').appendTo(this.element);
-            {
-                var __ms = new Date().getTime() - __start;
-                _putstat('_render', __ms);
-            }
+            _putstat('_render', __start);
+            __popstack();
         },
         _onCollapse: function (e) {
-            var __start = new Date().getTime();
+            __pushstack('_onCollapse');
+            var __start = _getstart();
             var noCancel, event, cancelableEvent, o = this.options, width, self = this, visibility, opacity;
             if (!o.allowCollapsing) {
-                {
-                    var __ms = new Date().getTime() - __start;
-                    _putstat('_onCollapse', __ms);
-                }
+                _putstat('_onCollapse', __start);
+                __popstack();
                 return;
             }
             if (o.isExpanded) {
@@ -12896,7 +11781,8 @@
             if (noCancel) {
                 this.element.css({ overflow: 'hidden' });
                 this.element.animate({ width: width }, 300, null, function () {
-                    var __start = new Date().getTime();
+                    __pushstack('anonymous');
+                    var __start = _getstart();
                     if (!o.isExpanded) {
                         self.buttonsList.hide();
                     }
@@ -12908,19 +11794,16 @@
                         toolbarElement: self.element,
                         toolbar: {}
                     });
-                    {
-                        var __ms = new Date().getTime() - __start;
-                        _putstat('anonymous', __ms);
-                    }
+                    _putstat('anonymous', __start);
+                    __popstack();
                 });
             }
-            {
-                var __ms = new Date().getTime() - __start;
-                _putstat('_onCollapse', __ms);
-            }
+            _putstat('_onCollapse', __start);
+            __popstack();
         },
         _setOption: function (name, value) {
-            var __start = new Date().getTime();
+            __pushstack('_setOption');
+            var __start = _getstart();
             $.Widget.prototype._setOption.apply(this, arguments);
             switch (name) {
             case 'allowCollapsing':
@@ -12930,147 +11813,133 @@
                 this._updateItems(value);
                 break;
             }
-            {
-                var __ms = new Date().getTime() - __start;
-                _putstat('_setOption', __ms);
-            }
+            _putstat('_setOption', __start);
+            __popstack();
         },
         _isSelectedAction: function (el, props, itemOptionObj) {
-            var __start = new Date().getTime();
+            __pushstack('_isSelectedAction');
+            var __start = _getstart();
             if (props.value) {
                 el.addClass('ui-state-active');
             }
-            {
-                var __ms = new Date().getTime() - __start;
-                _putstat('_isSelectedAction', __ms);
-            }
+            _putstat('_isSelectedAction', __start);
+            __popstack();
         },
         _tooltipAction: function (el, props, itemOptionObj) {
-            var __start = new Date().getTime();
+            __pushstack('_tooltipAction');
+            var __start = _getstart();
             if (itemOptionObj !== undefined) {
                 itemOptionObj.title = props.value;
             } else {
                 el.igToolbarButton('option', 'title', props.value);
             }
-            {
-                var __ms = new Date().getTime() - __start;
-                _putstat('_tooltipAction', __ms);
-            }
+            _putstat('_tooltipAction', __start);
+            __popstack();
         },
         _buttonIconAction: function (el, props, itemOptionObj) {
-            var __start = new Date().getTime();
+            __pushstack('_buttonIconAction');
+            var __start = _getstart();
             if (itemOptionObj !== undefined) {
                 itemOptionObj.icons = { primary: props.value };
             } else {
                 el.igToolbarButton('option', 'icons', { primary: props.value });
             }
-            {
-                var __ms = new Date().getTime() - __start;
-                _putstat('_buttonIconAction', __ms);
-            }
+            _putstat('_buttonIconAction', __start);
+            __popstack();
         },
         _comboDataSourceAction: function (el, props, itemOptionObj) {
-            var __start = new Date().getTime();
+            __pushstack('_comboDataSourceAction');
+            var __start = _getstart();
             if (itemOptionObj !== undefined) {
                 itemOptionObj.dataSource = props.value;
             } else {
                 el.igCombo('option', 'dataSource', props.value);
             }
-            {
-                var __ms = new Date().getTime() - __start;
-                _putstat('_comboDataSourceAction', __ms);
-            }
+            _putstat('_comboDataSourceAction', __start);
+            __popstack();
         },
         _comboWidthAction: function (el, props, itemOptionObj) {
-            var __start = new Date().getTime();
+            __pushstack('_comboWidthAction');
+            var __start = _getstart();
             if (itemOptionObj !== undefined) {
                 itemOptionObj.width = props.value;
             } else {
                 el.igCombo('option', 'width', props.value);
             }
-            {
-                var __ms = new Date().getTime() - __start;
-                _putstat('_comboWidthAction', __ms);
-            }
+            _putstat('_comboWidthAction', __start);
+            __popstack();
         },
         _comboHeightAction: function (el, props, itemOptionObj) {
-            var __start = new Date().getTime();
+            __pushstack('_comboHeightAction');
+            var __start = _getstart();
             if (itemOptionObj !== undefined) {
                 itemOptionObj.height = props.value;
             } else {
                 el.igCombo('option', 'height', props.value);
             }
-            {
-                var __ms = new Date().getTime() - __start;
-                _putstat('_comboHeightAction', __ms);
-            }
+            _putstat('_comboHeightAction', __start);
+            __popstack();
         },
         _spltBtnTooltipAction: function (el, props, itemOptionObj) {
-            var __start = new Date().getTime();
-            {
-                var __ms = new Date().getTime() - __start;
-                _putstat('_spltBtnTooltipAction', __ms);
-            }
+            __pushstack('_spltBtnTooltipAction');
+            var __start = _getstart();
+            _putstat('_spltBtnTooltipAction', __start);
+            __popstack();
         },
         _comboSelectedItem: function (el, props, itemOptionObj) {
-            var __start = new Date().getTime();
+            __pushstack('_comboSelectedItem');
+            var __start = _getstart();
             if (itemOptionObj !== undefined) {
                 itemOptionObj.selectedItems = [{ value: props.value }];
             } else {
                 el.igCombo('option', 'selectedItems', [{ value: props.value }]);
             }
-            {
-                var __ms = new Date().getTime() - __start;
-                _putstat('_comboSelectedItem', __ms);
-            }
+            _putstat('_comboSelectedItem', __start);
+            __popstack();
         },
         _spltButtonColorAction: function (el, props, itemOptionObj) {
-            var __start = new Date().getTime();
+            __pushstack('_spltButtonColorAction');
+            var __start = _getstart();
             if (itemOptionObj !== undefined) {
                 itemOptionObj.defaultColor = props.value;
             } else {
                 el.igColorPickerSplitButton('option', 'defaultColor', props.value);
             }
-            {
-                var __ms = new Date().getTime() - __start;
-                _putstat('_spltButtonColorAction', __ms);
-            }
+            _putstat('_spltButtonColorAction', __start);
+            __popstack();
         },
         _comboDropDownListWidth: function (el, props, itemOptionObj) {
-            var __start = new Date().getTime();
+            __pushstack('_comboDropDownListWidth');
+            var __start = _getstart();
             if (itemOptionObj !== undefined) {
                 itemOptionObj.dropDownWidth = props.value;
             } else {
                 el.igCombo('option', 'dropDownWidth', props.value);
             }
-            {
-                var __ms = new Date().getTime() - __start;
-                _putstat('_comboDropDownListWidth', __ms);
-            }
+            _putstat('_comboDropDownListWidth', __start);
+            __popstack();
         },
         _createItems: function () {
-            var __start = new Date().getTime();
+            __pushstack('_createItems');
+            var __start = _getstart();
             var o = this.options, i, self = this, itemProps = {}, newItem, tbItemsHash = {
                     button: 'igToolbarButton',
                     combo: 'igCombo',
                     splitButton: 'igSplitButton',
                     splitButtonColor: 'igColorPickerSplitButton'
                 }, tbItemsPropsTraversing = function (key, property) {
-                    var __start = new Date().getTime();
+                    __pushstack('tbItemsPropsTraversing');
+                    var __start = _getstart();
                     var scope = o.items[i].scope || self;
                     if (property.action !== undefined && $.isFunction(scope[property.action])) {
                         scope[property.action](newItem, property, itemProps);
-                        {
-                            var __ms = new Date().getTime() - __start;
-                            _putstat('tbItemsPropsTraversing', __ms);
-                        }
+                        _putstat('tbItemsPropsTraversing', __start);
+                        __popstack();
                         return;
                     }
                     itemProps[key] = property.value;
-                    {
-                        var __ms = new Date().getTime() - __start;
-                        _putstat('tbItemsPropsTraversing', __ms);
-                    }
+                    _putstat('tbItemsPropsTraversing', __start);
+                    __popstack();
                 };
             this.buttonsList.empty();
             for (i = 0; i < o.items.length; i++) {
@@ -13082,13 +11951,12 @@
                     continue;
                 }
             }
-            {
-                var __ms = new Date().getTime() - __start;
-                _putstat('_createItems', __ms);
-            }
+            _putstat('_createItems', __start);
+            __popstack();
         },
         _updateItems: function (items) {
-            var __start = new Date().getTime();
+            __pushstack('_updateItems');
+            var __start = _getstart();
             var o = this.options, updProps, i, j, scope, el, key;
             for (i = 0; i < items.length; i++) {
                 updProps = items[i].getUpdatedProperties();
@@ -13107,66 +11975,56 @@
                     }
                 }
             }
-            {
-                var __ms = new Date().getTime() - __start;
-                _putstat('_updateItems', __ms);
-            }
+            _putstat('_updateItems', __start);
+            __popstack();
         },
         _getWidgetType: function (el) {
-            var __start = new Date().getTime();
+            __pushstack('_getWidgetType');
+            var __start = _getstart();
             var data, i;
             if (el === undefined) {
-                {
-                    var __ms = new Date().getTime() - __start;
-                    _putstat('_getWidgetType', __ms);
-                }
+                _putstat('_getWidgetType', __start);
+                __popstack();
                 return;
             }
             data = el.data();
             for (i in data) {
                 if (data.hasOwnProperty(i) && data[i].widgetName) {
-                    {
-                        var __ms = new Date().getTime() - __start;
-                        _putstat('_getWidgetType', __ms);
-                    }
+                    _putstat('_getWidgetType', __start);
+                    __popstack();
                     return data[i].widgetName;
                 }
             }
-            {
-                var __ms = new Date().getTime() - __start;
-                _putstat('_getWidgetType', __ms);
-            }
+            _putstat('_getWidgetType', __start);
+            __popstack();
         },
         _isWidgetSupported: function (name) {
-            var __start = new Date().getTime();
+            __pushstack('_isWidgetSupported');
+            var __start = _getstart();
             var i;
             for (i = 0; i < this.supportedWidgets.length; i++) {
                 if (this.supportedWidgets[i].name === name) {
-                    {
-                        var __ms = new Date().getTime() - __start;
-                        _putstat('_isWidgetSupported', __ms);
-                    }
+                    _putstat('_isWidgetSupported', __start);
+                    __popstack();
                     return true;
                 }
             }
-            {
-                var __ms = new Date().getTime() - __start;
-                _putstat('_isWidgetSupported', __ms);
-            }
+            _putstat('_isWidgetSupported', __start);
+            __popstack();
         },
         _attachEvents: function () {
-            var __start = new Date().getTime();
+            __pushstack('_attachEvents');
+            var __start = _getstart();
             var toolbarItemsEvents = 'igtoolbarbuttonclick igsplitbuttonclick igcolorpickersplitbuttoncolorselected';
             this.element.delegate('.ui-widget', toolbarItemsEvents, $.proxy(this._onToolbarItemInteraction, this));
             this.element.delegate(':ui-igCombo', 'igcomboselectionchanged', $.proxy(this._onComboListItemClick, this));
             this.collapseBtn.bind('igtoolbarbuttonclick', $.proxy(this._onCollapse, this));
-            {
-                var __ms = new Date().getTime() - __start;
-                _putstat('_attachEvents', __ms);
-            }
+            _putstat('_attachEvents', __start);
+            __popstack();
         },
         _onToolbarItemInteraction: function (e, ui) {
-            var __start = new Date().getTime();
+            __pushstack('_onToolbarItemInteraction');
+            var __start = _getstart();
             var selectedItemValue, targetWidget = $(e.target).parentsUntil(':ui-igToolbar').eq(-2), selectedItemIndex, triggeredEvent, o = this.options;
             if (targetWidget.length === 0) {
                 targetWidget = $(e.target);
@@ -13190,13 +12048,12 @@
                 toolbarItem: targetWidget,
                 toolbarName: o.name
             });
-            {
-                var __ms = new Date().getTime() - __start;
-                _putstat('_onToolbarItemInteraction', __ms);
-            }
+            _putstat('_onToolbarItemInteraction', __start);
+            __popstack();
         },
         _onComboListItemClick: function (e, data) {
-            var __start = new Date().getTime();
+            __pushstack('_onComboListItemClick');
+            var __start = _getstart();
             var toolbarItemIndex, toolbarItem;
             toolbarItemIndex = this.buttonsList.children().index($(e.currentTarget));
             toolbarItem = this.options.items[toolbarItemIndex];
@@ -13209,100 +12066,88 @@
                 toolbarItem: data.owner,
                 toolbarName: this.options.name
             });
-            {
-                var __ms = new Date().getTime() - __start;
-                _putstat('_onComboListItemClick', __ms);
-            }
+            _putstat('_onComboListItemClick', __start);
+            __popstack();
         },
         getItem: function (index) {
-            var __start = new Date().getTime();
+            __pushstack('getItem');
+            var __start = _getstart();
             var result;
             if (!isNaN(parseInt(index, 10))) {
-                {
-                    var __ms = new Date().getTime() - __start;
-                    _putstat('getItem', __ms);
-                }
+                _putstat('getItem', __start);
+                __popstack();
                 return this.buttonsList.eq(index);
             }
             if (typeof index === 'string') {
                 result = this.buttonsList.find('#' + this._id('_item_' + index));
                 if (result.length) {
-                    {
-                        var __ms = new Date().getTime() - __start;
-                        _putstat('getItem', __ms);
-                    }
+                    _putstat('getItem', __start);
+                    __popstack();
                     return result;
                 }
             }
-            {
-                var __ms = new Date().getTime() - __start;
-                _putstat('getItem', __ms);
-            }
+            _putstat('getItem', __start);
+            __popstack();
         },
         addItem: function (item) {
-            var __start = new Date().getTime();
+            __pushstack('addItem');
+            var __start = _getstart();
             if (this._isWidgetSupported(item.type)) {
                 this.options.items.push(item);
                 this._createItems();
                 this._trigger(this.events.itemAdded);
             }
-            {
-                var __ms = new Date().getTime() - __start;
-                _putstat('addItem', __ms);
-            }
+            _putstat('addItem', __start);
+            __popstack();
         },
         removeItem: function (index) {
-            var __start = new Date().getTime();
+            __pushstack('removeItem');
+            var __start = _getstart();
             this.buttonsList.eq(index).remove();
             this._trigger(this.events.itemremoved);
-            {
-                var __ms = new Date().getTime() - __start;
-                _putstat('removeItem', __ms);
-            }
+            _putstat('removeItem', __start);
+            __popstack();
         },
         disableItem: function (index, disabled) {
-            var __start = new Date().getTime();
+            __pushstack('disableItem');
+            var __start = _getstart();
             var item = this.getItem(index), widgetType = this._getWidgetType(item);
             if (widgetType) {
                 item[this._getWidgetType(item)]('option', 'disabled', disabled);
                 this._trigger(this.events.itemDisable, { isDisabled: disabled });
             }
-            {
-                var __ms = new Date().getTime() - __start;
-                _putstat('disableItem', __ms);
-            }
+            _putstat('disableItem', __start);
+            __popstack();
         },
         activateItem: function (index, activated) {
-            var __start = new Date().getTime();
+            __pushstack('activateItem');
+            var __start = _getstart();
             var item = this.getItem(index), action = activated ? item.addClass : item.removeClass;
             action.call(this, 'ui-state-active');
             item.igToolbarButton('options', 'isSelected', activated);
             this._trigger(this.events.itemActivated, { isActivated: activated });
-            {
-                var __ms = new Date().getTime() - __start;
-                _putstat('activateItem', __ms);
-            }
+            _putstat('activateItem', __start);
+            __popstack();
         },
         deactivateAll: function () {
-            var __start = new Date().getTime();
+            __pushstack('deactivateAll');
+            var __start = _getstart();
             this.buttonsList.find('.ui-igbutton.ui-state-active').removeClass('ui-state-active').igToolbarButton('option', 'isSelected', false);
-            {
-                var __ms = new Date().getTime() - __start;
-                _putstat('deactivateAll', __ms);
-            }
+            _putstat('deactivateAll', __start);
+            __popstack();
         },
         _setCollapseExpandButtonIcon: function () {
-            var __start = new Date().getTime();
+            __pushstack('_setCollapseExpandButtonIcon');
+            var __start = _getstart();
             if (this.options.collapseButtonIcon) {
                 this.collapseBtn.switchClass('ui-icon-triangle-1-w', this.options.collapseButtonIcon);
             }
-            {
-                var __ms = new Date().getTime() - __start;
-                _putstat('_setCollapseExpandButtonIcon', __ms);
-            }
+            _putstat('_setCollapseExpandButtonIcon', __start);
+            __popstack();
         },
         destroy: function () {
-            var __start = new Date().getTime();
+            __pushstack('destroy');
+            var __start = _getstart();
             $.Widget.prototype.destroy.apply(this, arguments);
             this.element.undelegate();
             this.element.unbind();
@@ -13310,10 +12155,8 @@
             delete this.buttonsList;
             delete this.collapseBtn;
             delete this.toolbarBody;
-            {
-                var __ms = new Date().getTime() - __start;
-                _putstat('destroy', __ms);
-            }
+            _putstat('destroy', __start);
+            __popstack();
         }
     });
     $.ig = $.ig || {};
@@ -13325,71 +12168,62 @@
         },
         _updatedProperties: [],
         init: function (item) {
-            var __start = new Date().getTime();
+            __pushstack('init');
+            var __start = _getstart();
             this.settings = $.extend(true, {}, this.settings, item);
             this.name = item.name;
             this.type = item.type;
             if (this.settings.scope) {
                 this.settings.props.scope = this.settings.scope;
             }
-            {
-                var __ms = new Date().getTime() - __start;
-                _putstat('init', __ms);
-            }
+            _putstat('init', __start);
+            __popstack();
         },
         updateProperty: function (name, value) {
-            var __start = new Date().getTime();
+            __pushstack('updateProperty');
+            var __start = _getstart();
             this.settings.props[name].value = value;
             this._updatedProperties.push(this.settings.props[name]);
-            {
-                var __ms = new Date().getTime() - __start;
-                _putstat('updateProperty', __ms);
-            }
+            _putstat('updateProperty', __start);
+            __popstack();
         },
         getProperty: function (name) {
-            var __start = new Date().getTime();
-            {
-                var __ms = new Date().getTime() - __start;
-                _putstat('getProperty', __ms);
-            }
+            __pushstack('getProperty');
+            var __start = _getstart();
+            _putstat('getProperty', __start);
+            __popstack();
             return this.settings.props[name];
         },
         getUpdatedProperties: function () {
-            var __start = new Date().getTime();
-            {
-                var __ms = new Date().getTime() - __start;
-                _putstat('getUpdatedProperties', __ms);
-            }
+            __pushstack('getUpdatedProperties');
+            var __start = _getstart();
+            _putstat('getUpdatedProperties', __start);
+            __popstack();
             return this._updatedProperties;
         },
         getProperties: function () {
-            var __start = new Date().getTime();
-            {
-                var __ms = new Date().getTime() - __start;
-                _putstat('getProperties', __ms);
-            }
+            __pushstack('getProperties');
+            var __start = _getstart();
+            _putstat('getProperties', __start);
+            __popstack();
             return this.settings.props;
         },
         callbackRenderer: function () {
-            var __start = new Date().getTime();
+            __pushstack('callbackRenderer');
+            var __start = _getstart();
             if (this.settings.callbackRenderer && $.isFunction(this.settings.callbackRenderer)) {
-                {
-                    var __ms = new Date().getTime() - __start;
-                    _putstat('callbackRenderer', __ms);
-                }
+                _putstat('callbackRenderer', __start);
+                __popstack();
                 return this.settings.callbackRenderer();
             }
-            {
-                var __ms = new Date().getTime() - __start;
-                _putstat('callbackRenderer', __ms);
-            }
+            _putstat('callbackRenderer', __start);
+            __popstack();
         },
         handler: function () {
-            var __start = new Date().getTime();
-            {
-                var __ms = new Date().getTime() - __start;
-                _putstat('handler', __ms);
-            }
+            __pushstack('handler');
+            var __start = _getstart();
+            _putstat('handler', __start);
+            __popstack();
             return this.settings.handler;
         }
     });
@@ -13401,23 +12235,21 @@
             }
         },
         init: function (item) {
-            var __start = new Date().getTime();
+            __pushstack('init');
+            var __start = _getstart();
             this._super(item);
-            {
-                var __ms = new Date().getTime() - __start;
-                _putstat('init', __ms);
-            }
+            _putstat('init', __start);
+            __popstack();
         }
     });
     $.ig.igToolbarSplitButtonDescriptor = $.ig.igToolbarItemBaseDescriptor.extend({
         settings: { props: { items: [] } },
         init: function (item) {
-            var __start = new Date().getTime();
+            __pushstack('init');
+            var __start = _getstart();
             this._super(item);
-            {
-                var __ms = new Date().getTime() - __start;
-                _putstat('init', __ms);
-            }
+            _putstat('init', __start);
+            __popstack();
         }
     });
     $.ig.igToolbarComboDescriptor = $.ig.igToolbarItemBaseDescriptor.extend({
@@ -13436,15 +12268,14 @@
             }
         },
         init: function (item) {
-            var __start = new Date().getTime();
+            __pushstack('init');
+            var __start = _getstart();
             this._super(item);
             if (this.settings.dataSource) {
                 this.settings.props.dataSource.value = this.settings.dataSource;
             }
-            {
-                var __ms = new Date().getTime() - __start;
-                _putstat('init', __ms);
-            }
+            _putstat('init', __start);
+            __popstack();
         }
     });
     $.widget('ui.igToolbarButton', $.ui.igButton, {
@@ -13454,7 +12285,8 @@
         },
         ENTER: 13,
         _setOption: function (name, value) {
-            var __start = new Date().getTime();
+            __pushstack('_setOption');
+            var __start = _getstart();
             $.ui.igButton.prototype._setOption.apply(this, arguments);
             switch (name) {
             case 'allowToggling':
@@ -13464,13 +12296,12 @@
                 this.options.isSelected = value;
                 break;
             }
-            {
-                var __ms = new Date().getTime() - __start;
-                _putstat('_setOption', __ms);
-            }
+            _putstat('_setOption', __start);
+            __popstack();
         },
         _init: function () {
-            var __start = new Date().getTime();
+            __pushstack('_init');
+            var __start = _getstart();
             var self = this, o = this.options;
             $.ui.igButton.prototype._init.apply(this);
             this._isToggled = false;
@@ -13478,87 +12309,75 @@
             this.element.bind('keypress', $.proxy(this._onEnterKey, this));
             this.element.unbind('blur');
             this.element.bind('blur', function (e) {
-                var __start = new Date().getTime();
+                __pushstack('anonymous');
+                var __start = _getstart();
                 self.element.removeClass(o.css.buttonFocusClasses);
-                {
-                    var __ms = new Date().getTime() - __start;
-                    _putstat('anonymous', __ms);
-                }
+                _putstat('anonymous', __start);
+                __popstack();
             });
-            {
-                var __ms = new Date().getTime() - __start;
-                _putstat('_init', __ms);
-            }
+            _putstat('_init', __start);
+            __popstack();
         },
         _setToggling: function (value) {
-            var __start = new Date().getTime();
+            __pushstack('_setToggling');
+            var __start = _getstart();
             var o = this.options, self = this;
             o.allowToggling = value;
             if (o.allowToggling) {
                 this.element.unbind('mouseup');
                 this.element.bind('click', function () {
-                    var __start = new Date().getTime();
+                    __pushstack('anonymous');
+                    var __start = _getstart();
                     if (o.isSelected) {
                         self.element.removeClass(o.css.buttonActiveClasses);
                     }
                     self.element.removeClass(o.css.buttonFocusClasses);
                     o.isSelected = !o.isSelected;
-                    {
-                        var __ms = new Date().getTime() - __start;
-                        _putstat('anonymous', __ms);
-                    }
+                    _putstat('anonymous', __start);
+                    __popstack();
                 });
             } else {
                 this.element.bind('mouseup', this._events.mouseup);
                 this.element.unbind('mousedown');
                 this.element.bind('mousedown', this._events.mousedown);
             }
-            {
-                var __ms = new Date().getTime() - __start;
-                _putstat('_setToggling', __ms);
-            }
+            _putstat('_setToggling', __start);
+            __popstack();
         },
         toggle: function () {
-            var __start = new Date().getTime();
+            __pushstack('toggle');
+            var __start = _getstart();
             var self = this, e = self.element, o = this.options;
             if (o.disabled === true || o.allowToggling === false) {
-                {
-                    var __ms = new Date().getTime() - __start;
-                    _putstat('toggle', __ms);
-                }
+                _putstat('toggle', __start);
+                __popstack();
                 return;
             }
             o.isSelected = !o.isSelected;
             e.toggleClass(o.css.buttonActiveClasses);
-            {
-                var __ms = new Date().getTime() - __start;
-                _putstat('toggle', __ms);
-            }
+            _putstat('toggle', __start);
+            __popstack();
         },
         _onEnterKey: function (e) {
-            var __start = new Date().getTime();
+            __pushstack('_onEnterKey');
+            var __start = _getstart();
             if (e.keyCode !== this.ENTER) {
-                {
-                    var __ms = new Date().getTime() - __start;
-                    _putstat('_onEnterKey', __ms);
-                }
+                _putstat('_onEnterKey', __start);
+                __popstack();
                 return;
             }
             this.element.mousedown();
-            {
-                var __ms = new Date().getTime() - __start;
-                _putstat('_onEnterKey', __ms);
-            }
+            _putstat('_onEnterKey', __start);
+            __popstack();
         },
         destroy: function () {
-            var __start = new Date().getTime();
+            __pushstack('destroy');
+            var __start = _getstart();
             $.ui.igButton.prototype.destroy.call(this);
             this.element.unbind();
             this.element.removeClass('');
-            {
-                var __ms = new Date().getTime() - __start;
-                _putstat('destroy', __ms);
-            }
+            _putstat('destroy', __start);
+            __popstack();
         }
     });
     $.widget('ui.mouseWrapper', $.ui.mouse, {
@@ -13574,80 +12393,73 @@
             capture: 'capture'
         },
         _create: function () {
-            var __start = new Date().getTime();
+            __pushstack('_create');
+            var __start = _getstart();
             var self = this, originalMouseDown = this._mouseDown;
             if ($.ig.util.isIE9) {
                 this._mouseDown = function (event) {
-                    var __start = new Date().getTime();
+                    __pushstack('_mouseDown');
+                    var __start = _getstart();
                     var originalPreventDefault = event.preventDefault, result;
                     event.preventDefault = function () {
-                        var __start = new Date().getTime();
-                        {
-                            var __ms = new Date().getTime() - __start;
-                            _putstat('event.preventDefault', __ms);
-                        }
+                        __pushstack('event.preventDefault');
+                        var __start = _getstart();
+                        _putstat('event.preventDefault', __start);
+                        __popstack();
                     };
                     result = originalMouseDown.apply(self, [event]);
                     event.preventDefault = originalPreventDefault;
-                    {
-                        var __ms = new Date().getTime() - __start;
-                        _putstat('_mouseDown', __ms);
-                    }
+                    _putstat('_mouseDown', __start);
+                    __popstack();
                     return result;
                 };
             }
             this._mouseInit();
-            {
-                var __ms = new Date().getTime() - __start;
-                _putstat('_create', __ms);
-            }
+            _putstat('_create', __start);
+            __popstack();
         },
         destroy: function () {
-            var __start = new Date().getTime();
+            __pushstack('destroy');
+            var __start = _getstart();
             this._mouseDestroy();
-            {
-                var __ms = new Date().getTime() - __start;
-                _putstat('destroy', __ms);
-            }
+            _putstat('destroy', __start);
+            __popstack();
             return this;
         },
         _mouseStart: function (event) {
-            var __start = new Date().getTime();
-            {
-                var __ms = new Date().getTime() - __start;
-                _putstat('_mouseStart', __ms);
-            }
+            __pushstack('_mouseStart');
+            var __start = _getstart();
+            _putstat('_mouseStart', __start);
+            __popstack();
             return this._trigger(this.events.start, event);
         },
         _mouseDrag: function (event) {
-            var __start = new Date().getTime();
-            {
-                var __ms = new Date().getTime() - __start;
-                _putstat('_mouseDrag', __ms);
-            }
+            __pushstack('_mouseDrag');
+            var __start = _getstart();
+            _putstat('_mouseDrag', __start);
+            __popstack();
             return this._trigger(this.events.drag, event);
         },
         _mouseStop: function (event) {
-            var __start = new Date().getTime();
-            {
-                var __ms = new Date().getTime() - __start;
-                _putstat('_mouseStop', __ms);
-            }
+            __pushstack('_mouseStop');
+            var __start = _getstart();
+            _putstat('_mouseStop', __start);
+            __popstack();
             return this._trigger(this.events.stop, event);
         },
         _mouseCapture: function (event) {
-            var __start = new Date().getTime();
-            {
-                var __ms = new Date().getTime() - __start;
-                _putstat('_mouseCapture', __ms);
-            }
+            __pushstack('_mouseCapture');
+            var __start = _getstart();
+            _putstat('_mouseCapture', __start);
+            __popstack();
             return this._trigger(this.events.capture, event);
         }
     });
     $.widget('ui.igResponsiveContainer', {
         options: { pollingInterval: 500 },
         _createWidget: function (options, element) {
-            var __start = new Date().getTime();
+            __pushstack('_createWidget');
+            var __start = _getstart();
             this._callbacks = [];
             this._element = element;
             this._pollerHandler = $.proxy(this._pollerTick, this);
@@ -13655,54 +12467,47 @@
             this._width = this._getCurrentWidth();
             this._height = this._getCurrentHeight();
             $.Widget.prototype._createWidget.apply(this, arguments);
-            {
-                var __ms = new Date().getTime() - __start;
-                _putstat('_createWidget', __ms);
-            }
+            _putstat('_createWidget', __start);
+            __popstack();
         },
         destroy: function () {
-            var __start = new Date().getTime();
+            __pushstack('destroy');
+            var __start = _getstart();
             this._stopPoller();
             this._callbacks = [];
             $.Widget.prototype.destroy.call(this);
-            {
-                var __ms = new Date().getTime() - __start;
-                _putstat('destroy', __ms);
-            }
+            _putstat('destroy', __start);
+            __popstack();
             return this;
         },
         startPoller: function () {
-            var __start = new Date().getTime();
+            __pushstack('startPoller');
+            var __start = _getstart();
             this._startPoller();
-            {
-                var __ms = new Date().getTime() - __start;
-                _putstat('startPoller', __ms);
-            }
+            _putstat('startPoller', __start);
+            __popstack();
         },
         stopPoller: function () {
-            var __start = new Date().getTime();
+            __pushstack('stopPoller');
+            var __start = _getstart();
             this._stopPoller();
-            {
-                var __ms = new Date().getTime() - __start;
-                _putstat('stopPoller', __ms);
-            }
+            _putstat('stopPoller', __start);
+            __popstack();
         },
         removeCallback: function (callbackId) {
-            var __start = new Date().getTime();
+            __pushstack('removeCallback');
+            var __start = _getstart();
             if (callbackId >= 0 && callbackId < this._callbacks.length) {
                 this._callbacks.splice(callbackId, 1);
             }
-            {
-                var __ms = new Date().getTime() - __start;
-                _putstat('removeCallback', __ms);
-            }
+            _putstat('removeCallback', __start);
+            __popstack();
         },
         addCallback: function (callback, owner, reactionStep, reactionDirection) {
-            var __start = new Date().getTime();
-            {
-                var __ms = new Date().getTime() - __start;
-                _putstat('addCallback', __ms);
-            }
+            __pushstack('addCallback');
+            var __start = _getstart();
+            _putstat('addCallback', __start);
+            __popstack();
             return this._callbacks.push({
                 callback: callback,
                 owner: owner,
@@ -13714,26 +12519,25 @@
             }) - 1;
         },
         _startPoller: function () {
-            var __start = new Date().getTime();
+            __pushstack('_startPoller');
+            var __start = _getstart();
             this._intervalId = setInterval(this._pollerHandler, this.options.pollingInterval);
-            {
-                var __ms = new Date().getTime() - __start;
-                _putstat('_startPoller', __ms);
-            }
+            _putstat('_startPoller', __start);
+            __popstack();
         },
         _stopPoller: function () {
-            var __start = new Date().getTime();
+            __pushstack('_stopPoller');
+            var __start = _getstart();
             if (this._intervalId) {
                 clearInterval(this._intervalId);
                 delete this._intervalId;
             }
-            {
-                var __ms = new Date().getTime() - __start;
-                _putstat('_stopPoller', __ms);
-            }
+            _putstat('_stopPoller', __start);
+            __popstack();
         },
         _pollerTick: function () {
-            var __start = new Date().getTime();
+            __pushstack('_pollerTick');
+            var __start = _getstart();
             var nw = this._getCurrentWidth(), nh = this._getCurrentHeight(), cb, i, called = false;
             for (i = 0; i < this._callbacks.length; i++) {
                 cb = this._callbacks[i];
@@ -13761,25 +12565,21 @@
             }
             this._width = nw;
             this._height = nh;
-            {
-                var __ms = new Date().getTime() - __start;
-                _putstat('_pollerTick', __ms);
-            }
+            _putstat('_pollerTick', __start);
+            __popstack();
         },
         _getCurrentWidth: function () {
-            var __start = new Date().getTime();
-            {
-                var __ms = new Date().getTime() - __start;
-                _putstat('_getCurrentWidth', __ms);
-            }
+            __pushstack('_getCurrentWidth');
+            var __start = _getstart();
+            _putstat('_getCurrentWidth', __start);
+            __popstack();
             return this._element.offsetWidth;
         },
         _getCurrentHeight: function () {
-            var __start = new Date().getTime();
-            {
-                var __ms = new Date().getTime() - __start;
-                _putstat('_getCurrentHeight', __ms);
-            }
+            __pushstack('_getCurrentHeight');
+            var __start = _getstart();
+            _putstat('_getCurrentHeight', __start);
+            __popstack();
             return this._element.offsetHeight;
         }
     });
@@ -13790,141 +12590,124 @@
             'jquery.ui.core',
             'jquery.ui.widget'
         ], function () {
-            var __start = new Date().getTime();
-            {
-                var __ms = new Date().getTime() - __start;
-                _putstat('anonymous', __ms);
-            }
+            __pushstack('anonymous');
+            var __start = _getstart();
+            _putstat('anonymous', __start);
+            __popstack();
             return $.ui.igLoading;
         });
     }
-    {
-        var __ms = new Date().getTime() - __start;
-        _putstat('anonymous', __ms);
-    }
+    _putstat('anonymous', __start);
+    __popstack();
 }(jQuery));
 (function ($) {
-    var __start = new Date().getTime();
+    __pushstack('anonymous');
+    var __start = _getstart();
     var _attr = 'data-scroll', _stop = function (e) {
-            var __start = new Date().getTime();
+            __pushstack('_stop');
+            var __start = _getstart();
             try {
                 e.preventDefault();
                 e.stopPropagation();
             } catch (ex) {
             }
-            {
-                var __ms = new Date().getTime() - __start;
-                _putstat('_stop', __ms);
-            }
+            _putstat('_stop', __start);
+            __popstack();
         }, _aNull = function (val) {
-            var __start = new Date().getTime();
-            {
-                var __ms = new Date().getTime() - __start;
-                _putstat('_aNull', __ms);
-            }
+            __pushstack('_aNull');
+            var __start = _getstart();
+            _putstat('_aNull', __start);
+            __popstack();
             return val === null || val === undefined || typeof val === 'number' && isNaN(val);
         }, _num = function (val) {
-            var __start = new Date().getTime();
-            {
-                var __ms = new Date().getTime() - __start;
-                _putstat('_num', __ms);
-            }
+            __pushstack('_num');
+            var __start = _getstart();
+            _putstat('_num', __start);
+            __popstack();
             return isNaN(val = parseInt(val, 10)) ? 0 : val;
         }, _int = function (elem, css) {
-            var __start = new Date().getTime();
-            {
-                var __ms = new Date().getTime() - __start;
-                _putstat('_int', __ms);
-            }
+            __pushstack('_int');
+            var __start = _getstart();
+            _putstat('_int', __start);
+            __popstack();
             return _num(elem.css(css));
         }, _draggable = function (type) {
-            var __start = new Date().getTime();
-            {
-                var __ms = new Date().getTime() - __start;
-                _putstat('_draggable', __ms);
-            }
+            __pushstack('_draggable');
+            var __start = _getstart();
+            _putstat('_draggable', __start);
+            __popstack();
             return type === 'draggable';
         }, _thin = function (type) {
-            var __start = new Date().getTime();
-            {
-                var __ms = new Date().getTime() - __start;
-                _putstat('_thin', __ms);
-            }
+            __pushstack('_thin');
+            var __start = _getstart();
+            _putstat('_thin', __start);
+            __popstack();
             return type === 'show';
         }, _zero = function (num) {
-            var __start = new Date().getTime();
-            {
-                var __ms = new Date().getTime() - __start;
-                _putstat('_zero', __ms);
-            }
+            __pushstack('_zero');
+            var __start = _getstart();
+            _putstat('_zero', __start);
+            __popstack();
             return isNaN(num) || num < 5;
         }, _touch = function (e) {
-            var __start = new Date().getTime();
+            __pushstack('_touch');
+            var __start = _getstart();
             e = e.originalEvent;
             e = e ? e.touches : null;
-            {
-                var __ms = new Date().getTime() - __start;
-                _putstat('_touch', __ms);
-            }
+            _putstat('_touch', __start);
+            __popstack();
             return e && e.length === 1 ? e[0] : null;
         }, _src = function (e) {
-            var __start = new Date().getTime();
+            __pushstack('_src');
+            var __start = _getstart();
             e = e.target;
-            {
-                var __ms = new Date().getTime() - __start;
-                _putstat('_src', __ms);
-            }
+            _putstat('_src', __start);
+            __popstack();
             return e.nodeName === '#text' ? e.parentNode : e;
         }, _is = function (elem, src) {
-            var __start = new Date().getTime();
-            {
-                var __ms = new Date().getTime() - __start;
-                _putstat('_is', __ms);
-            }
+            __pushstack('_is');
+            var __start = _getstart();
+            _putstat('_is', __start);
+            __popstack();
             return elem && (elem.has(src).length > 0 || elem[0] === src);
         }, _valid = function (elem) {
-            var __start = new Date().getTime();
-            {
-                var __ms = new Date().getTime() - __start;
-                _putstat('_valid', __ms);
-            }
+            __pushstack('_valid');
+            var __start = _getstart();
+            _putstat('_valid', __start);
+            __popstack();
             return elem && elem[0].parentNode ? elem : null;
         }, _remove = function (elem) {
-            var __start = new Date().getTime();
+            __pushstack('_remove');
+            var __start = _getstart();
             if (_valid(elem)) {
                 elem.remove();
             }
-            {
-                var __ms = new Date().getTime() - __start;
-                _putstat('_remove', __ms);
-            }
+            _putstat('_remove', __start);
+            __popstack();
         }, _find = function (notMobile) {
-            var __start = new Date().getTime();
+            __pushstack('_find');
+            var __start = _getstart();
             setTimeout(function () {
-                var __start = new Date().getTime();
+                __pushstack('anonymous');
+                var __start = _getstart();
                 var m = window.Modernizr;
                 if (!m || m.touch) {
                     $('body').find('[' + _attr + ']').each(function () {
-                        var __start = new Date().getTime();
+                        __pushstack('anonymous');
+                        var __start = _getstart();
                         var elem = $(this), scroll = elem.data('igScroll');
                         if ((!scroll || !scroll.evts) && !elem.data('igScroll') && !elem.data('scrollview')) {
                             elem.igScroll({ _find: true });
                         }
-                        {
-                            var __ms = new Date().getTime() - __start;
-                            _putstat('anonymous', __ms);
-                        }
+                        _putstat('anonymous', __start);
+                        __popstack();
                     });
                 }
-                {
-                    var __ms = new Date().getTime() - __start;
-                    _putstat('anonymous', __ms);
-                }
+                _putstat('anonymous', __start);
+                __popstack();
             }, notMobile === true ? 1000 : 100);
-            {
-                var __ms = new Date().getTime() - __start;
-                _putstat('_find', __ms);
-            }
+            _putstat('_find', __start);
+            __popstack();
         };
     $.widget('ui.igScroll', {
         options: {
@@ -13958,55 +12741,48 @@
             stopped: null
         },
         scrollLeft: function (val) {
-            var __start = new Date().getTime();
+            __pushstack('scrollLeft');
+            var __start = _getstart();
             if (_aNull(val)) {
-                {
-                    var __ms = new Date().getTime() - __start;
-                    _putstat('scrollLeft', __ms);
-                }
+                _putstat('scrollLeft', __start);
+                __popstack();
                 return this._getScroll(true);
             }
             this._scroll(val);
-            {
-                var __ms = new Date().getTime() - __start;
-                _putstat('scrollLeft', __ms);
-            }
+            _putstat('scrollLeft', __start);
+            __popstack();
             return this;
         },
         scrollTop: function (val) {
-            var __start = new Date().getTime();
+            __pushstack('scrollTop');
+            var __start = _getstart();
             if (_aNull(val)) {
-                {
-                    var __ms = new Date().getTime() - __start;
-                    _putstat('scrollTop', __ms);
-                }
+                _putstat('scrollTop', __start);
+                __popstack();
                 return this._getScroll();
             }
             this._scroll(null, val);
-            {
-                var __ms = new Date().getTime() - __start;
-                _putstat('scrollTop', __ms);
-            }
+            _putstat('scrollTop', __start);
+            __popstack();
             return this;
         },
         scrollWidth: function () {
-            var __start = new Date().getTime();
-            {
-                var __ms = new Date().getTime() - __start;
-                _putstat('scrollWidth', __ms);
-            }
+            __pushstack('scrollWidth');
+            var __start = _getstart();
+            _putstat('scrollWidth', __start);
+            __popstack();
             return this._getScroll(true, true);
         },
         scrollHeight: function () {
-            var __start = new Date().getTime();
-            {
-                var __ms = new Date().getTime() - __start;
-                _putstat('scrollHeight', __ms);
-            }
+            __pushstack('scrollHeight');
+            var __start = _getstart();
+            _putstat('scrollHeight', __start);
+            __popstack();
             return this._getScroll(false, true);
         },
         _create: function () {
-            var __start = new Date().getTime();
+            __pushstack('_create');
+            var __start = _getstart();
             var v, key, self = this, elem = self.element, o = self.options;
             if (o._find) {
                 for (key in o) {
@@ -14030,64 +12806,57 @@
             self._ms = elem.css('msTouchAction');
             if (self._ms) {
                 setTimeout(function () {
-                    var __start = new Date().getTime();
+                    __pushstack('anonymous');
+                    var __start = _getstart();
                     self._skip(0, 0, 2);
-                    {
-                        var __ms = new Date().getTime() - __start;
-                        _putstat('anonymous', __ms);
-                    }
+                    _putstat('anonymous', __start);
+                    __popstack();
                 }, 10);
             }
             v = o.direction;
             self.dir = o.oneDirection && v !== 'x' && v !== 'y';
             self.evts = {
                 MSPointerDown: function (e) {
-                    var __start = new Date().getTime();
+                    __pushstack('MSPointerDown');
+                    var __start = _getstart();
                     self._skip(0, 0, 2);
                     var evt = e.originalEvent;
                     if (!evt || evt.pointerType !== 2) {
-                        {
-                            var __ms = new Date().getTime() - __start;
-                            _putstat('MSPointerDown', __ms);
-                        }
+                        _putstat('MSPointerDown', __start);
+                        __popstack();
                         return;
                     }
                     e.target.msSetPointerCapture(self._pointer = evt.pointerId);
                     self.evts.touchstart(e);
-                    {
-                        var __ms = new Date().getTime() - __start;
-                        _putstat('MSPointerDown', __ms);
-                    }
+                    _putstat('MSPointerDown', __start);
+                    __popstack();
                 },
                 MSPointerMove: function (e) {
-                    var __start = new Date().getTime();
+                    __pushstack('MSPointerMove');
+                    var __start = _getstart();
                     if (self._pointer) {
                         self._move(e);
                     }
-                    {
-                        var __ms = new Date().getTime() - __start;
-                        _putstat('MSPointerMove', __ms);
-                    }
+                    _putstat('MSPointerMove', __start);
+                    __popstack();
                 },
                 MSPointerUp: function (e) {
-                    var __start = new Date().getTime();
+                    __pushstack('MSPointerUp');
+                    var __start = _getstart();
                     if (!self._pointer) {
-                        {
-                            var __ms = new Date().getTime() - __start;
-                            _putstat('MSPointerUp', __ms);
-                        }
+                        _putstat('MSPointerUp', __start);
+                        __popstack();
                         return;
                     }
                     e.target.msReleasePointerCapture(self._pointer);
                     self.evts.touchend(e);
                     delete self._pointer;
-                    {
-                        var __ms = new Date().getTime() - __start;
-                        _putstat('MSPointerUp', __ms);
-                    }
+                    _putstat('MSPointerUp', __start);
+                    __popstack();
                 },
                 touchstart: function (e) {
-                    var __start = new Date().getTime();
+                    __pushstack('touchstart');
+                    var __start = _getstart();
                     delete self.skip;
                     var touch = self._pointer ? e.originalEvent : _touch(e);
                     if (touch) {
@@ -14100,49 +12869,43 @@
                     } else {
                         self._move(e, 'start');
                     }
-                    {
-                        var __ms = new Date().getTime() - __start;
-                        _putstat('touchstart', __ms);
-                    }
+                    _putstat('touchstart', __start);
+                    __popstack();
                 },
                 touchmove: function (e) {
-                    var __start = new Date().getTime();
+                    __pushstack('touchmove');
+                    var __start = _getstart();
                     self._move(e);
-                    {
-                        var __ms = new Date().getTime() - __start;
-                        _putstat('touchmove', __ms);
-                    }
+                    _putstat('touchmove', __start);
+                    __popstack();
                 },
                 touchend: function (e) {
-                    var __start = new Date().getTime();
+                    __pushstack('touchend');
+                    var __start = _getstart();
                     if (!self.click) {
                         self._move(e, 'end');
                     } else if (self._isCancel(o)) {
                         $(_src(e)).trigger('mousedown').trigger('mouseup').trigger('click');
                     }
-                    {
-                        var __ms = new Date().getTime() - __start;
-                        _putstat('touchend', __ms);
-                    }
+                    _putstat('touchend', __start);
+                    __popstack();
                 }
             };
             elem.bind(self.evts);
-            {
-                var __ms = new Date().getTime() - __start;
-                _putstat('_create', __ms);
-            }
+            _putstat('_create', __start);
+            __popstack();
         },
         _isCancel: function (o) {
-            var __start = new Date().getTime();
+            __pushstack('_isCancel');
+            var __start = _getstart();
             o = o.cancelStart;
-            {
-                var __ms = new Date().getTime() - __start;
-                _putstat('_isCancel', __ms);
-            }
+            _putstat('_isCancel', __start);
+            __popstack();
             return o === true || o === 'ms' && this._pointer;
         },
         _createBar: function (elem, hor, type) {
-            var __start = new Date().getTime();
+            __pushstack('_createBar');
+            var __start = _getstart();
             var bar, thumb, border, sizeInt, span, img, iconSize = 17, thumbSize = 5, thumbDragSize = 30, thin = _thin(type), display = hor ? 'inline-block' : 'block', margin = 'margin' + (hor ? 'Top' : 'Left'), size = hor ? 'height' : 'width';
             if (thin || _draggable(type)) {
                 bar = $('<span />').css({
@@ -14188,31 +12951,26 @@
                 this.barY = bar;
                 this.thumbY = thumb;
             }
-            {
-                var __ms = new Date().getTime() - __start;
-                _putstat('_createBar', __ms);
-            }
+            _putstat('_createBar', __start);
+            __popstack();
         },
         _bar: function (elem, hor) {
-            var __start = new Date().getTime();
+            __pushstack('_bar');
+            var __start = _getstart();
             var v, left, top, thumb, locElem, locBar, shiftBar, shiftX, shiftY, thumbSize, o = this.options, barMargin = 2, barSizeMargin = _num(hor ? o.marginLeft : o.marginTop), barSizeMargin2 = _num(hor ? o.marginRight : o.marginBottom), minBarSize = 4, minThumbSize = 15, bar = hor ? this.barX : this.barY, type = hor ? o.xThumb : o.yThumb, elemSize = hor ? elem[0].offsetWidth : elem[0].offsetHeight, barSize = Math.max(elemSize - barSizeMargin - barSizeMargin2, minBarSize), scrollSize = Math.max(this._getScroll(hor, true), minBarSize + barSizeMargin + barSizeMargin2);
             if (!elemSize || scrollSize - elemSize < 1) {
                 if (bar) {
                     bar.remove();
                     delete this.bar;
                 }
-                {
-                    var __ms = new Date().getTime() - __start;
-                    _putstat('_bar', __ms);
-                }
+                _putstat('_bar', __start);
+                __popstack();
                 return;
             }
             if (bar) {
                 if (_valid(bar)) {
-                    {
-                        var __ms = new Date().getTime() - __start;
-                        _putstat('_bar', __ms);
-                    }
+                    _putstat('_bar', __start);
+                    __popstack();
                     return bar;
                 }
                 bar.insertAfter(elem);
@@ -14222,10 +12980,8 @@
             }
             bar = hor ? this.barX : this.barY;
             if (!bar) {
-                {
-                    var __ms = new Date().getTime() - __start;
-                    _putstat('_bar', __ms);
-                }
+                _putstat('_bar', __start);
+                __popstack();
                 return;
             }
             thumb = hor ? this.thumbX : this.thumbY;
@@ -14261,20 +13017,17 @@
             if (Math.abs(shiftX) > 0) {
                 bar.css('marginLeft', left - shiftX + _int(elem, 'borderLeftWidth') + 'px');
             }
-            {
-                var __ms = new Date().getTime() - __start;
-                _putstat('_bar', __ms);
-            }
+            _putstat('_bar', __start);
+            __popstack();
             return bar;
         },
         _scroller: function (hor) {
-            var __start = new Date().getTime();
+            __pushstack('_scroller');
+            var __start = _getstart();
             var o = this.options, div = o.direction;
             if (!this.evts || hor && div === 'y' || !hor && div === 'x') {
-                {
-                    var __ms = new Date().getTime() - __start;
-                    _putstat('_scroller', __ms);
-                }
+                _putstat('_scroller', __start);
+                __popstack();
                 return;
             }
             div = hor ? o.xScroller : o.yScroller;
@@ -14289,30 +13042,26 @@
             if (div && div.length) {
                 div = div[0];
             }
-            {
-                var __ms = new Date().getTime() - __start;
-                _putstat('_scroller', __ms);
-            }
+            _putstat('_scroller', __start);
+            __popstack();
             return div || this.element[0];
         },
         _getScroll: function (hor, size) {
-            var __start = new Date().getTime();
+            __pushstack('_getScroll');
+            var __start = _getstart();
             var div = this._scroller(hor);
             if (!div) {
-                {
-                    var __ms = new Date().getTime() - __start;
-                    _putstat('_getScroll', __ms);
-                }
+                _putstat('_getScroll', __start);
+                __popstack();
                 return 0;
             }
-            {
-                var __ms = new Date().getTime() - __start;
-                _putstat('_getScroll', __ms);
-            }
+            _putstat('_getScroll', __start);
+            __popstack();
             return hor ? size ? div.scrollWidth : div.scrollLeft : size ? div.scrollHeight : div.scrollTop;
         },
         _scroll: function (x, y) {
-            var __start = new Date().getTime();
+            __pushstack('_scroll');
+            var __start = _getstart();
             var div = this._scroller(true);
             if (div && !this.inBarY && this.dir !== 'y' && !_aNull(x)) {
                 div.scrollLeft = x;
@@ -14327,34 +13076,32 @@
                     this.thumbY.css('marginTop', Math.floor(div.scrollTop / this.ratioY) + 'px');
                 }
             }
-            {
-                var __ms = new Date().getTime() - __start;
-                _putstat('_scroll', __ms);
-            }
+            _putstat('_scroll', __start);
+            __popstack();
         },
         _vis: function () {
-            var __start = new Date().getTime();
-            {
-                var __ms = new Date().getTime() - __start;
-                _putstat('_vis', __ms);
-            }
+            __pushstack('_vis');
+            var __start = _getstart();
+            _putstat('_vis', __start);
+            __popstack();
             return this.evts && this.element[0].offsetWidth;
         },
         _inertia: function () {
-            var __start = new Date().getTime();
+            __pushstack('_inertia');
+            var __start = _getstart();
             var self = this, arg = { owner: self }, max = 0.97, stopTimerSpeed = 0.8, x = self.speedX, y = self.speedY, o = self.options, tick = 17, rateX = Math.max(Math.min(parseFloat(o.xInertia), max), 0), rateY = Math.max(Math.min(parseFloat(o.yInertia), max), 0), speedX = (x ? x[0] + x[1] + x[2] : 0) * tick, speedY = (y ? y[0] + y[1] + y[2] : 0) * tick, left = self._getScroll(true), top = self._getScroll(), inertia = function () {
-                    var __start = new Date().getTime();
+                    __pushstack('inertia');
+                    var __start = _getstart();
                     self.timer = setTimeout(function () {
-                        var __start = new Date().getTime();
+                        __pushstack('anonymous');
+                        var __start = _getstart();
                         delete self.timer;
                         arg.deltaX = -Math.floor(speedX);
                         arg.deltaY = -Math.floor(speedY);
                         if (!self._vis() || !self._trigger('scrolling', null, arg)) {
                             self._end();
-                            {
-                                var __ms = new Date().getTime() - __start;
-                                _putstat('anonymous', __ms);
-                            }
+                            _putstat('anonymous', __start);
+                            __popstack();
                             return;
                         }
                         left += arg.deltaX;
@@ -14368,24 +13115,19 @@
                         } else {
                             self._end();
                         }
-                        {
-                            var __ms = new Date().getTime() - __start;
-                            _putstat('anonymous', __ms);
-                        }
+                        _putstat('anonymous', __start);
+                        __popstack();
                     }, tick * 3);
-                    {
-                        var __ms = new Date().getTime() - __start;
-                        _putstat('inertia', __ms);
-                    }
+                    _putstat('inertia', __start);
+                    __popstack();
                 };
             inertia();
-            {
-                var __ms = new Date().getTime() - __start;
-                _putstat('_inertia', __ms);
-            }
+            _putstat('_inertia', __start);
+            __popstack();
         },
         _show: function (valid) {
-            var __start = new Date().getTime();
+            __pushstack('_show');
+            var __start = _getstart();
             var bar, self = this, o = self.options, val = parseFloat(o.thumbOpacity), valDrag = parseFloat(o.thumbOpacityDrag), dur = valid ? 0 : _num(o.animateShowDuration), barX = _valid(self.barX), barY = _valid(self.barY);
             if (self.hiding) {
                 self.hiding.stop(true);
@@ -14398,10 +13140,8 @@
                 if (barY) {
                     barY.css('opacity', self.inBarY ? valDrag : val);
                 }
-                {
-                    var __ms = new Date().getTime() - __start;
-                    _putstat('_show', __ms);
-                }
+                _putstat('_show', __start);
+                __popstack();
                 return;
             }
             bar = barX || barY;
@@ -14409,38 +13149,33 @@
                 self.showing = bar.animate({ opacity: val }, {
                     duration: dur,
                     complete: function () {
-                        var __start = new Date().getTime();
+                        __pushstack('complete');
+                        var __start = _getstart();
                         delete self.showing;
-                        {
-                            var __ms = new Date().getTime() - __start;
-                            _putstat('complete', __ms);
-                        }
+                        _putstat('complete', __start);
+                        __popstack();
                     },
                     step: function (now) {
-                        var __start = new Date().getTime();
+                        __pushstack('step');
+                        var __start = _getstart();
                         if (barX && barY) {
                             barY.css('opacity', now);
                         }
-                        {
-                            var __ms = new Date().getTime() - __start;
-                            _putstat('step', __ms);
-                        }
+                        _putstat('step', __start);
+                        __popstack();
                     }
                 });
             }
-            {
-                var __ms = new Date().getTime() - __start;
-                _putstat('_show', __ms);
-            }
+            _putstat('_show', __start);
+            __popstack();
         },
         _hide: function (hide) {
-            var __start = new Date().getTime();
+            __pushstack('_hide');
+            var __start = _getstart();
             var self = this;
             if (!self.time) {
-                {
-                    var __ms = new Date().getTime() - __start;
-                    _putstat('_hide', __ms);
-                }
+                _putstat('_hide', __start);
+                __popstack();
                 return;
             }
             if (self.showing) {
@@ -14448,37 +13183,34 @@
                 delete self.showing;
             }
             setTimeout(function () {
-                var __start = new Date().getTime();
+                __pushstack('anonymous');
+                var __start = _getstart();
                 if (self.hiding || hide) {
                     _remove(self.barX);
                     _remove(self.barY);
                     delete self.hiding;
                     self._fixSB();
                 }
-                {
-                    var __ms = new Date().getTime() - __start;
-                    _putstat('anonymous', __ms);
-                }
+                _putstat('anonymous', __start);
+                __popstack();
             }, 0);
-            {
-                var __ms = new Date().getTime() - __start;
-                _putstat('_hide', __ms);
-            }
+            _putstat('_hide', __start);
+            __popstack();
         },
         _end: function () {
-            var __start = new Date().getTime();
+            __pushstack('_end');
+            var __start = _getstart();
             var self = this, o = self.options, delay = self.thumbX && _draggable(o.xThumb) || self.thumbY && _draggable(o.yThumb), dur = _num(o.animateHideDuration);
             self._trigger('stopped', null, { owner: self });
             if (self.skip || !self._vis()) {
-                {
-                    var __ms = new Date().getTime() - __start;
-                    _putstat('_end', __ms);
-                }
+                _putstat('_end', __start);
+                __popstack();
                 return self._hide(true);
             }
             delay = _num(delay ? o.hideDragThumbsDelay : o.hideThumbsDelay);
             self.timerEnd = setTimeout(function () {
-                var __start = new Date().getTime();
+                __pushstack('anonymous');
+                var __start = _getstart();
                 if (!self.timer && self.timerEnd) {
                     if (_zero(dur)) {
                         self._hide(true);
@@ -14492,43 +13224,38 @@
                             self.hiding = bar.animate({ opacity: 0 }, {
                                 duration: dur,
                                 complete: function () {
-                                    var __start = new Date().getTime();
+                                    __pushstack('complete');
+                                    var __start = _getstart();
                                     self._hide();
-                                    {
-                                        var __ms = new Date().getTime() - __start;
-                                        _putstat('complete', __ms);
-                                    }
+                                    _putstat('complete', __start);
+                                    __popstack();
                                 },
                                 step: function (now) {
-                                    var __start = new Date().getTime();
+                                    __pushstack('step');
+                                    var __start = _getstart();
                                     if (bar2) {
                                         bar2.css('opacity', now);
                                     }
                                     if (self.skip && self.hiding) {
                                         self.hiding.stop();
                                     }
-                                    {
-                                        var __ms = new Date().getTime() - __start;
-                                        _putstat('step', __ms);
-                                    }
+                                    _putstat('step', __start);
+                                    __popstack();
                                 }
                             });
                         }
                     }
                 }
                 delete self.timerEnd;
-                {
-                    var __ms = new Date().getTime() - __start;
-                    _putstat('anonymous', __ms);
-                }
+                _putstat('anonymous', __start);
+                __popstack();
             }, _zero(delay) ? 5 : delay);
-            {
-                var __ms = new Date().getTime() - __start;
-                _putstat('_end', __ms);
-            }
+            _putstat('_end', __start);
+            __popstack();
         },
         _clear: function () {
-            var __start = new Date().getTime();
+            __pushstack('_clear');
+            var __start = _getstart();
             if (this.timer) {
                 clearTimeout(this.timer);
                 delete this.timer;
@@ -14537,17 +13264,14 @@
                 clearTimeout(this.timerEnd);
                 delete this.timerEnd;
             }
-            {
-                var __ms = new Date().getTime() - __start;
-                _putstat('_clear', __ms);
-            }
+            _putstat('_clear', __start);
+            __popstack();
         },
         _fire: function (t, e, x, y) {
-            var __start = new Date().getTime();
-            {
-                var __ms = new Date().getTime() - __start;
-                _putstat('_fire', __ms);
-            }
+            __pushstack('_fire');
+            var __start = _getstart();
+            _putstat('_fire', __start);
+            __popstack();
             return this._trigger(t, e, {
                 owner: this,
                 left: x,
@@ -14555,7 +13279,8 @@
             });
         },
         _skip: function (x, y, ms) {
-            var __start = new Date().getTime();
+            __pushstack('_skip');
+            var __start = _getstart();
             var dir = this.options.direction, left = this._scroller(true) || 0, top = this._scroller() || 0, height = 0, width = 0, heightScroll = 0, widthScroll = 0;
             if (left) {
                 width = left.clientWidth + (ms || 0);
@@ -14571,36 +13296,29 @@
                 if (ms && this._ms !== 'auto') {
                     this.element.css('msTouchAction', this._ms = 'auto');
                 }
-                {
-                    var __ms = new Date().getTime() - __start;
-                    _putstat('_skip', __ms);
-                }
+                _putstat('_skip', __start);
+                __popstack();
                 return true;
             }
             if (ms && this._ms !== 'none') {
                 this.element.css('msTouchAction', this._ms = 'none');
             }
             if ((Math.abs(y) > Math.abs(x) || dir === 'y') && dir !== 'x') {
-                {
-                    var __ms = new Date().getTime() - __start;
-                    _putstat('_skip', __ms);
-                }
+                _putstat('_skip', __start);
+                __popstack();
                 return y > 0 && !top || y < 0 && top + height >= heightScroll;
             }
-            {
-                var __ms = new Date().getTime() - __start;
-                _putstat('_skip', __ms);
-            }
+            _putstat('_skip', __start);
+            __popstack();
             return x > 0 && !left || x < 0 && left + width >= widthScroll;
         },
         _fixSB: function (hide) {
-            var __start = new Date().getTime();
+            __pushstack('_fixSB');
+            var __start = _getstart();
             var vert, hor, on = this._on;
             if (hide && on || !on && !hide) {
-                {
-                    var __ms = new Date().getTime() - __start;
-                    _putstat('_fixSB', __ms);
-                }
+                _putstat('_fixSB', __start);
+                __popstack();
                 return;
             }
             vert = this._scroller();
@@ -14613,10 +13331,8 @@
                     hor.style.overflowX = on.x;
                 }
                 delete this._on;
-                {
-                    var __ms = new Date().getTime() - __start;
-                    _putstat('_fixSB', __ms);
-                }
+                _putstat('_fixSB', __start);
+                __popstack();
                 return;
             }
             on = this._on = {};
@@ -14628,34 +13344,27 @@
                 on.x = $(hor).css('overflowX');
                 hor.style.overflowX = 'hidden';
             }
-            {
-                var __ms = new Date().getTime() - __start;
-                _putstat('_fixSB', __ms);
-            }
+            _putstat('_fixSB', __start);
+            __popstack();
         },
         _move: function (evt, end) {
-            var __start = new Date().getTime();
+            __pushstack('_move');
+            var __start = _getstart();
             if (!this.evts) {
-                {
-                    var __ms = new Date().getTime() - __start;
-                    _putstat('_move', __ms);
-                }
+                _putstat('_move', __start);
+                __popstack();
                 return;
             }
             var speed, arg = { owner: this }, time = new Date().getTime(), self = this, maxSpeed = 3, oldX = self.x0, oldY = self.y0, speedX = self.speedX, speedY = self.speedY, oldTop = self.top, oldLeft = self.left, inBarY = self.inBarY, inBarX = self.inBarX, barX = self.barX, barY = self.barY, start = !self.drag, elem = self.element, touch = self._pointer ? evt.originalEvent : _touch(evt), x = touch ? touch.pageX : 0, y = touch ? touch.pageY : 0, src = _src(evt);
             if (self.click && self._pointer && Math.abs(self.x - x) < 3 && Math.abs(self.y - y) < 3) {
-                {
-                    var __ms = new Date().getTime() - __start;
-                    _putstat('_move', __ms);
-                }
+                _putstat('_move', __start);
+                __popstack();
                 return;
             }
             delete self.click;
             if (self.skip) {
-                {
-                    var __ms = new Date().getTime() - __start;
-                    _putstat('_move', __ms);
-                }
+                _putstat('_move', __start);
+                __popstack();
                 return;
             }
             self._fixSB(true);
@@ -14669,10 +13378,8 @@
                     }
                 }
                 delete self.drag;
-                {
-                    var __ms = new Date().getTime() - __start;
-                    _putstat('_move', __ms);
-                }
+                _putstat('_move', __start);
+                __popstack();
                 return;
             }
             if (start) {
@@ -14685,10 +13392,8 @@
                 arg.deltaY = self.y - y;
             }
             if (self.skip || !this._trigger(start ? 'starting' : 'scrolling', evt, arg)) {
-                {
-                    var __ms = new Date().getTime() - __start;
-                    _putstat('_move', __ms);
-                }
+                _putstat('_move', __start);
+                __popstack();
                 return;
             }
             if (start) {
@@ -14755,13 +13460,12 @@
             y = inBarY ? oldTop + Math.floor((y - oldY) * self.ratioY) : oldTop - y + oldY;
             self._scroll(x, y);
             this._trigger(start ? 'started' : 'scrolled', evt);
-            {
-                var __ms = new Date().getTime() - __start;
-                _putstat('_move', __ms);
-            }
+            _putstat('_move', __start);
+            __popstack();
         },
         destroy: function () {
-            var __start = new Date().getTime();
+            __pushstack('destroy');
+            var __start = _getstart();
             if (this.evts) {
                 this.element.unbind(this.evts);
                 delete this.evts;
@@ -14776,10 +13480,8 @@
                 _remove(this.barY);
                 $.Widget.prototype.destroy.apply(this, arguments);
             }
-            {
-                var __ms = new Date().getTime() - __start;
-                _putstat('destroy', __ms);
-            }
+            _putstat('destroy', __start);
+            __popstack();
             return this;
         }
     });
@@ -14805,27 +13507,26 @@
     } catch (ex) {
         _find(true);
         $(document).bind('igcontrolcreated', function (event, args) {
-            var __start = new Date().getTime();
+            __pushstack('anonymous');
+            var __start = _getstart();
             var container = args.owner.scrollContainer();
             if (container.length === 0 && args.owner.container) {
                 container = args.owner.container().find('[data-scroll]').eq(0);
             }
             container.igScroll({ _find: true });
-            {
-                var __ms = new Date().getTime() - __start;
-                _putstat('anonymous', __ms);
-            }
+            _putstat('anonymous', __start);
+            __popstack();
         });
     }
-    {
-        var __ms = new Date().getTime() - __start;
-        _putstat('anonymous', __ms);
-    }
+    _putstat('anonymous', __start);
+    __popstack();
 }(jQuery));
 (function ($) {
-    var __start = new Date().getTime();
+    __pushstack('anonymous');
+    var __start = _getstart();
     $(document).ready(function () {
-        var __start = new Date().getTime();
+        __pushstack('anonymous');
+        var __start = _getstart();
         var wm = $('#__ig_wm__').length > 0 ? $('#__ig_wm__') : $('<div id="__ig_wm__"></div>').appendTo(document.body);
         wm.css({
             position: 'fixed',
@@ -14833,13 +13534,9 @@
             right: 0,
             zIndex: 1000
         }).addClass('ui-igtrialwatermark');
-        {
-            var __ms = new Date().getTime() - __start;
-            _putstat('anonymous', __ms);
-        }
+        _putstat('anonymous', __start);
+        __popstack();
     });
-    {
-        var __ms = new Date().getTime() - __start;
-        _putstat('anonymous', __ms);
-    }
+    _putstat('anonymous', __start);
+    __popstack();
 }(jQuery));

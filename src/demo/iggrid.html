@@ -8,9 +8,9 @@
     <link href="http://cdn-na.infragistics.com/jquery/20132/latest/css/structure/infragistics.css" rel="stylesheet" />
     <script type="text/javascript" src="cheetah-collect.js"></script>
     <script src="http://modernizr.com/downloads/modernizr-latest.js"></script>
+    <!-- <script src="js/jquery-2.min.js"></script> -->
     <script src="http://code.jquery.com/jquery-1.11.0.min.js"></script>
     <script src="http://code.jquery.com/ui/1.10.3/jquery-ui.min.js"></script>
-
     <!-- Ignite UI Required Combined JavaScript Files -->
     <script src="js/infragistics.core.js"></script>
     <script src="js/infragistics.lob.js"></script>
@@ -24,6 +24,8 @@
             $(".collect").on("click", function () {
                 _sendPerfData();
             });
+            // reset 
+            _startPerf();
             $("#grid").igGrid({
                 autoGenerateColumns: false,
                 width: "100%",

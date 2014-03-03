@@ -1,12 +1,15 @@
 {
-    var head = document.getElementsByTagName('head')[0], script = document.createElement('script');
-    script.src = 'http://code.jquery.com/jquery-1.11.0.min.js';
-    head.insertBefore(script, head.firstChild);
+    if (!window._p) {
+        window._p = {};
+        window._p.__callstack = {};
+    }
 }
-window._p = {};
 'use strict';
 (function (window, document) {
-    var start = new Date().getTime();
+    var __start = new Date().getTime();
+    {
+        _pushstack('anonymous');
+    }
     var blast = window.blast = window.blast || {}, doc = document;
     var _arrextend = [
             'pop',
@@ -18,34 +21,49 @@ window._p = {};
             'unshift'
         ];
     blast.observable = function (val) {
-        var start = new Date().getTime();
+        var __start = new Date().getTime();
+        {
+            _pushstack('blast.observable');
+        }
         var current = val;
         var ret = function (retVal) {
-            var start = new Date().getTime();
+            var __start = new Date().getTime();
+            {
+                _pushstack('ret');
+            }
             if (!undef(retVal) && retVal !== ret._val) {
                 ret.notify(false);
                 current = retVal;
                 ret.notify(true);
                 {
-                    var ms = new Date().getTime() - start;
-                    _putstat('ret', ms);
+                    var __ms = new Date().getTime() - __start;
+                    _putstat('ret', __ms);
                 }
                 return ret;
             }
             {
-                var ms = new Date().getTime() - start;
-                _putstat('ret', ms);
+                var __ms = new Date().getTime() - __start;
+                _putstat('ret', __ms);
             }
             return current;
+            {
+                _popstack('ret');
+            }
         };
         ret.notify = function (end, action) {
-            var start = new Date().getTime();
+            var __start = new Date().getTime();
+            {
+                _pushstack('ret.notify');
+            }
             for (var i = 0; i < ret.subs.length; i++) {
                 ret.subs[i](current, !end ? true : false, action);
             }
             {
-                var ms = new Date().getTime() - start;
-                _putstat('ret.notify', ms);
+                var __ms = new Date().getTime() - __start;
+                _putstat('ret.notify', __ms);
+            }
+            {
+                _popstack('ret.notify');
             }
         };
         ret.subs = [];
@@ -53,60 +71,93 @@ window._p = {};
         ret.__bo = true;
         ret(val);
         {
-            var ms = new Date().getTime() - start;
-            _putstat('blast.observable', ms);
+            var __ms = new Date().getTime() - __start;
+            _putstat('blast.observable', __ms);
         }
         return ret;
+        {
+            _popstack('blast.observable');
+        }
     };
     blast.observableArray = function (arr) {
-        var start = new Date().getTime();
+        var __start = new Date().getTime();
+        {
+            _pushstack('blast.observableArray');
+        }
         arr = arr || [];
         var i;
         var observableArr = blast.observable(arr);
         var _compilefn = function (fn) {
-            var start = new Date().getTime();
+            var __start = new Date().getTime();
             {
-                var ms = new Date().getTime() - start;
-                _putstat('_compilefn', ms);
+                _pushstack('_compilefn');
+            }
+            {
+                var __ms = new Date().getTime() - __start;
+                _putstat('_compilefn', __ms);
             }
             return function () {
-                var start = new Date().getTime();
+                var __start = new Date().getTime();
+                {
+                    _pushstack('anonymous');
+                }
                 observableArr.notify(false, fn);
                 var ret = observableArr._val[fn].apply(observableArr._val, arguments);
                 observableArr.notify(true, fn);
                 {
-                    var ms = new Date().getTime() - start;
-                    _putstat('anonymous', ms);
+                    var __ms = new Date().getTime() - __start;
+                    _putstat('anonymous', __ms);
                 }
                 return ret;
+                {
+                    _popstack('anonymous');
+                }
             };
+            {
+                _popstack('_compilefn');
+            }
         };
         for (i = 0; i < _arrextend.length; i++) {
             observableArr[_arrextend[i]] = _compilefn(_arrextend[i]);
         }
         {
-            var ms = new Date().getTime() - start;
-            _putstat('blast.observableArray', ms);
+            var __ms = new Date().getTime() - __start;
+            _putstat('blast.observableArray', __ms);
         }
         return observableArr;
+        {
+            _popstack('blast.observableArray');
+        }
     };
     blast.link = function (elem, meta, data) {
-        var start = new Date().getTime();
+        var __start = new Date().getTime();
+        {
+            _pushstack('blast.link');
+        }
         var key = meta.key;
         if (data[key].__bo) {
             data[key].subs.push(function (val, beforeEvent) {
-                var start = new Date().getTime();
+                var __start = new Date().getTime();
+                {
+                    _pushstack('anonymous');
+                }
                 if (!beforeEvent) {
                     setval(elem, val);
                 }
                 {
-                    var ms = new Date().getTime() - start;
-                    _putstat('anonymous', ms);
+                    var __ms = new Date().getTime() - __start;
+                    _putstat('anonymous', __ms);
+                }
+                {
+                    _popstack('anonymous');
                 }
             });
         }
         elem.addEventListener(meta.event ? meta.event : 'change', function () {
-            var start = new Date().getTime();
+            var __start = new Date().getTime();
+            {
+                _pushstack('anonymous');
+            }
             var newVal = getval(elem);
             if (data[key].__bo) {
                 data[key](newVal);
@@ -114,36 +165,51 @@ window._p = {};
                 data[key] = newVal;
             }
             {
-                var ms = new Date().getTime() - start;
-                _putstat('anonymous', ms);
+                var __ms = new Date().getTime() - __start;
+                _putstat('anonymous', __ms);
+            }
+            {
+                _popstack('anonymous');
             }
         }, false);
         if (undef(meta) || meta && meta.init !== false) {
             setval(elem, data[key].__bo ? data[key]() : data[key]);
         }
         {
-            var ms = new Date().getTime() - start;
-            _putstat('blast.link', ms);
+            var __ms = new Date().getTime() - __start;
+            _putstat('blast.link', __ms);
+        }
+        {
+            _popstack('blast.link');
         }
     };
     blast.linkAll = function (prop, meta, model) {
-        var start = new Date().getTime();
+        var __start = new Date().getTime();
+        {
+            _pushstack('blast.linkAll');
+        }
         var elems = elem(prop, meta.parent);
         for (var i = 0; i < elems.length; i++) {
             meta.key = prop;
             blast.link(elems[i], meta, model);
         }
         {
-            var ms = new Date().getTime() - start;
-            _putstat('blast.linkAll', ms);
+            var __ms = new Date().getTime() - __start;
+            _putstat('blast.linkAll', __ms);
+        }
+        {
+            _popstack('blast.linkAll');
         }
     };
     blast.observe = function (data) {
-        var start = new Date().getTime();
+        var __start = new Date().getTime();
+        {
+            _pushstack('blast.observe');
+        }
         if (undef(data)) {
             {
-                var ms = new Date().getTime() - start;
-                _putstat('blast.observe', ms);
+                var __ms = new Date().getTime() - __start;
+                _putstat('blast.observe', __ms);
             }
             return null;
         }
@@ -153,22 +219,31 @@ window._p = {};
                 observed.push(observeObj(data[i]));
             }
             {
-                var ms = new Date().getTime() - start;
-                _putstat('blast.observe', ms);
+                var __ms = new Date().getTime() - __start;
+                _putstat('blast.observe', __ms);
             }
             return observed;
         }
         {
-            var ms = new Date().getTime() - start;
-            _putstat('blast.observe', ms);
+            var __ms = new Date().getTime() - __start;
+            _putstat('blast.observe', __ms);
         }
         return observeObj(data);
+        {
+            _popstack('blast.observe');
+        }
     };
     blast.bind = function (model, meta) {
-        var start = new Date().getTime();
+        var __start = new Date().getTime();
+        {
+            _pushstack('blast.bind');
+        }
         var m = undef(meta) ? {} : meta;
         var addItem = function (parent, tmpl, meta, prepend) {
-            var start = new Date().getTime();
+            var __start = new Date().getTime();
+            {
+                _pushstack('addItem');
+            }
             var item = tmpl.cloneNode(true);
             if (prepend) {
                 parent.insertBefore(item, parent.firstChild);
@@ -177,8 +252,11 @@ window._p = {};
             }
             meta.parent = item;
             {
-                var ms = new Date().getTime() - start;
-                _putstat('addItem', ms);
+                var __ms = new Date().getTime() - __start;
+                _putstat('addItem', __ms);
+            }
+            {
+                _popstack('addItem');
             }
         };
         for (var p in model) {
@@ -190,7 +268,10 @@ window._p = {};
                     clear(dom);
                     if (prop.__bo) {
                         prop.subs.push(function (arr, before, action) {
-                            var start = new Date().getTime();
+                            var __start = new Date().getTime();
+                            {
+                                _pushstack('anonymous');
+                            }
                             if (!before) {
                                 switch (action) {
                                 case 'push':
@@ -216,8 +297,11 @@ window._p = {};
                                 }
                             }
                             {
-                                var ms = new Date().getTime() - start;
-                                _putstat('anonymous', ms);
+                                var __ms = new Date().getTime() - __start;
+                                _putstat('anonymous', __ms);
+                            }
+                            {
+                                _popstack('anonymous');
                             }
                         });
                         prop = prop();
@@ -232,16 +316,22 @@ window._p = {};
             }
         }
         {
-            var ms = new Date().getTime() - start;
-            _putstat('blast.bind', ms);
+            var __ms = new Date().getTime() - __start;
+            _putstat('blast.bind', __ms);
+        }
+        {
+            _popstack('blast.bind');
         }
     };
     blast.json = function (model) {
-        var start = new Date().getTime();
+        var __start = new Date().getTime();
+        {
+            _pushstack('blast.json');
+        }
         if (undef(model)) {
             {
-                var ms = new Date().getTime() - start;
-                _putstat('blast.json', ms);
+                var __ms = new Date().getTime() - __start;
+                _putstat('blast.json', __ms);
             }
             return null;
         }
@@ -251,19 +341,25 @@ window._p = {};
                 d.push(toObj(model[i]));
             }
             {
-                var ms = new Date().getTime() - start;
-                _putstat('blast.json', ms);
+                var __ms = new Date().getTime() - __start;
+                _putstat('blast.json', __ms);
             }
             return d;
         }
         {
-            var ms = new Date().getTime() - start;
-            _putstat('blast.json', ms);
+            var __ms = new Date().getTime() - __start;
+            _putstat('blast.json', __ms);
         }
         return toObj(model);
+        {
+            _popstack('blast.json');
+        }
     };
     function observeObj(o) {
-        var start = new Date().getTime();
+        var __start = new Date().getTime();
+        {
+            _pushstack('observeObj');
+        }
         var observed = {}, prop = null;
         for (prop in o) {
             if (o.hasOwnProperty(prop)) {
@@ -271,13 +367,19 @@ window._p = {};
             }
         }
         {
-            var ms = new Date().getTime() - start;
-            _putstat('observeObj', ms);
+            var __ms = new Date().getTime() - __start;
+            _putstat('observeObj', __ms);
         }
         return observed;
+        {
+            _popstack('observeObj');
+        }
     }
     function toObj(observable) {
-        var start = new Date().getTime();
+        var __start = new Date().getTime();
+        {
+            _pushstack('toObj');
+        }
         var obj = {};
         for (var p in observable) {
             if (observable.hasOwnProperty(p)) {
@@ -285,78 +387,120 @@ window._p = {};
             }
         }
         {
-            var ms = new Date().getTime() - start;
-            _putstat('toObj', ms);
+            var __ms = new Date().getTime() - __start;
+            _putstat('toObj', __ms);
         }
         return obj;
+        {
+            _popstack('toObj');
+        }
     }
     function setval(elem, val) {
-        var start = new Date().getTime();
+        var __start = new Date().getTime();
+        {
+            _pushstack('setval');
+        }
         if (elem instanceof window.HTMLInputElement) {
             elem.value = val;
         } else {
             elem.innerHTML = val;
         }
         {
-            var ms = new Date().getTime() - start;
-            _putstat('setval', ms);
+            var __ms = new Date().getTime() - __start;
+            _putstat('setval', __ms);
+        }
+        {
+            _popstack('setval');
         }
     }
     function getval(elem) {
-        var start = new Date().getTime();
+        var __start = new Date().getTime();
+        {
+            _pushstack('getval');
+        }
         if (elem instanceof window.HTMLInputElement) {
             {
-                var ms = new Date().getTime() - start;
-                _putstat('getval', ms);
+                var __ms = new Date().getTime() - __start;
+                _putstat('getval', __ms);
             }
             return elem.value;
         }
         {
-            var ms = new Date().getTime() - start;
-            _putstat('getval', ms);
+            var __ms = new Date().getTime() - __start;
+            _putstat('getval', __ms);
         }
         return elem.innerHTML;
+        {
+            _popstack('getval');
+        }
     }
     function elem(prop, parent) {
-        var start = new Date().getTime();
+        var __start = new Date().getTime();
+        {
+            _pushstack('elem');
+        }
         var root = parent ? parent : doc;
         {
-            var ms = new Date().getTime() - start;
-            _putstat('elem', ms);
+            var __ms = new Date().getTime() - __start;
+            _putstat('elem', __ms);
         }
         return root.querySelectorAll('[data-bind=' + prop + ']');
+        {
+            _popstack('elem');
+        }
     }
     function clear(elem) {
-        var start = new Date().getTime();
+        var __start = new Date().getTime();
+        {
+            _pushstack('clear');
+        }
         while (elem.firstChild) {
             elem.removeChild(elem.firstChild);
         }
         {
-            var ms = new Date().getTime() - start;
-            _putstat('clear', ms);
+            var __ms = new Date().getTime() - __start;
+            _putstat('clear', __ms);
+        }
+        {
+            _popstack('clear');
         }
     }
     function undef(val) {
-        var start = new Date().getTime();
+        var __start = new Date().getTime();
         {
-            var ms = new Date().getTime() - start;
-            _putstat('undef', ms);
+            _pushstack('undef');
+        }
+        {
+            var __ms = new Date().getTime() - __start;
+            _putstat('undef', __ms);
         }
         return val === null || typeof val === 'undefined';
+        {
+            _popstack('undef');
+        }
     }
     {
-        var ms = new Date().getTime() - start;
-        _putstat('anonymous', ms);
+        var __ms = new Date().getTime() - __start;
+        _putstat('anonymous', __ms);
+    }
+    {
+        _popstack('anonymous');
     }
 }(window, document));
 if (typeof define === 'function' && define.amd) {
     define('blast', [], function () {
-        var start = new Date().getTime();
+        var __start = new Date().getTime();
         {
-            var ms = new Date().getTime() - start;
-            _putstat('anonymous', ms);
+            _pushstack('anonymous');
+        }
+        {
+            var __ms = new Date().getTime() - __start;
+            _putstat('anonymous', __ms);
         }
         return window.blast;
+        {
+            _popstack('anonymous');
+        }
     });
 }
 if (typeof module !== 'undefined' && module.exports) {

@@ -24,14 +24,25 @@ fs.readFile(fname, function (err, data) {
 	var ast = esprima.parse(data);
 	// inject our script which sends data
 	//TODO: code template; make sure to handle SCOPE... different functions with the same name
-	var endExprStr = "{ var __ms = new Date().getTime() - __start; _putstat('{f}', __ms);}";
-	var startExpr = esprima.parse("var __start = new Date().getTime();").body[0];
+	var endExprStr = "_putstat('{f}', __start);";
+	//var stackExprPush = "{ _pushstack('{f}');}";
+	//var stackExprPop = "{ _popstack('{f}');}";
+	var startExpr = esprima.parse("var __start = _getstart();").body[0];
 	var _compileEndExpr = function (node, parent) {
 		// let's say we've got a Return statement which is nested down other statements. for instance an IfStatement
 		// we still need to look for variable declarations in order to infer the function name
 		// find the closest FunctionExpression which has an AssignmentExpression as a parent
 		return esprima.parse(endExprStr.replace(/{f}/g, fnstack[fnstack.length - 1])).body[0];
 	};
+	/*
+	var _compileStackPushExpr = function (node, parent) {
+		return esprima.parse(stackExprPush.replace(/{f}/g, fnstack[fnstack.length - 1])).body[0];
+	}
+	var _compileStackPopExpr = function (node, parent) {
+		return esprima.parse(stackExprPop.replace(/{f}/g, fnstack[fnstack.length - 1])).body[0];
+	}
+	*/
+	var stackAddExpr = "__pushstack('{f}');";
 	//modify AST as we traverse it
 	estraverse.traverse(ast, {
 		enter: function (node, parent) {
@@ -46,7 +57,7 @@ fs.readFile(fname, function (err, data) {
 				// initialize
 				//var headScript = "{ var head = document.getElementsByTagName('head')[0], script = document.createElement('script'); script.src = 'cheetah-collect.js'; head.insertBefore(script, head.firstChild); }";
 				//var jqueryScript = "{ var head = document.getElementsByTagName('head')[0], script = document.createElement('script'); script.src = 'http://code.jquery.com/jquery-1.11.0.min.js'; head.insertBefore(script, head.firstChild); }";
-				node.body.unshift(esprima.parse("{ if (!window._p) {window._p = {}; } if (!window._callstack) {window._callstack = {}; }}").body[0]);
+				node.body.unshift(esprima.parse("__init__();").body[0]);
 				//node.body.unshift(esprima.parse(headScript).body[0]);
 				//node.body.unshift(esprima.parse(jqueryScript).body[0]);
 				// now add a statement that will push the results to our server
@@ -79,6 +90,8 @@ fs.readFile(fname, function (err, data) {
 				var exprs = node.body.body;
 				var recorded = false;
 				exprs.unshift(startExpr);
+				// add to stack and set new parent
+				exprs.unshift(esprima.parse(stackAddExpr.replace(/{f}/g, fnstack[fnstack.length - 1])).body[0]);
 				// need to find all Return statements and process them recursively, cannot rely on the last expression
 				for (var i = 0; exprs[i] && i < exprs.length; i++) {
 					if (exprs[i].type === "ReturnStatement") {
@@ -91,7 +104,10 @@ fs.readFile(fname, function (err, data) {
 				if (!recorded) {
 					//exprs.push(currEndExpr);
 					exprs.push(_compileEndExpr(node, parent));
+					exprs.push(esprima.parse("__popstack();").body[0]);
 				}
+				//record in callstack (TBD)
+				//exprs.push(_compileStackPopExpr(node, parent));
 				fnstack.pop();
 			} else {
 				// make sure we cover all return stmts
@@ -100,6 +116,7 @@ fs.readFile(fname, function (err, data) {
 						if (node.body[i].type === "ReturnStatement") {
 							//node.body.splice(i, 0, currEndExpr);
 							node.body.splice(i, 0, _compileEndExpr(node, parent));
+							node.body.splice(i + 1, 0, esprima.parse("__popstack();").body[0]);
 							i++;
 							break;
 						}
