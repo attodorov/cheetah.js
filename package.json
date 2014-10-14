@@ -1,28 +1,54 @@
 {
-	"name": "CheetahJS",
-	"title": "Cheetah.JS performance tracking framework",
-	"description": "A framework which instruments your javascript, and after you run your user scenarios and/or tests, it builds a performance report",
-	"version": "0.1.0",
-	"repository": {
-	"type": "git",
-	"url": "https://github.com/attodorov/cheetah.js.git"
-	},
-	"engine": "node >= 0.10.5",
-	"keywords": ["performance", "benchmarking", "instrumentation", "analysis", "monitoring"],
-	"devDependencies": {
-		"jsdom": "*",
-		"chai": "*",
-		"mocha": "*",
-		"grunt": "~0.4.1",
-		"grunt-contrib-jshint": "~0.7.2",
-		"grunt-contrib-uglify": "~0.2.4",
-		"time-grunt": "~0.1.1",
-		"load-grunt-tasks": "~0.1.0",
-		"jshint-stylish": "~0.1.4",
-		"esprima": "*",
-		"acorn": "*",
-		"estraverse": "*",
-		"escodegen": "*",
-		"express": "*"
-	}
+  "name": "cheetahjs",
+  "title": "Cheetah.JS performance tracking framework",
+  "description": "A framework which instruments your javascript, and after you run your user scenarios and/or tests, it builds a performance report",
+  "version": "0.1.0",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/attodorov/cheetah.js.git"
+  },
+  "engine": "node >= 0.10.5",
+  "keywords": [
+    "performance",
+    "benchmarking",
+    "instrumentation",
+    "analysis",
+    "monitoring"
+  ],
+  "dependencies": {
+    "esprima": "*",
+    "acorn": "*",
+    "estraverse": "*",
+    "escodegen": "*",
+    "express": "*"
+  },
+  "devDependencies": {
+    "jsdom": "*",
+    "chai": "*",
+    "mocha": "*",
+    "grunt": "~0.4.1",
+    "grunt-contrib-jshint": "~0.7.2",
+    "grunt-contrib-uglify": "~0.2.4",
+    "time-grunt": "~0.1.1",
+    "load-grunt-tasks": "~0.1.0",
+    "jshint-stylish": "~0.1.4",
+    "esprima": "*",
+    "acorn": "*",
+    "estraverse": "*",
+    "escodegen": "*",
+    "express": "*"
+  },
+  "bugs": {
+    "url": "https://github.com/attodorov/cheetah.js/issues"
+  },
+  "homepage": "https://github.com/attodorov/cheetah.js",
+  "main": "Gruntfile.js",
+  "directories": {
+    "test": "test"
+  },
+  "scripts": {
+    "test": "grunt test"
+  },
+  "author": "Angel Todorov <attodorov@gmail.com>",
+  "license": "BSD"
 }

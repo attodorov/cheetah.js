@@ -1,0 +1,136 @@
+0 info it worked if it ends with ok
+1 verbose cli [ 'C:\\Program Files\\nodejs\\\\node.exe',
+1 verbose cli   'C:\\Program Files\\nodejs\\node_modules\\npm\\bin\\npm-cli.js',
+1 verbose cli   'publish',
+1 verbose cli   './' ]
+2 info using npm@1.4.28
+3 info using node@v0.10.32
+4 verbose node symlink C:\Program Files\nodejs\\node.exe
+5 verbose publish [ './' ]
+6 verbose cache add [ './', null ]
+7 verbose cache add name=undefined spec="./" args=["./",null]
+8 verbose parsed url { protocol: null,
+8 verbose parsed url   slashes: null,
+8 verbose parsed url   auth: null,
+8 verbose parsed url   host: null,
+8 verbose parsed url   port: null,
+8 verbose parsed url   hostname: null,
+8 verbose parsed url   hash: null,
+8 verbose parsed url   search: null,
+8 verbose parsed url   query: null,
+8 verbose parsed url   pathname: './',
+8 verbose parsed url   path: './',
+8 verbose parsed url   href: './' }
+9 silly lockFile 0ee6c175- ./
+10 verbose lock ./ C:\Users\ATodorov\AppData\Roaming\npm-cache\0ee6c175-.lock
+11 verbose tar pack [ 'C:\\Users\\ATodorov\\AppData\\Roaming\\npm-cache\\CheetahJS\\0.1.0\\package.tgz',
+11 verbose tar pack   './' ]
+12 verbose tarball C:\Users\ATodorov\AppData\Roaming\npm-cache\CheetahJS\0.1.0\package.tgz
+13 verbose folder ./
+14 info prepublish CheetahJS@0.1.0
+15 silly lockFile 04cb2bca-tar tar://./
+16 verbose lock tar://./ C:\Users\ATodorov\AppData\Roaming\npm-cache\04cb2bca-tar.lock
+17 silly lockFile 5298e411-ache-CheetahJS-0-1-0-package-tgz tar://C:\Users\ATodorov\AppData\Roaming\npm-cache\CheetahJS\0.1.0\package.tgz
+18 verbose lock tar://C:\Users\ATodorov\AppData\Roaming\npm-cache\CheetahJS\0.1.0\package.tgz C:\Users\ATodorov\AppData\Roaming\npm-cache\5298e411-ache-CheetahJS-0-1-0-package-tgz.lock
+19 silly lockFile 04cb2bca-tar tar://./
+20 silly lockFile 04cb2bca-tar tar://./
+21 silly lockFile 5298e411-ache-CheetahJS-0-1-0-package-tgz tar://C:\Users\ATodorov\AppData\Roaming\npm-cache\CheetahJS\0.1.0\package.tgz
+22 silly lockFile 5298e411-ache-CheetahJS-0-1-0-package-tgz tar://C:\Users\ATodorov\AppData\Roaming\npm-cache\CheetahJS\0.1.0\package.tgz
+23 silly lockFile 82314256-pm-cache-CheetahJS-0-1-0-package C:\Users\ATodorov\AppData\Roaming\npm-cache\CheetahJS\0.1.0\package
+24 verbose lock C:\Users\ATodorov\AppData\Roaming\npm-cache\CheetahJS\0.1.0\package C:\Users\ATodorov\AppData\Roaming\npm-cache\82314256-pm-cache-CheetahJS-0-1-0-package.lock
+25 silly lockFile 82314256-pm-cache-CheetahJS-0-1-0-package C:\Users\ATodorov\AppData\Roaming\npm-cache\CheetahJS\0.1.0\package
+26 silly lockFile 82314256-pm-cache-CheetahJS-0-1-0-package C:\Users\ATodorov\AppData\Roaming\npm-cache\CheetahJS\0.1.0\package
+27 silly lockFile 0ee6c175- ./
+28 silly lockFile 0ee6c175- ./
+29 silly publish { name: 'CheetahJS',
+29 silly publish   title: 'Cheetah.JS performance tracking framework',
+29 silly publish   description: 'A framework which instruments your javascript, and after you run your user scenarios and/or tests, it builds a performance report',
+29 silly publish   version: '0.1.0',
+29 silly publish   repository:
+29 silly publish    { type: 'git',
+29 silly publish      url: 'https://github.com/attodorov/cheetah.js.git' },
+29 silly publish   engine: 'node >= 0.10.5',
+29 silly publish   keywords:
+29 silly publish    [ 'performance',
+29 silly publish      'benchmarking',
+29 silly publish      'instrumentation',
+29 silly publish      'analysis',
+29 silly publish      'monitoring' ],
+29 silly publish   dependencies:
+29 silly publish    { esprima: '*',
+29 silly publish      acorn: '*',
+29 silly publish      estraverse: '*',
+29 silly publish      escodegen: '*',
+29 silly publish      express: '*' },
+29 silly publish   devDependencies:
+29 silly publish    { jsdom: '*',
+29 silly publish      chai: '*',
+29 silly publish      mocha: '*',
+29 silly publish      grunt: '~0.4.1',
+29 silly publish      'grunt-contrib-jshint': '~0.7.2',
+29 silly publish      'grunt-contrib-uglify': '~0.2.4',
+29 silly publish      'time-grunt': '~0.1.1',
+29 silly publish      'load-grunt-tasks': '~0.1.0',
+29 silly publish      'jshint-stylish': '~0.1.4',
+29 silly publish      esprima: '*',
+29 silly publish      acorn: '*',
+29 silly publish      estraverse: '*',
+29 silly publish      escodegen: '*',
+29 silly publish      express: '*' },
+29 silly publish   bugs: { url: 'https://github.com/attodorov/cheetah.js/issues' },
+29 silly publish   homepage: 'https://github.com/attodorov/cheetah.js',
+29 silly publish   main: 'Gruntfile.js',
+29 silly publish   directories: { test: 'test' },
+29 silly publish   scripts: { test: 'grunt test' },
+29 silly publish   author: { name: 'Angel Todorov', email: 'attodorov@gmail.com' },
+29 silly publish   license: 'BSD',
+29 silly publish   readme: 'cheetah.js\r\n==========\r\n\r\nJavaScript Performance Testing Framework\r\n',
+29 silly publish   readmeFilename: 'README.md',
+29 silly publish   gitHead: 'b46e400c203847f5e9f62f5b77a1e08616e11d30',
+29 silly publish   _id: 'CheetahJS@0.1.0',
+29 silly publish   _shasum: '6122a6992c735ad22e0c137980c10044c8043d7d',
+29 silly publish   _from: './' }
+30 verbose request where is /CheetahJS
+31 verbose request registry https://registry.npmjs.org/
+32 verbose request id 51a7cf0f5294e7e6
+33 verbose url raw /CheetahJS
+34 verbose url resolving [ 'https://registry.npmjs.org/', './CheetahJS' ]
+35 verbose url resolved https://registry.npmjs.org/CheetahJS
+36 verbose request where is https://registry.npmjs.org/CheetahJS
+37 info trying registry request attempt 1 at 15:15:02
+38 http PUT https://registry.npmjs.org/CheetahJS
+39 http 403 https://registry.npmjs.org/CheetahJS
+40 verbose headers { date: 'Tue, 14 Oct 2014 12:15:12 GMT',
+40 verbose headers   server: 'CouchDB/1.5.0 (Erlang OTP/R16B03)',
+40 verbose headers   'content-type': 'application/json',
+40 verbose headers   'cache-control': 'max-age=60',
+40 verbose headers   'content-length': '76',
+40 verbose headers   'accept-ranges': 'bytes',
+40 verbose headers   via: '1.1 varnish',
+40 verbose headers   'x-served-by': 'cache-iad2121-IAD',
+40 verbose headers   'x-cache': 'MISS',
+40 verbose headers   'x-cache-hits': '0',
+40 verbose headers   'x-timer': 'S1413288908.102256,VS0,VE4748',
+40 verbose headers   'keep-alive': 'timeout=10, max=50',
+40 verbose headers   connection: 'Keep-Alive' }
+41 error publish Failed PUT 403
+42 error Error: forbidden New packages must have all-lowercase names: CheetahJS
+42 error     at RegClient.<anonymous> (C:\Program Files\nodejs\node_modules\npm\node_modules\npm-registry-client\lib\request.js:308:14)
+42 error     at Request._callback (C:\Program Files\nodejs\node_modules\npm\node_modules\npm-registry-client\lib\request.js:246:65)
+42 error     at Request.self.callback (C:\Program Files\nodejs\node_modules\npm\node_modules\request\request.js:236:22)
+42 error     at Request.emit (events.js:98:17)
+42 error     at Request.<anonymous> (C:\Program Files\nodejs\node_modules\npm\node_modules\request\request.js:1142:14)
+42 error     at Request.emit (events.js:117:20)
+42 error     at IncomingMessage.<anonymous> (C:\Program Files\nodejs\node_modules\npm\node_modules\request\request.js:1096:12)
+42 error     at IncomingMessage.emit (events.js:117:20)
+42 error     at _stream_readable.js:943:16
+42 error     at process._tickCallback (node.js:419:13)
+43 error If you need help, you may report this *entire* log,
+43 error including the npm and node versions, at:
+43 error     <http://github.com/npm/npm/issues>
+44 error System Windows_NT 6.2.9200
+45 error command "C:\\Program Files\\nodejs\\\\node.exe" "C:\\Program Files\\nodejs\\node_modules\\npm\\bin\\npm-cli.js" "publish" "./"
+46 error cwd C:\Users\ATodorov\Desktop\cheetah.js
+47 error node -v v0.10.32
+48 error npm -v 1.4.28
+49 verbose exit [ 1, true ]
