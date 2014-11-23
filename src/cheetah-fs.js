@@ -3,7 +3,7 @@
  * Licensed under BSD 
  */
 var fs = require("fs");
-var cheetah = require("./cheetahjs");
+var cheetah = require("./cheetah-module");
 var fname = process.argv.slice(2)[0];
 
 fs.readFile(fname, function (err, data) {
