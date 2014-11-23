@@ -80,3 +80,49 @@ module.exports = {
 			return result;
 	}
 }
+function __init__() {
+	if (!window._p) {
+		window._p = {};
+		window.__current = {
+			fn: "Program",
+			calls: [], 
+			parent: null
+		};
+		window._p.__callstack = window.__current;
+	}
+}
+function __pushstack(name) {
+	//var stack = window._p.__callstack;
+	var c = window.__current;
+	c.calls.push({
+		fn: name,
+		parent: c,
+		calls: []
+	});
+	window.__current = c.calls[c.calls.length - 1];
+}
+function __popstack() {
+	if (window.__current.parent) {
+		window.__current = window.__current.parent;
+	}
+}
+function _putstat(name, start) {
+	var duration = new Date().getTime() - start; 
+	if (!window._p[name]) {
+		window._p[name] = {
+			count: 0,
+			avg: 0,
+			sum: 0
+		}; 
+	}
+	window._p[name].count++;
+	window._p[name].sum += duration;
+	if (window._p[name].count === 0) {
+		window._p[avg] = duration;
+	} else {
+		window._p[name].avg = window._p[name].avg + ((duration - window._p[name].avg) / window._p[name].count);
+	}
+}
+function _getstart() {
+	return new Date().getTime();
+}
