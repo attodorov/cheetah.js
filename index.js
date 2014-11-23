@@ -80,7 +80,7 @@ module.exports = {
 			return result;
 	}
 }
-function __init__() {
+GLOBAL.__init__ = function () {
 	if (!window._p) {
 		window._p = {};
 		window.__current = {
