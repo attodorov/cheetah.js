@@ -80,7 +80,7 @@ module.exports = {
 			return result;
 	}
 }
-GLOBAL.__init__ = function () {
+__init__ = function () {
 	if (!window._p) {
 		window._p = {};
 		window.__current = {
@@ -91,7 +91,7 @@ GLOBAL.__init__ = function () {
 		window._p.__callstack = window.__current;
 	}
 }
-GLOBAL.__pushstack = function (name) {
+__pushstack = function (name) {
 	//var stack = window._p.__callstack;
 	var c = window.__current;
 	c.calls.push({
@@ -101,12 +101,12 @@ GLOBAL.__pushstack = function (name) {
 	});
 	window.__current = c.calls[c.calls.length - 1];
 }
-GLOBAL.__popstack = function () {
+__popstack = function () {
 	if (window.__current.parent) {
 		window.__current = window.__current.parent;
 	}
 }
-GLOBAL._putstat = function (name, start) {
+_putstat = function (name, start) {
 	var duration = new Date().getTime() - start; 
 	if (!window._p[name]) {
 		window._p[name] = {
@@ -123,6 +123,6 @@ GLOBAL._putstat = function (name, start) {
 		window._p[name].avg = window._p[name].avg + ((duration - window._p[name].avg) / window._p[name].count);
 	}
 }
-GLOBAL._getstart = function () {
+_getstart = function () {
 	return new Date().getTime();
 }
