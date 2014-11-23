@@ -4,7 +4,7 @@
  */
 var fs = require("fs");
 var esprima = require("esprima");
-var acorn = require("acorn");
+//var acorn = require("acorn");
 var estraverse = require("estraverse");
 var escodegen = require("escodegen");
 var start = process.hrtime();
@@ -126,7 +126,7 @@ fs.readFile(fname, function (err, data) {
 		}
 	});
 	var result = escodegen.generate(ast);
-	var stream = fs.createWriteStream(fname + ".gen.js");
+	var stream = fs.createWriteStream(fname.replace(".js", "") + ".gen.js");
 		stream.once("open", function (fd) {
 		stream.write(result);
 		stream.end();
