@@ -112,11 +112,13 @@ _putstat = function (name, start) {
 		window._p[name] = {
 			count: 0,
 			avg: 0,
-			sum: 0
+			sum: 0,
+			max: 0
 		}; 
 	}
 	window._p[name].count++;
 	window._p[name].sum += duration;
+	window._p[name].max = duration > window._p[name].max ? duration : window._p[name].max;
 	if (window._p[name].count === 0) {
 		window._p[avg] = duration;
 	} else {
