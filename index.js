@@ -122,7 +122,7 @@ _putstat = function (name, start) {
 	if (duration > window._p[name].max) {
 		window._p[name].max = duration;
 	}
-	if (duration < window._p[name].min) {
+	if (duration < window._p[name].min && duration > 0) {
 		window._p[name].min = duration;
 	}
 	if (window._p[name].count === 0) {
