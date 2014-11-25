@@ -113,7 +113,8 @@ _putstat = function (name, start) {
 			count: 0,
 			avg: 0,
 			sum: 0,
-			max: 0
+			max: 0,
+			min: Math.max()
 		}; 
 	}
 	window._p[name].count++;
@@ -121,11 +122,14 @@ _putstat = function (name, start) {
 	if (duration > window._p[name].max) {
 		window._p[name].max = duration;
 	}
+	if (duration < window._p[name].min) {
+		window._p[name].min = duration;
+	}
 	if (window._p[name].count === 0) {
 		window._p[avg] = duration;
 	} else {
-		//window._p[name].avg = window._p[name].avg + ((duration - window._p[name].avg) / window._p[name].count);
-		window._p[name].avg = (duration + (window._p[name].count - 1) * window._p[name].avg) / window._p[name].count;
+		window._p[name].avg = window._p[name].avg + ((duration - window._p[name].avg) / window._p[name].count);
+		//window._p[name].avg = (duration + (window._p[name].count - 1) * window._p[name].avg) / window._p[name].count;
 	}
 }
 _getstart = function () {

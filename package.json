@@ -2,7 +2,7 @@
   "name": "cheetahjs",
   "title": "Cheetah.JS performance tracking framework",
   "description": "A framework which instruments your javascript, and after you run your user scenarios and/or tests, it builds a performance report",
-  "version": "0.11.9",
+  "version": "0.12.9",
   "main": "./index",
   "repository": {
     "type": "git",
