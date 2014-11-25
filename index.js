@@ -118,11 +118,14 @@ _putstat = function (name, start) {
 	}
 	window._p[name].count++;
 	window._p[name].sum += duration;
-	window._p[name].max = duration > window._p[name].max ? duration : window._p[name].max;
+	if (duration > window._p[name].max) {
+		window._p[name].max = duration;
+	}
 	if (window._p[name].count === 0) {
 		window._p[avg] = duration;
 	} else {
-		window._p[name].avg = window._p[name].avg + ((window._p[name].sum - window._p[name].avg) / window._p[name].count);
+		//window._p[name].avg = window._p[name].avg + ((duration - window._p[name].avg) / window._p[name].count);
+		window._p[name].avg = (duration + (count - 1) * window._p[name].avg) / count;
 	}
 }
 _getstart = function () {
