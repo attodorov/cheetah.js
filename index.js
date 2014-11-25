@@ -125,7 +125,7 @@ _putstat = function (name, start) {
 		window._p[avg] = duration;
 	} else {
 		//window._p[name].avg = window._p[name].avg + ((duration - window._p[name].avg) / window._p[name].count);
-		window._p[name].avg = (duration + (count - 1) * window._p[name].avg) / count;
+		window._p[name].avg = (duration + (window._p[name].count - 1) * window._p[name].avg) / window._p[name].count;
 	}
 }
 _getstart = function () {
